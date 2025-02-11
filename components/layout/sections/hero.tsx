@@ -16,7 +16,7 @@ export const HeroSection = () => {
         layout="fill"
         objectFit="cover"
         quality={100}
-        className="z-0"
+        className="z-0 opacity-60"
       />
       <div className="relative z-10 container flex flex-col gap-5 items-center justify-center h-full">
         <div className="flex flex-col mb-10">
