@@ -1,11 +1,4 @@
-import { SearchPanel } from "@/components/search-panel";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Icon } from "@/components/ui/icon";
-import { icons } from "lucide-react";
-
-interface BenefitsProps {}
-
-const benefitList: BenefitsProps[] = [];
+import { SearchPanel } from "@/components/layout/search-panel";
 
 export const SearchSection = () => {
   return (

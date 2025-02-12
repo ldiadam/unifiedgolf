@@ -1,10 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import { Separator } from "./ui/separator";
+import { Separator } from "@/components/ui/separator";
 import { addDays, format, isBefore } from "date-fns";
 
-import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
-import { Button } from "./ui/button";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { Button } from "@/components/ui/button";
 import { CheckIcon, SearchIcon, TextSelectionIcon } from "lucide-react";
 import {
   Command,
@@ -13,9 +17,9 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "./ui/command";
+} from "@/components/ui/command";
 import { cn } from "@/lib/utils";
-import { Calendar } from "./ui/calendar";
+import { Calendar } from "@/components/ui/calendar";
 import { SelectIcon } from "@radix-ui/react-select";
 
 interface LocationProps {

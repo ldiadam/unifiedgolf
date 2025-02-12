@@ -1,4 +1,4 @@
-import { FooterSection } from "@/components/layout/sections/footer";
+// import { FooterSection } from "@/components/layout/sections/footer";
 import { HeroSection } from "@/components/layout/sections/hero";
 import { SearchSection } from "@/components/layout/sections/search";
 import { DestionationSection } from "@/components/layout/sections/destionation";
@@ -16,7 +16,7 @@ export default function Home() {
       <SearchSection />
       <DestionationSection />
       <TestimonialSection />
-      <FooterSection />
+      {/* <FooterSection /> */}
     </>
   );
 }

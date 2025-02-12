@@ -1,6 +1,4 @@
-import GithubIcon from "@/components/icons/github-icon";
-import LinkedInIcon from "@/components/icons/linkedin-icon";
-import XIcon from "@/components/icons/x-icon";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -14,6 +12,11 @@ interface LocationProps {
   imageUrl: string;
   name: string;
 }
+
+export const metadata = {
+  title: "Destination",
+  description: "",
+};
 
 export const DestionationSection = () => {
   const locationList: LocationProps[] = [
@@ -61,6 +64,21 @@ export const DestionationSection = () => {
             key={index}
             className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg relative"
           >
+            <Button
+              variant={"link"}
+              className="m-0 flex size-full p-0 ring-inset"
+              asChild
+            >
+              <Link
+                href={{
+                  pathname: "/locations",
+                  // query: {
+                  //   [SearchParams.BODY_STYLE]: slug,
+                  // },
+                }}
+                className="absolute inset-0 z-20 size-full rounded-xl"
+              />
+            </Button>
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center z-10">
               <div className="text-center">
                 <h2 className="text-3xl text-white font-bold">{name}</h2>
