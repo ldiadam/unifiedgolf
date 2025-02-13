@@ -112,7 +112,8 @@ export default function LocationsPage() {
     <div className="container mx-auto my-16">
       <h1 className="text-3xl font-bold text-center">Locations</h1>
       <div className="flex justify-center mb-8">
-        <SearchPanel searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+        {/* <SearchPanel searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> */}
+        <SearchPanel />
       </div>
       <div className="flex justify-center my-8 pt-4">
         <div className="flex flex-wrap gap-4">
@@ -127,7 +128,9 @@ export default function LocationsPage() {
               <SelectGroup>
                 <SelectItem value="All">All Countries</SelectItem>
                 {[
-                  ...new Set(locations.map((location) => location.country)),
+                  ...Array.from(
+                    new Set(locations.map((location) => location.country))
+                  ),
                 ].map((country) => (
                   <SelectItem key={country} value={country}>
                     {country}
@@ -143,13 +146,13 @@ export default function LocationsPage() {
             <SelectContent>
               <SelectGroup>
                 <SelectItem value="All">All Cities</SelectItem>
-                {[...new Set(locations.map((location) => location.city))].map(
-                  (city) => (
-                    <SelectItem key={city} value={city}>
-                      {city}
-                    </SelectItem>
-                  )
-                )}
+                {Array.from(
+                  new Set(locations.map((location) => location.city))
+                ).map((city) => (
+                  <SelectItem key={city} value={city}>
+                    {city}
+                  </SelectItem>
+                ))}
               </SelectGroup>
             </SelectContent>
           </Select>
