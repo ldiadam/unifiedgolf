@@ -36,6 +36,10 @@ const locations: LocationProps[] = [
     name: "Singapore",
   },
 ];
+interface SearchPanelProps {
+  value: string;
+}
+
 export const SearchPanel = () => {
   const [open, setOpen] = useState(false);
   const [location, setLocation] = useState("");
@@ -194,7 +198,6 @@ export const SearchPanel = () => {
           <div className="absolute right-2 z-20">
             <Button
               type="submit"
-              variant={"ghost"}
               size={"icon"}
               className="flex sm:size-10 shrink-0 items-center justify-center rounded-full bg-black text-white"
             >

@@ -1,78 +1,175 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
+import { LocationCard } from "./components/location-card";
 import { SearchPanel } from "@/components/layout/search-panel";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const locations = [
   {
     id: 1,
-    name: "Phuket",
+    name: "Place 1",
+    country: "Thailand",
+    city: "Phuket",
     imageUrl: "/loc-1.jpg",
-    description: "Beautiful beaches and vibrant nightlife.",
+    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    rating: 4.7,
+    reviews: 190,
+    pricePerDay: 80,
   },
   {
     id: 2,
-    name: "Bangkok",
+    name: "Place 2",
+    country: "Indonesia",
+    city: "Bali",
     imageUrl: "/loc-2.jpg",
-    description: "The bustling capital city of Thailand.",
+    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    rating: 4.6,
+    reviews: 170,
+    pricePerDay: 75,
   },
   {
     id: 3,
-    name: "Hua Hin",
+    name: "Place 3",
+    country: "Vietnam",
+    city: "Hanoi",
     imageUrl: "/loc-3.jpg",
-    description: "A serene seaside resort town.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    rating: 4.6,
+    reviews: 170,
+    pricePerDay: 75,
   },
   {
     id: 4,
-    name: "Pattaya",
+    name: "Place 4",
+    country: "Malaysia",
+    city: "Serawak",
     imageUrl: "/loc-4.jpg",
-    description: "Known for its beaches and nightlife.",
+    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    rating: 4.6,
+    reviews: 170,
+    pricePerDay: 75,
   },
   {
     id: 5,
-    name: "Bali",
+    name: "Place 5",
+    country: "Singapore",
+    city: "Singapore",
     imageUrl: "/loc-5.jpg",
-    description: "A tropical paradise with rich culture.",
+    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    rating: 4.6,
+    reviews: 170,
+    pricePerDay: 75,
   },
   {
     id: 6,
-    name: "Dubai",
+    name: "Place 6",
+    country: "Indonesia",
+    city: "Jakarta",
     imageUrl: "/loc-6.jpg",
-    description: "A modern city with luxury shopping and entertainment.",
+    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    rating: 4.6,
+    reviews: 170,
+    pricePerDay: 75,
   },
+  // ... rest of your locations with added fields
 ];
 
 export default function LocationsPage() {
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCountry, setSelectedCountry] = useState("All");
+  const [selectedCity, setSelectedCity] = useState("All");
+  const [sortOption, setSortOption] = useState("price");
 
-  const filteredLocations = locations.filter((location) =>
-    location.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredLocations = locations
+    .filter((location) =>
+      location.name.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+    .filter((location) =>
+      selectedCountry === "All" ? true : location.country === selectedCountry
+    )
+    .filter((location) =>
+      selectedCity === "All" ? true : location.city === selectedCity
+    )
+    .sort((a, b) => {
+      if (sortOption === "price") {
+        return a.pricePerDay - b.pricePerDay;
+      } else if (sortOption === "rating") {
+        return b.rating - a.rating;
+      } else if (sortOption === "reviews") {
+        return b.reviews - a.reviews;
+      }
+      return 0;
+    });
 
   return (
-    <div className="container mx-auto py-16">
+    <div className="container mx-auto my-16">
       <h1 className="text-3xl font-bold text-center">Locations</h1>
-      <div className="flex justify-center mb-16">
-        <SearchPanel />
+      <div className="flex justify-center mb-8">
+        <SearchPanel searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      </div>
+      <div className="flex justify-center my-8 pt-4">
+        <div className="flex flex-wrap gap-4">
+          <span className="flex justify-center items-center font-bold">
+            Filter:
+          </span>
+          <Select value={selectedCountry} onValueChange={setSelectedCountry}>
+            <SelectTrigger className="w-[180px] shadow-inner bg-opacity-15">
+              <SelectValue placeholder="Choose Country" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectItem value="All">All Countries</SelectItem>
+                {[
+                  ...new Set(locations.map((location) => location.country)),
+                ].map((country) => (
+                  <SelectItem key={country} value={country}>
+                    {country}
+                  </SelectItem>
+                ))}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+          <Select value={selectedCity} onValueChange={setSelectedCity}>
+            <SelectTrigger className="w-[180px] shadow-inner bg-opacity-15">
+              <SelectValue placeholder="Choose Country" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectItem value="All">All Cities</SelectItem>
+                {[...new Set(locations.map((location) => location.city))].map(
+                  (city) => (
+                    <SelectItem key={city} value={city}>
+                      {city}
+                    </SelectItem>
+                  )
+                )}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+          <Select value={sortOption} onValueChange={setSortOption}>
+            <SelectTrigger className="w-[180px] shadow-inner bg-opacity-15">
+              <SelectValue placeholder="Choose Country" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectItem value="price">Sort by Price</SelectItem>
+                <SelectItem value="rating">Sort by Rating</SelectItem>
+                <SelectItem value="reviews">Sort by Reviews</SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+        </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredLocations.map((location) => (
-          <div
-            key={location.id}
-            className="border rounded-lg overflow-hidden shadow-lg"
-          >
-            <Image
-              src={location.imageUrl}
-              alt={location.name}
-              width={300}
-              height={200}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h2 className="text-xl font-bold mb-2">{location.name}</h2>
-              <p className="text-gray-700">{location.description}</p>
-            </div>
-          </div>
+          <LocationCard key={location.id} location={location} />
         ))}
       </div>
     </div>
