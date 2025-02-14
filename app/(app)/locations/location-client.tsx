@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { LocationCard } from "./components/location-card";
 import { EnhancedSearchPanel } from "@/components/layout/search/enhanced-search-panel";
 import { LocationFilter } from "./components/location-filter";
@@ -8,15 +9,27 @@ import { Location } from "@/lib/types";
 import dataPlace from "@/dataPlace.json";
 
 export default function LocationsClient() {
-  const { filters } = useSearch();
-  const [locations, setLocations] = useState<Location[]>([]);
+  const { filters, setFilters } = useSearch();
+  const searchParams = useSearchParams();
+  const [locations, setLocations] = useState<Location[]>(dataPlace);
   const [selectedCountry, setSelectedCountry] = useState("All");
   const [selectedCity, setSelectedCity] = useState("All");
   const [sortOption, setSortOption] = useState("price");
 
+  // Initialize filters from URL parameters
   useEffect(() => {
-    setLocations(dataPlace);
-  }, []);
+    const location = searchParams.get("location") || "";
+    const searchTerm = searchParams.get("searchTerm") || "";
+    const checkIn = searchParams.get("checkIn");
+    const checkOut = searchParams.get("checkOut");
+
+    setFilters({
+      location,
+      searchTerm,
+      checkInDate: checkIn ? new Date(checkIn) : undefined,
+      checkOutDate: checkOut ? new Date(checkOut) : undefined,
+    });
+  }, [searchParams, setFilters]);
 
   const filteredLocations = locations
     .filter((location) =>

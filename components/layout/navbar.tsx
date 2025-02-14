@@ -22,6 +22,7 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { ToggleTheme } from "./toogle-theme";
+import { CartComponent } from "./cart/cart";
 
 interface RouteProps {
   href: string;
@@ -119,8 +120,10 @@ export const Navbar = () => {
 
             <SheetFooter className="flex-col sm:flex-col justify-start items-start">
               <Separator className="mb-2" />
-
-              <ToggleTheme />
+              <div className="flex flex-col justify-between items-start gap-3">
+                <ToggleTheme />
+                <CartComponent />
+              </div>
             </SheetFooter>
           </SheetContent>
         </Sheet>
@@ -163,14 +166,9 @@ export const Navbar = () => {
         </NavigationMenuList>
       </NavigationMenu>
 
-      <div className="hidden lg:flex">
+      <div className="hidden lg:flex flex-row gap-2 justify-between items-center mr-2">
         <ToggleTheme />
-
-        <Button asChild size="sm" variant="ghost" aria-label="View on Cart">
-          <Link aria-label="View Cart" href="#" target="_blank">
-            <ShoppingCart className="size-5" />
-          </Link>
-        </Button>
+        <CartComponent />
       </div>
     </header>
   );

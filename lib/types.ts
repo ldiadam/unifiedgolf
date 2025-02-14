@@ -1,5 +1,6 @@
 export interface Location {
   id: number;
+  slug: string;
   name: string;
   country: string;
   city: string;
@@ -16,4 +17,12 @@ export interface SearchFilters {
   checkInDate?: Date;
   checkOutDate?: Date;
   searchTerm: string;
+}
+
+export interface BookingItem {
+  locationId: string;
+  location: Location;
+  startDate: Date;
+  endDate: Date;
+  totalPrice: number;
 }

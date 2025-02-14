@@ -5,6 +5,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { FooterSection } from "@/components/layout/sections/footer";
 import { SearchProvider } from "@/hook/search-context";
+import { CartProvider } from "@/hook/booking-context";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -22,9 +23,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <SearchProvider>
-            <Navbar />
-            {children}
-            <FooterSection />
+            <CartProvider>
+              <Navbar />
+              {children}
+              <FooterSection />
+            </CartProvider>
           </SearchProvider>
         </ThemeProvider>
       </body>

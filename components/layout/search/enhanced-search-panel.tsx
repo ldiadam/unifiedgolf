@@ -74,9 +74,9 @@ export const EnhancedSearchPanel = () => {
                             {filters.location}
                           </p>
                         ) : (
-                          <div className="text-neutral-500">
+                          <span className="text-neutral-500">
                             Select location
-                          </div>
+                          </span>
                         )}
                       </div>
                     </div>
