@@ -1,12 +1,10 @@
-"use client";
-import { useParams, useRouter } from "next/navigation";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { MapPin, Star } from "lucide-react";
+import { Metadata } from "next";
+import { LocationDetailClient } from "./location-detail-client";
 
 const locations = [
   {
     id: 1,
+    slug: "place-1",
     name: "Place 1",
     country: "Thailand",
     city: "Phuket",
@@ -15,9 +13,11 @@ const locations = [
     rating: 4.7,
     reviews: 190,
     pricePerDay: 80,
+    type: "Location",
   },
   {
     id: 2,
+    slug: "place-2",
     name: "Place 2",
     country: "Indonesia",
     city: "Bali",
@@ -26,9 +26,11 @@ const locations = [
     rating: 4.6,
     reviews: 170,
     pricePerDay: 75,
+    type: "Location",
   },
   {
     id: 3,
+    slug: "place-3",
     name: "Place 3",
     country: "Vietnam",
     city: "Hanoi",
@@ -37,9 +39,11 @@ const locations = [
     rating: 4.6,
     reviews: 170,
     pricePerDay: 75,
+    type: "Location",
   },
   {
     id: 4,
+    slug: "place-4",
     name: "Place 4",
     country: "Malaysia",
     city: "Serawak",
@@ -48,9 +52,11 @@ const locations = [
     rating: 4.6,
     reviews: 170,
     pricePerDay: 75,
+    type: "Location",
   },
   {
     id: 5,
+    slug: "place-5",
     name: "Place 5",
     country: "Singapore",
     city: "Singapore",
@@ -59,9 +65,11 @@ const locations = [
     rating: 4.6,
     reviews: 170,
     pricePerDay: 75,
+    type: "Location",
   },
   {
     id: 6,
+    slug: "place-6",
     name: "Place 6",
     country: "Indonesia",
     city: "Jakarta",
@@ -70,60 +78,50 @@ const locations = [
     rating: 4.6,
     reviews: 170,
     pricePerDay: 75,
+    type: "Location",
   },
-  // ... rest of your locations with added fields
 ];
 
-export default function LocationDetailPage() {
-  const { slug } = useParams();
-  const router = useRouter();
+type Props = {
+  params: {
+    slug: string;
+  };
+};
 
-  const location = locations.find(
-    (loc) => loc.name.toLowerCase().replace(/\s+/g, "-") === slug
-  );
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  // In a real app, you would fetch the location data here
+  const location = locations.find((loc) => loc.slug === params.slug);
+
+  if (!location) {
+    return {
+      title: "Location Not Found",
+      description: "The requested location could not be found.",
+    };
+  }
+
+  return {
+    title: `${location.name} - ${location.city}, ${location.country}`,
+    description: location.description,
+    // openGraph: {
+    //   title: `${location.name} - ${location.city}, ${location.country}`,
+    //   description: location.description,
+    //   images: [
+    //     {
+    //       url: location.imageUrl,
+    //       width: 1200,
+    //       height: 630,
+    //       alt: location.name,
+    //     },
+    //   ],
+    // },
+  };
+}
+export default async function LocationPage({ params }: Props) {
+  const location = locations.find((loc) => loc.slug === params.slug);
 
   if (!location) {
     return <div>Location not found</div>;
   }
 
-  return (
-    <div className="container mx-auto my-16">
-      <Button variant="outline" className="mb-8" onClick={() => router.back()}>
-        Back to Locations
-      </Button>
-      <div className="flex flex-col lg:flex-row gap-8">
-        <div className="w-full lg:w-1/2">
-          <Image
-            src={location.imageUrl}
-            alt={location.name}
-            width={600}
-            height={400}
-            className="w-full h-auto object-cover rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="w-full lg:w-1/2">
-          <h1 className="text-4xl font-bold mb-4">{location.name}</h1>
-          <div className="flex items-center gap-2 mb-4">
-            <MapPin size={16} />
-            <span className="text-gray-600">
-              {location.city}, {location.country}
-            </span>
-          </div>
-          <div className="flex items-center mb-4">
-            <Star className="text-yellow-500 mr-2" />
-            <span className="text-lg font-semibold">
-              {location.rating} ({location.reviews} reviews)
-            </span>
-          </div>
-          <p className="text-lg mb-4">{location.description}</p>
-          <div className="text-3xl font-bold text-blue-600 mb-4">
-            ${location.pricePerDay} / day
-          </div>
-          <Button variant="default" className="w-full py-3">
-            Book Now
-          </Button>
-        </div>
-      </div>
-    </div>
-  );
+  return <LocationDetailClient location={location} />;
 }

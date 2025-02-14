@@ -1,0 +1,67 @@
+"use client";
+
+import { Button } from "@/components/ui/button";
+import { MapPin, Star } from "lucide-react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+
+interface Location {
+  id: number;
+  name: string;
+  country: string;
+  city: string;
+  imageUrl: string;
+  description: string;
+  rating: number;
+  reviews: number;
+  pricePerDay: number;
+  type: string;
+}
+
+interface LocationDetailClientProps {
+  location: Location;
+}
+
+export function LocationDetailClient({ location }: LocationDetailClientProps) {
+  const router = useRouter();
+  return (
+    <div className="container mx-auto my-16">
+      <Button variant="outline" className="mb-8" onClick={() => router.back()}>
+        Back to Locations
+      </Button>
+      <div className="flex flex-col lg:flex-row gap-8">
+        <div className="w-full lg:w-1/2">
+          <Image
+            src={location.imageUrl}
+            alt={location.name}
+            width={600}
+            height={400}
+            className="w-full h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div>
+        <div className="w-full lg:w-1/2">
+          <h1 className="text-4xl font-bold mb-4">{location.name}</h1>
+          <div className="flex items-center gap-2 mb-4">
+            <MapPin size={16} />
+            <span className="text-gray-600">
+              {location.city}, {location.country}
+            </span>
+          </div>
+          <div className="flex items-center mb-4">
+            <Star className="text-yellow-500 mr-2" />
+            <span className="text-lg font-semibold">
+              {location.rating} ({location.reviews} reviews)
+            </span>
+          </div>
+          <p className="text-lg mb-4">{location.description}</p>
+          <div className="text-3xl font-bold text-blue-600 mb-4">
+            ${location.pricePerDay} / day
+          </div>
+          <Button variant="default" className="w-full py-3">
+            Book Now
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+}

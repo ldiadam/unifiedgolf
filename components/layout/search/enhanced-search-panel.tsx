@@ -1,15 +1,11 @@
-"use client";
-import React, { useState } from "react";
-import { Separator } from "@/components/ui/separator";
-import { addDays, format, isBefore } from "date-fns";
-
+import { format, addDays } from "date-fns";
+import { Button } from "@/components/ui/button";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { Button } from "@/components/ui/button";
-import { CheckIcon, SearchIcon, TextSelectionIcon } from "lucide-react";
+import { Calendar } from "@/components/ui/calendar";
 import {
   Command,
   CommandEmpty,
@@ -18,42 +14,44 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
+import { Separator } from "@/components/ui/separator";
+import { SearchIcon, CheckIcon } from "lucide-react";
+import { useSearch } from "@/hook/search-context";
 import { cn } from "@/lib/utils";
-import { Calendar } from "@/components/ui/calendar";
-import { SelectIcon } from "@radix-ui/react-select";
+import { useState } from "react";
 
-interface LocationProps {
-  name: string;
-}
-const locations: LocationProps[] = [
-  {
-    name: "Indonesia",
-  },
-  {
-    name: "Malaysia",
-  },
-  {
-    name: "Singapore",
-  },
+const locations = [
+  { country: "Thailand" },
+  { country: "Indonesia" },
+  { country: "Vietnam" },
+  { country: "Malaysia" },
+  { country: "Singapore" },
+  // Add more locations as needed
 ];
-interface SearchPanelProps {
-  value: string;
-}
 
-export const SearchPanel = () => {
+export const EnhancedSearchPanel = () => {
+  const { filters, setFilters } = useSearch();
   const [open, setOpen] = useState(false);
-  const [location, setLocation] = useState("");
 
-  const [checkInDate, setCheckInDate] = useState<Date>();
-  const [checkOutDate, setCheckOutDate] = useState<Date>();
+  const handleSearch = () => {
+    // Update both location and searchTerm when searching
+    setFilters((prev) => ({
+      ...prev,
+      searchTerm: prev.location, // Use location as search term
+    }));
+  };
 
   return (
     <form
-      onSubmit={(e) => e.preventDefault()}
+      onSubmit={(e) => {
+        e.preventDefault();
+        handleSearch();
+      }}
       className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto relative border rounded-2xl flex justify-between items-center p-2 bg-card"
     >
       <div className="relative grid w-full grid-cols-1 items-center">
         <div className="grid h-full grid-cols-3 items-center justify-center">
+          {/* Location Selection */}
           <div className="relative h-full">
             <Separator
               orientation="vertical"
@@ -71,12 +69,9 @@ export const SearchPanel = () => {
                     <div className="flex size-full items-center justify-between">
                       <div className="flex size-full flex-col items-start justify-center truncate">
                         <div className="text-[13px] font-bold">Location</div>
-                        {location ? (
+                        {filters.location ? (
                           <p className="truncate font-semibold text-neutral-800">
-                            {
-                              locations.find((loc) => loc.name === location)
-                                ?.name
-                            }
+                            {filters.location}
                           </p>
                         ) : (
                           <div className="text-neutral-500">
@@ -84,7 +79,6 @@ export const SearchPanel = () => {
                           </div>
                         )}
                       </div>
-                      <SelectIcon className="-mr-2 ml-2  size-5 shrink-0 opacity-50" />
                     </div>
                   </Button>
                 </PopoverTrigger>
@@ -96,24 +90,28 @@ export const SearchPanel = () => {
                       <CommandGroup>
                         {locations.map((loc) => (
                           <CommandItem
-                            key={loc.name}
-                            value={loc.name}
+                            key={loc.country}
+                            value={loc.country}
                             onSelect={(currentValue) => {
-                              setLocation(
-                                currentValue === location ? "" : currentValue
-                              );
+                              setFilters((prev) => ({
+                                ...prev,
+                                location:
+                                  currentValue === filters.location
+                                    ? ""
+                                    : currentValue,
+                              }));
                               setOpen(false);
                             }}
                           >
                             <CheckIcon
                               className={cn(
                                 "mr-2 size-4 shrink-0",
-                                location === loc.name
+                                filters.location === loc.country
                                   ? "opacity-100"
                                   : "opacity-0"
                               )}
                             />
-                            {loc.name}
+                            {loc.country}
                           </CommandItem>
                         ))}
                       </CommandGroup>
@@ -123,6 +121,8 @@ export const SearchPanel = () => {
               </Popover>
             </div>
           </div>
+
+          {/* Check-in Date */}
           <div className="relative h-full">
             <Separator
               orientation="vertical"
@@ -132,14 +132,14 @@ export const SearchPanel = () => {
               <Popover>
                 <PopoverTrigger asChild>
                   <Button
-                    variant={"ghost"}
+                    variant="ghost"
                     className="size-full flex-col overflow-hidden rounded-full border-none px-5 py-0 focus-visible:z-10"
                   >
                     <div className="flex size-full flex-col items-start justify-center truncate">
                       <div className="text-[13px] font-bold">Check in</div>
-                      {checkInDate ? (
+                      {filters.checkInDate ? (
                         <div className="font-semibold text-neutral-800">
-                          {format(checkInDate, "LLL dd, y")}
+                          {format(filters.checkInDate, "LLL dd, y")}
                         </div>
                       ) : (
                         <div className="truncate text-neutral-500">
@@ -152,8 +152,10 @@ export const SearchPanel = () => {
                 <PopoverContent className="w-auto p-0">
                   <Calendar
                     mode="single"
-                    selected={checkInDate}
-                    onSelect={setCheckInDate}
+                    selected={filters.checkInDate}
+                    onSelect={(date) =>
+                      setFilters((prev) => ({ ...prev, checkInDate: date }))
+                    }
                     initialFocus
                     disabled={(date) => date <= addDays(new Date(), 1)}
                   />
@@ -161,19 +163,21 @@ export const SearchPanel = () => {
               </Popover>
             </div>
           </div>
+
+          {/* Check-out Date */}
           <div className="relative h-full">
             <div className="flex size-full items-center justify-center px-0">
               <Popover>
                 <PopoverTrigger asChild>
                   <Button
-                    variant={"ghost"}
+                    variant="ghost"
                     className="size-full flex-col overflow-hidden rounded-full border-none px-5 py-0 focus-visible:z-10"
                   >
                     <div className="flex size-full flex-col items-start justify-center truncate">
                       <div className="text-[13px] font-bold">Check Out</div>
-                      {checkOutDate ? (
+                      {filters.checkOutDate ? (
                         <div className="font-semibold text-neutral-800">
-                          {format(checkOutDate, "LLL dd, y")}
+                          {format(filters.checkOutDate, "LLL dd, y")}
                         </div>
                       ) : (
                         <div className="truncate text-neutral-500">
@@ -186,19 +190,25 @@ export const SearchPanel = () => {
                 <PopoverContent className="w-auto p-0">
                   <Calendar
                     mode="single"
-                    selected={checkOutDate}
-                    onSelect={setCheckOutDate}
+                    selected={filters.checkOutDate}
+                    onSelect={(date) =>
+                      setFilters((prev) => ({ ...prev, checkOutDate: date }))
+                    }
                     initialFocus
-                    disabled={(date) => date <= addDays(new Date(), 1)}
+                    disabled={(date) =>
+                      date <= (filters.checkInDate || addDays(new Date(), 1))
+                    }
                   />
                 </PopoverContent>
               </Popover>
             </div>
           </div>
+
+          {/* Search Button */}
           <div className="absolute right-2 z-20">
             <Button
               type="submit"
-              size={"icon"}
+              size="icon"
               className="flex sm:size-10 shrink-0 items-center justify-center rounded-full bg-black text-white"
             >
               <span className="sr-only">Search</span>

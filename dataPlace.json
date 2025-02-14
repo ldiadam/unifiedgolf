@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Place 1",
+    "country": "Thailand",
+    "city": "Phuket",
+    "imageUrl": "/loc-1.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "rating": 4.7,
+    "reviews": 190,
+    "pricePerDay": 80,
+    "type": "Location"
+  },
+  {
+    "id": 2,
+    "name": "Place 2",
+    "country": "Indonesia",
+    "city": "Bali",
+    "imageUrl": "/loc-2.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 3,
+    "name": "Place 3",
+    "country": "Vietnam",
+    "city": "Hanoi",
+    "imageUrl": "/loc-3.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 4,
+    "name": "Place 4",
+    "country": "Malaysia",
+    "city": "Serawak",
+    "imageUrl": "/loc-4.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 5,
+    "name": "Place 5",
+    "country": "Singapore",
+    "city": "Singapore",
+    "imageUrl": "/loc-5.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 6,
+    "name": "Place 6",
+    "country": "Indonesia",
+    "city": "Jakarta",
+    "imageUrl": "/loc-6.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  }
+]

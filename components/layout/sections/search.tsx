@@ -1,4 +1,6 @@
-import { SearchPanel } from "@/components/layout/search-panel";
+"use client";
+import { useState } from "react";
+import { EnhancedSearchPanel } from "../search/enhanced-search-panel";
 
 export const SearchSection = () => {
   return (
@@ -17,7 +19,7 @@ export const SearchSection = () => {
                       <SearchPanelWrapper />
                     </Suspense> */}
                     {/* Search panel */}
-                    <SearchPanel />
+                    <EnhancedSearchPanel />
                   </div>
                 </div>
               </div>
