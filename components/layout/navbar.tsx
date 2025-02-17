@@ -31,6 +31,7 @@ interface RouteProps {
 
 interface FeatureProps {
   title: string;
+  href: string;
 }
 
 const routeList: RouteProps[] = [
@@ -39,7 +40,7 @@ const routeList: RouteProps[] = [
   //   label: "Contact Me",
   // },
   {
-    href: "#about",
+    href: "/about",
     label: "About Us",
   },
   {
@@ -55,21 +56,27 @@ const routeList: RouteProps[] = [
 const featureList: FeatureProps[] = [
   {
     title: "Indonesia",
+    href: "/locations",
   },
   {
     title: "Malaysia",
+    href: "/locations",
   },
   {
     title: "Thailand",
+    href: "/locations",
   },
   {
     title: "Singapore",
+    href: "/locations",
   },
   {
     title: "Kamboja",
+    href: "/locations",
   },
   {
     title: "Vietnam",
+    href: "/locations",
   },
 ];
 
@@ -78,7 +85,7 @@ export const Navbar = () => {
   return (
     <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-xl flex justify-between items-center p-2 bg-card">
       <Link href="/" className="font-bold text-lg flex items-center p-3">
-        Golf Booking
+        Unified Golf
       </Link>
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
@@ -98,7 +105,7 @@ export const Navbar = () => {
               <SheetHeader className="mb-4 ml-4">
                 <SheetTitle className="flex items-center">
                   <Link href="/" className="flex items-center">
-                    Golf Booking
+                    Unified
                   </Link>
                 </SheetTitle>
               </SheetHeader>
@@ -139,15 +146,19 @@ export const Navbar = () => {
             <NavigationMenuContent>
               <div className="grid w-[600px] grid-cols-1 gap-5 p-4">
                 <ul className="flex flex-row gap-2">
-                  {featureList.map(({ title }) => (
-                    <li
-                      key={title}
+                  {featureList.map(({ href, title }) => (
+                    <Button
+                      key={href}
+                      variant={"link"}
                       className="rounded-md p-3 text-sm hover:bg-muted"
                     >
-                      <p className="mb-1 font-semibold leading-none text-foreground">
+                      <Link
+                        href={href}
+                        className="mb-1 font-semibold leading-none text-foreground"
+                      >
                         {title}
-                      </p>
-                    </li>
+                      </Link>
+                    </Button>
                   ))}
                 </ul>
               </div>
