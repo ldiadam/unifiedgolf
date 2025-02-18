@@ -64,7 +64,7 @@ export const NavbarNew = () => {
           <div className="flex justify-between items-center p-2">
             <Link href="/" className="flex items-center p-3">
               <Image
-                src={"/company-logo.JPG"}
+                src={"/company-logo.jpg"}
                 width={80}
                 height={30}
                 alt="Company Logo"
@@ -106,7 +106,7 @@ export const NavbarNew = () => {
         <header className=" shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl mx-auto border border-secondary z-40 rounded-xl flex justify-between items-center p-2 bg-card">
           <Link href="/" className="flex items-center p-3">
             <Image
-              src={"/company-logo.JPG"}
+              src={"/company-logo.jpg"}
               width={80}
               height={30}
               alt=""
