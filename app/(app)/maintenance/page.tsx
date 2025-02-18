@@ -1,7 +1,5 @@
-export default function UnderConstructPage() {
-  return (
-    <>
-      <span>Under construct page</span>
-    </>
-  );
+import UnderConstructionClient from "./maintenance-client";
+
+export default function UnderConstructionPage() {
+  return <UnderConstructionClient />;
 }

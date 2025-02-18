@@ -1,15 +1,12 @@
 "use client";
-import { ChevronsDown, Github, Menu, ShoppingCart } from "lucide-react";
 import React from "react";
-import {
-  Sheet,
-  SheetContent,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "../ui/sheet";
 import { Separator } from "../ui/separator";
+import Link from "next/link";
+import Image from "next/image";
+import { ToggleTheme } from "./toogle-theme";
+import { CartComponent } from "./cart/cart";
+import { Button } from "../ui/button";
+import { cn } from "@/utils/utils";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -18,22 +15,12 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "../ui/navigation-menu";
-import { Button } from "../ui/button";
-import Link from "next/link";
-import Image from "next/image";
-import { ToggleTheme } from "./toogle-theme";
-import { CartComponent } from "./cart/cart";
 
 interface RouteProps {
   id: number;
   href: string;
   label: string;
 }
-
-// interface FeatureProps {
-//   title: string;
-//   href: string;
-// }
 
 const routeList: RouteProps[] = [
   {
@@ -68,100 +55,68 @@ const routeList: RouteProps[] = [
   },
 ];
 
-// const featureList: FeatureProps[] = [
-//   {
-//     title: "Indonesia",
-//     href: "/locations",
-//   },
-//   {
-//     title: "Malaysia",
-//     href: "/locations",
-//   },
-//   {
-//     title: "Thailand",
-//     href: "/locations",
-//   },
-//   {
-//     title: "Singapore",
-//     href: "/locations",
-//   },
-//   {
-//     title: "Kamboja",
-//     href: "/locations",
-//   },
-//   {
-//     title: "Vietnam",
-//     href: "/locations",
-//   },
-// ];
-
 export const NavbarNew = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-xl flex justify-between items-center p-2 bg-card">
-      <Link href="/" className="flex items-center p-3">
-        <Image
-          src={"/company-logo.jpg"}
-          width={70}
-          height={30}
-          alt="Logo"
-          // fill
-          className="rounded ml-3"
-        />
-      </Link>
-      {/* <!-- Mobile --> */}
-      <div className="flex items-center lg:hidden px-5">
-        <Sheet open={isOpen} onOpenChange={setIsOpen}>
-          <SheetTrigger asChild>
-            <Menu
-              onClick={() => setIsOpen(!isOpen)}
-              className="cursor-pointer lg:hidden"
-            />
-          </SheetTrigger>
+    <div className="container sticky top-5 z-40 w-full">
+      <div className="lg:hidden  flex justify-center">
+        <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[80%] lg:w-[90%] xl:w-[75%] max-w-screen-xl mx-auto border border-secondary rounded-xl bg-card flex flex-col">
+          {/* Top section with logo and actions */}
+          <div className="flex justify-between items-center p-2">
+            <Link href="/" className="flex items-center p-3">
+              <Image
+                src={"/company-logo.JPG"}
+                width={80}
+                height={30}
+                alt="Company Logo"
+              />
+            </Link>
 
-          <SheetContent
-            side="left"
-            className="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card border-secondary"
-          >
-            <div>
-              <SheetHeader className="mb-4 ml-4">
-                <SheetTitle className="flex items-center">
-                  <Link href="/" className="flex items-center">
-                    Unified
-                  </Link>
-                </SheetTitle>
-              </SheetHeader>
-
-              <div className="flex flex-col gap-2">
-                {routeList.map(({ id, href, label }) => (
-                  <Button
-                    key={id}
-                    onClick={() => setIsOpen(false)}
-                    asChild
-                    variant="ghost"
-                    className="justify-start text-base"
-                  >
-                    <Link href={href}>{label}</Link>
-                  </Button>
-                ))}
-              </div>
+            <div className="flex flex-row gap-2 justify-between items-center mr-2">
+              <ToggleTheme />
+              <CartComponent />
             </div>
+          </div>
 
-            <SheetFooter className="flex-col sm:flex-col justify-start items-start">
-              <Separator className="mb-2" />
-              <div className="flex flex-col justify-between items-start gap-3">
-                <ToggleTheme />
-                <CartComponent />
-              </div>
-            </SheetFooter>
-          </SheetContent>
-        </Sheet>
+          <Separator />
+
+          {/* Navigation menu - always visible */}
+          <nav className="flex flex-wrap justify-center p-2">
+            {routeList.map(({ id, href, label }) => (
+              <Button
+                key={id}
+                asChild
+                variant="ghost"
+                size="sm"
+                className={cn(
+                  "text-xs sm:text-sm md:text-base",
+                  "px-1 sm:px-2 md:px-3",
+                  "h-8 sm:h-9 md:h-10",
+                  "rounded-md",
+                  "whitespace-nowrap"
+                )}
+              >
+                <Link href={href}>{label}</Link>
+              </Button>
+            ))}
+          </nav>
+        </header>
       </div>
-
       {/* <!-- Desktop --> */}
-      <NavigationMenu className="hidden lg:block mx-auto">
-        <NavigationMenuList>
-          {/* <NavigationMenuItem>
+      <div className="hidden lg:block">
+        <header className=" shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl mx-auto border border-secondary z-40 rounded-xl flex justify-between items-center p-2 bg-card">
+          <Link href="/" className="flex items-center p-3">
+            <Image
+              src={"/company-logo.JPG"}
+              width={80}
+              height={30}
+              alt=""
+              // fill
+              className="rounded-md"
+            />
+          </Link>
+          <NavigationMenu className="hidden lg:block mx-auto">
+            <NavigationMenuList>
+              {/* <NavigationMenuItem>
             <NavigationMenuTrigger className="bg-card text-base">
               Select Your Country
             </NavigationMenuTrigger>
@@ -187,22 +142,24 @@ export const NavbarNew = () => {
             </NavigationMenuContent>
           </NavigationMenuItem> */}
 
-          <NavigationMenuItem>
-            {routeList.map(({ id, href, label }) => (
-              <NavigationMenuLink key={id} asChild>
-                <Link href={href} className="text-base px-2">
-                  {label}
-                </Link>
-              </NavigationMenuLink>
-            ))}
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
+              <NavigationMenuItem>
+                {routeList.map(({ href, label }) => (
+                  <NavigationMenuLink key={label} asChild>
+                    <Link href={href} className="text-base font-bold px-2">
+                      {label}
+                    </Link>
+                  </NavigationMenuLink>
+                ))}
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
 
-      <div className="hidden lg:flex flex-row gap-2 justify-between items-center mr-2">
-        <ToggleTheme />
-        <CartComponent />
+          <div className="hidden lg:flex flex-row gap-2 justify-between items-center mr-2">
+            <ToggleTheme />
+            <CartComponent />
+          </div>
+        </header>
       </div>
-    </header>
+    </div>
   );
 };

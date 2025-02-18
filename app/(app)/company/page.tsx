@@ -90,10 +90,11 @@ export default function CompanyProfilePage() {
           </div>
           <div className="md:w-1/2 relative h-80 w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/img-background.jpg"
+              src="/company-logo.jpg"
               alt="Golf course"
-              fill
-              className="object-cover transition-transform hover:scale-105 duration-700"
+              layout="fill"
+              quality={100}
+              className=""
             />
           </div>
         </div>

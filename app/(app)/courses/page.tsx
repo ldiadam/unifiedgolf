@@ -24,8 +24,8 @@ export default function CourseDetailPage() {
   };
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-6xl">
-      <h1 className="text-3xl font-bold mb-6">Course Locations</h1>
+    <div className="container mx-auto py-16 px-4 max-w-6xl">
+      <h1 className="text-3xl font-bold mb-6">Course Details</h1>
 
       {/* Country Tabs */}
       <Tabs
@@ -38,9 +38,9 @@ export default function CourseDetailPage() {
             <TabsTrigger
               key={location.id}
               value={location.country}
-              className="px-4 py-2 m-1"
+              className="px-4 py-2 m-1 hover:bg-primary"
             >
-              {location.country}
+              <span className="text-base">{location.country}</span>
             </TabsTrigger>
           ))}
         </TabsList>
@@ -63,7 +63,7 @@ export default function CourseDetailPage() {
                         )}`}
                         key={index}
                       >
-                        <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+                        <Card className="hover:shadow-lg hover:bg-primary transition-shadow cursor-pointer h-full">
                           <CardContent className="flex items-center justify-center h-full p-6">
                             <span className="text-center font-medium">
                               {city}

@@ -95,5 +95,15 @@
     "id": 11,
     "country": "Vietnam",
     "city": ["Hanoi", "Ho Chi Min", "Nha Trang", "Dalat", "Danang"]
+  },
+  {
+    "id": 12,
+    "country": "Brunei",
+    "city": [
+      "The Empire",
+      "The Royal Brunei",
+      "Pantai Mentiri",
+      "RBA Golf Club Sdn Bhd"
+    ]
   }
 ]
