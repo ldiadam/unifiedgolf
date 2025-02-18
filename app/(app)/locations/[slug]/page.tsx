@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { LocationDetailClient } from "./location-detail-client";
-import dataPlace from "@/dataPlace.json";
+import dataPlace from "@/data/dataPlace.json";
 
 const locations = dataPlace;
 

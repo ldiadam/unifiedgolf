@@ -1,11 +1,11 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-import { Navbar } from "@/components/layout/navbar";
+import { cn } from "@/utils/utils";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { FooterSection } from "@/components/layout/sections/footer";
 import { SearchProvider } from "@/hook/search-context";
 import { CartProvider } from "@/hook/booking-context";
+import { NavbarNew } from "@/components/layout/navbar-new";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
         >
           <SearchProvider>
             <CartProvider>
-              <Navbar />
+              <NavbarNew />
               {children}
               <FooterSection />
             </CartProvider>

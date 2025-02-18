@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "country": "China",
+    "city": [
+      "ChengDu",
+      "ChongQing",
+      "Hainan",
+      "Kunming",
+      "Dali",
+      "Lijiang",
+      "Nanjing",
+      "QingDao",
+      "WeiHai",
+      "Shanghai",
+      "Shengzhen",
+      "Xiamen",
+      "XingXiang",
+      "Xinjiang",
+      "Inner Mongolia",
+      "Heliongjiang",
+      "Jilin",
+      "Liaoning",
+      "Shandong",
+      "Shanxi",
+      "Ningxia",
+      "Hebei",
+      "Shandong"
+    ]
+  },
+  {
+    "id": 2,
+    "country": "Cambodia",
+    "city": ["Phom Penh", "Semprit"]
+  },
+  {
+    "id": 3,
+    "country": "Indonesia",
+    "city": [
+      "Java",
+      "Bali",
+      "Surabaya",
+      "Batam",
+      "Bintan",
+      "Bogor",
+      "Jakarta",
+      "Bandung"
+    ]
+  },
+  {
+    "id": 4,
+    "country": "Japan",
+    "city": ["Nara", "Okinawa", "Ciba", "Osaka", "Hokkaido"]
+  },
+  {
+    "id": 5,
+    "country": "Laos",
+    "city": ["Vientaine"]
+  },
+  {
+    "id": 6,
+    "country": "Malaysia",
+    "city": [
+      "Johor",
+      "Meleka",
+      "Selangor",
+      "Ipoh",
+      "Sabah",
+      "Kuching",
+      "Penang",
+      "Langkawi"
+    ]
+  },
+  {
+    "id": 7,
+    "country": "Myanmar",
+    "city": []
+  },
+  {
+    "id": 8,
+    "country": "Philippines",
+    "city": ["Makati", "Manila", "Cebu", "Bagio", "Iloilo"]
+  },
+  {
+    "id": 9,
+    "country": "Singapore",
+    "city": []
+  },
+  {
+    "id": 10,
+    "country": "Thailand",
+    "city": ["Bangkok", "Hua Hin", "Chengmai", "Chengrai", "Phuket", "Pataya"]
+  },
+  {
+    "id": 11,
+    "country": "Vietnam",
+    "city": ["Hanoi", "Ho Chi Min", "Nha Trang", "Dalat", "Danang"]
+  }
+]

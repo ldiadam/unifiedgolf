@@ -6,7 +6,7 @@ import { EnhancedSearchPanel } from "@/components/layout/search/enhanced-search-
 import { LocationFilter } from "./components/location-filter";
 import { useSearch } from "@/hook/search-context";
 import { Location } from "@/lib/types";
-import dataPlace from "@/dataPlace.json";
+import dataPlace from "@/data/dataPlace.json";
 
 export default function LocationsClient() {
   const { filters, setFilters } = useSearch();

@@ -18,11 +18,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
-export default function AboutUsPage() {
+export default function CompanyProfilePage() {
   return (
     <div className="container mx-auto px-4 py-16">
       {/* Hero Section */}
@@ -57,27 +56,37 @@ export default function AboutUsPage() {
         <div className="flex flex-col md:flex-row gap-10 items-center">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-semibold text-primary mb-6">
-              Company Information
+              Company Profile
             </h2>
             <p className="text-xl font-medium text-primary mb-4">
-              Unified Golf is one of the leading providers of golf holidays and
-              tee times across Asia and the Middle East.
+              We are established with the aim to offer golf holiday packages
+              tailored to our cliets exact requirements, competitively, and with
+              a high standard of personal customised service
             </p>
             <p className="mb-4 text-muted-foreground">
-              From our offices in Thailand, we&apos;ve delivered outstanding
-              choice, value and customer services to over 100,000 golfers since
-              2014. As a proud member of IAGTO (International Association of
-              Golf Tour Operators), you can rest assured that you&apos;re in
-              safe hands when you book your golf with us.
+              The Company operates in partnership with established tour
+              operators, with local connection and experience that been running
+              successfully in the golf travel industry for many years.
+            </p>
+            <p className="mb-4 text-muted-foreground">
+              With our direct connection with various related and essential
+              service providers, we are capable of offering our clients a highly
+              competitive package with integrity and professionalism.
+            </p>
+            <p className="mb-4 text-muted-foreground">
+              We customise golf packages for local (Singapore), regional and
+              international golf packages for both private group and
+              personalised event with multinational participants from different
+              countries, in advance or ad hoc basis.
             </p>
             <p className="mb-6 text-muted-foreground">
-              Our aim is to make booking a tee time or golf holiday as
-              user-friendly as possible while providing unbeatable prices and
-              unparalleled customer service.
+              Please contact us for a free quotation or speak to our consultant
+              to customise your nest trip to your specific requirement and
+              budget.
             </p>
-            {/* <Button variant="default" className="bg-card hover:bg-card">
-              Explore Our Services
-            </Button> */}
+            <Button variant="default" className="bg-card hover:bg-card">
+              <Link href={"https://wa.me/6289123123123"}>Contact Us</Link>
+            </Button>
           </div>
           <div className="md:w-1/2 relative h-80 w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image

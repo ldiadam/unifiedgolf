@@ -17,7 +17,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { SearchIcon, CheckIcon } from "lucide-react";
 import { useSearch } from "@/hook/search-context";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
 import { useState } from "react";
 
 const locations = [

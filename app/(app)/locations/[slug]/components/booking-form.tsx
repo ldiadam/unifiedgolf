@@ -16,7 +16,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
 import { CalendarIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { addDays, differenceInDays, format } from "date-fns";
