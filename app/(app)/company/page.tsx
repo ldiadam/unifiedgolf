@@ -31,7 +31,7 @@ export default function CompanyProfilePage() {
             src="/img-background.jpg"
             alt="Golf course panorama"
             fill
-            className="object-cover opacity-60"
+            className="object-cover"
           />
         </div>
         <div className="relative z-10 flex flex-col items-center justify-center text-center h-96 px-4">

@@ -15,6 +15,12 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "../ui/navigation-menu";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "../ui/collapsible";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 interface RouteProps {
   id: number;
@@ -56,49 +62,85 @@ const routeList: RouteProps[] = [
 ];
 
 export const NavbarNew = () => {
+  const [isOpen, setIsOpen] = React.useState(true);
+
   return (
     <div className="container sticky top-5 z-40 w-full">
+      {/* Mobile Mode */}
       <div className="lg:hidden  flex justify-center">
         <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[80%] lg:w-[90%] xl:w-[75%] max-w-screen-xl mx-auto border border-secondary rounded-xl bg-card flex flex-col">
           {/* Top section with logo and actions */}
-          <div className="flex justify-between items-center p-2">
-            <Link href="/" className="flex items-center p-3">
+          <div className="flex flex-col items-center p-2">
+            <Link href="/" className="flex flex-col items-center py-4 gap-1">
               <Image
                 src={"/company-logo.jpg"}
                 width={80}
                 height={30}
                 alt="Company Logo"
+                className="rounded-md"
               />
+              <h1 className="text-xs text-bold">Unified Golf</h1>
             </Link>
 
-            <div className="flex flex-row gap-2 justify-between items-center mr-2">
-              <ToggleTheme />
-              <CartComponent />
-            </div>
+            <Separator />
+            <Collapsible
+              open={isOpen}
+              onOpenChange={setIsOpen}
+              className="w-full space-y-2"
+            >
+              <div className="flex items-center justify-between px-4">
+                <h4 className="text-sm font-semibold">Menu</h4>
+                <CollapsibleTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="w-9 p-0 hover:bg-primary"
+                  >
+                    {isOpen ? (
+                      <ChevronUp className="h-4 w-4" />
+                    ) : (
+                      <ChevronDown className="h-4 w-4" />
+                    )}
+                  </Button>
+                </CollapsibleTrigger>
+              </div>
+              {isOpen ? <Separator /> : null}
+
+              <CollapsibleContent className="space-y-2">
+                <nav className="flex flex-col w-full justify-center items-start py-2 pl-3">
+                  {routeList.map(({ id, href, label }) => (
+                    <Button
+                      key={id}
+                      asChild
+                      variant={null}
+                      size="sm"
+                      className={cn(
+                        "px-1 sm:px-2 md:px-3",
+                        "h-8 sm:h-9 md:h-10",
+                        "rounded-md",
+                        "whitespace-nowrap",
+                        "w-full text-left justify-start"
+                      )}
+                    >
+                      <Link
+                        className="hover:underline hover:text-primary"
+                        href={href}
+                      >
+                        {label}
+                      </Link>
+                    </Button>
+                  ))}
+                </nav>
+
+                <Separator />
+
+                <div className="flex flex-col w-full items-start">
+                  <ToggleTheme />
+                  <CartComponent />
+                </div>
+              </CollapsibleContent>
+            </Collapsible>
           </div>
-
-          <Separator />
-
-          {/* Navigation menu - always visible */}
-          <nav className="flex flex-wrap justify-center p-2">
-            {routeList.map(({ id, href, label }) => (
-              <Button
-                key={id}
-                asChild
-                variant="ghost"
-                size="sm"
-                className={cn(
-                  "text-xs sm:text-sm md:text-base",
-                  "px-1 sm:px-2 md:px-3",
-                  "h-8 sm:h-9 md:h-10",
-                  "rounded-md",
-                  "whitespace-nowrap"
-                )}
-              >
-                <Link href={href}>{label}</Link>
-              </Button>
-            ))}
-          </nav>
         </header>
       </div>
       {/* <!-- Desktop --> */}
@@ -116,36 +158,13 @@ export const NavbarNew = () => {
           </Link>
           <NavigationMenu className="hidden lg:block mx-auto">
             <NavigationMenuList>
-              {/* <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-card text-base">
-              Select Your Country
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <div className="grid w-[600px] grid-cols-1 gap-5 p-4">
-                <ul className="flex flex-row gap-2">
-                  {featureList.map(({ href, title }) => (
-                    <Button
-                      key={href}
-                      variant={"link"}
-                      className="rounded-md p-3 text-sm hover:bg-muted"
-                    >
-                      <Link
-                        href={href}
-                        className="mb-1 font-semibold leading-none text-foreground"
-                      >
-                        {title}
-                      </Link>
-                    </Button>
-                  ))}
-                </ul>
-              </div>
-            </NavigationMenuContent>
-          </NavigationMenuItem> */}
-
               <NavigationMenuItem>
                 {routeList.map(({ href, label }) => (
                   <NavigationMenuLink key={label} asChild>
-                    <Link href={href} className="text-base font-bold px-2">
+                    <Link
+                      href={href}
+                      className="items-center text-base font-bold px-2 hover:underline hover:text-primary"
+                    >
                       {label}
                     </Link>
                   </NavigationMenuLink>

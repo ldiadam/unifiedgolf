@@ -15,14 +15,14 @@ import Image from "next/image";
 export function CartComponent() {
   const { state, dispatch } = useCart();
 
-  const removeBooking = (locationId: string) => {
-    dispatch({ type: "REMOVE_BOOKING", payload: locationId });
+  const removeBooking = (bookingId: string) => {
+    dispatch({ type: "REMOVE_BOOKING", payload: bookingId });
   };
 
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button className="relative" variant="ghost">
+        <Button className="relative hover:bg-primary" variant="ghost">
           <div className="flex -ml-1 gap-2 items-center">
             <div className="relative">
               <ShoppingCart size={22} />
@@ -55,28 +55,31 @@ export function CartComponent() {
         <div className="mt-8 space-y-4">
           {state.items.map((item) => (
             <div
-              key={item.locationId}
+              key={item.bookingId}
               className="flex items-start space-x-4 p-4 border rounded-lg"
             >
               <Image
-                src={item.location.imageUrl}
-                alt={item.location.name}
+                src={item.imageUrl}
+                alt={item.name}
                 width={100}
                 height={100}
                 className="rounded-md object-cover"
               />
               <div className="flex-1">
-                <h3 className="font-semibold">{item.location.name}</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="font-semibold">{item.name}</h3>
+                {/* <p className="text-sm text-muted-foreground">
                   {format(item.startDate, "MMM dd, yyyy")} -{" "}
                   {format(item.endDate, "MMM dd, yyyy")}
+                </p> */}
+                <p className="text-sm text-muted-foreground">
+                  {format(item.date, "MMM dd, yyyy")}
                 </p>
                 <p className="font-medium">${item.totalPrice}</p>
               </div>
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => removeBooking(item.locationId)}
+                onClick={() => removeBooking(item.bookingId)}
               >
                 <Trash2 className="h-4 w-4" />
               </Button>

@@ -5,7 +5,7 @@ import { Location } from "@/lib/types";
 import { MapPin, Star } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { BookingForm } from "./components/booking-form";
+// import { BookingForm } from "./components/booking-form";
 import {
   Carousel,
   CarouselContent,
@@ -62,7 +62,7 @@ export function LocationDetailClient({ location }: LocationDetailClientProps) {
           <div className="text-3xl font-bold text-blue-600 mb-4">
             ${location.pricePerDay} / day
           </div>
-          <BookingForm location={location} />
+          {/* <BookingForm location={location} /> */}
         </div>
       </div>
     </div>

@@ -31,7 +31,7 @@ function cartReducer(state: CartState, action: CartAction): CartState {
   switch (action.type) {
     case "ADD_BOOKING":
       const existingItemIndex = state.items.findIndex(
-        (item) => item.locationId === action.payload.locationId
+        (item) => item.bookingId === action.payload.bookingId
       );
 
       if (existingItemIndex > -1) {
@@ -53,7 +53,7 @@ function cartReducer(state: CartState, action: CartAction): CartState {
 
     case "REMOVE_BOOKING":
       const filteredItems = state.items.filter(
-        (item) => item.locationId !== action.payload
+        (item) => item.bookingId !== action.payload
       );
       return {
         items: filteredItems,

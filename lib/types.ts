@@ -20,9 +20,14 @@ export interface SearchFilters {
 }
 
 export interface BookingItem {
-  locationId: string;
-  location: Location;
-  startDate: Date;
-  endDate: Date;
+  bookingId: string;
+  name: string;
+  imageUrl: string;
+  country: string;
+  city: string;
+  date: string;
+  players: number;
+  teeTime: string;
+  pricePerDay: number;
   totalPrice: number;
 }
