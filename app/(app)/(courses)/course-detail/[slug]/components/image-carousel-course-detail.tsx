@@ -36,6 +36,7 @@ export default function ImageCarousel({ images }: { images: Image[] }) {
                 fill
                 className="object-cover"
                 priority={index === 0}
+                quality={100}
               />
             </div>
           </CarouselItem>
