@@ -67,11 +67,14 @@ export const NavbarNew = () => {
   return (
     <div className="container sticky top-5 z-40 w-full">
       {/* Mobile Mode */}
-      <div className="lg:hidden  flex justify-center">
-        <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[80%] lg:w-[90%] xl:w-[75%] max-w-screen-xl mx-auto border border-secondary rounded-xl bg-card flex flex-col">
+      <div className="lg:hidden flex justify-center">
+        <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[85%] lg:w-[90%] xl:w-[85%] max-w-screen-xl mx-auto border border-secondary rounded-xl bg-card flex flex-col">
           {/* Top section with logo and actions */}
           <div className="flex flex-col items-center p-2">
-            <Link href="/" className="flex flex-col items-center py-4 gap-1">
+            <Link
+              href="/"
+              className="flex flex-col items-start py-4 mx-2 gap-1"
+            >
               <Image
                 src={"/company-logo.jpg"}
                 width={80}
@@ -79,7 +82,10 @@ export const NavbarNew = () => {
                 alt="Company Logo"
                 className="rounded-md"
               />
-              <h1 className="text-xs text-bold">Unified Golf</h1>
+              <span className="text-xs font-bold">
+                Street No, Building No. Name, unit no, Province, City, Country,
+                Postal Code
+              </span>{" "}
             </Link>
 
             <Separator />
@@ -134,9 +140,17 @@ export const NavbarNew = () => {
 
                 <Separator />
 
-                <div className="flex flex-col w-full items-start">
-                  <ToggleTheme />
-                  <CartComponent />
+                <div className="flex w-full items-start">
+                  <Link
+                    href={"mailto:theunifiedgolf@gmail.com"}
+                    className="text-xs font-bold"
+                  >
+                    <Button variant={"link"}>
+                      Email: theunifiedgolf@gmail.com
+                    </Button>
+                  </Link>
+                  {/* <ToggleTheme /> */}
+                  {/* <CartComponent /> */}
                 </div>
               </CollapsibleContent>
             </Collapsible>
@@ -146,7 +160,61 @@ export const NavbarNew = () => {
       {/* <!-- Desktop --> */}
       <div className="hidden lg:block">
         <header className=" shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl mx-auto border border-secondary z-40 rounded-xl flex justify-between items-center p-2 bg-card">
-          <Link href="/" className="flex items-center p-3">
+          <div className="flex flex-col w-full">
+            <div className="flex flex-nowrap justify-between items-center w-full ml-1 mb-2">
+              <div className="flex flex-col items-start gap-1">
+                <Link href="/" className="flex items-center">
+                  <Image
+                    src={"/company-logo.jpg"}
+                    width={80}
+                    height={30}
+                    alt=""
+                    // fill
+                    className="rounded-md"
+                  />
+                </Link>
+                <span className="text-xs font-bold">
+                  Street No, Building No. Name, unit no, Province ,City,
+                  Country, Postal Code
+                </span>
+              </div>
+              <div className="flex h-full mt-14 mr-2">
+                <Link
+                  href={"mailto:theunifiedgolf@gmail.com"}
+                  className="text-xs font-bold"
+                >
+                  <Button variant={"link"}>
+                    Email: theunifiedgolf@gmail.com
+                  </Button>
+                </Link>
+              </div>
+            </div>
+            <Separator />
+            <div className="flex flex-row justify-between items-center">
+              <NavigationMenu className="hidden lg:block py-2">
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    {routeList.map(({ href, label }) => (
+                      <NavigationMenuLink key={label} asChild>
+                        <Link
+                          href={href}
+                          className="items-center text-base font-bold px-2 hover:underline hover:text-primary"
+                        >
+                          {label}
+                        </Link>
+                      </NavigationMenuLink>
+                    ))}
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+              {/* <div className="hidden lg:flex flex-row gap-2 justify-between items-center mr-2">
+                <ToggleTheme />
+                <CartComponent />
+              </div> */}
+            </div>
+          </div>
+
+          {/* <Link href="/" className="flex items-center p-3">
             <Image
               src={"/company-logo.jpg"}
               width={80}
@@ -176,7 +244,7 @@ export const NavbarNew = () => {
           <div className="hidden lg:flex flex-row gap-2 justify-between items-center mr-2">
             <ToggleTheme />
             <CartComponent />
-          </div>
+          </div> */}
         </header>
       </div>
     </div>

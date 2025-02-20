@@ -23,7 +23,7 @@ import Link from "next/link";
 
 export default function CompanyProfilePage() {
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div className="container mx-auto px-4 py-2">
       {/* Hero Section */}
       <div className="relative rounded-3xl overflow-hidden mb-16">
         <div className="absolute inset-0">
@@ -34,21 +34,21 @@ export default function CompanyProfilePage() {
             className="object-cover"
           />
         </div>
-        <div className="relative z-10 flex flex-col items-center justify-center text-center h-96 px-4">
+        {/* <div className="relative z-10 flex flex-col items-center justify-center text-center h-96 px-4">
           <h1
             id="about"
             className="text-5xl md:text-6xl font-bold text-white mb-6"
           >
             About Us
           </h1>
-          {/* <Badge variant="secondary" className="px-4 py-2 text-sm mb-6">
+          <Badge variant="secondary" className="px-4 py-2 text-sm mb-6">
             Established 2014
-          </Badge> */}
+          </Badge>
           <p className="text-xl text-white max-w-2xl mx-auto">
             Your premier gateway to exceptional golf experiences across Asia and
             the Middle East
           </p>
-        </div>
+        </div> */}
       </div>
 
       {/* Company Introduction Section */}

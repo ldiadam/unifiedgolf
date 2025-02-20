@@ -5,12 +5,50 @@
     "name": "Chengdu Wolong Valley International Golf Club",
     "country": "China",
     "city": "ChengDu",
-    "imageUrl": "/chengdu-wolong-img.jpg",
-    "description_1": "One of the lesser known but better quality courses in the Sichuan region of southwestern China, the Chengdu Wolong Valley golf course was designed by American Rick Jacobson and first opened for play in 2012. The layout is dominated by sand, and prior to our visit we were told there were as many as 400 traps across the course. While this figure is plainly untrue, there is enough sand for 400 bunkers as the traps built are enormous, and literally everywhere. The great shame with Wolong Valley is that the obscene amount of sand tends to disguise what are otherwise nice, subtle golf shapes and holes. There are some interesting greens here and some effective strategy in amidst all the sand, but it is hard to identify because of the sheer size of the hazards. The bunkers themselves are rugged, well built and naturalistic in isolation, they are simply too prolific and spoilt conceptually by the fact that a course so full of sand looks anything but natural. Putting the sand to one side, highlights include a number of crested landing areas, the small, shapely putting greens and some of the more intimate individual bunkers. Traps short of the long par three 17th, for example, are unusually small for this course, but reasonably effective at framing the undersized, saddle green site. While we believe that Wolong Valley is likely the pick of the Chengdu golf courses, it certainly could have been better with a little more restraint shown during design and construction.",
-    "description_2": "One of the lesser known but better quality courses in the Sichuan region of southwestern China, the Chengdu Wolong Valley golf course was designed by American Rick Jacobson and first opened for play in 2012. The layout is dominated by sand, and prior to our visit we were told there were as many as 400 traps across the course. While this figure is plainly untrue, there is enough sand for 400 bunkers as the traps built are enormous, and literally everywhere. The great shame with Wolong Valley is that the obscene amount of sand tends to disguise what are otherwise nice, subtle golf shapes and holes. There are some interesting greens here and some effective strategy in amidst all the sand, but it is hard to identify because of the sheer size of the hazards. The bunkers themselves are rugged, well built and naturalistic in isolation, they are simply too prolific and spoilt conceptually by the fact that a course so full of sand looks anything but natural. Putting the sand to one side, highlights include a number of crested landing areas, the small, shapely putting greens and some of the more intimate individual bunkers. Traps short of the long par three 17th, for example, are unusually small for this course, but reasonably effective at framing the undersized, saddle green site. While we believe that Wolong Valley is likely the pick of the Chengdu golf courses, it certainly could have been better with a little more restraint shown during design and construction.",
-    "description_3": "One of the lesser known but better quality courses in the Sichuan region of southwestern China, the Chengdu Wolong Valley golf course was designed by American Rick Jacobson and first opened for play in 2012. The layout is dominated by sand, and prior to our visit we were told there were as many as 400 traps across the course. While this figure is plainly untrue, there is enough sand for 400 bunkers as the traps built are enormous, and literally everywhere. The great shame with Wolong Valley is that the obscene amount of sand tends to disguise what are otherwise nice, subtle golf shapes and holes. There are some interesting greens here and some effective strategy in amidst all the sand, but it is hard to identify because of the sheer size of the hazards. The bunkers themselves are rugged, well built and naturalistic in isolation, they are simply too prolific and spoilt conceptually by the fact that a course so full of sand looks anything but natural. Putting the sand to one side, highlights include a number of crested landing areas, the small, shapely putting greens and some of the more intimate individual bunkers. Traps short of the long par three 17th, for example, are unusually small for this course, but reasonably effective at framing the undersized, saddle green site. While we believe that Wolong Valley is likely the pick of the Chengdu golf courses, it certainly could have been better with a little more restraint shown during design and construction.",
-    "description_4": "One of the lesser known but better quality courses in the Sichuan region of southwestern China, the Chengdu Wolong Valley golf course was designed by American Rick Jacobson and first opened for play in 2012. The layout is dominated by sand, and prior to our visit we were told there were as many as 400 traps across the course. While this figure is plainly untrue, there is enough sand for 400 bunkers as the traps built are enormous, and literally everywhere. The great shame with Wolong Valley is that the obscene amount of sand tends to disguise what are otherwise nice, subtle golf shapes and holes. There are some interesting greens here and some effective strategy in amidst all the sand, but it is hard to identify because of the sheer size of the hazards. The bunkers themselves are rugged, well built and naturalistic in isolation, they are simply too prolific and spoilt conceptually by the fact that a course so full of sand looks anything but natural. Putting the sand to one side, highlights include a number of crested landing areas, the small, shapely putting greens and some of the more intimate individual bunkers. Traps short of the long par three 17th, for example, are unusually small for this course, but reasonably effective at framing the undersized, saddle green site. While we believe that Wolong Valley is likely the pick of the Chengdu golf courses, it certainly could have been better with a little more restraint shown during design and construction.",
-    "description_5": "One of the lesser known but better quality courses in the Sichuan region of southwestern China, the Chengdu Wolong Valley golf course was designed by American Rick Jacobson and first opened for play in 2012. The layout is dominated by sand, and prior to our visit we were told there were as many as 400 traps across the course. While this figure is plainly untrue, there is enough sand for 400 bunkers as the traps built are enormous, and literally everywhere. The great shame with Wolong Valley is that the obscene amount of sand tends to disguise what are otherwise nice, subtle golf shapes and holes. There are some interesting greens here and some effective strategy in amidst all the sand, but it is hard to identify because of the sheer size of the hazards. The bunkers themselves are rugged, well built and naturalistic in isolation, they are simply too prolific and spoilt conceptually by the fact that a course so full of sand looks anything but natural. Putting the sand to one side, highlights include a number of crested landing areas, the small, shapely putting greens and some of the more intimate individual bunkers. Traps short of the long par three 17th, for example, are unusually small for this course, but reasonably effective at framing the undersized, saddle green site. While we believe that Wolong Valley is likely the pick of the Chengdu golf courses, it certainly could have been better with a little more restraint shown during design and construction.",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/chengdu-wolong-img-1.jpg",
+        "alt": "Chengdu Wolong Valley International Golf Club"
+      },
+      {
+        "id": 2,
+        "url": "/chengdu-wolong-img-2.jpg",
+        "alt": "Chengdu Wolong Valley International Golf Club"
+      },
+      {
+        "id": 3,
+        "url": "/chengdu-wolong-img-3.jpg",
+        "alt": "Chengdu Wolong Valley International Golf Club"
+      },
+      {
+        "id": 4,
+        "url": "/chengdu-wolong-img-4.jpg",
+        "alt": "Chengdu Wolong Valley International Golf Club"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "One of the lesser known but better quality courses in the Sichuan region of southwestern China, the Chengdu Wolong Valley golf course was designed by American Rick Jacobson and first opened for play in 2012. The layout is dominated by sand, and prior to our visit we were told there were as many as 400 traps across the course. While this figure is plainly untrue, there is enough sand for 400 bunkers as the traps built are enormous, and literally everywhere. The great shame with Wolong Valley is that the obscene amount of sand tends to disguise what are otherwise nice, subtle golf shapes and holes. There are some interesting greens here and some effective strategy in amidst all the sand, but it is hard to identify because of the sheer size of the hazards. The bunkers themselves are rugged, well built and naturalistic in isolation, they are simply too prolific and spoilt conceptually by the fact that a course so full of sand looks anything but natural. Putting the sand to one side, highlights include a number of crested landing areas, the small, shapely putting greens and some of the more intimate individual bunkers. Traps short of the long par three 17th, for example, are unusually small for this course, but reasonably effective at framing the undersized, saddle green site. While we believe that Wolong Valley is likely the pick of the Chengdu golf courses, it certainly could have been better with a little more restraint shown during design and construction."
+      },
+      {
+        "id": 2,
+        "text": "One of the lesser known but better quality courses in the Sichuan region of southwestern China, the Chengdu Wolong Valley golf course was designed by American Rick Jacobson and first opened for play in 2012. The layout is dominated by sand, and prior to our visit we were told there were as many as 400 traps across the course. While this figure is plainly untrue, there is enough sand for 400 bunkers as the traps built are enormous, and literally everywhere. The great shame with Wolong Valley is that the obscene amount of sand tends to disguise what are otherwise nice, subtle golf shapes and holes. There are some interesting greens here and some effective strategy in amidst all the sand, but it is hard to identify because of the sheer size of the hazards. The bunkers themselves are rugged, well built and naturalistic in isolation, they are simply too prolific and spoilt conceptually by the fact that a course so full of sand looks anything but natural. Putting the sand to one side, highlights include a number of crested landing areas, the small, shapely putting greens and some of the more intimate individual bunkers. Traps short of the long par three 17th, for example, are unusually small for this course, but reasonably effective at framing the undersized, saddle green site. While we believe that Wolong Valley is likely the pick of the Chengdu golf courses, it certainly could have been better with a little more restraint shown during design and construction."
+      },
+      {
+        "id": 3,
+        "text": "One of the lesser known but better quality courses in the Sichuan region of southwestern China, the Chengdu Wolong Valley golf course was designed by American Rick Jacobson and first opened for play in 2012. The layout is dominated by sand, and prior to our visit we were told there were as many as 400 traps across the course. While this figure is plainly untrue, there is enough sand for 400 bunkers as the traps built are enormous, and literally everywhere. The great shame with Wolong Valley is that the obscene amount of sand tends to disguise what are otherwise nice, subtle golf shapes and holes. There are some interesting greens here and some effective strategy in amidst all the sand, but it is hard to identify because of the sheer size of the hazards. The bunkers themselves are rugged, well built and naturalistic in isolation, they are simply too prolific and spoilt conceptually by the fact that a course so full of sand looks anything but natural. Putting the sand to one side, highlights include a number of crested landing areas, the small, shapely putting greens and some of the more intimate individual bunkers. Traps short of the long par three 17th, for example, are unusually small for this course, but reasonably effective at framing the undersized, saddle green site. While we believe that Wolong Valley is likely the pick of the Chengdu golf courses, it certainly could have been better with a little more restraint shown during design and construction."
+      },
+      {
+        "id": 4,
+        "text": "One of the lesser known but better quality courses in the Sichuan region of southwestern China, the Chengdu Wolong Valley golf course was designed by American Rick Jacobson and first opened for play in 2012. The layout is dominated by sand, and prior to our visit we were told there were as many as 400 traps across the course. While this figure is plainly untrue, there is enough sand for 400 bunkers as the traps built are enormous, and literally everywhere. The great shame with Wolong Valley is that the obscene amount of sand tends to disguise what are otherwise nice, subtle golf shapes and holes. There are some interesting greens here and some effective strategy in amidst all the sand, but it is hard to identify because of the sheer size of the hazards. The bunkers themselves are rugged, well built and naturalistic in isolation, they are simply too prolific and spoilt conceptually by the fact that a course so full of sand looks anything but natural. Putting the sand to one side, highlights include a number of crested landing areas, the small, shapely putting greens and some of the more intimate individual bunkers. Traps short of the long par three 17th, for example, are unusually small for this course, but reasonably effective at framing the undersized, saddle green site. While we believe that Wolong Valley is likely the pick of the Chengdu golf courses, it certainly could have been better with a little more restraint shown during design and construction."
+      },
+      {
+        "id": 5,
+        "text": "One of the lesser known but better quality courses in the Sichuan region of southwestern China, the Chengdu Wolong Valley golf course was designed by American Rick Jacobson and first opened for play in 2012. The layout is dominated by sand, and prior to our visit we were told there were as many as 400 traps across the course. While this figure is plainly untrue, there is enough sand for 400 bunkers as the traps built are enormous, and literally everywhere. The great shame with Wolong Valley is that the obscene amount of sand tends to disguise what are otherwise nice, subtle golf shapes and holes. There are some interesting greens here and some effective strategy in amidst all the sand, but it is hard to identify because of the sheer size of the hazards. The bunkers themselves are rugged, well built and naturalistic in isolation, they are simply too prolific and spoilt conceptually by the fact that a course so full of sand looks anything but natural. Putting the sand to one side, highlights include a number of crested landing areas, the small, shapely putting greens and some of the more intimate individual bunkers. Traps short of the long par three 17th, for example, are unusually small for this course, but reasonably effective at framing the undersized, saddle green site. While we believe that Wolong Valley is likely the pick of the Chengdu golf courses, it certainly could have been better with a little more restraint shown during design and construction."
+      }
+    ],
     "rating": 4.7,
     "reviews": 190,
     "pricePerDay": 80,
@@ -22,12 +60,50 @@
     "name": "Cambodia Golf & Country Club",
     "country": "Cambodia",
     "city": "Phom Penh",
-    "imageUrl": "/cambodia-golf-country-club-img.jpg",
-    "description_1": "It is Phnom Penh's first and oldest golf course. opened in December 1996",
-    "description_2": "Designed by Japanese and Taiwanese",
-    "description_3": "The 7000 plus yard course is spreaded over an area of 120 acres",
-    "description_4": "It is lined by sugar palm trees, native fruit, and evergreen plants, flowers and rocks",
-    "description_5": "Located 33 kilometers, west of Phnom Penh",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/cambodia-golf-country-club-img-1.jpg",
+        "alt": "Cambodia Golf & Country Club"
+      },
+      {
+        "id": 2,
+        "url": "/cambodia-golf-country-club-img-2.jpg",
+        "alt": "Cambodia Golf & Country Club"
+      },
+      {
+        "id": 3,
+        "url": "/cambodia-golf-country-club-img-3.jpg",
+        "alt": "Cambodia Golf & Country Club"
+      },
+      {
+        "id": 4,
+        "url": "/cambodia-golf-country-club-img-4.jpg",
+        "alt": "Cambodia Golf & Country Club"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "It is Phnom Penh's first and oldest golf course. opened in December 1996"
+      },
+      {
+        "id": 2,
+        "text": "Designed by Japanese and Taiwanese"
+      },
+      {
+        "id": 3,
+        "text": "The 7000 plus yard course is spreaded over an area of 120 acres"
+      },
+      {
+        "id": 4,
+        "text": "It is lined by sugar palm trees, native fruit, and evergreen plants, flowers and rocks"
+      },
+      {
+        "id": 5,
+        "text": "Located 33 kilometers, west of Phnom Penh"
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -39,12 +115,50 @@
     "name": "Chhun On Golf Resort (Lakes Course)",
     "country": "Cambodia",
     "city": "Phom Penh",
-    "imageUrl": "/chhun-on-golf-resort-img.jpg",
-    "description_1": "An excellent and exquisite palm-lined Golf Resort",
-    "description_2": "Designed by Brian Curley from Schmidt-Curley Design",
-    "description_3": "About 1 hour north of Phnom Penh’s dowwntown. along National Road #130 in Chhveang Village",
-    "description_4": "Near the Royal Palace, National Museum, and the city’s myriad tourist attractions",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/chhun-on-golf-resort-img-1.jpg",
+        "alt": "Chhun On Golf Resort (Lakes Course)"
+      },
+      {
+        "id": 2,
+        "url": "/chhun-on-golf-resort-img-2.jpg",
+        "alt": "Chhun On Golf Resort (Lakes Course)"
+      },
+      {
+        "id": 3,
+        "url": "/chhun-on-golf-resort-img-3.jpg",
+        "alt": "Chhun On Golf Resort (Lakes Course)"
+      },
+      {
+        "id": 4,
+        "url": "/chhun-on-golf-resort-img-4.jpg",
+        "alt": "Chhun On Golf Resort (Lakes Course)"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "An excellent and exquisite palm-lined Golf Resort"
+      },
+      {
+        "id": 2,
+        "text": "Designed by Brian Curley from Schmidt-Curley Design"
+      },
+      {
+        "id": 3,
+        "text": "About 1 hour north of Phnom Penh’s dowwntown. along National Road #130 in Chhveang Village"
+      },
+      {
+        "id": 4,
+        "text": "Near the Royal Palace, National Museum, and the city’s myriad tourist attractions"
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -56,12 +170,50 @@
     "name": "Garden City Golf Club",
     "country": "Cambodia",
     "city": "Phom Penh",
-    "imageUrl": "/garden-city-golf-club-img.jpg",
-    "description_1": "Well-conditioned and emerging as one of the best golf courses in Phnom Penh",
-    "description_2": "The par-72 golf course over 240 acres was opened in April 2013",
-    "description_3": "Using Seashore Paspalum turf and operations management consulting by IMG is excellent and comparable with the top courses in the region",
-    "description_4": "About 15 kilometers northeast of downtown Phnom Penh",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/garden-city-golf-club-img-1.jpg",
+        "alt": "Garden City Golf Club"
+      },
+      {
+        "id": 2,
+        "url": "/garden-city-golf-club-img-2.jpg",
+        "alt": "Garden City Golf Club"
+      },
+      {
+        "id": 3,
+        "url": "/garden-city-golf-club-img-3.jpg",
+        "alt": "Garden City Golf Club"
+      },
+      {
+        "id": 4,
+        "url": "/garden-city-golf-club-img-4.jpg",
+        "alt": "Garden City Golf Club"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "Well-conditioned and emerging as one of the best golf courses in Phnom Penh"
+      },
+      {
+        "id": 2,
+        "text": "The par-72 golf course over 240 acres was opened in April 2013"
+      },
+      {
+        "id": 3,
+        "text": "Using Seashore Paspalum turf and operations management consulting by IMG is excellent and comparable with the top courses in the region"
+      },
+      {
+        "id": 4,
+        "text": "About 15 kilometers northeast of downtown Phnom Penh"
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -73,12 +225,50 @@
     "name": "Grand Phnom Penh Golf Club",
     "country": "Cambodia",
     "city": "Phom Penh",
-    "imageUrl": "/grand-phnom-penh-golf-club-img.jpg",
-    "description_1": "A well-maintained  private members club",
-    "description_2": "Designed by Nicklaus design",
-    "description_3": "Located at the Grand Phnom Penh International City",
-    "description_4": "About 20 minutes northwest of Phnom Penh and on the way to the airport",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/grand-phnom-penh-golf-club-img-1.jpg",
+        "alt": "Grand Phnom Penh Golf Club"
+      },
+      {
+        "id": 2,
+        "url": "/grand-phnom-penh-golf-club-img-2.jpg",
+        "alt": "Grand Phnom Penh Golf Club"
+      },
+      {
+        "id": 3,
+        "url": "/grand-phnom-penh-golf-club-img-3.jpg",
+        "alt": "Grand Phnom Penh Golf Club"
+      },
+      {
+        "id": 4,
+        "url": "/grand-phnom-penh-golf-club-img-4.jpg",
+        "alt": "Grand Phnom Penh Golf Club"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "A well-maintained  private members club"
+      },
+      {
+        "id": 2,
+        "text": "Designed by Nicklaus design"
+      },
+      {
+        "id": 3,
+        "text": "Located at the Grand Phnom Penh International City"
+      },
+      {
+        "id": 4,
+        "text": "About 20 minutes northwest of Phnom Penh and on the way to the airport"
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -90,12 +280,50 @@
     "name": "Royal Phnom Penh Golf Club",
     "country": "Cambodia",
     "city": "Phom Penh",
-    "imageUrl": "/royal-phnom-penh-golf-club-img.jpg",
-    "description_1": "The 7,075-yard golf course is spreaded over 200 hectares",
-    "description_2": "A flat course with different  condition amongst rice paddies and coconut palms",
-    "description_3": "A favorite course  with locals and expatriates due to its location",
-    "description_4": "Close to the  capital of Phnom Penh and only 8 kilometers from the Phnom Penh International Airport",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/royal-phnom-penh-golf-club-img-1.jpg",
+        "alt": "Royal Phnom Penh Golf Club"
+      },
+      {
+        "id": 2,
+        "url": "/royal-phnom-penh-golf-club-img-2.jpg",
+        "alt": "Royal Phnom Penh Golf Club"
+      },
+      {
+        "id": 3,
+        "url": "/royal-phnom-penh-golf-club-img-3.jpg",
+        "alt": "Royal Phnom Penh Golf Club"
+      },
+      {
+        "id": 4,
+        "url": "/royal-phnom-penh-golf-club-img-4.jpg",
+        "alt": "Royal Phnom Penh Golf Club"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "The 7,075-yard golf course is spreaded over 200 hectares"
+      },
+      {
+        "id": 2,
+        "text": "A flat course with different  condition amongst rice paddies and coconut palms"
+      },
+      {
+        "id": 3,
+        "text": "A favorite course  with locals and expatriates due to its location"
+      },
+      {
+        "id": 4,
+        "text": "Close to the  capital of Phnom Penh and only 8 kilometers from the Phnom Penh International Airport"
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -106,13 +334,51 @@
     "slug": "vattanac-golf-resort-east",
     "name": "Vattanac Golf Resort - East Course",
     "country": "Cambodia",
-    "city": "Semprit",
-    "imageUrl": "/vattanac-golf-resort-east-img.jpg",
-    "description_1": "A well maintained excellent Nick Faldo design, 18 holes public course with 'temples'",
-    "description_2": "About 15 km from the center of the capital, out skirt of the city",
-    "description_3": "Includes two contrasting Nick Faldo designed 18-hole golf courses located",
-    "description_4": "The par-72 East Course spread over 7,400 yards with scale models of pre-Angkorean structures including Preah Vihear Temple, Bayon Temple, and Angkor Wat",
-    "description_5": "",
+    "city": "Siem Reap",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/vattanac-golf-resort-east-img-1.jpg",
+        "alt": "Vattanac Golf Resort - East Course"
+      },
+      {
+        "id": 2,
+        "url": "/vattanac-golf-resort-east-img-2.jpg",
+        "alt": "Vattanac Golf Resort - East Course"
+      },
+      {
+        "id": 3,
+        "url": "/vattanac-golf-resort-east-img-3.jpg",
+        "alt": "Vattanac Golf Resort - East Course"
+      },
+      {
+        "id": 4,
+        "url": "/vattanac-golf-resort-east-img-4.jpg",
+        "alt": "Vattanac Golf Resort - East Course"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "A well maintained excellent Nick Faldo design, 18 holes public course with 'temples'"
+      },
+      {
+        "id": 2,
+        "text": "About 15 km from the center of the capital, out skirt of the city"
+      },
+      {
+        "id": 3,
+        "text": "Includes two contrasting Nick Faldo designed 18-hole golf courses located"
+      },
+      {
+        "id": 4,
+        "text": "The par-72 East Course spread over 7,400 yards with scale models of pre-Angkorean structures including Preah Vihear Temple, Bayon Temple, and Angkor Wat"
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -123,13 +389,51 @@
     "slug": "vattanac-golf-resort-west",
     "name": "Vattanac Golf Resort - West Course",
     "country": "Cambodia",
-    "city": "Semprit",
-    "imageUrl": "/vattanac-golf-resort-west-img.jpg",
-    "description_1": "A well maintained excellent Nick Faldo design, 18 holes members course",
-    "description_2": "It opened in 2020",
-    "description_3": "About 15 km from the center of the capital, outskirt of the city",
-    "description_4": "The par-72 East Course spread over 7,400 yards",
-    "description_5": "Features lush paspalum fairways, greens, and dramatic bunkering",
+    "city": "Siem Reap",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/vattanac-golf-resort-west-img-1.jpg",
+        "alt": "Vattanac Golf Resort - West Course"
+      },
+      {
+        "id": 2,
+        "url": "/vattanac-golf-resort-west-img-2.jpg",
+        "alt": "Vattanac Golf Resort - West Course"
+      },
+      {
+        "id": 3,
+        "url": "/vattanac-golf-resort-west-img-3.jpg",
+        "alt": "Vattanac Golf Resort - West Course"
+      },
+      {
+        "id": 4,
+        "url": "/vattanac-golf-resort-west-img-4.jpg",
+        "alt": "Vattanac Golf Resort - West Course"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "A well maintained excellent Nick Faldo design, 18 holes members course"
+      },
+      {
+        "id": 2,
+        "text": "It opened in 2020"
+      },
+      {
+        "id": 3,
+        "text": "About 15 km from the center of the capital, outskirt of the city"
+      },
+      {
+        "id": 4,
+        "text": "The par-72 East Course spread over 7,400 yards"
+      },
+      {
+        "id": 5,
+        "text": "Features lush paspalum fairways, greens, and dramatic bunkering"
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -141,12 +445,50 @@
     "name": "Black Rocks Hotel & Golf Club Belitung",
     "country": "Indonesia",
     "city": "Batam",
-    "imageUrl": "/black-rocks-hotel-&-golf-club-belitung-img.jpg",
-    "description_1": "Championship course surrounded by black rocks",
-    "description_2": "Located on the beautiful island of Belitung. It’s reachable within 45 minutes flight from Jakarta or one hour from Singapore, followed by a 20-minute ride from Tanjung Pandan Airport.",
-    "description_3": "Black Rocks Hotel & Golf Club is a challenging course for all players.",
-    "description_4": "",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/black-rocks-hotel-&-golf-club-belitung-img-1.jpg",
+        "alt": "Black Rocks Hotel & Golf Club Belitung"
+      },
+      {
+        "id": 2,
+        "url": "/black-rocks-hotel-&-golf-club-belitung-img-2.jpg",
+        "alt": "Black Rocks Hotel & Golf Club Belitung"
+      },
+      {
+        "id": 3,
+        "url": "/black-rocks-hotel-&-golf-club-belitung-img-3.jpg",
+        "alt": "Black Rocks Hotel & Golf Club Belitung"
+      },
+      {
+        "id": 4,
+        "url": "/black-rocks-hotel-&-golf-club-belitung-img-4.jpg",
+        "alt": "Black Rocks Hotel & Golf Club Belitung"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "Championship course surrounded by black rocks"
+      },
+      {
+        "id": 2,
+        "text": "Located on the beautiful island of Belitung. It’s reachable within 45 minutes flight from Jakarta or one hour from Singapore, followed by a 20-minute ride from Tanjung Pandan Airport."
+      },
+      {
+        "id": 3,
+        "text": "Black Rocks Hotel & Golf Club is a challenging course for all players."
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -158,12 +500,50 @@
     "name": "Cengkareng Golf Club",
     "country": "Indonesia",
     "city": "Jakarta",
-    "imageUrl": "/cengkareng-golf-club-img.jpg",
-    "description_1": "A popular course conveniently located near Soekarno-Hatta International Airport",
-    "description_2": "Traveler can golf and depart without having to rush into the city and deal with the traffic",
-    "description_3": "Golfers can relax after golf in the comfort of clubhouse for their flight departure",
-    "description_4": "",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/cengkareng-golf-club-img-1.jpg",
+        "alt": "Cengkareng Golf Club"
+      },
+      {
+        "id": 2,
+        "url": "/cengkareng-golf-club-img-2.jpg",
+        "alt": "Cengkareng Golf Club"
+      },
+      {
+        "id": 3,
+        "url": "/cengkareng-golf-club-img-3.jpg",
+        "alt": "Cengkareng Golf Club"
+      },
+      {
+        "id": 4,
+        "url": "/cengkareng-golf-club-img-4.jpg",
+        "alt": "Cengkareng Golf Club"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "A popular course conveniently located near Soekarno-Hatta International Airport"
+      },
+      {
+        "id": 2,
+        "text": "Traveler can golf and depart without having to rush into the city and deal with the traffic"
+      },
+      {
+        "id": 3,
+        "text": "Golfers can relax after golf in the comfort of clubhouse for their flight departure"
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -175,12 +555,50 @@
     "name": "Damai Indah Golf, Bumi Serpong Damai (BSD) Course",
     "country": "Indonesia",
     "city": "Jakarta",
-    "imageUrl": "/damai-indah-golf-bsd-course-img.jpg",
-    "description_1": "The course is Jack Nicklaus forst course designed in Indonesia, opened in 1992",
-    "description_2": "BSD has won many awards including the 1999 Best Golf Course in Indonesia and 2015 IAGTO Excellence",
-    "description_3": "It is located located in the West Java satellite city of Bumi Serpong Damai",
-    "description_4": "Consist of many Jack’s signature design of the undulating greens,and waste bunkers flanking the fairways",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/damai-indah-golf-bsd-course-img-1.jpg",
+        "alt": "Damai Indah Golf, Bumi Serpong Damai (BSD) Course"
+      },
+      {
+        "id": 2,
+        "url": "/damai-indah-golf-bsd-course-img-2.jpg",
+        "alt": "Damai Indah Golf, Bumi Serpong Damai (BSD) Course"
+      },
+      {
+        "id": 3,
+        "url": "/damai-indah-golf-bsd-course-img-3.jpg",
+        "alt": "Damai Indah Golf, Bumi Serpong Damai (BSD) Course"
+      },
+      {
+        "id": 4,
+        "url": "/damai-indah-golf-bsd-course-img-4.jpg",
+        "alt": "Damai Indah Golf, Bumi Serpong Damai (BSD) Course"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "The course is Jack Nicklaus forst course designed in Indonesia, opened in 1992"
+      },
+      {
+        "id": 2,
+        "text": "BSD has won many awards including the 1999 Best Golf Course in Indonesia and 2015 IAGTO Excellence"
+      },
+      {
+        "id": 3,
+        "text": "It is located located in the West Java satellite city of Bumi Serpong Damai"
+      },
+      {
+        "id": 4,
+        "text": "Consist of many Jack’s signature design of the undulating greens,and waste bunkers flanking the fairways"
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -192,12 +610,50 @@
     "name": "Damai Indah Golf, Pantai Indah Kapuk (PIK) Course",
     "country": "Indonesia",
     "city": "Jakarta",
-    "imageUrl": "/damai-indah-golf-pik-course-img.jpg",
-    "description_1": "Designed by Robert Trent Jones Jr",
-    "description_2": "Hosted tournaments for the 1983 World Cup and Indonesia Open in 2007 and 2010",
-    "description_3": "Located close to the Java Sea and sometimes referred by locals as “The Spirit of the Sea",
-    "description_4": "About 22 miles north of Damai Indah Golf’s other 18-hole layout, the Bumi Serpong Damai Course and around 30 minutes from the Jakarta International Airport",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/damai-indah-golf-pik-course-img-1.jpg",
+        "alt": "Damai Indah Golf, Pantai Indah Kapuk (PIK) Course"
+      },
+      {
+        "id": 2,
+        "url": "/damai-indah-golf-pik-course-img-2.jpg",
+        "alt": "Damai Indah Golf, Pantai Indah Kapuk (PIK) Course"
+      },
+      {
+        "id": 3,
+        "url": "/damai-indah-golf-pik-course-img-3.jpg",
+        "alt": "Damai Indah Golf, Pantai Indah Kapuk (PIK) Course"
+      },
+      {
+        "id": 4,
+        "url": "/damai-indah-golf-pik-course-img-4.jpg",
+        "alt": "Damai Indah Golf, Pantai Indah Kapuk (PIK) Course"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "Designed by Robert Trent Jones Jr"
+      },
+      {
+        "id": 2,
+        "text": "Hosted tournaments for the 1983 World Cup and Indonesia Open in 2007 and 2010"
+      },
+      {
+        "id": 3,
+        "text": "Located close to the Java Sea and sometimes referred by locals as “The Spirit of the Sea"
+      },
+      {
+        "id": 4,
+        "text": "About 22 miles north of Damai Indah Golf’s other 18-hole layout, the Bumi Serpong Damai Course and around 30 minutes from the Jakarta International Airport"
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -209,12 +665,50 @@
     "name": "Imperial Klub Golf",
     "country": "Indonesia",
     "city": "Jakarta",
-    "imageUrl": "/imperial-klub-golf-img.jpg",
-    "description_1": "It is a challenging public course, designed by British course designer Desmond Muirhead.",
-    "description_2": "Located in the new town of Lippo Karawaci, 25 minutes from downtown Jakarta and 35 minutes from Jakarta’s International Airport",
-    "description_3": "The course is more difficult than most and plays to over 7200 yards from the back tees",
-    "description_4": "",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/imperial-klub-golf-img-1.jpg",
+        "alt": "Imperial Klub Golf"
+      },
+      {
+        "id": 2,
+        "url": "/imperial-klub-golf-img-2.jpg",
+        "alt": "Imperial Klub Golf"
+      },
+      {
+        "id": 3,
+        "url": "/imperial-klub-golf-img-3.jpg",
+        "alt": "Imperial Klub Golf"
+      },
+      {
+        "id": 4,
+        "url": "/imperial-klub-golf-img-4.jpg",
+        "alt": "Imperial Klub Golf"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "It is a challenging public course, designed by British course designer Desmond Muirhead."
+      },
+      {
+        "id": 2,
+        "text": "Located in the new town of Lippo Karawaci, 25 minutes from downtown Jakarta and 35 minutes from Jakarta’s International Airport"
+      },
+      {
+        "id": 3,
+        "text": "The course is more difficult than most and plays to over 7200 yards from the back tees"
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -226,12 +720,50 @@
     "name": "Jagorawi Golf & Country Club",
     "country": "Indonesia",
     "city": "Bogor",
-    "imageUrl": "/jagorawi-golf-&-country-club-img.jpg",
-    "description_1": "It is one of the most challenging courses in Indonesia",
-    "description_2": "It is situated 60 minutes from the center of Jakarta off the Jagorawi toll road",
-    "description_3": "Three courses make up in a total of 45 holes",
-    "description_4": "Both the Old Course and the New Course have hosted the Indonesian Open",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/jagorawi-golf-&-country-club-img-1.jpg",
+        "alt": "Jagorawi Golf & Country Club"
+      },
+      {
+        "id": 2,
+        "url": "/jagorawi-golf-&-country-club-img-2.jpg",
+        "alt": "Jagorawi Golf & Country Club"
+      },
+      {
+        "id": 3,
+        "url": "/jagorawi-golf-&-country-club-img-3.jpg",
+        "alt": "Jagorawi Golf & Country Club"
+      },
+      {
+        "id": 4,
+        "url": "/jagorawi-golf-&-country-club-img-4.jpg",
+        "alt": "Jagorawi Golf & Country Club"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "It is one of the most challenging courses in Indonesia"
+      },
+      {
+        "id": 2,
+        "text": "It is situated 60 minutes from the center of Jakarta off the Jagorawi toll road"
+      },
+      {
+        "id": 3,
+        "text": "Three courses make up in a total of 45 holes"
+      },
+      {
+        "id": 4,
+        "text": "Both the Old Course and the New Course have hosted the Indonesian Open"
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -243,12 +775,50 @@
     "name": "Pondok Indah Golf Course",
     "country": "Indonesia",
     "city": "Jakarta",
-    "imageUrl": "/pondok-indah-golf-course-img.jpg",
-    "description_1": "A beautiful golf course in the heart of the city",
-    "description_2": "The golf course blends into the natural  environment",
-    "description_3": "",
-    "description_4": "",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/pondok-indah-golf-course-img-1.jpg",
+        "alt": "Pondok Indah Golf Course"
+      },
+      {
+        "id": 2,
+        "url": "/pondok-indah-golf-course-img-2.jpg",
+        "alt": "Pondok Indah Golf Course"
+      },
+      {
+        "id": 3,
+        "url": "/pondok-indah-golf-course-img-3.jpg",
+        "alt": "Pondok Indah Golf Course"
+      },
+      {
+        "id": 4,
+        "url": "/pondok-indah-golf-course-img-4.jpg",
+        "alt": "Pondok Indah Golf Course"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "A beautiful golf course in the heart of the city"
+      },
+      {
+        "id": 2,
+        "text": "The golf course blends into the natural  environment"
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -260,12 +830,50 @@
     "name": "Royale Jakarta Golf Club",
     "country": "Indonesia",
     "city": "Jakarta",
-    "imageUrl": "/royale-jakarta-golf-club-img.jpg",
-    "description_1": "The Championship course is the permanent home and venue for the Indonesian Masters.",
-    "description_2": "Located just 15 minutes from central Jakarta and accessible via the toll road",
-    "description_3": "A new Jakarta golf courses, designed as a world-class championship course from day one",
-    "description_4": "",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/royale-jakarta-golf-club-img-1.jpg",
+        "alt": "Royale Jakarta Golf Club"
+      },
+      {
+        "id": 2,
+        "url": "/royale-jakarta-golf-club-img-2.jpg",
+        "alt": "Royale Jakarta Golf Club"
+      },
+      {
+        "id": 3,
+        "url": "/royale-jakarta-golf-club-img-3.jpg",
+        "alt": "Royale Jakarta Golf Club"
+      },
+      {
+        "id": 4,
+        "url": "/royale-jakarta-golf-club-img-4.jpg",
+        "alt": "Royale Jakarta Golf Club"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "The Championship course is the permanent home and venue for the Indonesian Masters."
+      },
+      {
+        "id": 2,
+        "text": "Located just 15 minutes from central Jakarta and accessible via the toll road"
+      },
+      {
+        "id": 3,
+        "text": "A new Jakarta golf courses, designed as a world-class championship course from day one"
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -277,12 +885,50 @@
     "name": "Sedayu Indo Golf",
     "country": "Indonesia",
     "city": "Jakarta",
-    "imageUrl": "/sedayu-indo-golf-img.jpg",
-    "description_1": "A Jack Nicklaus designed hybrid links course",
-    "description_2": "It is a “man-made links course”, like the New York’s Bayonne Golf Club",
-    "description_3": "A new golf course in downtown Jakarta located in the Pantai Indah Kapuk area",
-    "description_4": "Devloped by Agung Sedayu Group and Salim Group - Sedayu Indo",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/sedayu-indo-golf-img-1.jpg",
+        "alt": "Sedayu Indo Golf"
+      },
+      {
+        "id": 2,
+        "url": "/sedayu-indo-golf-img-2.jpg",
+        "alt": "Sedayu Indo Golf"
+      },
+      {
+        "id": 3,
+        "url": "/sedayu-indo-golf-img-3.jpg",
+        "alt": "Sedayu Indo Golf"
+      },
+      {
+        "id": 4,
+        "url": "/sedayu-indo-golf-img-4.jpg",
+        "alt": "Sedayu Indo Golf"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "A Jack Nicklaus designed hybrid links course"
+      },
+      {
+        "id": 2,
+        "text": "It is a “man-made links course”, like the New York’s Bayonne Golf Club"
+      },
+      {
+        "id": 3,
+        "text": "A new golf course in downtown Jakarta located in the Pantai Indah Kapuk area"
+      },
+      {
+        "id": 4,
+        "text": "Devloped by Agung Sedayu Group and Salim Group - Sedayu Indo"
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -294,12 +940,50 @@
     "name": "Senayan National Golf Club",
     "country": "Indonesia",
     "city": "Jakarta",
-    "imageUrl": "/senayan-national-golf-club-img.jpg",
-    "description_1": "A well-maintained member/public course in the heart of Jakarta",
-    "description_2": "A complete makeover was done by JMP Group and course architect Bob Moore in 2012",
-    "description_3": "Popular amongst local Indonesia golfers as it is in the heart of the central business district",
-    "description_4": "Tight fairways, mature trees and an old clubhouse",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/senayan-national-golf-club-img-1.jpg",
+        "alt": "Senayan National Golf Club"
+      },
+      {
+        "id": 2,
+        "url": "/senayan-national-golf-club-img-2.jpg",
+        "alt": "Senayan National Golf Club"
+      },
+      {
+        "id": 3,
+        "url": "/senayan-national-golf-club-img-3.jpg",
+        "alt": "Senayan National Golf Club"
+      },
+      {
+        "id": 4,
+        "url": "/senayan-national-golf-club-img-4.jpg",
+        "alt": "Senayan National Golf Club"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "A well-maintained member/public course in the heart of Jakarta"
+      },
+      {
+        "id": 2,
+        "text": "A complete makeover was done by JMP Group and course architect Bob Moore in 2012"
+      },
+      {
+        "id": 3,
+        "text": "Popular amongst local Indonesia golfers as it is in the heart of the central business district"
+      },
+      {
+        "id": 4,
+        "text": "Tight fairways, mature trees and an old clubhouse"
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
@@ -311,12 +995,105 @@
     "name": "Suvarna Jakarta Golf Club",
     "country": "Indonesia",
     "city": "Jakarta",
-    "imageUrl": "/suvarna-jakarta-golf-club-img.jpg",
-    "description_1": "Excellent 27-hole Course  in central Jakarta",
-    "description_2": "The entirely newly developed 27-hole championship golf course opened in 2018",
-    "description_3": "It sits on the site of the old Halim 2 golf course",
-    "description_4": "",
-    "description_5": "",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/suvarna-jakarta-golf-club-img-1.jpg",
+        "alt": "Suvarna Jakarta Golf Club"
+      },
+      {
+        "id": 2,
+        "url": "/suvarna-jakarta-golf-club-img-2.jpg",
+        "alt": "Suvarna Jakarta Golf Club"
+      },
+      {
+        "id": 3,
+        "url": "/suvarna-jakarta-golf-club-img-3.jpg",
+        "alt": "Suvarna Jakarta Golf Club"
+      },
+      {
+        "id": 4,
+        "url": "/suvarna-jakarta-golf-club-img-4.jpg",
+        "alt": "Suvarna Jakarta Golf Club"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "Excellent 27-hole Course  in central Jakarta"
+      },
+      {
+        "id": 2,
+        "text": "The entirely newly developed 27-hole championship golf course opened in 2018"
+      },
+      {
+        "id": 3,
+        "text": "It sits on the site of the old Halim 2 golf course"
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 20,
+    "slug": "angkor-golf-resort",
+    "name": "Angkor Golf Resort",
+    "country": "Cambodia",
+    "city": "Siem Reap",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/angkor-golf-resort-img-1.jpg",
+        "alt": "Angkor Golf Resort"
+      },
+      {
+        "id": 2,
+        "url": "/angkor-golf-resort-img-2.jpg",
+        "alt": "Angkor Golf Resort"
+      },
+      {
+        "id": 3,
+        "url": "/angkor-golf-resort-img-3.jpg",
+        "alt": "Angkor Golf Resort"
+      },
+      {
+        "id": 4,
+        "url": "/angkor-golf-resort-img-4.jpg",
+        "alt": "Angkor Golf Resort"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "The golf course in December 2007"
+      },
+      {
+        "id": 2,
+        "text": "A challenging and well-maintained Nick Faldo design golf course"
+      },
+      {
+        "id": 3,
+        "text": "Probably the best in the country, putting Cambodia onto international golf destination map"
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,

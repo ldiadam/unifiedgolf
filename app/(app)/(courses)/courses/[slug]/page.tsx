@@ -38,12 +38,8 @@ interface Course {
   name: string;
   country: string;
   city: string;
-  imageUrl: string;
-  description_1: string;
-  description_2: string;
-  description_3: string;
-  description_4: string;
-  description_5: string;
+  imageUrl: { id: number; url: string; alt: string }[];
+  description: { id: number; text: string }[];
   rating: number;
   reviews: number;
   pricePerDay: number;
@@ -242,7 +238,11 @@ export default function CourseListPage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={course.imageUrl}
+                    src={
+                      course.imageUrl[0].url
+                        ? course.imageUrl[0].url
+                        : "/no-image.jpg"
+                    }
                     alt={course.name}
                     fill
                     className="object-cover transition-transform hover:scale-105"
@@ -263,7 +263,7 @@ export default function CourseListPage() {
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <p className="text-muted-foreground line-clamp-3 mb-4">
-                    {course.description_1}
+                    {course.description[0].text}
                   </p>
                   <p className="font-medium">
                     ${course.pricePerDay.toFixed(2)}{" "}

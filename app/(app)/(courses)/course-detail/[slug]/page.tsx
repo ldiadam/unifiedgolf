@@ -18,6 +18,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import courseData from "@/data/allData.json";
+import ImageCarousel from "./components/image-carousel-course-detail";
 
 interface Course {
   id: number;
@@ -25,18 +26,23 @@ interface Course {
   name: string;
   country: string;
   city: string;
-  imageUrl: string;
-  description_1: string;
-  description_2: string;
-  description_3: string;
-  description_4: string;
-  description_5: string;
+  imageUrl: Image[];
+  description: Description[];
   rating: number;
   reviews: number;
   pricePerDay: number;
   type: string;
 }
+interface Image {
+  id: number;
+  url: string;
+  alt: string;
+}
 
+interface Description {
+  id: number;
+  text: string;
+}
 export default function CourseDetailPage() {
   const params = useParams();
   const router = useRouter();
@@ -133,14 +139,7 @@ export default function CourseDetailPage() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left column - course details */}
         <div className="lg:col-span-2">
-          <div className="relative h-64 md:h-96 w-full mb-6 rounded-lg overflow-hidden">
-            <Image
-              src={course.imageUrl}
-              alt={course.name}
-              fill
-              className="object-cover"
-            />
-          </div>
+          <ImageCarousel images={course.imageUrl} />
 
           <h1 className="text-3xl font-bold mb-3">{course.name}</h1>
 
@@ -173,19 +172,15 @@ export default function CourseDetailPage() {
             </TabsList>
             <TabsContent value="overview" className="mt-6">
               <div className="space-y-4">
-                <p className="text-lg">{course.description_1}</p>
-                {/* <p>{course.description_2}</p>
-                <p>{course.description_3}</p> */}
+                <p className="text-lg">{course.description[0]?.text}</p>
               </div>
             </TabsContent>
             <TabsContent value="description" className="mt-6">
               {/* <div className="space-y-4"> */}
               <ul className="space-y-4 list-disc ml-4">
-                {course.description_1 && <li>{course.description_1}</li>}
-                {course.description_2 && <li>{course.description_2}</li>}
-                {course.description_3 && <li>{course.description_3}</li>}
-                {course.description_4 && <li>{course.description_4}</li>}
-                {course.description_5 && <li>{course.description_5}</li>}
+                {course.description.map(
+                  (desc) => desc.text && <li key={desc.id}>{desc.text}</li>
+                )}{" "}
               </ul>
             </TabsContent>
             <TabsContent value="amenities" className="mt-6">
