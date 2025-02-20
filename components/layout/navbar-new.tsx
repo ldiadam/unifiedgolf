@@ -32,32 +32,32 @@ const routeList: RouteProps[] = [
   {
     id: 1,
     href: "/company",
-    label: "Company Profile",
+    label: "A. Company Profile",
   },
   {
     id: 2,
     href: "/courses",
-    label: "Course Detail",
+    label: "B. Course Detail",
   },
   {
     id: 3,
-    href: "/maintenance",
-    label: "Standard Packages",
+    href: "/standard-packages",
+    label: "C. Standard Packages",
   },
   {
     id: 4,
-    href: "/maintenance",
-    label: "Course Booking",
+    href: "/course-booking",
+    label: "D. Course Booking",
   },
   {
     id: 5,
     href: "/maintenance",
-    label: "Enquiry",
+    label: "E. Enquiry",
   },
   {
     id: 6,
     href: "/maintenance",
-    label: "Contact",
+    label: "F. Contact",
   },
 ];
 
@@ -65,10 +65,10 @@ export const NavbarNew = () => {
   const [isOpen, setIsOpen] = React.useState(true);
 
   return (
-    <div className="container relative top-5 w-full">
+    <div className="fixed z-40 w-full">
       {/* Mobile Mode */}
-      <div className="lg:hidden flex justify-center">
-        <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[85%] lg:w-[90%] xl:w-[85%] max-w-screen-xl mx-auto border border-secondary rounded-xl bg-card flex flex-col">
+      <div className="lg:hidden md:hidden flex justify-center">
+        <header className="shadow-inner bg-opacity-15 mx-auto border border-secondary rounded-md bg-card flex flex-col">
           {/* Top section with logo and actions */}
           <div className="flex flex-col items-center p-2">
             <Link
@@ -97,11 +97,7 @@ export const NavbarNew = () => {
               <div className="flex items-center justify-between px-4">
                 <h4 className="text-sm font-semibold">Menu</h4>
                 <CollapsibleTrigger asChild>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="w-9 p-0 hover:bg-primary"
-                  >
+                  <Button variant="ghost" size="sm" className="w-9 p-0">
                     {isOpen ? (
                       <ChevronUp className="h-4 w-4" />
                     ) : (
@@ -158,8 +154,8 @@ export const NavbarNew = () => {
         </header>
       </div>
       {/* <!-- Desktop --> */}
-      <div className="hidden lg:block">
-        <header className=" shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl mx-auto border border-secondary z-40 rounded-xl flex justify-between items-center p-2 bg-card">
+      <div className="hidden lg:block md:block">
+        <header className=" shadow-inner bg-opacity-15 border border-secondary rounded-md p-2 bg-card">
           <div className="flex flex-col w-full">
             <div className="flex flex-nowrap justify-between items-center w-full ml-1 mb-2">
               <div className="flex flex-col items-start gap-1">
@@ -178,7 +174,7 @@ export const NavbarNew = () => {
                   Country, Postal Code
                 </span>
               </div>
-              <div className="flex h-full mt-14 mr-2">
+              <div className="flex h-full mt-14">
                 <Link
                   href={"mailto:theunifiedgolf@gmail.com"}
                   className="text-xs font-bold"
@@ -190,15 +186,15 @@ export const NavbarNew = () => {
               </div>
             </div>
             <Separator />
-            <div className="flex flex-row justify-between items-center">
-              <NavigationMenu className="hidden lg:block py-2">
+            <div className="flex flex-row justify-between items-center mt-1">
+              <NavigationMenu className="hidden lg:block md:block py-2">
                 <NavigationMenuList>
                   <NavigationMenuItem>
                     {routeList.map(({ href, label }) => (
                       <NavigationMenuLink key={label} asChild>
                         <Link
                           href={href}
-                          className="items-center text-base font-bold px-2 hover:underline hover:text-primary"
+                          className="items-center text-base font-bold px-2 py-2 md:text-xs lg:text-base hover:underline hover:text-primary border border-secondary"
                         >
                           {label}
                         </Link>

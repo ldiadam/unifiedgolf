@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import locationData from "@/data/locationData.json";
 
-export default function CourseDetailPage() {
+export default function StandardPackagesPage() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Function to create a unique slug for each city
@@ -34,7 +34,7 @@ export default function CourseDetailPage() {
   return (
     <div className="container mx-auto pt-40">
       <div className="flex flex-col space-y-6 mt-6">
-        <h1 className="text-3xl font-bold">B. Course Details</h1>
+        <h1 className="text-3xl font-bold">C. Standard Packages</h1>
 
         {/* Countries List with hover effect */}
         <div className="relative">
@@ -70,7 +70,7 @@ export default function CourseDetailPage() {
                     <h3 className="font-semibold border-b pb-2">
                       {location.country}
                     </h3>
-                    {location.city && location.city.length > 0 ? (
+                    {/* {location.city && location.city.length > 0 ? (
                       <div className="grid gap-2">
                         {location.city.map((city, index) => (
                           <Link
@@ -92,7 +92,7 @@ export default function CourseDetailPage() {
                           No cities available in this country yet
                         </p>
                       </div>
-                    )}
+                    )} */}
                   </div>
                 </PopoverContent>
               </Popover>

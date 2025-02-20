@@ -23,7 +23,7 @@ import Link from "next/link";
 
 export default function CompanyProfilePage() {
   return (
-    <div className="container mx-auto px-4 py-2">
+    <div className="container mx-auto px-4 py-2 pt-32">
       {/* Hero Section */}
       <div className="relative rounded-3xl overflow-hidden mb-16">
         <div className="absolute inset-0">
@@ -52,12 +52,10 @@ export default function CompanyProfilePage() {
       </div>
 
       {/* Company Introduction Section */}
-      <section className="mb-20">
+      <section className="">
         <div className="flex flex-col md:flex-row gap-10 items-center">
           <div className="md:w-1/2">
-            <h2 className="text-3xl font-semibold text-primary mb-6">
-              Company Profile
-            </h2>
+            <h2 className="text-3xl font-bold mb-6">A. Company Profile</h2>
             <p className="text-xl font-medium text-primary mb-4">
               We are established with the aim to offer golf holiday packages
               tailored to our cliets exact requirements, competitively, and with
@@ -84,9 +82,9 @@ export default function CompanyProfilePage() {
               to customise your nest trip to your specific requirement and
               budget.
             </p>
-            <Button variant="default" className="bg-card hover:bg-card">
+            {/* <Button variant="default" className="bg-card hover:bg-card">
               <Link href={"https://wa.me/6289123123123"}>Contact Us</Link>
-            </Button>
+            </Button> */}
           </div>
           <div className="md:w-1/2 relative h-80 w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
@@ -101,7 +99,7 @@ export default function CompanyProfilePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="mb-20">
+      {/* <section className="mb-20">
         <Card className="border-0 shadow-xl bg-gradient-to-r ">
           <CardContent className="p-8">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -136,10 +134,10 @@ export default function CompanyProfilePage() {
             </div>
           </CardContent>
         </Card>
-      </section>
+      </section> */}
 
       {/* Company Details Section */}
-      <section className="mb-20">
+      {/* <section className="mb-20">
         <h2 className="text-3xl font-semibold text-primary mb-8">
           Our Company
         </h2>
@@ -165,9 +163,9 @@ export default function CompanyProfilePage() {
           </CardContent>
         </Card>
       </section>
-
+ */}
       {/* Mission Statement */}
-      <section className="mb-20">
+      {/* <section className="mb-20">
         <Card className="overflow-hidden border-0 shadow-2xl">
           <div className="relative h-32 bg-primary">
             <div className="absolute inset-0">
@@ -190,10 +188,10 @@ export default function CompanyProfilePage() {
             </p>
           </CardContent>
         </Card>
-      </section>
+      </section> */}
 
       {/* Why Choose Us Section */}
-      <section className="">
+      {/* <section className="">
         <h2 className="text-3xl font-semibold text-primary mb-8">
           Why Choose Unified Golf?
         </h2>
@@ -246,7 +244,7 @@ export default function CompanyProfilePage() {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

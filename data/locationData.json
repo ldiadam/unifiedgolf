@@ -99,11 +99,6 @@
   {
     "id": 12,
     "country": "Brunei",
-    "city": [
-      "The Empire",
-      "The Royal Brunei",
-      "Pantai Mentiri",
-      "RBA Golf Club Sdn Bhd"
-    ]
+    "city": ["Brunei"]
   }
 ]

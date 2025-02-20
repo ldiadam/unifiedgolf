@@ -334,7 +334,7 @@
     "slug": "vattanac-golf-resort-east",
     "name": "Vattanac Golf Resort - East Course",
     "country": "Cambodia",
-    "city": "Siem Reap",
+    "city": "Phom Penh",
     "imageUrl": [
       {
         "id": 1,
@@ -389,7 +389,7 @@
     "slug": "vattanac-golf-resort-west",
     "name": "Vattanac Golf Resort - West Course",
     "country": "Cambodia",
-    "city": "Siem Reap",
+    "city": "Phom Penh",
     "imageUrl": [
       {
         "id": 1,
@@ -1084,6 +1084,411 @@
       {
         "id": 3,
         "text": "Probably the best in the country, putting Cambodia onto international golf destination map"
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 21,
+    "slug": "phokeethra-country-club",
+    "name": "Phokeethra Country Club",
+    "country": "Cambodia",
+    "city": "Siem Reap",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/phokeethra-country-club-img-1.jpg",
+        "alt": "Phokeethra Country Club"
+      },
+      {
+        "id": 2,
+        "url": "/phokeethra-country-club-img-2.jpg",
+        "alt": "Phokeethra Country Club"
+      },
+      {
+        "id": 3,
+        "url": "/phokeethra-country-club-img-3.jpg",
+        "alt": "Phokeethra Country Club"
+      },
+      {
+        "id": 4,
+        "url": "/phokeethra-country-club-img-4.jpg",
+        "alt": "Phokeethra Country Club"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "Home of the Asian Tour's Johnnie Walker Cambodian Open"
+      },
+      {
+        "id": 2,
+        "text": "It hosted the 2009 Johnnie Walker Classic and 2010 Cambodian Open"
+      },
+      {
+        "id": 3,
+        "text": "It is managed by The Sofitel"
+      },
+      {
+        "id": 4,
+        "text": "Major renovations in 2018 keep up the course standards"
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 22,
+    "slug": "siem-reap-booyoung-country-club",
+    "name": "Siem Reap Booyoung Country Club",
+    "country": "Cambodia",
+    "city": "Siem Reap",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/siem-reap-booyoung-country-club-img-1.jpg",
+        "alt": "Siem Reap Booyoung Country Club"
+      },
+      {
+        "id": 2,
+        "url": "/siem-reap-booyoung-country-club-img-2.jpg",
+        "alt": "Siem Reap Booyoung Country Club"
+      },
+      {
+        "id": 3,
+        "url": "/siem-reap-booyoung-country-club-img-3.jpg",
+        "alt": "Siem Reap Booyoung Country Club"
+      },
+      {
+        "id": 4,
+        "url": "/siem-reap-booyoung-country-club-img-4.jpg",
+        "alt": "Siem Reap Booyoung Country Club"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "The course is designed bywell-known Japanese golf course designer, Kentaro Sato"
+      },
+      {
+        "id": 2,
+        "text": "Good course layout with wide fairways for scoring opportunities"
+      },
+      {
+        "id": 3,
+        "text": "The Club (Siem Reap Lake) is the third international standard golf course opened in Angkor Wat"
+      },
+      {
+        "id": 4,
+        "text": "The $150 million US dollar course took one year to construct"
+      },
+      {
+        "id": 5,
+        "text": "It is located 6 kilometers from Siem Reap town center"
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 23,
+    "slug": "the-empire",
+    "name": "The Empire",
+    "country": "Brunei",
+    "city": "Brunei",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/the-empire-img-1.jpg",
+        "alt": "The Empire"
+      },
+      {
+        "id": 2,
+        "url": "/the-empire-img-2.jpg",
+        "alt": "The Empire"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "The tiny sultanate of Brunei is home to one of the most surprising and opulent courses in all of Asia. Designed by J"
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 24,
+    "slug": "the-royal-brunei",
+    "name": "The Royal Brunei",
+    "country": "Brunei",
+    "city": "Brunei",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/the-royal-brunei-img-1.jpg",
+        "alt": "The Royal Brunei"
+      },
+      {
+        "id": 2,
+        "url": "/the-royal-brunei-img-2.jpg",
+        "alt": "The Royal Brunei"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "Described by its designer, Ron Fream, as the 'Augusta National of Asia,' Royal Brunei Golf & Country Club might lack the exclusivity of its more famous golfing counterpart but it certainly has the reputation of housing one of the best manicured layouts on the Asian continent."
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 25,
+    "slug": "pantai-mentiri",
+    "name": "Pantai Mentiri",
+    "country": "Brunei",
+    "city": "Brunei",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/pantai-mentiri-img-1.jpg",
+        "alt": "Pantai Mentiri"
+      },
+      {
+        "id": 2,
+        "url": "/pantai-mentiri-img-2.jpg",
+        "alt": "Pantai Mentiri"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "Ron Fream of Golfplan laid out the course here at Pantai Mentiri Golf Club in 1983 and he would return again to Brunei before the decade was over to design and construct the Royal Brunei course, on the other side of the nation’s international airport. The layout plays to a par of 72 with water hazards involved at many of the holes on the card. The outward half, the Bakau nine, extends to 3,006 metres from the back markers – it’s considered to be the 'easier' nine – whilst the inward Membangan nine measures slightly longer at 3,099 metres."
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 26,
+    "slug": "rba-golf-club-sdn-bhd",
+    "name": "RBA Golf Club Sdn Bhd",
+    "country": "Brunei",
+    "city": "Brunei",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/rba-golf-club-sdn-bhd-img-1.jpg",
+        "alt": "RBA Golf Club Sdn Bhd"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "Designed by Max Wexler, this course offers artistically shaped bunkers and naturally flowing waterways."
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 27,
+    "slug": "bali-national-golf-club",
+    "name": "Bali National Golf Club",
+    "country": "Indonesia",
+    "city": "Bali",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/bali-national-golf-club-img-1.jpg",
+        "alt": "Bali National Golf Club"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "We played the original course at Bali National Golf Club many years ago and thought then that it was a great layout – indeed good enough to be voted by Fortune magazine as one of the Top Five Golf Courses in Asia back in 1997. Unfortunately the course went into a gradual decline and the decision was made to totally renovate the course. It turned out to be a great decision, as designers Nelson & Haworth created an entirely new course which is unrecognisable from the previous layout. Reopened in 2013 it has been receiving rave reviews and has won a host of awards, including the Asian Golf Awards gong for Best Renovated Course in Asia Pacific (2014) and Best Course in Indonesia (2018). The course sits right in the middle of the Nusa Dua Beach hotel complex and is very conveniently located for anyone staying in the area, and following the completion of the bypass road it is now only 15 minutes from the airport. The course offers a choice of four tee boxes, but unless you are a real masochist or a seriously good golfer then it’s probably best to have a relaxing round off the Resort tee boxes (equivalent to the white tees). The course is in immaculate condition, with hardly a blade of grass out of place. It’s a pleasure to play here – we loved the way they have used native grasses in front of some of the tee boxes and also around the bunkers, which really softens the look of the course. The greens are particularly challenging, lightning fast with plenty of undulations, so if putting is not your strong suit then you are in for a long day. Thankfully you can rely on the advice of the caddies, who are usually excellent here. The course is in immaculate condition, with hardly a blade of grass out of place. The front nine are played in amongst the trees but the back nine opens up a bit and the course finished on a really high note with two superb finishing holes. The 17th is a spectacular par 3 with an island green - the only solid ground is the tees boxes and the green, everything else is water. Just aim for the centre of the putting surface and pray! The 18th is a 400-yard dogleg par 4 with a waste bunker all along the left and a water hazard fronting the green; your approach will be made all the more difficult as you will probably have an audience watching on from the clubhouse as you finish. The clubhouse at Bali National Golf Club features outstanding locker rooms and a great restaurant and terrace overlooking the 18th green. There's also a driving range and you get a free bucket of 25 balls to use prior to your round. While it’s not cheap to play here, the price compares quite favourably to other top courses in Asia, and given the quality of the golf course and the beauty of the surroundings, it's worth every penny."
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 28,
+    "slug": "new-kuta-golf-course",
+    "name": "New Kuta Golf Course",
+    "country": "Indonesia",
+    "city": "Bali",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/new-kuta-golf-course-img-1.jpg",
+        "alt": "New Kuta Golf Course"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "A relative newcomer to the Bali golfing scene, New Kuta Golf Club opened in 2007 to wide acclaim, and has since been showered with awards: it was included on Rolex's list of the Top 1,000 Golf Courses in the World as well as picking up the title of Indonesia's Best Golf Course at the World Golf Awards in 2017 and 2018. "
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 29,
+    "slug": "handara-golf-resort-bali",
+    "name": "Handara Golf Resort Bali",
+    "country": "Indonesia",
+    "city": "Bali",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/handara-golf-resort-bali-img-1.jpg",
+        "alt": "Handara Golf Resort Bali"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "It may be a long way from the traditional tourist centres in Nusa Dua and Ubud (up to 2.5 hours), but a deserved place in Golf Magazine’s “Top 50 Greatest Golf Courses in the World” means a trip to the world-class championship course at Bali Handara Kosaido Country Club is well worth the effort."
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
       },
       {
         "id": 4,

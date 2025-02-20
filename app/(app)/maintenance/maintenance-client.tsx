@@ -15,7 +15,7 @@ import {
 
 export default function UnderConstructionClient() {
   return (
-    <div className="min-h-screen bg-background py-16">
+    <div className="min-h-screen bg-background pt-40">
       <main className="flex-1 flex items-center justify-center p-4 md:p-8">
         <Card className="w-full max-w-3xl shadow-lg">
           <CardHeader className="text-center">

@@ -9,7 +9,7 @@ import Link from "next/link";
 export const HeroSection = () => {
   // const { theme } = useTheme();
   return (
-    <section className="relative w-full h-screen">
+    <section className="relative w-full h-screen mt-8">
       <Image
         src="/img-background.jpg"
         alt="Background Image"

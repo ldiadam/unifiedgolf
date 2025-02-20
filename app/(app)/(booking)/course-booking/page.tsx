@@ -9,9 +9,28 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
-import locationData from "@/data/locationData.json";
+// import itemData from "@/data/itemData.json";
 
-export default function CourseDetailPage() {
+const barData = [
+  {
+    id: 1,
+    name: "Your Contact Detail",
+  },
+  {
+    id: 2,
+    name: "Course Selection",
+  },
+  {
+    id: 3,
+    name: "Hotel Selection",
+  },
+  {
+    id: 4,
+    name: "Booking Detail",
+  },
+];
+
+export default function CourseBookingPage() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Function to create a unique slug for each city
@@ -34,11 +53,11 @@ export default function CourseDetailPage() {
   return (
     <div className="container mx-auto pt-40">
       <div className="flex flex-col space-y-6 mt-6">
-        <h1 className="text-3xl font-bold">B. Course Details</h1>
+        <h1 className="text-3xl font-bold">D. Course Booking</h1>
 
         {/* Countries List with hover effect */}
         <div className="relative">
-          {locationData.length > 4 && (
+          {barData.length > 4 && (
             <Button
               variant="ghost"
               size="icon"
@@ -54,29 +73,27 @@ export default function CourseDetailPage() {
             className="flex overflow-x-auto gap-2 px-2 scrollbar-hide snap-x snap-mandatory"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
-            {locationData.map((location) => (
-              <Popover key={location.id}>
+            {barData.map((item) => (
+              <Popover key={item.id}>
                 <PopoverTrigger asChild>
                   <Card className="flex-shrink-0 cursor-pointer snap-center hover:bg-primary transition-all">
-                    <CardContent className="p-1 w-36">
+                    <CardContent className="p-1 w-full">
                       <h2 className="text-center font-semibold truncate">
-                        {location.id}. {location.country}
+                        {item.id}. {item.name}
                       </h2>
                     </CardContent>
                   </Card>
                 </PopoverTrigger>
                 <PopoverContent className="w-64">
                   <div className="space-y-2">
-                    <h3 className="font-semibold border-b pb-2">
-                      {location.country}
-                    </h3>
-                    {location.city && location.city.length > 0 ? (
+                    <h3 className="font-semibold border-b pb-2">{item.name}</h3>
+                    {/* {item.city && item.city.length > 0 ? (
                       <div className="grid gap-2">
-                        {location.city.map((city, index) => (
+                        {item.city.map((city, index) => (
                           <Link
                             key={index}
                             href={`/courses/${createCitySlug(
-                              location.country,
+                              item.country,
                               city
                             )}`}
                             className="block p-2 hover:bg-primary rounded-md transition-colors"
@@ -92,14 +109,14 @@ export default function CourseDetailPage() {
                           No cities available in this country yet
                         </p>
                       </div>
-                    )}
+                    )} */}
                   </div>
                 </PopoverContent>
               </Popover>
             ))}
           </div>
 
-          {locationData.length > 4 && (
+          {barData.length > 4 && (
             <Button
               variant="ghost"
               size="icon"
