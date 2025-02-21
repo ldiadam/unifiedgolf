@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import {
   Popover,
@@ -11,10 +11,16 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import locationData from "@/data/locationData.json";
 
+// Types
+interface Location {
+  id: number;
+  country: string;
+  city: string[];
+}
+
 export default function CourseDetailPage() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-  // Function to create a unique slug for each city
   const createCitySlug = (country: string, city: string) => {
     return `${country.toLowerCase()}-${city
       .toLowerCase()
@@ -31,12 +37,48 @@ export default function CourseDetailPage() {
     }
   };
 
+  const renderCityList = (cities: string[], country: string) => {
+    if (!cities.length) {
+      return (
+        <div className="py-8 text-center">
+          <MapPin className="mx-auto h-12 w-12 text-gray-400 mb-3" />
+          <p className="text-sm text-gray-500">
+            No cities available in this country yet
+          </p>
+        </div>
+      );
+    }
+
+    // Calculate the number of columns needed
+    const itemsPerColumn = 5;
+    const numberOfColumns =
+      cities.length <= 5 ? 1 : Math.ceil(cities.length / itemsPerColumn);
+
+    return (
+      <div
+        className="grid gap-4"
+        style={{
+          gridTemplateColumns: `repeat(${numberOfColumns}, minmax(0, 1fr))`,
+        }}
+      >
+        {cities.map((city, index) => (
+          <Link
+            key={index}
+            href={`/courses/${createCitySlug(country, city)}`}
+            className="block p-2 hover:bg-primary rounded-md transition-colors"
+          >
+            <li className="">{city}</li>
+          </Link>
+        ))}
+      </div>
+    );
+  };
+
   return (
     <div className="container mx-auto pt-40">
       <div className="flex flex-col space-y-6 mt-6">
         <h1 className="text-3xl font-bold">B. Course Details</h1>
 
-        {/* Countries List with hover effect */}
         <div className="relative">
           {locationData.length > 4 && (
             <Button
@@ -54,7 +96,7 @@ export default function CourseDetailPage() {
             className="flex overflow-x-auto gap-2 px-2 scrollbar-hide snap-x snap-mandatory"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
-            {locationData.map((location) => (
+            {locationData.map((location: Location) => (
               <Popover key={location.id}>
                 <PopoverTrigger asChild>
                   <Card className="flex-shrink-0 cursor-pointer snap-center hover:bg-primary transition-all">
@@ -65,34 +107,12 @@ export default function CourseDetailPage() {
                     </CardContent>
                   </Card>
                 </PopoverTrigger>
-                <PopoverContent className="w-64">
+                <PopoverContent className="w-auto min-w-[200px]">
                   <div className="space-y-2">
                     <h3 className="font-semibold border-b pb-2">
                       {location.country}
                     </h3>
-                    {location.city && location.city.length > 0 ? (
-                      <div className="grid gap-2">
-                        {location.city.map((city, index) => (
-                          <Link
-                            key={index}
-                            href={`/courses/${createCitySlug(
-                              location.country,
-                              city
-                            )}`}
-                            className="block p-2 hover:bg-primary rounded-md transition-colors"
-                          >
-                            <li>{city}</li>
-                          </Link>
-                        ))}
-                      </div>
-                    ) : (
-                      <div className="py-8 text-center">
-                        <MapPin className="mx-auto h-12 w-12 text-gray-400 mb-3" />
-                        <p className="text-sm text-gray-500">
-                          No cities available in this country yet
-                        </p>
-                      </div>
-                    )}
+                    {renderCityList(location.city, location.country)}
                   </div>
                 </PopoverContent>
               </Popover>
@@ -110,6 +130,8 @@ export default function CourseDetailPage() {
             </Button>
           )}
         </div>
+
+        <div className="w-full h-[20rem]"></div>
       </div>
     </div>
   );

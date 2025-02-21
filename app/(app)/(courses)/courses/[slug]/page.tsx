@@ -1,41 +1,19 @@
-// app/courses/[slug]/page.tsx
 "use client";
 
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
-import {
-  ChevronLeft,
-  Star,
-  ChevronRight,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-} from "lucide-react";
+import { ChevronDown, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import {
-  Pagination,
-  PaginationContent,
-  PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
 import courseData from "@/data/allData.json";
+import { Separator } from "@/components/ui/separator";
 
 interface Course {
   id: number;
   slug: string;
   name: string;
+  courseTitle: string;
+  courseDesc: { id: number; text: string }[];
   country: string;
   city: string;
   imageUrl: { id: number; url: string; alt: string }[];
@@ -48,247 +26,115 @@ interface Course {
 
 export default function CourseListPage() {
   const params = useParams();
-  const [courses, setCourses] = useState<Course[]>([]);
-  const [countryCity, setCountryCity] = useState({ country: "", city: "" });
-
-  // Pagination state
-  const [currentPage, setCurrentPage] = useState(1);
-  const coursesPerPage = 6;
+  const [locationCourses, setLocationCourses] = useState<Course[]>([]);
+  const [mainCourse, setMainCourse] = useState<Course | null>(null);
+  const [showCourses, setShowCourses] = useState(false);
 
   useEffect(() => {
-    if (params.slug) {
-      const slugString = Array.isArray(params.slug)
-        ? params.slug[0]
-        : params.slug;
-      const parts = slugString.split("-");
+    const slug = params?.slug as string;
+    if (slug) {
+      const [country, city] = slug
+        .split("-")
+        .map((part) => part.charAt(0).toUpperCase() + part.slice(1));
 
-      // Assuming the first part is the country and the rest is the city (may contain hyphens)
-      const country = parts[0];
-      const cityParts = parts.slice(1);
-      const city = cityParts
-        .join(" ")
-        .replace(/(^|\s)\S/g, (char) => char.toUpperCase());
+      // Filter courses for this location
+      const filteredCourses = courseData.filter(
+        (course: Course) =>
+          course.country.toLowerCase() === country.toLowerCase() &&
+          course.city.toLowerCase() === city.toLowerCase()
+      );
 
-      setCountryCity({
-        country: country.charAt(0).toUpperCase() + country.slice(1),
-        city: city,
-      });
-
-      // Filter courses based on the city
-      const filteredCourses = courseData.filter((course: Course) => {
-        return (
-          course.city.toLowerCase() === city.toLowerCase() ||
-          city.toLowerCase().includes(course.city.toLowerCase()) ||
-          course.city.toLowerCase().includes(city.toLowerCase())
-        );
-      });
-
-      setCourses(filteredCourses);
-      setCurrentPage(1); // Reset to first page when location changes
+      setLocationCourses(filteredCourses);
+      // Set the first course as the main course to display its title and description
+      if (filteredCourses.length > 0) {
+        setMainCourse(filteredCourses[0]);
+      }
     }
-  }, [params.slug]);
+  }, [params]);
 
-  // Get current courses
-  const indexOfLastCourse = currentPage * coursesPerPage;
-  const indexOfFirstCourse = indexOfLastCourse - coursesPerPage;
-  const currentCourses = courses.slice(indexOfFirstCourse, indexOfLastCourse);
-  const totalPages = Math.ceil(courses.length / coursesPerPage);
-
-  const handlePageChange = (pageNumber: number) => {
-    setCurrentPage(pageNumber);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const renderStars = (rating: number) => {
-    const roundedRating = Math.round(rating * 2) / 2;
-    return (
-      <div className="flex items-center">
-        {[...Array(5)].map((_, i) => (
-          <Star
-            key={i}
-            className={`h-4 w-4 ${
-              i < Math.floor(roundedRating)
-                ? "text-yellow-400 fill-yellow-400"
-                : i < roundedRating
-                ? "text-yellow-400 fill-yellow-400 opacity-50"
-                : "text-gray-300"
-            }`}
-          />
-        ))}
-        <span className="ml-1 text-sm font-medium">{rating.toFixed(1)}</span>
-      </div>
-    );
-  };
-
-  const renderPagination = () => {
-    if (totalPages <= 1) return null;
-
-    return (
-      <Pagination className="mt-8">
-        <PaginationContent>
-          <PaginationItem>
-            <PaginationPrevious
-              onClick={() =>
-                currentPage > 1 && handlePageChange(currentPage - 1)
-              }
-              className={
-                currentPage === 1
-                  ? "pointer-events-none opacity-50"
-                  : "cursor-pointer"
-              }
-            />
-          </PaginationItem>
-
-          {[...Array(totalPages)].map((_, index) => {
-            const pageNumber = index + 1;
-            // Show first page, last page, current page, and pages adjacent to current page
-            if (
-              pageNumber === 1 ||
-              pageNumber === totalPages ||
-              (pageNumber >= currentPage - 1 && pageNumber <= currentPage + 1)
-            ) {
-              return (
-                <PaginationItem key={pageNumber}>
-                  <PaginationLink
-                    onClick={() => handlePageChange(pageNumber)}
-                    isActive={currentPage === pageNumber}
-                  >
-                    {pageNumber}
-                  </PaginationLink>
-                </PaginationItem>
-              );
-            }
-
-            // Show ellipsis for gaps (but only once per gap)
-            if (
-              (pageNumber === 2 && currentPage > 3) ||
-              (pageNumber === totalPages - 1 && currentPage < totalPages - 2)
-            ) {
-              return (
-                <PaginationItem key={`ellipsis-${pageNumber}`}>
-                  <PaginationEllipsis />
-                </PaginationItem>
-              );
-            }
-
-            return null;
-          })}
-
-          <PaginationItem>
-            <PaginationNext
-              onClick={() =>
-                currentPage < totalPages && handlePageChange(currentPage + 1)
-              }
-              className={
-                currentPage === totalPages
-                  ? "pointer-events-none opacity-50"
-                  : "cursor-pointer"
-              }
-            />
-          </PaginationItem>
-        </PaginationContent>
-      </Pagination>
-    );
-  };
+  if (!mainCourse) {
+    return <div className="container mx-auto px-4 pt-52">Loading...</div>;
+  }
 
   return (
-    <div className="container mx-auto pt-48">
-      <div className="mb-8">
-        <div className="flex justify-start">
-          <Button
-            variant="ghost"
-            asChild
-            className="mb-4 text-base hover:bg-primary"
-          >
-            <Link href="/courses">
-              <ChevronLeft className="mr-2 h-4 w-4" />
-              Back to Course Selection
-            </Link>
-          </Button>
+    <div className="container mx-auto px-4 pt-52">
+      <div className="flex flex-col">
+        {/* Back Button */}
+        <div className="mb-6">
+          <div className="flex justify-start">
+            <Button variant="outline" asChild className="border-2">
+              <Link href="/courses">Back to Course Selection</Link>
+            </Button>
+          </div>
         </div>
 
-        <h1 className="text-3xl font-bold">
-          Golf Courses in {countryCity.city}, {countryCity.country}
-        </h1>
-        <p className="text-muted-foreground mt-2">
-          Found {courses.length} courses available in this location
-        </p>
-        <Separator className="my-4" />
-      </div>
+        {/* Menu Bar */}
+        <div className="bg-card shadow-md rounded-lg flex items-center justify-start gap-6 p-4 mb-8">
+          {/* Golfing in Kunming (Title) */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="text-lg font-semibold hover:text-primary transition"
+          >
+            A. Golfing in Kunming
+          </button>
 
-      {courses.length === 0 ? (
-        <Card>
-          <CardContent className="flex flex-col items-center justify-center p-8">
-            <div className="text-center">
-              <h2 className="text-xl font-semibold mb-2">No Courses Found</h2>
-              <p className="text-muted-foreground mb-4">
-                We couldn&apos;t find any golf courses in {countryCity.city},{" "}
-                {countryCity.country}.
-              </p>
-              <Button asChild>
-                <Link href="/courses">Return to Course Selection</Link>
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-      ) : (
-        <>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {currentCourses.map((course) => (
-              <Card
-                key={course.id}
-                className="overflow-hidden h-full flex flex-col"
-              >
-                <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={
-                      course.imageUrl[0].url
-                        ? course.imageUrl[0].url
-                        : "/no-image.jpg"
-                    }
-                    alt={course.name}
-                    fill
-                    className="object-cover transition-transform hover:scale-105"
-                    //   onError={(e) => {
-                    //     const target = e.target as HTMLImageElement;
-                    // target.src = "/placeholder-course.jpg";
-                    //   }}
-                  />
-                </div>
-                <CardHeader>
-                  <CardTitle className="line-clamp-2">{course.name}</CardTitle>
-                  <div className="flex items-center justify-between mt-2">
-                    {renderStars(course.rating)}
-                    <span className="text-sm text-muted-foreground">
-                      {course.reviews} reviews
-                    </span>
-                  </div>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground line-clamp-3 mb-4">
-                    {course.description[0].text}
-                  </p>
-                  <p className="font-medium">
-                    ${course.pricePerDay.toFixed(2)}{" "}
-                    <span className="text-muted-foreground text-sm">
-                      per day
-                    </span>
-                  </p>
-                </CardContent>
-                <CardFooter>
-                  <Button asChild className="w-full">
-                    <Link href={`/course-detail/${course.slug}`}>
-                      View Details
-                    </Link>
-                  </Button>
-                </CardFooter>
-              </Card>
-            ))}
+          {/* Course List Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => setShowCourses(!showCourses)}
+              className="flex items-center text-lg font-semibold hover:text-primary transition"
+            >
+              B. Name of Courses <ChevronDown className="ml-2" size={18} />
+            </button>
+
+            {/* Dropdown List */}
+            {showCourses && (
+              <ul className="absolute right-0 mt-2 w-56 bg-card shadow-lg border rounded-lg overflow-hidden z-10">
+                {locationCourses.length > 0 ? (
+                  locationCourses.map((course) => (
+                    <li key={course.id} className="border-b last:border-none">
+                      <Link
+                        href={`/course-detail/${course.slug}`}
+                        className="block px-4 py-2 transition"
+                      >
+                        {course.name}
+                      </Link>
+                    </li>
+                  ))
+                ) : (
+                  <li className="px-4 py-2 text-gray-500">No courses found</li>
+                )}
+              </ul>
+            )}
           </div>
+        </div>
 
-          {renderPagination()}
-        </>
-      )}
+        {/* Course Title */}
+        <div className="course-tittle">
+          <h1 className="text-xl font-bold mb-8">A. Golfing in Kunming</h1>
+          <h1 className="text-xl font-bold mb-4 text-primary">
+            {mainCourse.courseTitle}
+          </h1>
+          <p className="text-md mb-2">{mainCourse.courseDesc[0].text}</p>
+        </div>
+        {/* Course Description List */}
+        <div className="mb-8">
+          <ul className="list-disc pl-6 space-y-4">
+            {mainCourse.courseDesc.slice(1).map((desc) => (
+              <li key={desc.id} className="text-base">
+                {desc.text}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Course Detail Button */}
+        {/* <div className="flex justify-end">
+          <Button variant="outline" asChild className="border-2">
+            <Link href={`/courses/${params.slug}/detail`}>Course Detail</Link>
+          </Button>
+        </div> */}
+      </div>
     </div>
   );
 }

@@ -65,7 +65,7 @@ export const NavbarNew = () => {
   const [isOpen, setIsOpen] = React.useState(true);
 
   return (
-    <div className="fixed z-40 w-full">
+    <div className="fixed z-50 w-full">
       {/* Mobile Mode */}
       <div className="lg:hidden md:hidden flex justify-center">
         <header className="shadow-inner bg-opacity-15 mx-auto border border-secondary rounded-md bg-card flex flex-col">

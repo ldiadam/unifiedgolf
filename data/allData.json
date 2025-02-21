@@ -52,7 +52,14 @@
     "rating": 4.7,
     "reviews": 190,
     "pricePerDay": 80,
-    "type": ""
+    "type": "",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 2,
@@ -107,7 +114,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 3,
@@ -162,7 +176,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 4,
@@ -217,7 +238,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 5,
@@ -272,7 +300,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 6,
@@ -327,7 +362,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 7,
@@ -382,7 +424,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 8,
@@ -437,7 +486,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 9,
@@ -492,7 +548,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 10,
@@ -547,7 +610,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 11,
@@ -602,7 +672,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 12,
@@ -657,7 +734,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 13,
@@ -712,7 +796,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 14,
@@ -767,7 +858,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 15,
@@ -822,7 +920,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 16,
@@ -877,7 +982,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 17,
@@ -932,7 +1044,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 18,
@@ -987,7 +1106,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 19,
@@ -1042,7 +1168,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 20,
@@ -1097,7 +1230,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 21,
@@ -1152,7 +1292,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 22,
@@ -1207,7 +1354,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 23,
@@ -1252,7 +1406,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 24,
@@ -1297,7 +1458,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 25,
@@ -1342,7 +1510,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 26,
@@ -1382,7 +1557,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 27,
@@ -1422,7 +1604,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 28,
@@ -1462,7 +1651,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 29,
@@ -1502,7 +1698,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": ""
+      }
+    ]
   },
   {
     "id": 30,
@@ -1542,12 +1745,90 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Location",
+    "courseTitle": "",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": "Reasons to golf in Bali."
+      },
+      {
+        "id": 2,
+        "text": "Bali is a paradise for golfers."
+      },
+      {
+        "id": 3,
+        "text": "The island is home to some of the best golf courses in Indonesia."
+      },
+      {
+        "id": 4,
+        "text": "The courses are designed by some of the best golf course designers in the world."
+      },
+      {
+        "id": 5,
+        "text": "The courses are set in stunning locations, with beautiful views of the ocean and the mountains."
+      },
+      {
+        "id": 6,
+        "text": "The weather in Bali is perfect for golfing, with warm temperatures and plenty of sunshine."
+      },
+      {
+        "id": 7,
+        "text": "The island is home to some of the best golf resorts in Indonesia, with luxurious accommodation and top-class facilities."
+      },
+      {
+        "id": 8,
+        "text": "The courses are suitable for golfers of all levels, from beginners to professionals."
+      },
+      {
+        "id": 9,
+        "text": "The island is a popular destination for golfers from all over the world, with many international tournaments held here every year."
+      },
+      {
+        "id": 10,
+        "text": "The island is home to some of the best golf courses in Indonesia."
+      }
+    ]
   },
   {
     "id": 31,
     "slug": "kunming-sunshine-golf-club",
     "name": "Kunming Sunshine Golf Club (昆明阳光高尔夫俱乐部}",
+    "courseTitle": "Kunming Golf | Best Golf Courses in Kunming, Yunnan",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": "Reasons to golf in Kunming."
+      },
+      {
+        "id": 2,
+        "text": "Kunming is known as 'the City of Eternal Spring' and paradise for golfing."
+      },
+      {
+        "id": 3,
+        "text": "An unique natural environment with many courses designed with topography of the terrains."
+      },
+      {
+        "id": 4,
+        "text": "It offers a more enjoyable golf experience, with sunshine, blue sky, white clouds, lake view, wildness, fun, imagination, quality. excitement and challenge."
+      },
+      {
+        "id": 5,
+        "text": "A comfortable weather for golfing"
+      },
+      {
+        "id": 6,
+        "text": "Temperature avarages  around  15℃ . (Summer average is around 19℃ and winter is 8℃)."
+      },
+      {
+        "id": 7,
+        "text": "Among all the top 10 golf courses in China, Kunming Spring City Golf & Lake Resort is ranked as the No.1 Golf Course, offering a golfing experience that capitalizes on the existing features of the property while taking advantage of the dramatic view changes in elevation and expansive nature of the site."
+      },
+      {
+        "id": 8,
+        "text": " providing travelers both the 4 best golf courses in Kunming as well as other top recommended golf courses in Yunnan Province and start planning your golf trip!"
+      }
+    ],
     "country": "China",
     "city": "Kunming",
     "imageUrl": [
@@ -1603,6 +1884,41 @@
     "id": 32,
     "slug": "kunming-spring-city-golf-and-lake-resort",
     "name": "Kunming Spring City Golf and Lake Resort (Chinese Name: 昆明春城湖畔高尔夫度假村)",
+    "courseTitle": "Kunming Golf | Best Golf Courses in Kunming, Yunnan",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": "Reasons to golf in Kunming."
+      },
+      {
+        "id": 2,
+        "text": "Kunming is known as 'the City of Eternal Spring' and paradise for golfing."
+      },
+      {
+        "id": 3,
+        "text": "An unique natural environment with many courses designed with topography of the terrains."
+      },
+      {
+        "id": 4,
+        "text": "It offers a more enjoyable golf experience, with sunshine, blue sky, white clouds, lake view, wildness, fun, imagination, quality. excitement and challenge."
+      },
+      {
+        "id": 5,
+        "text": "A comfortable weather for golfing"
+      },
+      {
+        "id": 6,
+        "text": "Temperature avarages  around  15℃ . (Summer average is around 19℃ and winter is 8℃)."
+      },
+      {
+        "id": 7,
+        "text": "Among all the top 10 golf courses in China, Kunming Spring City Golf & Lake Resort is ranked as the No.1 Golf Course, offering a golfing experience that capitalizes on the existing features of the property while taking advantage of the dramatic view changes in elevation and expansive nature of the site."
+      },
+      {
+        "id": 8,
+        "text": " providing travelers both the 4 best golf courses in Kunming as well as other top recommended golf courses in Yunnan Province and start planning your golf trip!"
+      }
+    ],
     "country": "China",
     "city": "Kunming",
     "imageUrl": [

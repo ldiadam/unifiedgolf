@@ -24,6 +24,8 @@ interface Course {
   id: number;
   slug: string;
   name: string;
+  courseTitle: string;
+  courseDesc: { id: number; text: string }[];
   country: string;
   city: string;
   imageUrl: Image[];
@@ -50,6 +52,11 @@ export default function CourseDetailPage() {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("overview");
 
+  const createCitySlug = (country: string, city: string) => {
+    return `${country.toLowerCase()}-${city
+      .toLowerCase()
+      .replace(/\s+/g, "-")}`;
+  };
   useEffect(() => {
     if (params.slug) {
       const slugString = Array.isArray(params.slug)
@@ -131,7 +138,9 @@ export default function CourseDetailPage() {
           asChild
           className="mb-4 text-base hover:bg-primary"
         >
-          <Link href="/courses">
+          <Link
+            href={`/courses/${createCitySlug(course.country, course.city)}`}
+          >
             <ChevronLeft className="mr-2 h-4 w-4" />
             Back to Course List
           </Link>
@@ -156,7 +165,22 @@ export default function CourseDetailPage() {
 
           <Separator className="my-6" />
 
-          <Tabs
+          <div className="w-full bg-card rounded-md">
+            <div className="flex flex-col gap-1">
+              <div className="flex justify-start items-center py-4 px-4">
+                <span className="text-xl text-bold">Description</span>
+              </div>
+              <div className="flex justify-start items-center py-4 px-4">
+                <ul className="space-y-4 list-disc ml-4">
+                  {course.description.map(
+                    (desc) => desc.text && <li key={desc.id}>{desc.text}</li>
+                  )}{" "}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* <Tabs
             value={activeTab}
             onValueChange={setActiveTab}
             className="w-full"
@@ -168,9 +192,6 @@ export default function CourseDetailPage() {
               <TabsTrigger value="description" className="flex-1">
                 Description
               </TabsTrigger>
-              <TabsTrigger value="amenities" className="flex-1">
-                Amenities
-              </TabsTrigger>
             </TabsList>
             <TabsContent value="overview" className="mt-6">
               <div className="space-y-4">
@@ -178,34 +199,13 @@ export default function CourseDetailPage() {
               </div>
             </TabsContent>
             <TabsContent value="description" className="mt-6">
-              {/* <div className="space-y-4"> */}
               <ul className="space-y-4 list-disc ml-4">
                 {course.description.map(
                   (desc) => desc.text && <li key={desc.id}>{desc.text}</li>
                 )}{" "}
               </ul>
             </TabsContent>
-            <TabsContent value="amenities" className="mt-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex items-center">
-                  <Calendar className="h-5 w-5 mr-3 text-muted-foreground" />
-                  <span>Booking Available</span>
-                </div>
-                <div className="flex items-center">
-                  <Info className="h-5 w-5 mr-3 text-muted-foreground" />
-                  <span>Professional Instruction</span>
-                </div>
-                <div className="flex items-center">
-                  <DollarSign className="h-5 w-5 mr-3 text-muted-foreground" />
-                  <span>Equipment Rental</span>
-                </div>
-                <div className="flex items-center">
-                  <Info className="h-5 w-5 mr-3 text-muted-foreground" />
-                  <span>Restaurant & Bar</span>
-                </div>
-              </div>
-            </TabsContent>
-          </Tabs>
+          </Tabs> */}
         </div>
 
         {/* Right column - booking card */}
