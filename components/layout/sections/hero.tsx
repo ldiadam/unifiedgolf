@@ -19,33 +19,27 @@ export const HeroSection = () => {
         className="z-0 opacity-60 -mb-32"
       />
       <div className="relative z-10 container flex flex-col gap-5 items-center justify-center h-full">
-        <div className="flex flex-col mb-10">
+        {/* <div className="flex flex-col mb-10">
           <h1 className="text-md md:text-xl lg:text-2xl font-bold text-white text-center">
             Book Discount Golf Holidays Online
           </h1>
           <p className="text-sm md:text-md lg:text-xl text-white text-center">
             The trusted choice for golf tee times & holiday across Asia
           </p>
+        </div> */}
+        <div className="flex flex-row gap-1 items-center justify-center">
+          <h2 className="text-sm md:text-lg lg:text-xl text-white">
+            Golf Package
+          </h2>
+          <h2 className="text-sm md:text-lg lg:text-xl text-white">|</h2>
+          <h2 className="text-sm md:text-lg lg:text-xl text-white">Booking</h2>
+          <h2 className="text-sm md:text-lg lg:text-xl text-white">|</h2>
+          <h2 className="text-sm md:text-lg lg:text-xl text-white">Holiday</h2>
+          <h2 className="text-sm md:text-lg lg:text-xl text-white">|</h2>
+          <h2 className="text-sm md:text-lg lg:text-xl text-white">Planner</h2>
         </div>
         <div className="mt-5 bg-black bg-opacity-50 w-full p-6">
           <div className="flex flex-col gap-5 items-center justify-center">
-            <div className="flex flex-row gap-1 items-center justify-center">
-              <h2 className="text-sm md:text-lg lg:text-xl text-white">
-                Golf Package
-              </h2>
-              <h2 className="text-sm md:text-lg lg:text-xl text-white">|</h2>
-              <h2 className="text-sm md:text-lg lg:text-xl text-white">
-                Booking
-              </h2>
-              <h2 className="text-sm md:text-lg lg:text-xl text-white">|</h2>
-              <h2 className="text-sm md:text-lg lg:text-xl text-white">
-                Holiday
-              </h2>
-              <h2 className="text-sm md:text-lg lg:text-xl text-white">|</h2>
-              <h2 className="text-sm md:text-lg lg:text-xl text-white">
-                Planner
-              </h2>
-            </div>
             <div>
               <div className="flex flex-row gap-3 md:gap-6 lg:gap-10 items-center justify-center">
                 <h2 className="text-sm md:text-lg lg:text-xl text-white">

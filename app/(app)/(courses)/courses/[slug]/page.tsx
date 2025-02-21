@@ -57,25 +57,32 @@ export default function CourseListPage() {
   }
 
   return (
-    <div className="container mx-auto px-4 pt-52">
+    <div className="container mx-auto px-4 pt-48">
       <div className="flex flex-col">
         {/* Back Button */}
-        <div className="mb-6">
+        <div className="mb-2">
           <div className="flex justify-start">
-            <Button variant="outline" asChild className="border-2">
-              <Link href="/courses">Back to Course Selection</Link>
+            <Button
+              variant="ghost"
+              asChild
+              className="mb-4 text-base hover:bg-primary"
+            >
+              <Link href="/courses">
+                <ChevronLeft className="mr-2 h-4 w-4" />
+                Back to Course Selection
+              </Link>
             </Button>
           </div>
         </div>
 
         {/* Menu Bar */}
-        <div className="bg-card shadow-md rounded-lg flex items-center justify-start gap-6 p-4 mb-8">
+        <div className="bg-card shadow-md rounded-lg flex items-center justify-start gap-6 p-4 mb-4">
           {/* Golfing in Kunming (Title) */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="text-lg font-semibold hover:text-primary transition"
           >
-            A. Golfing in Kunming
+            A. Golfing in {mainCourse.city}
           </button>
 
           {/* Course List Dropdown */}
@@ -91,13 +98,13 @@ export default function CourseListPage() {
             {showCourses && (
               <ul className="absolute right-0 mt-2 w-56 bg-card shadow-lg border rounded-lg overflow-hidden z-10">
                 {locationCourses.length > 0 ? (
-                  locationCourses.map((course) => (
+                  locationCourses.map((course, index) => (
                     <li key={course.id} className="border-b last:border-none">
                       <Link
                         href={`/course-detail/${course.slug}`}
                         className="block px-4 py-2 transition"
                       >
-                        {course.name}
+                        {index + 1}. {course.name}
                       </Link>
                     </li>
                   ))
@@ -111,7 +118,9 @@ export default function CourseListPage() {
 
         {/* Course Title */}
         <div className="course-tittle">
-          <h1 className="text-xl font-bold mb-8">A. Golfing in Kunming</h1>
+          <h1 className="text-xl font-bold mb-8">
+            A. Golfing in {mainCourse.city}
+          </h1>
           <h1 className="text-xl font-bold mb-4 text-primary">
             {mainCourse.courseTitle}
           </h1>
