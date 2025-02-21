@@ -1503,5 +1503,145 @@
     "reviews": 170,
     "pricePerDay": 75,
     "type": "Location"
+  },
+  {
+    "id": 30,
+    "slug": "bali-beach-golf-course",
+    "name": "Bali Beach Golf Course",
+    "country": "Indonesia",
+    "city": "Bali",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/bali-beach-golf-course-img-1.jpg",
+        "alt": "Bali Beach Golf Course"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "Bali Beach Golf Course set in an environment of very mature, tall trees, has been given a face lift, with the introduction of lakes, mounding and features, including newly designed and constructed greens all of which add to the aesthetic beauty of the course. It is a course that will provide challenges to all golfers of all skill levels."
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 31,
+    "slug": "kunming-sunshine-golf-club",
+    "name": "Kunming Sunshine Golf Club (昆明阳光高尔夫俱乐部}",
+    "country": "China",
+    "city": "Kunming",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kunming-sunshine-golf-club-img-1.jpg",
+        "alt": "Kunming Sunshine Golf Club"
+      },
+      {
+        "id": 2,
+        "url": "/kunming-sunshine-golf-club-img-2.jpg",
+        "alt": "Kunming Sunshine Golf Club"
+      },
+      {
+        "id": 3,
+        "url": "/kunming-sunshine-golf-club-img-3.jpg",
+        "alt": "Kunming Sunshine Golf Club"
+      },
+      {
+        "id": 4,
+        "url": "/kunming-sunshine-golf-club-img-4.jpg",
+        "alt": "Kunming Sunshine Golf Club"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "One of the top 5 golf courses in Kunming"
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 32,
+    "slug": "kunming-spring-city-golf-and-lake-resort",
+    "name": "Kunming Spring City Golf and Lake Resort (Chinese Name: 昆明春城湖畔高尔夫度假村)",
+    "country": "China",
+    "city": "Kunming",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kunming-spring-city-golf-and-lake-resort-img-1.jpg",
+        "alt": "Kunming Spring City Golf and Lake Resort"
+      },
+      {
+        "id": 2,
+        "url": "/kunming-spring-city-golf-and-lake-resort-img-2.jpg",
+        "alt": "Kunming Spring City Golf and Lake Resort"
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "Reputed as “the Golf Paradise in Asia"
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
   }
 ]
