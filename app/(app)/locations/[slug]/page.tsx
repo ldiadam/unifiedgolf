@@ -2,7 +2,9 @@ import { Metadata } from "next";
 import { LocationDetailClient } from "./location-detail-client";
 import dataPlace from "@/data/dataPlace.json";
 
-const locations = dataPlace;
+import { Location } from "@/lib/types";
+
+const locations: Location[] = dataPlace as unknown as Location[];
 
 type Props = {
   params: {
@@ -23,7 +25,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${location.name} - ${location.city}, ${location.country}`,
-    description: location.description,
   };
 }
 export default async function LocationPage({ params }: Props) {

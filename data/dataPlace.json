@@ -1,80 +1,138 @@
-[
-  {
-    "id": 1,
-    "slug": "place-1",
-    "name": "Place 1",
-    "country": "Thailand",
-    "city": "Phuket",
-    "imageUrl": "/loc-1.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "rating": 4.7,
-    "reviews": 190,
-    "pricePerDay": 80,
-    "type": "Location"
+{
+  "id": 31,
+  "slug": "kunming-sunshine-golf-club",
+  "name": "Kunming Sunshine Golf Club (昆明阳光高尔夫俱乐部}",
+  "courseTitle": "Kunming Golf | Best Golf Courses in Kunming, Yunnan",
+  "courseDesc": [
+    {
+      "id": 1,
+      "text": "Reasons to golf in Kunming."
+    },
+    {
+      "id": 2,
+      "text": "Kunming is known as 'the City of Eternal Spring' and paradise for golfing."
+    },
+    {
+      "id": 3,
+      "text": "An unique natural environment with many courses designed with topography of the terrains."
+    },
+    {
+      "id": 4,
+      "text": "It offers a more enjoyable golf experience, with sunshine, blue sky, white clouds, lake view, wildness, fun, imagination, quality. excitement and challenge."
+    },
+    {
+      "id": 5,
+      "text": "A comfortable weather for golfing"
+    },
+    {
+      "id": 6,
+      "text": "Temperature avarages  around  15℃ . (Summer average is around 19℃ and winter is 8℃)."
+    },
+    {
+      "id": 7,
+      "text": "Among all the top 10 golf courses in China, Kunming Spring City Golf & Lake Resort is ranked as the No.1 Golf Course, offering a golfing experience that capitalizes on the existing features of the property while taking advantage of the dramatic view changes in elevation and expansive nature of the site."
+    },
+    {
+      "id": 8,
+      "text": " providing travelers both the 4 best golf courses in Kunming as well as other top recommended golf courses in Yunnan Province and start planning your golf trip!"
+    }
+  ],
+  "country": "China",
+  "city": "Kunming",
+  "imageUrl": [
+    {
+      "id": 1,
+      "url": "/kunming-sunshine-golf-club-img-1.jpg",
+      "alt": "Kunming Sunshine Golf Club"
+    },
+    {
+      "id": 2,
+      "url": "/kunming-sunshine-golf-club-img-2.jpg",
+      "alt": "Kunming Sunshine Golf Club"
+    },
+    {
+      "id": 3,
+      "url": "/kunming-sunshine-golf-club-img-3.jpg",
+      "alt": "Kunming Sunshine Golf Club"
+    },
+    {
+      "id": 4,
+      "url": "/kunming-sunshine-golf-club-img-4.jpg",
+      "alt": "Kunming Sunshine Golf Club"
+    }
+  ],
+  "description": {
+    "credential": [
+      {
+        "text": "This18-hole, 7217 yards, pars 72, golf course was designed by Robert Trent Jones Jr. "
+      },
+      {
+        "text": "One of the top 5 golf courses in Kunming. "
+      },
+      {
+        "text": "In 2007, Sunshine Golf Club won “best golf award” if Golf Digest."
+      },
+      {
+        "text": "In 2009, it won “the Sixth Best Course in China” by Golf Master."
+      }
+    ],
+    "theCourse": [
+      {
+        "text": "First 9 holes are easy. Second 9 holes are challenging. Hole 14 is unforegttable and exciitng"
+      },
+      {
+        "text": "The 14th hole is unforgettable and exciting."
+      },
+      {
+        "text": "The course preserves the topography of the natural landscape, and surrounding woody hills"
+      },
+      {
+        "text": "The rocks, jungles, pinewood and lakes, are natural barriers, challenging and fun."
+      },
+      {
+        "text": "It also has  4 man-made lakes, 59 bunkers and 40 bay lighted driving range. "
+      },
+      {
+        "text": "Excellent condition and favorable climate to golf and relax with family or business friend"
+      }
+    ],
+    "accomodation": [
+      {
+        "text": "empty"
+      }
+    ],
+    "address": [
+      {
+        "text": "Kunming-Qujing Highway 6 km, Beicheng District, Kunming."
+      },
+      {
+        "text": "Qukun Highway, Panlong District, Kunming City"
+      },
+      {
+        "text": "Located north of Kunming City"
+      },
+      {
+        "text": "About 16 Km (14 min) from Kunming Downtown (昆明市盘龙区昆曲高速公路6公里"
+      }
+    ],
+    "contact": [
+      {
+        "text": " Tel: 86-871-68288999"
+      }
+    ],
+    "courseFee": [
+      {
+        "text": "Cost per Round: CNY 1,469 /About S$275.00"
+      }
+    ],
+    "otherInfo": [
+      {
+        "text": "empty"
+      }
+    ]
   },
-  {
-    "id": 2,
-    "slug": "place-2",
-    "name": "Place 2",
-    "country": "Indonesia",
-    "city": "Bali",
-    "imageUrl": "/loc-2.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "rating": 4.6,
-    "reviews": 170,
-    "pricePerDay": 75,
-    "type": "Location"
-  },
-  {
-    "id": 3,
-    "slug": "place-3",
-    "name": "Place 3",
-    "country": "Vietnam",
-    "city": "Hanoi",
-    "imageUrl": "/loc-3.jpg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "rating": 4.6,
-    "reviews": 170,
-    "pricePerDay": 75,
-    "type": "Location"
-  },
-  {
-    "id": 4,
-    "slug": "place-4",
-    "name": "Place 4",
-    "country": "Malaysia",
-    "city": "Serawak",
-    "imageUrl": "/loc-4.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "rating": 4.6,
-    "reviews": 170,
-    "pricePerDay": 75,
-    "type": "Location"
-  },
-  {
-    "id": 5,
-    "slug": "place-5",
-    "name": "Place 5",
-    "country": "Singapore",
-    "city": "Singapore",
-    "imageUrl": "/loc-5.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "rating": 4.6,
-    "reviews": 170,
-    "pricePerDay": 75,
-    "type": "Location"
-  },
-  {
-    "id": 6,
-    "slug": "place-6",
-    "name": "Place 6",
-    "country": "Indonesia",
-    "city": "Jakarta",
-    "imageUrl": "/loc-6.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "rating": 4.6,
-    "reviews": 170,
-    "pricePerDay": 75,
-    "type": "Location"
-  }
-]
+  "rating": 4.6,
+  "reviews": 170,
+  "pricePerDay": 75,
+  "type": "Location"
+}

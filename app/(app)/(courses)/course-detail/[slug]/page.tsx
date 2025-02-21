@@ -29,7 +29,15 @@ interface Course {
   country: string;
   city: string;
   imageUrl: Image[];
-  description: Description[];
+  description: {
+    credential: { text: string }[];
+    theCourse: { text: string }[];
+    accomodation: { text: string }[];
+    address: { text: string }[];
+    contact: { text: string }[];
+    courseFee: { text: string }[];
+    otherInfo: { text: string }[];
+  };
   rating: number;
   reviews: number;
   pricePerDay: number;
@@ -165,18 +173,100 @@ export default function CourseDetailPage() {
 
           <Separator className="my-6" />
 
-          <div className="w-full bg-card rounded-md">
+          <div className="w-full bg-card rounded-md border">
             <div className="flex flex-col gap-1">
-              <div className="flex justify-start items-center py-4 px-4">
-                <span className="text-xl text-bold">Description</span>
+              <div className="flex flex-col justify-center items-center py-2 px-2">
+                <h1 className="text-lg font-bold mb-2">Description</h1>
+                <Separator />
               </div>
-              <div className="flex justify-start items-center py-4 px-4">
+              <div className="flex justify-start items-center pb-4 px-4">
+                <div className="flex flex-col">
+                  <div className="flex flex-col">
+                    <h2 className="font-bold">Credential</h2>
+                    <div className="flex justify-start items-center pb-4 px-4">
+                      <ul className="space-y-1 list-disc ml-4">
+                        {course.description.credential.map(
+                          (desc, index) =>
+                            desc.text && <li key={index}>{desc.text}</li>
+                        )}{" "}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="flex flex-col">
+                    <h2 className="font-bold">The Course</h2>
+                    <div className="flex justify-start items-center pb-4 px-4">
+                      <ul className="space-y-1 list-disc ml-4">
+                        {course.description.theCourse.map(
+                          (desc, index) =>
+                            desc.text && <li key={index}>{desc.text}</li>
+                        )}{" "}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="flex flex-col">
+                    <h2 className="font-bold">Accomodation</h2>
+                    <div className="flex justify-start items-center pb-4 px-4">
+                      <ul className="space-y-1 list-disc ml-4">
+                        {course.description.accomodation.map(
+                          (desc, index) =>
+                            desc.text && <li key={index}>{desc.text}</li>
+                        )}{" "}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="flex flex-col">
+                    <h2 className="font-bold">Address/Location</h2>
+                    <div className="flex justify-start items-center pb-4 px-4">
+                      <ul className="space-y-1 list-disc ml-4">
+                        {course.description.accomodation.map(
+                          (desc, index) =>
+                            desc.text && <li key={index}>{desc.text}</li>
+                        )}{" "}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="flex flex-col">
+                    <h2 className="font-bold">Contact</h2>
+                    <div className="flex justify-start items-center pb-4 px-4">
+                      <ul className="space-y-1 list-disc ml-4">
+                        {course.description.contact.map(
+                          (desc, index) =>
+                            desc.text && <li key={index}>{desc.text}</li>
+                        )}{" "}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="flex flex-col">
+                    <h2 className="font-bold">Course Fee</h2>
+                    <div className="flex justify-start items-center pb-4 px-4">
+                      <ul className="space-y-1 list-disc ml-4">
+                        {course.description.courseFee.map(
+                          (desc, index) =>
+                            desc.text && <li key={index}>{desc.text}</li>
+                        )}{" "}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="flex flex-col">
+                    <h2 className="font-bold">Other Information</h2>
+                    <div className="flex justify-start items-center pb-4 px-4">
+                      <ul className="space-y-1 list-disc ml-4">
+                        {course.description.otherInfo.map(
+                          (desc, index) =>
+                            desc.text && <li key={index}>{desc.text}</li>
+                        )}{" "}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="flex justify-start items-center pb-4 px-4">
                 <ul className="space-y-4 list-disc ml-4">
                   {course.description.map(
                     (desc) => desc.text && <li key={desc.id}>{desc.text}</li>
                   )}{" "}
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
 

@@ -7,6 +7,11 @@ import { ChevronDown, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import courseData from "@/data/allData.json";
 import { Separator } from "@/components/ui/separator";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 interface Course {
   id: number;
@@ -17,7 +22,15 @@ interface Course {
   country: string;
   city: string;
   imageUrl: { id: number; url: string; alt: string }[];
-  description: { id: number; text: string }[];
+  description: {
+    credential: { text: string }[];
+    theCourse: { text: string }[];
+    accomodation: { text: string }[];
+    address: { text: string }[];
+    contact: { text: string }[];
+    courseFee: { text: string }[];
+    otherInfo: { text: string }[];
+  };
   rating: number;
   reviews: number;
   pricePerDay: number;
@@ -38,11 +51,14 @@ export default function CourseListPage() {
         .map((part) => part.charAt(0).toUpperCase() + part.slice(1));
 
       // Filter courses for this location
-      const filteredCourses = courseData.filter(
-        (course: Course) =>
-          course.country.toLowerCase() === country.toLowerCase() &&
-          course.city.toLowerCase() === city.toLowerCase()
-      );
+      const filteredCourses = courseData.filter((course: Course) => {
+        return (
+          course.city.toLowerCase() === city.toLowerCase() ||
+          city.toLowerCase().includes(course.city.toLowerCase()) ||
+          course.city.toLowerCase().includes(city.toLowerCase())
+        );
+      });
+      // console.log(filteredCourses);
 
       setLocationCourses(filteredCourses);
       // Set the first course as the main course to display its title and description
@@ -53,7 +69,22 @@ export default function CourseListPage() {
   }, [params]);
 
   if (!mainCourse) {
-    return <div className="container mx-auto px-4 pt-52">Loading...</div>;
+    return (
+      <div className="container mx-auto px-4 pt-52">
+        <div className="flex justify-center">
+          <Button
+            variant="ghost"
+            asChild
+            className="mb-4 text-base hover:bg-primary"
+          >
+            <Link href="/courses">
+              <ChevronLeft className="mr-2 h-4 w-4" />
+              Data is Not Available. Please back to Course Selection
+            </Link>
+          </Button>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -77,7 +108,7 @@ export default function CourseListPage() {
 
         {/* Menu Bar */}
         <div className="bg-card shadow-md rounded-lg flex items-center justify-start gap-6 p-4 mb-4">
-          {/* Golfing in Kunming (Title) */}
+          {/* Golfing in City (Title) */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="text-lg font-semibold hover:text-primary transition"
@@ -85,40 +116,45 @@ export default function CourseListPage() {
             A. Golfing in {mainCourse.city}
           </button>
 
-          {/* Course List Dropdown */}
-          <div className="relative">
-            <button
-              onClick={() => setShowCourses(!showCourses)}
-              className="flex items-center text-lg font-semibold hover:text-primary transition"
-            >
-              B. Name of Courses <ChevronDown className="ml-2" size={18} />
-            </button>
-
-            {/* Dropdown List */}
-            {showCourses && (
-              <ul className="absolute right-0 mt-2 w-56 bg-card shadow-lg border rounded-lg overflow-hidden z-10">
-                {locationCourses.length > 0 ? (
-                  locationCourses.map((course, index) => (
-                    <li key={course.id} className="border-b last:border-none">
+          {/* Course List Dropdown using Popover */}
+          <Popover>
+            <PopoverTrigger asChild>
+              <button className="flex items-center text-lg font-semibold hover:text-primary transition">
+                B. Name of Courses <ChevronDown className="ml-2" size={18} />
+              </button>
+            </PopoverTrigger>
+            <PopoverContent className="w-auto min-w-[256px] p-0">
+              <div className="p-2">
+                {/* <h3 className="font-semibold border-b pb-2">
+                  Available Courses in {mainCourse.city}
+                </h3> */}
+                <div className="flex flex-col space-y-1 mt-2">
+                  {locationCourses.length > 0 ? (
+                    locationCourses.map((course, index) => (
                       <Link
+                        key={course.id}
                         href={`/course-detail/${course.slug}`}
-                        className="block px-4 py-2 transition"
+                        className="block hover:bg-primary rounded-md transition-colors"
                       >
-                        {index + 1}. {course.name}
+                        <div className="text-sm py-1">
+                          {index + 1}. {course.name}
+                        </div>
                       </Link>
-                    </li>
-                  ))
-                ) : (
-                  <li className="px-4 py-2 text-gray-500">No courses found</li>
-                )}
-              </ul>
-            )}
-          </div>
+                    ))
+                  ) : (
+                    <div className="text-sm py-1 text-gray-500">
+                      No courses found
+                    </div>
+                  )}
+                </div>
+              </div>
+            </PopoverContent>
+          </Popover>
         </div>
 
         {/* Course Title */}
         <div className="course-tittle">
-          <h1 className="text-xl font-bold mb-8">
+          <h1 className="text-xl font-bold mb-6">
             A. Golfing in {mainCourse.city}
           </h1>
           <h1 className="text-xl font-bold mb-4 text-primary">
@@ -126,6 +162,7 @@ export default function CourseListPage() {
           </h1>
           <p className="text-md mb-2">{mainCourse.courseDesc[0].text}</p>
         </div>
+
         {/* Course Description List */}
         <div className="mb-8">
           <ul className="list-disc pl-6 space-y-4">
@@ -136,13 +173,6 @@ export default function CourseListPage() {
             ))}
           </ul>
         </div>
-
-        {/* Course Detail Button */}
-        {/* <div className="flex justify-end">
-          <Button variant="outline" asChild className="border-2">
-            <Link href={`/courses/${params.slug}/detail`}>Course Detail</Link>
-          </Button>
-        </div> */}
       </div>
     </div>
   );
