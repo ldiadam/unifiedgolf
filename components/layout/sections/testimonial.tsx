@@ -84,7 +84,7 @@ export const TestimonialSection = () => {
           Testimonials
         </h2>
 
-        <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
+        <h2 className="text-md md:text-xl text-center font-bold mb-4">
           Hear What Our Customers Say
         </h2>
       </div>
@@ -127,7 +127,7 @@ export const TestimonialSection = () => {
                     </Avatar>
 
                     <div className="flex flex-col">
-                      <CardTitle className="text-lg">{review.name}</CardTitle>
+                      <CardTitle className="text-md">{review.name}</CardTitle>
                       {/* <CardDescription>{review.userName}</CardDescription> */}
                     </div>
                   </div>

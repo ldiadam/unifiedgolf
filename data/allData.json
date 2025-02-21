@@ -1959,5 +1959,530 @@
     "reviews": 170,
     "pricePerDay": 75,
     "type": "Location"
+  },
+  {
+    "id": 33,
+    "slug": "blackstone-golf-course-mission-hills",
+    "name": "Blackstone Golf Course Mission Hills",
+    "courseTitle": "Hainan golf courses",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": "Reasons to golf in Hainan"
+      },
+      {
+        "id": 2,
+        "text": "During its construction, the locals new Hainan Island as “Project 791”, now they and the world know it as Mission Hills Hainan, a staggering engineering feat that only the Chinese would have dreamt up and completed in a time frame that other places in the world would have considered “impossible”."
+      },
+      {
+        "id": 3,
+        "text": "Set on the island, that was once considered as China´s answer to Hawaii, Mission Hills Hainan is going to be at the centre of the Chinese golf tourism industry with a total of 27 courses, double what Hainan province had before the completion of the mammoth project."
+      },
+      {
+        "id": 4,
+        "text": "The brain-child of Ken Chu, son of the billionaire business-man responsible for Mission Hills in Shenzhen, the island has been transformed into a golfing paradise, with no expense spared on any aspect of the incredible feat."
+      },
+      {
+        "id": 5,
+        "text": "It is what could be described as the only golf city in the world, perhaps even the Capital City of World Golf."
+      },
+      {
+        "id": 6,
+        "text": "It is not just the Mission Hills Club, the largest golf club in the world, that creates such a central hub for golf, there are other courses that reside in the Hainan province, some of which are also very good and well worth a visit."
+      },
+      {
+        "id": 7,
+        "text": "Most notably the Jian Lake Blue Bay Golf Club, located a 30-minute drive south of the city of Lingshui this parkland layout is a superb design by Mark Hollinger.  Rated in 2016 as the 4th best course in China Jian Lake Blue Bay Golf Club is a great test of golf, offering views out across the bay."
+      },
+      {
+        "id": 8,
+        "text": ""
+      }
+    ],
+    "country": "China",
+    "city": "Hainan",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/blackstone-golf-course-mission-hills-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "The Blackstone course at Mission Hills on China´s Hainan Island is just one of 10 courses in the Mission Hills complex. Built on the black lava rocks the course is an absolute brute. At 7808 yards from the championship tees, length is definitely a big player here if you want to score well. Constructed on a 350-acre site, the course weaves its way through mature trees, jungle vegetation and natural wetlands to create what can only be described as a course designed for the natural terrain. Brian Curley, of Schmidt & Curley design was the designer and has crafted a true test of golfing ability. The challenge that the courses possesses was never in doubt with the 2011 World Cup being allocated to the course before construction was even completed."
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 34,
+    "slug": "lava-fields-golf-course-mission-hills",
+    "name": "Lava Fields Golf Course Mission Hills",
+    "courseTitle": "Hainan golf courses",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": "Reasons to golf in Hainan"
+      },
+      {
+        "id": 2,
+        "text": "During its construction, the locals new Hainan Island as “Project 791”, now they and the world know it as Mission Hills Hainan, a staggering engineering feat that only the Chinese would have dreamt up and completed in a time frame that other places in the world would have considered “impossible”."
+      },
+      {
+        "id": 3,
+        "text": "Set on the island, that was once considered as China´s answer to Hawaii, Mission Hills Hainan is going to be at the centre of the Chinese golf tourism industry with a total of 27 courses, double what Hainan province had before the completion of the mammoth project."
+      },
+      {
+        "id": 4,
+        "text": "The brain-child of Ken Chu, son of the billionaire business-man responsible for Mission Hills in Shenzhen, the island has been transformed into a golfing paradise, with no expense spared on any aspect of the incredible feat."
+      },
+      {
+        "id": 5,
+        "text": "It is what could be described as the only golf city in the world, perhaps even the Capital City of World Golf."
+      },
+      {
+        "id": 6,
+        "text": "It is not just the Mission Hills Club, the largest golf club in the world, that creates such a central hub for golf, there are other courses that reside in the Hainan province, some of which are also very good and well worth a visit."
+      },
+      {
+        "id": 7,
+        "text": "Most notably the Jian Lake Blue Bay Golf Club, located a 30-minute drive south of the city of Lingshui this parkland layout is a superb design by Mark Hollinger.  Rated in 2016 as the 4th best course in China Jian Lake Blue Bay Golf Club is a great test of golf, offering views out across the bay."
+      },
+      {
+        "id": 8,
+        "text": ""
+      }
+    ],
+    "country": "China",
+    "city": "Hainan",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/lava-fields-golf-course-mission-hills-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "Lava Fields at Mission Hills Haikou has been designed to fit perfectly with its surroundings, yet the surroundings are further complimented by the golf course which is testament to the design by Curley and possibly the reason why I believe it to be the slightly better of the two courses. At 7475 yards from the back tees, it is more than capable of holding tour events although shorter than its sister course. Within the design features are the large, rugged and wild bunkers that merge seamlessly with the lava rock to create a visual feast for the eyes. Wider and more open, it is slightly more forgiving from the tee, but do not let this lead you into a false sense of security, if you do not bring you’re a-game to the course you will be punished and big numbers will appear on your scorecard."
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 35,
+    "slug": "meadow-links-golf-course-mission-hills",
+    "name": "Meadow Links Golf Course Mission Hills",
+    "courseTitle": "Hainan golf courses",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": "Reasons to golf in Hainan"
+      },
+      {
+        "id": 2,
+        "text": "During its construction, the locals new Hainan Island as “Project 791”, now they and the world know it as Mission Hills Hainan, a staggering engineering feat that only the Chinese would have dreamt up and completed in a time frame that other places in the world would have considered “impossible”."
+      },
+      {
+        "id": 3,
+        "text": "Set on the island, that was once considered as China´s answer to Hawaii, Mission Hills Hainan is going to be at the centre of the Chinese golf tourism industry with a total of 27 courses, double what Hainan province had before the completion of the mammoth project."
+      },
+      {
+        "id": 4,
+        "text": "The brain-child of Ken Chu, son of the billionaire business-man responsible for Mission Hills in Shenzhen, the island has been transformed into a golfing paradise, with no expense spared on any aspect of the incredible feat."
+      },
+      {
+        "id": 5,
+        "text": "It is what could be described as the only golf city in the world, perhaps even the Capital City of World Golf."
+      },
+      {
+        "id": 6,
+        "text": "It is not just the Mission Hills Club, the largest golf club in the world, that creates such a central hub for golf, there are other courses that reside in the Hainan province, some of which are also very good and well worth a visit."
+      },
+      {
+        "id": 7,
+        "text": "Most notably the Jian Lake Blue Bay Golf Club, located a 30-minute drive south of the city of Lingshui this parkland layout is a superb design by Mark Hollinger.  Rated in 2016 as the 4th best course in China Jian Lake Blue Bay Golf Club is a great test of golf, offering views out across the bay."
+      },
+      {
+        "id": 8,
+        "text": ""
+      }
+    ],
+    "country": "China",
+    "city": "Hainan",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/meadow-links-golf-course-mission-hills-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "Considered to be one of the more traditional styles of design at Mission Hills Hainan, Meadow Links is similar in style to that of the US Open courses found on the east coast. The use of native grasses and the care not to require too much earth moving in the construction phase has created a beautiful, gently undulating golf course that is easy on the eye and your game. Measuring just 6673 yards the Meadow course is not anywhere near as long as the other courses at Mission Hills and it is a welcome sight. Short it maybe, but challenging it still is. Being more open than the other designs, play is more affected by wind hence the name."
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 36,
+    "slug": "sandbelt-trails-golf-course-mission-hills",
+    "name": "Sandbelt Trails Golf Course Mission Hills",
+    "courseTitle": "Hainan golf courses",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": "Reasons to golf in Hainan"
+      },
+      {
+        "id": 2,
+        "text": "During its construction, the locals new Hainan Island as “Project 791”, now they and the world know it as Mission Hills Hainan, a staggering engineering feat that only the Chinese would have dreamt up and completed in a time frame that other places in the world would have considered “impossible”."
+      },
+      {
+        "id": 3,
+        "text": "Set on the island, that was once considered as China´s answer to Hawaii, Mission Hills Hainan is going to be at the centre of the Chinese golf tourism industry with a total of 27 courses, double what Hainan province had before the completion of the mammoth project."
+      },
+      {
+        "id": 4,
+        "text": "The brain-child of Ken Chu, son of the billionaire business-man responsible for Mission Hills in Shenzhen, the island has been transformed into a golfing paradise, with no expense spared on any aspect of the incredible feat."
+      },
+      {
+        "id": 5,
+        "text": "It is what could be described as the only golf city in the world, perhaps even the Capital City of World Golf."
+      },
+      {
+        "id": 6,
+        "text": "It is not just the Mission Hills Club, the largest golf club in the world, that creates such a central hub for golf, there are other courses that reside in the Hainan province, some of which are also very good and well worth a visit."
+      },
+      {
+        "id": 7,
+        "text": "Most notably the Jian Lake Blue Bay Golf Club, located a 30-minute drive south of the city of Lingshui this parkland layout is a superb design by Mark Hollinger.  Rated in 2016 as the 4th best course in China Jian Lake Blue Bay Golf Club is a great test of golf, offering views out across the bay."
+      },
+      {
+        "id": 8,
+        "text": ""
+      }
+    ],
+    "country": "China",
+    "city": "Hainan",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/sandbelt-trails-golf-course-mission-hills-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "Considered by Brian Curley and the team at Mission Hills Hainan, Sandbelt Trails was modelled on the great Australian Sandbelt courses. A 7297-yard par 72 golf course, Sandbelt Trails provides golfers with a straightforward test of golf that is far from the difficulties posed by the Lava Fields or championship Blackstone courses here. The use of the natural vegetation and lava rocks provide a much-needed injection of style to this otherwise relatively flat and somewhat drab golf course, in comparison to the design and difficulty of the other Mission Hills Hainan."
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 37,
+    "slug": "shadow-dunes-golf-course-mission-hills",
+    "name": "Shadow Dunes Golf Course Mission Hills",
+    "courseTitle": "Hainan golf courses",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": "Reasons to golf in Hainan"
+      },
+      {
+        "id": 2,
+        "text": "During its construction, the locals new Hainan Island as “Project 791”, now they and the world know it as Mission Hills Hainan, a staggering engineering feat that only the Chinese would have dreamt up and completed in a time frame that other places in the world would have considered “impossible”."
+      },
+      {
+        "id": 3,
+        "text": "Set on the island, that was once considered as China´s answer to Hawaii, Mission Hills Hainan is going to be at the centre of the Chinese golf tourism industry with a total of 27 courses, double what Hainan province had before the completion of the mammoth project."
+      },
+      {
+        "id": 4,
+        "text": "The brain-child of Ken Chu, son of the billionaire business-man responsible for Mission Hills in Shenzhen, the island has been transformed into a golfing paradise, with no expense spared on any aspect of the incredible feat."
+      },
+      {
+        "id": 5,
+        "text": "It is what could be described as the only golf city in the world, perhaps even the Capital City of World Golf."
+      },
+      {
+        "id": 6,
+        "text": "It is not just the Mission Hills Club, the largest golf club in the world, that creates such a central hub for golf, there are other courses that reside in the Hainan province, some of which are also very good and well worth a visit."
+      },
+      {
+        "id": 7,
+        "text": "Most notably the Jian Lake Blue Bay Golf Club, located a 30-minute drive south of the city of Lingshui this parkland layout is a superb design by Mark Hollinger.  Rated in 2016 as the 4th best course in China Jian Lake Blue Bay Golf Club is a great test of golf, offering views out across the bay."
+      },
+      {
+        "id": 8,
+        "text": ""
+      }
+    ],
+    "country": "China",
+    "city": "Hainan",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/shadow-dunes-golf-course-mission-hills-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "Mission Hills, Hainan was an ambitious project in the first place, but the course that stands out as perhaps the most difficult and ambitious design of all is the Shadow Dunes Course. Not the longest course at the resort, Shadow Dunes comes in at 6428-yards and has a par of 70. Shadow Dunes, arguably has the most character, in terms of design and is the one course that seems to sit apart from the rest. So what makes this course so different? Well, to begin it required an immense amount of earth moving, placed on top of the volcanic lava formations, to create what seemingly is a natural beachside golf course."
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 38,
+    "slug": "stone-quarry-golf-course-mission-hills",
+    "name": "Stone Quarry Golf Course Mission Hills",
+    "courseTitle": "Hainan golf courses",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": "Reasons to golf in Hainan"
+      },
+      {
+        "id": 2,
+        "text": "During its construction, the locals new Hainan Island as “Project 791”, now they and the world know it as Mission Hills Hainan, a staggering engineering feat that only the Chinese would have dreamt up and completed in a time frame that other places in the world would have considered “impossible”."
+      },
+      {
+        "id": 3,
+        "text": "Set on the island, that was once considered as China´s answer to Hawaii, Mission Hills Hainan is going to be at the centre of the Chinese golf tourism industry with a total of 27 courses, double what Hainan province had before the completion of the mammoth project."
+      },
+      {
+        "id": 4,
+        "text": "The brain-child of Ken Chu, son of the billionaire business-man responsible for Mission Hills in Shenzhen, the island has been transformed into a golfing paradise, with no expense spared on any aspect of the incredible feat."
+      },
+      {
+        "id": 5,
+        "text": "It is what could be described as the only golf city in the world, perhaps even the Capital City of World Golf."
+      },
+      {
+        "id": 6,
+        "text": "It is not just the Mission Hills Club, the largest golf club in the world, that creates such a central hub for golf, there are other courses that reside in the Hainan province, some of which are also very good and well worth a visit."
+      },
+      {
+        "id": 7,
+        "text": "Most notably the Jian Lake Blue Bay Golf Club, located a 30-minute drive south of the city of Lingshui this parkland layout is a superb design by Mark Hollinger.  Rated in 2016 as the 4th best course in China Jian Lake Blue Bay Golf Club is a great test of golf, offering views out across the bay."
+      },
+      {
+        "id": 8,
+        "text": ""
+      }
+    ],
+    "country": "China",
+    "city": "Hainan",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/stone-quarry-golf-course-mission-hills-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "If you are looking for a Pete Dye design course at Mission Hills Hainan, you won´t find one, instead you will come across the Stone Quarry Course, designed by Brian Curley of Schmidt-Curley design, in honour of his mentor Pete Dye. And what a course he has created. Not to the same level as the Blackstone or Lava Fields tracks, but such a good test of golf that you just have to play it. At just 6029 yards the par 70, Stone Quarry course is short, but as you would expect from a Pete Dye inspired course the challenge lies within the intricacy of the design rather than the length."
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 39,
+    "slug": "the-vintage-golf-course-mission-hills",
+    "name": "The Vintage Golf Course Mission Hills",
+    "courseTitle": "Hainan golf courses",
+    "courseDesc": [
+      {
+        "id": 1,
+        "text": "Reasons to golf in Hainan"
+      },
+      {
+        "id": 2,
+        "text": "During its construction, the locals new Hainan Island as “Project 791”, now they and the world know it as Mission Hills Hainan, a staggering engineering feat that only the Chinese would have dreamt up and completed in a time frame that other places in the world would have considered “impossible”."
+      },
+      {
+        "id": 3,
+        "text": "Set on the island, that was once considered as China´s answer to Hawaii, Mission Hills Hainan is going to be at the centre of the Chinese golf tourism industry with a total of 27 courses, double what Hainan province had before the completion of the mammoth project."
+      },
+      {
+        "id": 4,
+        "text": "The brain-child of Ken Chu, son of the billionaire business-man responsible for Mission Hills in Shenzhen, the island has been transformed into a golfing paradise, with no expense spared on any aspect of the incredible feat."
+      },
+      {
+        "id": 5,
+        "text": "It is what could be described as the only golf city in the world, perhaps even the Capital City of World Golf."
+      },
+      {
+        "id": 6,
+        "text": "It is not just the Mission Hills Club, the largest golf club in the world, that creates such a central hub for golf, there are other courses that reside in the Hainan province, some of which are also very good and well worth a visit."
+      },
+      {
+        "id": 7,
+        "text": "Most notably the Jian Lake Blue Bay Golf Club, located a 30-minute drive south of the city of Lingshui this parkland layout is a superb design by Mark Hollinger.  Rated in 2016 as the 4th best course in China Jian Lake Blue Bay Golf Club is a great test of golf, offering views out across the bay."
+      },
+      {
+        "id": 8,
+        "text": ""
+      }
+    ],
+    "country": "China",
+    "city": "Hainan",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/the-vintage-golf-course-mission-hills-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": [
+      {
+        "id": 1,
+        "text": "As one of 10 courses at Mission Hills, Hainan, The Vintage could not be better named. Sitting behind the more famous and well thought of courses of Lava Fields and Blackstone, The Vintage is somewhat overlooked, but with no good reason. It is a superb design, in a return to a bygone era of golf course design and it plays its part exceptionally well. One major difference, and the effect the modern era has had on the game, is the increase in length from years past. Measuring in at 7363 yards The Vintage is a tough course to tame."
+      },
+      {
+        "id": 2,
+        "text": ""
+      },
+      {
+        "id": 3,
+        "text": ""
+      },
+      {
+        "id": 4,
+        "text": ""
+      },
+      {
+        "id": 5,
+        "text": ""
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
   }
 ]

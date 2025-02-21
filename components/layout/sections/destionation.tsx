@@ -53,7 +53,7 @@ export const DestionationSection = () => {
           Destination
         </h2>
 
-        <h2 className="text-3xl md:text-4xl text-center font-bold">
+        <h2 className="text-xl md:text-xl text-center font-bold">
           Our Top Destination
         </h2>
       </div>
@@ -89,8 +89,8 @@ export const DestionationSection = () => {
                 <Image
                   src={imageUrl}
                   alt={`${name}`}
-                  width={300}
-                  height={300}
+                  width={100}
+                  height={100}
                   className="z-0 w-full aspect-square object-cover opacity-70 transition-all duration-200 ease-linear size-full group-hover/hoverimg:opacity-100 group-hover/hoverimg:scale-[1.01]"
                 />
               </div>

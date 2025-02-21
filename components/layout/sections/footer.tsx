@@ -4,12 +4,12 @@ import Link from "next/link";
 
 export const FooterSection = () => {
   return (
-    <footer id="footer" className="container py-8 sm:py-16">
+    <footer id="footer" className="container pt-5 pb-1">
       <div className="p-10 bg-card border border-secondary rounded-2xl">
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">
             <Link href="/" className="flex font-bold items-center">
-              <h3 className="text-2xl">Unified Golf</h3>
+              <h1 className="text-xl font-bold">Unified Golf</h1>
             </Link>
           </div>
 
