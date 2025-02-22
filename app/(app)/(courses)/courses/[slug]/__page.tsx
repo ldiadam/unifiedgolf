@@ -46,7 +46,7 @@
 //   type: string;
 // }
 
-// export default function CourseListPage() {
+// export default function DummyCourseListPage() {
 //   const params = useParams();
 //   const [courses, setCourses] = useState<Course[]>([]);
 //   const [countryCity, setCountryCity] = useState({ country: "", city: "" });
