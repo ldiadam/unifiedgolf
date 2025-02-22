@@ -7,7 +7,6 @@ import { ToggleTheme } from "./toogle-theme";
 import { CartComponent } from "./cart/cart";
 import { Button } from "../ui/button";
 import { cn } from "@/utils/utils";
-import { usePathname } from "next/navigation";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -21,7 +20,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "../ui/collapsible";
-import { ChevronDown, ChevronUp, ArrowLeft } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 interface RouteProps {
   id: number;
@@ -64,22 +63,6 @@ const routeList: RouteProps[] = [
 
 export const NavbarNew = () => {
   const [isOpen, setIsOpen] = React.useState(true);
-  const pathname = usePathname();
-  const isHomePage = pathname === "/";
-
-  const BackButton = () => (
-    <Button
-      variant="link"
-      size="sm"
-      className="flex items-center gap-2 hover:bg-none"
-      asChild
-    >
-      <Link href="/">
-        <ArrowLeft className="h-4 w-4" />
-        Back to Home
-      </Link>
-    </Button>
-  );
 
   return (
     <div className="fixed z-50 w-full">
@@ -102,7 +85,7 @@ export const NavbarNew = () => {
               <span className="text-xs font-bold">
                 Street No, Building No. Name, unit no, Province, City, Country,
                 Postal Code
-              </span>
+              </span>{" "}
             </Link>
 
             <Separator />
@@ -111,7 +94,6 @@ export const NavbarNew = () => {
               onOpenChange={setIsOpen}
               className="w-full space-y-2"
             >
-              {/* Rest of mobile menu code remains the same */}
               <div className="flex items-center justify-between px-4">
                 <h4 className="text-sm font-semibold">Menu</h4>
                 <CollapsibleTrigger asChild>
@@ -163,16 +145,17 @@ export const NavbarNew = () => {
                       Email: theunifiedgolf@gmail.com
                     </Button>
                   </Link>
+                  {/* <ToggleTheme /> */}
+                  {/* <CartComponent /> */}
                 </div>
               </CollapsibleContent>
             </Collapsible>
           </div>
         </header>
       </div>
-
-      {/* Desktop Mode */}
+      {/* <!-- Desktop --> */}
       <div className="hidden lg:block md:block">
-        <header className="shadow-inner bg-opacity-15 border border-secondary rounded-md p-2 bg-card">
+        <header className=" shadow-inner bg-opacity-15 border border-secondary rounded-md p-2 bg-card">
           <div className="flex flex-col w-full">
             <div className="flex flex-nowrap justify-between items-center w-full ml-1 mb-2">
               <div className="flex flex-col items-start gap-1">
@@ -182,11 +165,12 @@ export const NavbarNew = () => {
                     width={80}
                     height={30}
                     alt=""
+                    // fill
                     className="rounded-md"
                   />
                 </Link>
                 <span className="text-xs font-bold">
-                  Street No, Building No. Name, unit no, Province, City,
+                  Street No, Building No. Name, unit no, Province ,City,
                   Country, Postal Code
                 </span>
               </div>
@@ -202,28 +186,61 @@ export const NavbarNew = () => {
               </div>
             </div>
             <Separator />
-            <div className="flex justify-between items-center mt-1">
-              <div className="flex flex-shrink-0 justify-between items-center mt-1">
-                <NavigationMenu className="hidden lg:block md:block py-2">
-                  <NavigationMenuList>
-                    <NavigationMenuItem>
-                      {routeList.map(({ href, label }) => (
-                        <NavigationMenuLink key={label} asChild>
-                          <Link
-                            href={href}
-                            className="items-center text-base font-bold px-2 py-2 md:text-xs lg:text-base hover:underline hover:text-primary border border-secondary"
-                          >
-                            {label}
-                          </Link>
-                        </NavigationMenuLink>
-                      ))}
-                    </NavigationMenuItem>
-                  </NavigationMenuList>
-                </NavigationMenu>
-              </div>
-              {!isHomePage && <BackButton />}
+            <div className="flex flex-row justify-between items-center mt-1">
+              <NavigationMenu className="hidden lg:block md:block py-2">
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    {routeList.map(({ href, label }) => (
+                      <NavigationMenuLink key={label} asChild>
+                        <Link
+                          href={href}
+                          className="items-center text-base font-bold px-2 py-2 md:text-xs lg:text-base hover:underline hover:text-primary border border-secondary"
+                        >
+                          {label}
+                        </Link>
+                      </NavigationMenuLink>
+                    ))}
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+              {/* <div className="hidden lg:flex flex-row gap-2 justify-between items-center mr-2">
+                <ToggleTheme />
+                <CartComponent />
+              </div> */}
             </div>
           </div>
+
+          {/* <Link href="/" className="flex items-center p-3">
+            <Image
+              src={"/company-logo.jpg"}
+              width={80}
+              height={30}
+              alt=""
+              // fill
+              className="rounded-md"
+            />
+          </Link>
+          <NavigationMenu className="hidden lg:block mx-auto">
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                {routeList.map(({ href, label }) => (
+                  <NavigationMenuLink key={label} asChild>
+                    <Link
+                      href={href}
+                      className="items-center text-base font-bold px-2 hover:underline hover:text-primary"
+                    >
+                      {label}
+                    </Link>
+                  </NavigationMenuLink>
+                ))}
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+
+          <div className="hidden lg:flex flex-row gap-2 justify-between items-center mr-2">
+            <ToggleTheme />
+            <CartComponent />
+          </div> */}
         </header>
       </div>
     </div>
