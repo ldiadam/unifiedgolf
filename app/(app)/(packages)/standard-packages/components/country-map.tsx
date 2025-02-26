@@ -300,7 +300,7 @@ export default function CountryMap({
         const pin = document.createElement("div");
         pin.style.width = "12px";
         pin.style.height = "12px";
-        pin.style.backgroundColor = "#3b82f6"; // Tailwind blue-500
+        pin.style.backgroundColor = "#ea580c"; // Tailwind blue-500
         pin.style.borderRadius = "50%";
         pin.style.boxShadow = "0 2px 4px rgba(0,0,0,0.2)";
 
@@ -308,7 +308,7 @@ export default function CountryMap({
         label.style.fontSize = "10px";
         label.style.fontWeight = "600";
         label.style.marginTop = "4px";
-        label.style.backgroundColor = "#3b82f6"; // Tailwind blue-500
+        label.style.backgroundColor = "#ea580c"; // Tailwind blue-500
         label.style.color = "white";
         label.style.padding = "1px 4px";
         label.style.borderRadius = "2px";
@@ -415,14 +415,14 @@ export default function CountryMap({
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-70 z-10">
           <div className="flex flex-col items-center">
-            <div className="h-8 w-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+            <div className="h-8 w-8 border-4  border-t-transparent rounded-full animate-spin"></div>
             <p className="mt-2 text-sm text-gray-600">Loading map...</p>
           </div>
         </div>
       )}
 
       {!isLoading && availableCities.length === 0 && (
-        <div className="absolute top-2 left-2 bg-blue-500 text-white px-2 py-1 rounded text-xs z-10">
+        <div className="absolute top-2 left-2 bg-primary text-white px-2 py-1 rounded text-xs z-10">
           No city data available for {country}
         </div>
       )}

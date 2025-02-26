@@ -136,14 +136,14 @@ export default function CourseDetailPage() {
                     </CardContent>
                   </Card>
                 </PopoverTrigger>
-                <PopoverContent className="w-auto min-w-[200px]">
+                {/* <PopoverContent className="w-auto min-w-[200px]">
                   <div className="space-y-2">
                     <h3 className="font-semibold border-b pb-2">
                       {location.country}
                     </h3>
                     {renderCityList(location.city, location.country)}
                   </div>
-                </PopoverContent>
+                </PopoverContent> */}
               </Popover>
             ))}
           </div>
