@@ -173,7 +173,7 @@ export default function CourseDetailPage() {
 
           <Separator className="my-6" />
 
-          <div className="w-full bg-card rounded-md border">
+          <div className="w-full bg-card rounded-md">
             <div className="flex flex-col gap-1">
               <div className="flex flex-col justify-center items-center py-2 px-2">
                 <h1 className="text-lg font-bold mb-2">Description</h1>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import {
   Popover,
@@ -10,16 +10,27 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import locationData from "@/data/locationData.json";
-
-// Types
-interface Location {
-  id: number;
-  country: string;
-  city: string[];
-}
+import CountryMap from "./components/country-map";
+import { useRouter } from "next/navigation";
+import { Separator } from "@/components/ui/separator";
 
 export default function CourseDetailPage() {
+  const router = useRouter();
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [selectedCountry, setSelectedCountry] = useState<any>(null);
+  const [selectedCities, setSelectedCities] = useState<string[]>([]);
+
+  // Update selected cities when country changes
+  useEffect(() => {
+    if (selectedCountry) {
+      const countryData = locationData.find(
+        (location) => location.id === selectedCountry.id
+      );
+      setSelectedCities(countryData?.city || []);
+    } else {
+      setSelectedCities([]);
+    }
+  }, [selectedCountry]);
 
   const createCitySlug = (country: string, city: string) => {
     return `${country.toLowerCase()}-${city
@@ -37,6 +48,18 @@ export default function CourseDetailPage() {
     }
   };
 
+  const handleCountrySelect = (location: any) => {
+    setSelectedCountry(location);
+  };
+
+  const handleCityClick = (city: string) => {
+    if (selectedCountry) {
+      console.log(`City clicked: ${city}`);
+      const slug = createCitySlug(selectedCountry.country, city);
+      router.push(`/courses/${slug}`);
+    }
+  };
+
   const renderCityList = (cities: string[], country: string) => {
     if (!cities.length) {
       return (
@@ -49,7 +72,6 @@ export default function CourseDetailPage() {
       );
     }
 
-    // Calculate the number of columns needed
     const itemsPerColumn = 5;
     const numberOfColumns =
       cities.length <= 5 ? 1 : Math.ceil(cities.length / itemsPerColumn);
@@ -74,6 +96,8 @@ export default function CourseDetailPage() {
     );
   };
 
+  console.log(selectedCountry);
+
   return (
     <div className="container mx-auto pt-40">
       <div className="flex flex-col space-y-6 mt-6">
@@ -96,10 +120,15 @@ export default function CourseDetailPage() {
             className="flex overflow-x-auto gap-2 px-2 scrollbar-hide snap-x snap-mandatory"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
-            {locationData.map((location: Location) => (
+            {locationData.map((location: any) => (
               <Popover key={location.id}>
                 <PopoverTrigger asChild>
-                  <Card className="flex-shrink-0 cursor-pointer snap-center hover:bg-primary transition-all">
+                  <Card
+                    className={`flex-shrink-0 cursor-pointer snap-center hover:bg-primary transition-all ${
+                      selectedCountry?.id === location.id ? "bg-primary" : ""
+                    }`}
+                    onClick={() => handleCountrySelect(location)}
+                  >
                     <CardContent className="p-1 w-36">
                       <h2 className="text-center font-semibold truncate">
                         {location.id}. {location.country}
@@ -131,7 +160,41 @@ export default function CourseDetailPage() {
           )}
         </div>
 
-        <div className="w-full h-[20rem]"></div>
+        <div className="w-full h-[20rem]">
+          <div className="flex flex-row gap-4 h-full">
+            {selectedCountry !== null ? (
+              <div className="flex flex-col w-3/4 px-6">
+                <div className="flex justify-start items-center py-4">
+                  <h2 className="text-xl font-bold">
+                    Find your {selectedCountry.country} Golf Course by selecting
+                    a Golf Destination
+                  </h2>
+                </div>
+                <Separator />
+                <div className="flex justify-start items-center py-4">
+                  <p className="text-base">
+                    {selectedCountry.country}, a hidden gem in Southeast Asia,
+                    offers a unique and tranquil golfing experience surrounded
+                    by breathtaking landscapes.
+                  </p>
+                </div>
+              </div>
+            ) : (
+              <div className="flex items-center justify-center bg-card rounded border w-3/4">
+                <h1>Select a Country</h1>
+              </div>
+            )}
+
+            {/* Country Map */}
+            <div className="w-1/4 overflow-hidden rounded border bg-gray-50">
+              <CountryMap
+                country={selectedCountry?.country || null}
+                className="w-full h-full"
+                onCityClick={handleCityClick}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
