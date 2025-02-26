@@ -96,8 +96,6 @@ export default function StandardpackagesPage() {
     );
   };
 
-  // console.log(selectedCountry);
-
   return (
     <div className="container mx-auto pt-40">
       <div className="flex flex-col space-y-6 mt-6">
@@ -185,7 +183,7 @@ export default function StandardpackagesPage() {
               </div>
             )}
 
-            {/* Country Map */}
+            {/* Country Map - Now using Mapbox */}
             <div className="w-1/4 overflow-hidden rounded border bg-gray-50">
               <CountryMap
                 country={selectedCountry?.country || null}
