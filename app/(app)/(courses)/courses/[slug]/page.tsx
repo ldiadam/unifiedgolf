@@ -29,6 +29,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import courseData from "@/data/allData.json";
+import CourseMap from "./components/course-map";
 
 interface Course {
   id: number;
@@ -54,11 +55,46 @@ interface Course {
   type: string;
 }
 
+// Create a map of dummy coordinates for golf courses
+const generateDummyCoordinates = (
+  country: string,
+  city: string,
+  courseName: string,
+  index: number
+): [number, number] => {
+  // Base coordinates for major countries
+  const countryBaseCoordinates: Record<string, [number, number]> = {
+    China: [104.0668, 30.5728],
+    Cambodia: [104.9282, 11.5564],
+    Indonesia: [110.0045, -7.4917],
+    Japan: [135.8048, 34.6851],
+    Laos: [102.6331, 17.9757],
+    Malaysia: [101.5183, 3.0738],
+    Myanmar: [96.1951, 16.8661],
+    Philippines: [121.0244, 14.5547],
+    Singapore: [103.8198, 1.3521],
+    Thailand: [100.5018, 13.7563],
+    Vietnam: [105.8342, 21.0278],
+    Brunei: [114.9398, 4.9031],
+  };
+
+  // Use country base or default to a central Asia coordinate
+  const baseCoord = countryBaseCoordinates[country] || [100.0, 13.0];
+
+  // Add small random offsets based on the course index to create slightly different positions
+  // This ensures each course in the same city has a unique position on the map
+  const latOffset = (Math.random() - 0.5) * 0.1 + index * 0.01;
+  const lngOffset = (Math.random() - 0.5) * 0.1 + index * 0.01;
+
+  return [baseCoord[0] + lngOffset, baseCoord[1] + latOffset];
+};
+
 export default function IntegratedCoursePage() {
   const params = useParams();
   const [courses, setCourses] = useState<Course[]>([]);
   const [mainCourse, setMainCourse] = useState<Course | null>(null);
   const [countryCity, setCountryCity] = useState({ country: "", city: "" });
+  const [selectedCourseId, setSelectedCourseId] = useState<number | null>(null);
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
@@ -91,8 +127,29 @@ export default function IntegratedCoursePage() {
         );
       });
 
-      setCourses(filteredCourses);
-      setMainCourse(filteredCourses[0] || null);
+      // Add dummy coordinates to each course
+      const coursesWithCoordinates = filteredCourses.map((course, index) => ({
+        ...course,
+        coordinates: generateDummyCoordinates(
+          course.country,
+          course.city,
+          course.name,
+          index
+        ),
+      }));
+
+      setCourses(coursesWithCoordinates);
+
+      if (coursesWithCoordinates.length > 0) {
+        setMainCourse(coursesWithCoordinates[0]);
+        setSelectedCourseId(coursesWithCoordinates[0].id);
+      } else {
+        setMainCourse(null);
+        setSelectedCourseId(null);
+      }
+
+      // setCourses(filteredCourses);
+      // setMainCourse(filteredCourses[0] || null);
       setCurrentPage(1);
     }
   }, [params.slug]);
@@ -131,6 +188,29 @@ export default function IntegratedCoursePage() {
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
     // window.scrollTo({ top: 20, behavior: "smooth" });
+  };
+
+  // Handle course selection on map
+  const handleCourseSelect = (courseId: number) => {
+    setSelectedCourseId(courseId);
+    const course = courses.find((c) => c.id === courseId);
+    if (course) {
+      // You might want to navigate to the course detail page or highlight the selected course
+      console.log(`Selected course: ${course.name}`);
+    }
+  };
+
+  // Handle city click on map
+  const handleCityClick = (city: string) => {
+    // Find courses in the clicked city
+    const coursesInCity = courses.filter(
+      (course) => course.city.toLowerCase() === city.toLowerCase()
+    );
+
+    if (coursesInCity.length > 0) {
+      // Select the first course in that city
+      setSelectedCourseId(coursesInCity[0].id);
+    }
   };
 
   const renderStars = (rating: number) => {
@@ -263,7 +343,7 @@ export default function IntegratedCoursePage() {
           A. Golfing in {mainCourse.city}
         </button>
 
-        <Popover>
+        {/* <Popover>
           <PopoverTrigger asChild>
             <button className="flex items-center text-sm md:text-lg font-semibold hover:text-primary transition">
               B. Name of Courses <ChevronDown className="ml-2" size={18} />
@@ -286,28 +366,45 @@ export default function IntegratedCoursePage() {
               </div>
             </div>
           </PopoverContent>
-        </Popover>
+        </Popover> */}
       </div>
 
       {/* Course Description Section */}
-      <div className="mb-12 px-5">
-        <h2 className="text-xl font-bold mb-6">
-          A. Golfing in {mainCourse.city}
-        </h2>
-        <h3 className="text-xl font-bold mb-4 text-primary">
-          {mainCourse.courseTitle || `Golf Courses in ${mainCourse.city}`}
-        </h3>
-        <p className="text-md mb-6">
-          {mainCourse.courseDesc?.[0]?.text || getCourseDescription(mainCourse)}
-        </p>
+      <div className="mb-12 px-5 w-full">
+        <div className="flex flex-col gap-4 h-full">
+          <h2 className="text-xl font-bold">A. Golfing in {mainCourse.city}</h2>
+          <Separator />
+          <div className="flex flex-row w-full">
+            <div className="flex flex-col gap-4 justify-start items-start px-2 w-3/4">
+              <h3 className="text-xl font-bold text-primary">
+                {mainCourse.courseTitle || `Golf Courses in ${mainCourse.city}`}
+              </h3>
+              <p className="text-md">
+                {mainCourse.courseDesc?.[0]?.text ||
+                  getCourseDescription(mainCourse)}
+              </p>
+              <ul className="list-disc pl-4">
+                {(mainCourse.courseDesc || []).slice(1).map((desc) => (
+                  <li key={desc.id} className="text-base">
+                    {desc.text}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-        <ul className="list-disc pl-6 space-y-4 mb-12">
-          {(mainCourse.courseDesc || []).slice(1).map((desc) => (
-            <li key={desc.id} className="text-base">
-              {desc.text}
-            </li>
-          ))}
-        </ul>
+            {/* Country Map */}
+
+            <div className="w-1/4 overflow-hidden rounded border h-[400px]">
+              <CourseMap
+                country={countryCity.country}
+                courses={courses}
+                selectedCourseId={selectedCourseId}
+                className="w-full h-full"
+                onCourseClick={handleCourseSelect}
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Course Cards Section */}
