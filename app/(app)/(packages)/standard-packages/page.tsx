@@ -14,7 +14,7 @@ import CountryMap from "./components/country-map";
 import { useRouter } from "next/navigation";
 import { Separator } from "@/components/ui/separator";
 
-export default function StandardpackagesPage() {
+export default function StandardPackagesPage() {
   const router = useRouter();
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [selectedCountry, setSelectedCountry] = useState<any>(null);
@@ -158,39 +158,36 @@ export default function StandardpackagesPage() {
           )}
         </div>
 
-        <div className="w-full h-[20rem]">
-          <div className="flex flex-row gap-4 h-full">
-            {selectedCountry !== null ? (
-              <div className="flex flex-col w-3/4 px-6">
-                <div className="flex justify-start items-center py-4">
-                  <h2 className="text-xl font-bold">
-                    Find your good packages Courses at {selectedCountry.country}{" "}
-                    Golf
-                  </h2>
-                </div>
-                <Separator />
-                <div className="flex justify-start items-center py-4">
-                  <p className="text-base">
-                    {selectedCountry.country}, a hidden gem in Southeast Asia,
-                    offers a unique and tranquil golfing experience surrounded
-                    by breathtaking landscapes.
-                  </p>
-                </div>
+        <div className="w-full h-auto lg:h-[20rem] flex flex-col gap-4 lg:flex-row">
+          {selectedCountry !== null ? (
+            <div className="flex flex-col w-full lg:w-3/4 px-6">
+              <div className="flex justify-start items-center py-4">
+                <h2 className="text-xl font-bold">
+                  Find your good packages Courses at {selectedCountry.country}{" "}
+                  Golf
+                </h2>
               </div>
-            ) : (
-              <div className="flex items-center justify-center bg-card rounded border w-3/4">
-                <h1>Select a Country</h1>
+              <Separator />
+              <div className="flex justify-start items-center py-4">
+                <p className="text-base">
+                  {selectedCountry.country}, a hidden gem in Southeast Asia,
+                  offers a unique and tranquil golfing experience surrounded by
+                  breathtaking landscapes.
+                </p>
               </div>
-            )}
-
-            {/* Country Map - Now using Mapbox */}
-            <div className="w-1/4 overflow-hidden rounded border bg-gray-50">
-              <CountryMap
-                country={selectedCountry?.country || null}
-                className="w-full h-full"
-                onCityClick={handleCityClick}
-              />
             </div>
+          ) : (
+            <div className="flex items-center justify-center bg-card rounded border w-full lg:w-3/4">
+              <h1>Select a Country</h1>
+            </div>
+          )}
+          {/* Country Map */}
+          <div className="w-full lg:w-1/4 overflow-hidden rounded border bg-gray-50">
+            <CountryMap
+              country={selectedCountry?.country || null}
+              className="w-full h-full"
+              onCityClick={handleCityClick}
+            />
           </div>
         </div>
       </div>
