@@ -2,6 +2,7 @@
   {
     "id": 1,
     "country": "China",
+    "image": "/loc-2.jpg",
     "city": [
       "ChengDu",
       "ChongQing",
@@ -24,18 +25,19 @@
       "Shandong",
       "Shanxi",
       "Ningxia",
-      "Hebei",
-      "Shandong"
+      "Hebei"
     ]
   },
   {
     "id": 2,
     "country": "Cambodia",
+    "image": "/loc-1.jpg",
     "city": ["Phom Penh", "Siem Reap"]
   },
   {
     "id": 3,
     "country": "Indonesia",
+    "image": "/loc-3.jpg",
     "city": [
       "Java",
       "Bali",
@@ -50,16 +52,19 @@
   {
     "id": 4,
     "country": "Japan",
+    "image": "/loc-4.jpg",
     "city": ["Nara", "Okinawa", "Ciba", "Osaka", "Hokkaido"]
   },
   {
     "id": 5,
     "country": "Laos",
+    "image": "/loc-5.jpg",
     "city": ["Vientaine"]
   },
   {
     "id": 6,
     "country": "Malaysia",
+    "image": "/loc-6.jpg",
     "city": [
       "Johor",
       "Meleka",
@@ -74,31 +79,37 @@
   {
     "id": 7,
     "country": "Myanmar",
+    "image": "/long-vien-golf-club-img-1.jpg",
     "city": []
   },
   {
     "id": 8,
     "country": "Philippines",
+    "image": "/royal-phnom-penh-golf-club-img-1.jpg",
     "city": ["Makati", "Manila", "Cebu", "Bagio", "Iloilo"]
   },
   {
     "id": 9,
     "country": "Singapore",
+    "image": "/pantai-mentiri-img-1.jpg",
     "city": []
   },
   {
     "id": 10,
     "country": "Thailand",
+    "image": "/sea-games-golf-club-img-1.jpg",
     "city": ["Bangkok", "Hua Hin", "Chengmai", "Chengrai", "Phuket", "Pataya"]
   },
   {
     "id": 11,
     "country": "Vietnam",
+    "image": "/sandbelt-trails-golf-course-mission-hills-img-1.jpg",
     "city": ["Hanoi", "Ho Chi Min", "Nha Trang", "Dalat", "Danang"]
   },
   {
     "id": 12,
     "country": "Brunei",
+    "image": "/imperial-klub-golf-img-1.jpg",
     "city": ["Brunei"]
   }
 ]

@@ -148,6 +148,8 @@ export default function IntegratedCoursePage() {
         setSelectedCourseId(null);
       }
 
+      // setCourses(filteredCourses);
+      // setMainCourse(filteredCourses[0] || null);
       setCurrentPage(1);
     }
   }, [params.slug]);
@@ -185,6 +187,7 @@ export default function IntegratedCoursePage() {
 
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
+    // window.scrollTo({ top: 20, behavior: "smooth" });
   };
 
   // Handle course selection on map
@@ -192,17 +195,20 @@ export default function IntegratedCoursePage() {
     setSelectedCourseId(courseId);
     const course = courses.find((c) => c.id === courseId);
     if (course) {
+      // You might want to navigate to the course detail page or highlight the selected course
       console.log(`Selected course: ${course.name}`);
     }
   };
 
   // Handle city click on map
   const handleCityClick = (city: string) => {
+    // Find courses in the clicked city
     const coursesInCity = courses.filter(
       (course) => course.city.toLowerCase() === city.toLowerCase()
     );
 
     if (coursesInCity.length > 0) {
+      // Select the first course in that city
       setSelectedCourseId(coursesInCity[0].id);
     }
   };
@@ -336,6 +342,31 @@ export default function IntegratedCoursePage() {
         >
           A. Golfing in {mainCourse.city}
         </button>
+
+        {/* <Popover>
+          <PopoverTrigger asChild>
+            <button className="flex items-center text-sm md:text-lg font-semibold hover:text-primary transition">
+              B. Name of Courses <ChevronDown className="ml-2" size={18} />
+            </button>
+          </PopoverTrigger>
+          <PopoverContent className="w-auto min-w-[256px] p-0">
+            <div className="p-2">
+              <div className="flex flex-col space-y-1 mt-2">
+                {courses.map((course, index) => (
+                  <Link
+                    key={course.id}
+                    href={`/course-detail/${course.slug}`}
+                    className="block hover:bg-primary rounded-md transition-colors"
+                  >
+                    <div className="text-sm py-1">
+                      {index + 1}. {course.name}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </PopoverContent>
+        </Popover> */}
       </div>
 
       {/* Course Description Section */}
@@ -343,19 +374,8 @@ export default function IntegratedCoursePage() {
         <div className="flex flex-col gap-4 h-full">
           <h2 className="text-xl font-bold">A. Golfing in {mainCourse.city}</h2>
           <Separator />
-          <div className="flex flex-col lg:flex-row w-full">
-            {/* Country Map */}
-            <div className="w-full lg:w-1/4 overflow-hidden rounded border h-[400px] mb-4 lg:mb-0">
-              <CourseMap
-                country={countryCity.country}
-                courses={courses}
-                selectedCourseId={selectedCourseId}
-                className="w-full h-full"
-                onCourseClick={handleCourseSelect}
-              />
-            </div>
-
-            <div className="flex flex-col gap-4 justify-start items-start px-2 w-full lg:w-3/4">
+          <div className="flex flex-row w-full">
+            <div className="flex flex-col gap-4 justify-start items-start px-2 w-3/4">
               <h3 className="text-xl font-bold text-primary">
                 {mainCourse.courseTitle || `Golf Courses in ${mainCourse.city}`}
               </h3>
@@ -370,6 +390,18 @@ export default function IntegratedCoursePage() {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Country Map */}
+
+            <div className="w-1/4 overflow-hidden rounded border h-[400px]">
+              <CourseMap
+                country={countryCity.country}
+                courses={courses}
+                selectedCourseId={selectedCourseId}
+                className="w-full h-full"
+                onCourseClick={handleCourseSelect}
+              />
             </div>
           </div>
         </div>

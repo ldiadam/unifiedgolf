@@ -1,198 +1,196 @@
-"use client";
-import React, { useRef, useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import locationData from "@/data/locationData.json";
-import CountryMap from "./components/country-map";
-import { useRouter } from "next/navigation";
 import { Separator } from "@/components/ui/separator";
 
-export default function CourseDetailPage() {
-  const router = useRouter();
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const [selectedCountry, setSelectedCountry] = useState<any>(null);
-  const [selectedCities, setSelectedCities] = useState<string[]>([]);
-
-  // Update selected cities when country changes
-  useEffect(() => {
-    if (selectedCountry) {
-      const countryData = locationData.find(
-        (location) => location.id === selectedCountry.id
-      );
-      setSelectedCities(countryData?.city || []);
-    } else {
-      setSelectedCities([]);
-    }
-  }, [selectedCountry]);
-
-  const createCitySlug = (country: string, city: string) => {
-    return `${country.toLowerCase()}-${city
-      .toLowerCase()
-      .replace(/\s+/g, "-")}`;
-  };
-
-  const scroll = (direction: "left" | "right") => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 200;
-      scrollContainerRef.current.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  const handleCountrySelect = (location: any) => {
-    setSelectedCountry(location);
-  };
-
-  const handleCityClick = (city: string) => {
-    if (selectedCountry) {
-      console.log(`City clicked: ${city}`);
-      const slug = createCitySlug(selectedCountry.country, city);
-      router.push(`/courses/${slug}`);
-    }
-  };
-
-  const renderCityList = (cities: string[], country: string) => {
-    if (!cities.length) {
-      return (
-        <div className="py-8 text-center">
-          <MapPin className="mx-auto h-12 w-12 text-gray-400 mb-3" />
-          <p className="text-sm text-gray-500">
-            No cities available in this country yet
-          </p>
-        </div>
-      );
-    }
-
-    const itemsPerColumn = 5;
-    const numberOfColumns =
-      cities.length <= 5 ? 1 : Math.ceil(cities.length / itemsPerColumn);
-
-    return (
-      <div
-        className="grid gap-4"
-        style={{
-          gridTemplateColumns: `repeat(${numberOfColumns}, minmax(0, 1fr))`,
-        }}
-      >
-        {cities.map((city, index) => (
-          <Link
-            key={index}
-            href={`/courses/${createCitySlug(country, city)}`}
-            className="block p-2 hover:bg-primary rounded-md transition-colors"
-          >
-            <li className="">{city}</li>
-          </Link>
-        ))}
-      </div>
-    );
-  };
-
-  console.log(selectedCountry);
-
+export default function CoursesPage() {
   return (
-    <div className="container mx-auto pt-40">
-      <div className="flex flex-col space-y-6 mt-6">
+    <div className="container mx-auto pt-44">
+      <div className="flex flex-col gap-2">
         <h1 className="text-3xl font-bold">B. Course Details</h1>
+        <Separator />
+        <p className="text-lg mb-2">
+          Select a country to view available golf courses:
+        </p>
 
-        <div className="relative">
-          {locationData.length > 4 && (
-            <Button
-              variant="ghost"
-              size="icon"
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10"
-              onClick={() => scroll("left")}
+        {/* Country Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          {locationData.slice(0, 3).map((country, index) => (
+            <Link
+              href={`/courses/${country.country.toLowerCase()}`}
+              key={index}
             >
-              <ChevronLeft className="h-4 w-4" />
-            </Button>
-          )}
+              <div className="relative h-80 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
+                {/* Background Image */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  style={{ backgroundImage: `url(${country.image})` }}
+                ></div>
 
-          <div
-            ref={scrollContainerRef}
-            className="flex overflow-x-auto gap-2 px-2 scrollbar-hide snap-x snap-mandatory"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-          >
-            {locationData.map((location: any) => (
-              <Popover key={location.id}>
-                <PopoverTrigger asChild>
-                  <Card
-                    className={`flex-shrink-0 cursor-pointer snap-center hover:bg-primary transition-all ${
-                      selectedCountry?.id === location.id ? "bg-primary" : ""
-                    }`}
-                    onClick={() => handleCountrySelect(location)}
-                  >
-                    <CardContent className="p-1 w-36">
-                      <h2 className="text-center font-semibold truncate">
-                        {location.id}. {location.country}
-                      </h2>
-                    </CardContent>
-                  </Card>
-                </PopoverTrigger>
-                {/* <PopoverContent className="w-auto min-w-[200px]">
-                  <div className="space-y-2">
-                    <h3 className="font-semibold border-b pb-2">
-                      {location.country}
-                    </h3>
-                    {renderCityList(location.city, location.country)}
-                  </div>
-                </PopoverContent> */}
-              </Popover>
-            ))}
-          </div>
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
 
-          {locationData.length > 4 && (
-            <Button
-              variant="ghost"
-              size="icon"
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10"
-              onClick={() => scroll("right")}
-            >
-              <ChevronRight className="h-4 w-4" />
-            </Button>
-          )}
-        </div>
-
-        <div className="w-full h-auto lg:h-[20rem] flex flex-col lg:flex-row gap-4">
-          {selectedCountry !== null ? (
-            <div className="flex flex-col w-full lg:w-3/4 px-6">
-              <div className="flex justify-start items-center py-4">
-                <h2 className="text-xl font-bold">
-                  Find your {selectedCountry.country} Golf Course by selecting a
-                  Golf Destination
-                </h2>
+                {/* Content */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h2 className="text-3xl font-bold mb-2">{country.country}</h2>
+                  <p className="text-xl">
+                    {country.city.length} cities available
+                  </p>
+                </div>
               </div>
-              <Separator />
-              <div className="flex justify-start items-center py-4">
-                <p className="text-base">
-                  {selectedCountry.country}, a hidden gem in Southeast Asia,
-                  offers a unique and tranquil golfing experience surrounded by
-                  breathtaking landscapes.
+            </Link>
+          ))}
+        </div>
+        {/* Special Layout for 4th Item (Cambodia) */}
+        <div className="">
+          <Link href="/courses/japan">
+            <div className="relative h-64 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
+              {/* Background Image */}
+              <div
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style={{ backgroundImage: `url(${locationData[3].image})` }}
+              ></div>
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
+
+              {/* Content */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h2 className="text-3xl font-bold mb-2">
+                  {locationData[3].country}
+                </h2>
+                <p className="text-xl">
+                  {" "}
+                  {locationData[3].city.length} cities available
                 </p>
               </div>
             </div>
-          ) : (
-            <div className="flex items-center justify-center bg-card rounded border w-full lg:w-3/4">
-              <h1>Select a Country</h1>
+          </Link>
+        </div>
+        {/* Country Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          {locationData.slice(4, 7).map((country, index) => (
+            <Link
+              href={`/courses/${country.country.toLowerCase()}`}
+              key={index}
+            >
+              <div className="relative h-80 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
+                {/* Background Image */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  style={{ backgroundImage: `url(${country.image})` }}
+                ></div>
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
+
+                {/* Content */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h2 className="text-3xl font-bold mb-2">{country.country}</h2>
+                  <p className="text-xl">
+                    {country.city.length} cities available
+                  </p>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+        {/* Special Layout for 4th Item (Cambodia) */}
+        <div className="">
+          <Link href="/courses/philippines">
+            <div className="relative h-64 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
+              {/* Background Image */}
+              <div
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style={{ backgroundImage: `url(${locationData[7].image})` }}
+              ></div>
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
+
+              {/* Content */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h2 className="text-3xl font-bold mb-2">
+                  {locationData[7].country}
+                </h2>
+                <p className="text-xl">
+                  {" "}
+                  {locationData[7].city.length} cities available
+                </p>
+              </div>
             </div>
-          )}
-          {/* Country Map */}
-          <div className="w-full lg:w-1/4 overflow-hidden rounded border bg-gray-50">
-            <CountryMap
-              country={selectedCountry?.country || null}
-              className="w-full h-full"
-              onCityClick={handleCityClick}
-            />
-          </div>
+          </Link>
+        </div>
+        {/* Country Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          {locationData.slice(8, 11).map((country, index) => (
+            <Link
+              href={`/courses/${country.country.toLowerCase()}`}
+              key={index}
+            >
+              <div className="relative h-80 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
+                {/* Background Image */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  style={{ backgroundImage: `url(${country.image})` }}
+                ></div>
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
+
+                {/* Content */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h2 className="text-3xl font-bold mb-2">{country.country}</h2>
+                  <p className="text-xl">
+                    {country.city.length} cities available
+                  </p>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+        {/* Special Layout for 4th Item (Cambodia) */}
+        <div className="">
+          <Link href="/courses/philippines">
+            <div className="relative h-64 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
+              {/* Background Image */}
+              <div
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style={{ backgroundImage: `url(${locationData[11].image})` }}
+              ></div>
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
+
+              {/* Content */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h2 className="text-3xl font-bold mb-2">
+                  {locationData[11].country}
+                </h2>
+                <p className="text-xl">
+                  {" "}
+                  {locationData[11].city.length} cities available
+                </p>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
+
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {locationData.map((country) => (
+          <Link
+            key={country.country}
+            href={`/courses/${country.country.toLowerCase()}`}
+            className="p-4 border rounded-lg hover:bg-primary/10 transition-colors"
+          >
+            <h2 className="text-xl font-semibold">{country.country}</h2>
+            <p className="text-gray-600">
+              {country.city.length} cities available
+            </p>
+          </Link>
+        ))}
+      </div> */}
     </div>
   );
 }
