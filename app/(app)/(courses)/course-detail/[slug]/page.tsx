@@ -60,10 +60,11 @@ export default function CourseDetailPage() {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("overview");
 
-  const createCitySlug = (country: string, city: string) => {
-    return `${country.toLowerCase()}-${city
-      .toLowerCase()
-      .replace(/\s+/g, "-")}`;
+  const createCountrySlug = (country: string) => {
+    return `${country.toLowerCase()}`;
+  };
+  const createCitySlug = (city: string) => {
+    return `${city.toLowerCase().replace(/\s+/g, "-")}`;
   };
   useEffect(() => {
     if (params.slug) {
@@ -147,7 +148,9 @@ export default function CourseDetailPage() {
           className="mb-4 text-base hover:bg-primary"
         >
           <Link
-            href={`/courses/${createCitySlug(course.country, course.city)}`}
+            href={`/courses/${createCountrySlug(
+              course.country
+            )}/${createCitySlug(course.city)}`}
           >
             <ChevronLeft className="mr-2 h-4 w-4" />
             Back to Course List

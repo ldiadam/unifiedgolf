@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { cn } from "@/utils/utils";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -97,9 +97,11 @@ export const NavbarNew = () => {
   const [activeMobileCountry, setActiveMobileCountry] = useState<string | null>(
     null
   );
+  const [activeMobileCity, setActiveMobileCity] = useState<string | null>(null);
 
   const pathname = usePathname();
   const isHomePage = pathname === "/";
+  const router = useRouter();
 
   // Fix hydration mismatch by only rendering dynamic content on the client side
   useEffect(() => {
@@ -143,6 +145,21 @@ export const NavbarNew = () => {
     );
   };
 
+  const toggleMobileCity = (cityName: string) => {
+    setActiveMobileCity(activeMobileCity === cityName ? null : cityName);
+  };
+
+  // Handle navigation with menu collapse
+  const navigateAndCollapse = (href: string) => {
+    // Close all menus
+    setIsOpen(false);
+    setActiveMobileMenu(null);
+    setActiveMobileCountry(null);
+    setActiveMobileCity(null);
+
+    // Navigate to the selected page
+    router.push(href);
+  };
   // If not mounted yet, return a simpler version to avoid hydration errors
   if (!mounted) {
     return (
@@ -219,7 +236,7 @@ export const NavbarNew = () => {
               <CollapsibleContent className="space-y-2 max-h-96 overflow-y-auto">
                 <nav className="flex flex-col w-full justify-center items-start py-2 pl-3">
                   {routeList.map((route) => (
-                    <div key={route.id} className="w-full">
+                    <div key={route.id} className="w-full mb-2">
                       {route.hasChildren ? (
                         <Collapsible
                           className="w-full"
@@ -227,16 +244,11 @@ export const NavbarNew = () => {
                           onOpenChange={() => toggleMobileMenu(route.label)}
                         >
                           <CollapsibleTrigger className="w-full">
-                            <Link href={route.href} className="w-full">
+                            <div className="w-full">
                               <Button
-                                variant={null}
+                                variant="ghost"
                                 size="sm"
-                                className={cn(
-                                  "px-1 sm:px-2 md:px-3",
-                                  "h-8 sm:h-9 md:h-10",
-                                  "rounded-md",
-                                  "w-full text-left justify-between items-center flex"
-                                )}
+                                className="w-full text-left justify-between items-center flex"
                               >
                                 <span className="hover:text-primary">
                                   {route.label}
@@ -247,9 +259,21 @@ export const NavbarNew = () => {
                                   <ChevronDown className="h-4 w-4" />
                                 )}
                               </Button>
-                            </Link>
+                            </div>
                           </CollapsibleTrigger>
                           <CollapsibleContent className="ml-4 border-l border-gray-200 pl-2 mt-1">
+                            {/* Link to all courses */}
+                            {/* <Button
+                              variant="ghost"
+                              size="sm"
+                              className="w-full text-left justify-start items-center flex py-1 text-primary"
+                              onClick={() => navigateAndCollapse(route.href)}
+                            >
+                              <span className="text-sm font-medium">
+                                View All Courses
+                              </span>
+                            </Button> */}
+
                             {/* Countries */}
                             {countries.map((country) => (
                               <Collapsible
@@ -261,76 +285,120 @@ export const NavbarNew = () => {
                                 }
                               >
                                 <CollapsibleTrigger className="w-full">
-                                  <Link
-                                    href={`/courses/${country.name}`}
-                                    className="w-full"
+                                  <Button
+                                    variant="ghost"
+                                    size="sm"
+                                    className="w-full text-left justify-between items-center flex py-1"
                                   >
-                                    <Button
-                                      variant={null}
-                                      size="sm"
-                                      className="w-full text-left justify-between items-center flex py-1"
-                                    >
-                                      <span className="text-sm">
-                                        {country.name}
-                                      </span>
-                                      {country.cities.length > 0 &&
-                                        (activeMobileCountry ===
-                                        country.name ? (
-                                          <ChevronUp className="h-3 w-3" />
-                                        ) : (
-                                          <ChevronDown className="h-3 w-3" />
-                                        ))}
-                                    </Button>
-                                  </Link>
+                                    <span className="text-sm">
+                                      {country.name}
+                                    </span>
+                                    {country.cities.length > 0 &&
+                                      (activeMobileCountry === country.name ? (
+                                        <ChevronUp className="h-3 w-3" />
+                                      ) : (
+                                        <ChevronDown className="h-3 w-3" />
+                                      ))}
+                                  </Button>
                                 </CollapsibleTrigger>
                                 <CollapsibleContent className="ml-4 border-l border-gray-200 pl-2">
+                                  {/* Link to country courses */}
+                                  {/* <Button
+                                    variant="ghost"
+                                    size="sm"
+                                    className="w-full text-left justify-start items-center flex py-1 text-primary text-xs"
+                                    onClick={() =>
+                                      navigateAndCollapse(
+                                        `/courses/${country.name}`
+                                      )
+                                    }
+                                  >
+                                    <span>View All {country.name} Courses</span>
+                                  </Button> */}
+
                                   {/* Cities */}
                                   {country.cities.map((city) => (
                                     <div key={city} className="py-1">
                                       {cityHasCourses(city) ? (
-                                        <Collapsible className="w-full">
+                                        <Collapsible
+                                          className="w-full"
+                                          open={activeMobileCity === city}
+                                          onOpenChange={() =>
+                                            toggleMobileCity(city)
+                                          }
+                                        >
                                           <CollapsibleTrigger className="w-full">
-                                            <Link
-                                              href={`/courses/${
-                                                country.name
-                                              }/${encodeUrlParam(city)}`}
-                                              className="w-full"
+                                            <Button
+                                              variant="ghost"
+                                              size="sm"
+                                              className="w-full text-left justify-between items-center flex py-0.5"
                                             >
-                                              <Button
-                                                variant={null}
-                                                size="sm"
-                                                className="w-full text-left justify-between items-center flex py-0.5"
-                                              >
-                                                <span className="text-xs">
-                                                  {city}
-                                                </span>
+                                              <span className="text-xs">
+                                                {city}
+                                              </span>
+                                              {activeMobileCity === city ? (
+                                                <ChevronUp className="h-3 w-3" />
+                                              ) : (
                                                 <ChevronDown className="h-3 w-3" />
-                                              </Button>
-                                            </Link>
+                                              )}
+                                            </Button>
                                           </CollapsibleTrigger>
                                           <CollapsibleContent className="ml-4 border-l border-gray-200 pl-2">
-                                            {/* Courses */}
-                                            {courseDetails[
-                                              city as keyof typeof courseDetails
-                                            ]?.map((course) => (
-                                              <Link
-                                                key={course.title}
-                                                href={course.href}
-                                                className="block py-0.5 text-xs hover:text-primary"
-                                              >
-                                                {course.title}
-                                              </Link>
-                                            )) || (
-                                              <span className="block text-xs py-0.5">
-                                                No courses available
+                                            {/* Link to city courses */}
+                                            {/* <Button
+                                              variant="ghost"
+                                              size="sm"
+                                              className="w-full text-left justify-start items-center flex py-0.5 text-primary text-xs"
+                                              onClick={() =>
+                                                navigateAndCollapse(
+                                                  `/courses/${
+                                                    country.name
+                                                  }/${encodeUrlParam(city)}`
+                                                )
+                                              }
+                                            >
+                                              <span>
+                                                View All {city} Courses
                                               </span>
+                                            </Button> */}
+
+                                            {/* Courses */}
+                                            {courseDetails[city]?.map(
+                                              (course) => (
+                                                <Button
+                                                  key={course.title}
+                                                  variant="ghost"
+                                                  size="sm"
+                                                  className="w-full text-left justify-start text-xs hover:text-primary px-2"
+                                                  onClick={() =>
+                                                    navigateAndCollapse(
+                                                      course.href
+                                                    )
+                                                  }
+                                                >
+                                                  {course.title}
+                                                </Button>
+                                              )
                                             )}
                                           </CollapsibleContent>
                                         </Collapsible>
                                       ) : (
-                                        <span className="block text-xs py-0.5">
-                                          {city}
-                                        </span>
+                                        <Button
+                                          variant="ghost"
+                                          size="sm"
+                                          className="w-full text-left justify-start items-center flex py-0.5"
+                                          onClick={() =>
+                                            navigateAndCollapse(
+                                              `/courses/${
+                                                country.name
+                                              }/${encodeUrlParam(city)}`
+                                            )
+                                          }
+                                        >
+                                          <span className="text-xs">
+                                            {city}
+                                          </span>
+                                        </Button>
                                       )}
                                     </div>
                                   ))}
@@ -341,23 +409,14 @@ export const NavbarNew = () => {
                         </Collapsible>
                       ) : (
                         <Button
-                          asChild
-                          variant={null}
+                          variant="ghost"
                           size="sm"
-                          className={cn(
-                            "px-1 sm:px-2 md:px-3",
-                            "h-8 sm:h-9 md:h-10",
-                            "rounded-md",
-                            "whitespace-nowrap",
-                            "w-full text-left justify-start"
-                          )}
+                          className="w-full text-left justify-start rounded-md"
+                          onClick={() => navigateAndCollapse(route.href)}
                         >
-                          <Link
-                            className="hover:underline hover:text-primary"
-                            href={route.href}
-                          >
+                          <span className="hover:text-primary">
                             {route.label}
-                          </Link>
+                          </span>
                         </Button>
                       )}
                     </div>
@@ -371,7 +430,7 @@ export const NavbarNew = () => {
                     href={"mailto:theunifiedgolf@gmail.com"}
                     className="text-xs font-bold"
                   >
-                    <Button variant={"link"}>
+                    <Button variant="link">
                       Email: theunifiedgolf@gmail.com
                     </Button>
                   </Link>
