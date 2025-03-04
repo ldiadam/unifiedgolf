@@ -23,7 +23,7 @@ import {
 import { ChevronDown, ChevronUp, ArrowLeft, ChevronRight } from "lucide-react";
 import locationData from "@/data/locationData.json"; // Import location data
 import allData from "@/data/allData.json"; // Import course data
-import { encodeUrlParam } from "@/utils/url-helpers";
+import { encodeUrlParam, getCountryUrl } from "@/utils/url-helpers";
 
 interface RouteProps {
   id: number;
@@ -389,9 +389,9 @@ export const NavbarNew = () => {
                                           className="w-full text-left justify-start items-center flex py-0.5"
                                           onClick={() =>
                                             navigateAndCollapse(
-                                              `/courses/${
-                                                country.name
-                                              }/${encodeUrlParam(city)}`
+                                              `/courses/${country.name.toLowerCase()}/${encodeUrlParam(
+                                                city
+                                              )}`
                                             )
                                           }
                                         >
@@ -504,7 +504,11 @@ export const NavbarNew = () => {
                                           setSelectedCountry(country.name)
                                         }
                                       >
-                                        <Link href={`/courses/${country.name}`}>
+                                        <Link
+                                          href={`${getCountryUrl(
+                                            country.name
+                                          )}`}
+                                        >
                                           <span>{country.name}</span>
                                         </Link>
                                         {country.cities.length > 0 && (
@@ -534,7 +538,7 @@ export const NavbarNew = () => {
                                             }
                                           >
                                             <Link
-                                              href={`/courses/${selectedCountry}/${encodeUrlParam(
+                                              href={`/courses/${selectedCountry.toLowerCase()}/${encodeUrlParam(
                                                 city
                                               )}`}
                                             >

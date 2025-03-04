@@ -80,7 +80,7 @@
     "id": 7,
     "country": "Myanmar",
     "image": "/long-vien-golf-club-img-1.jpg",
-    "city": []
+    "city": ["Yangon"]
   },
   {
     "id": 8,
@@ -92,7 +92,7 @@
     "id": 9,
     "country": "Singapore",
     "image": "/pantai-mentiri-img-1.jpg",
-    "city": []
+    "city": ["Singapore"]
   },
   {
     "id": 10,

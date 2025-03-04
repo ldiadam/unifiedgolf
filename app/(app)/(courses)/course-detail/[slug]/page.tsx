@@ -140,7 +140,7 @@ export default function CourseDetailPage() {
     .replace(/\s+/g, "-")}`;
 
   return (
-    <div className="container mx-auto  pt-48">
+    <div className="container mx-auto pt-48 lg:pt-40">
       <div className="flex justify-start">
         <Button
           variant="ghost"
