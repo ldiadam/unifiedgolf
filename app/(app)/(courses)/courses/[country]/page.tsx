@@ -6,14 +6,6 @@ import allData from "@/data/allData.json";
 import { encodeUrlParam } from "@/utils/url-helpers";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import Image from "next/image";
 
 interface Props {
   params: {
@@ -66,9 +58,44 @@ export default function CountryPage({ params }: Props) {
             landscapes.
           </p>
         </div>
+        {/* Country Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+          {countryData.city.map((city) => {
+            const cityCourses = countryCourses.filter(
+              (course) => course.city === city
+            );
+            return (
+              <Link
+                href={`/courses/${countryData.country.toLowerCase()}/${encodeUrlParam(
+                  city
+                )}`}
+                key={city}
+              >
+                <div className="relative h-80 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
+                  {/* Background Image */}
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                    style={{ backgroundImage: `url(${countryData.image})` }}
+                  ></div>
+
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
+
+                  {/* Content */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h2 className="text-3xl font-bold mb-2">{city}</h2>
+                    <p className="text-xl">
+                      {cityCourses.length} courses available
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
 
         {/* Country Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
           {countryData.city.map((city) => {
             const cityCourses = countryCourses.filter(
               (course) => course.city === city
@@ -90,7 +117,7 @@ export default function CountryPage({ params }: Props) {
               </div>
             );
           })}
-        </div>
+        </div> */}
 
         {countryCourses.length === 0 && (
           <p className="text-lg text-gray-600">

@@ -151,7 +151,7 @@ export default function CoursesPage() {
         </div>
         {/* Special Layout for 4th Item (Cambodia) */}
         <div className="">
-          <Link href="/courses/philippines">
+          <Link href="/courses/brunei">
             <div className="relative h-64 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
               {/* Background Image */}
               <div

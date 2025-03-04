@@ -55,7 +55,7 @@ export default function CityPage({ params }: PageProps) {
             className="mb-2 text-base hover:bg-primary"
             size={"sm"}
           >
-            <Link href="/courses">
+            <Link href={`/courses/${countryData.country.toLowerCase()}`}>
               <ChevronLeft className="mr-2 h-4 w-4" />
               Back to Course Selection
             </Link>
@@ -73,17 +73,25 @@ export default function CityPage({ params }: PageProps) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {cityCourses.map((course) => (
-            <div key={course.slug} className="border rounded-lg p-4 shadow-sm">
-              <h2 className="text-xl font-semibold mb-2">{course.name}</h2>
-              <Link
-                href={`/course-detail/${course.slug}`}
-                className="text-primary hover:underline"
-              >
-                View Details →
-              </Link>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+          {cityCourses.map((course, index) => (
+            <Link href={`/course-detail/${course.slug}`} key={index}>
+              <div className="relative h-80 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
+                {/* Background Image */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  style={{ backgroundImage: `url(${course.imageUrl[0].url})` }}
+                ></div>
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
+
+                {/* Content */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h2 className="text-3xl font-bold mb-2">{course.name}</h2>
+                </div>
+              </div>
+            </Link>
           ))}
         </div>
 
