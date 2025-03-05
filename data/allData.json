@@ -5821,22 +5821,22 @@
       ],
       "address": [
         {
-          "text": "Hot Spring Valley, No. 688, Yangjiao Community, Wenquan Town, Anning City, Kunming"
+          "text": "empty"
         }
       ],
       "contact": [
         {
-          "text": "Tel: 86-871-68663333"
+          "text": "empty"
         }
       ],
       "courseFee": [
         {
-          "text": "Cost per Round: Please consult the club."
+          "text": "empty"
         }
       ],
       "otherInfo": [
         {
-          "text": "1 hour is enough to get to the Golf Course from downtown Kunming by taxi."
+          "text": "empty"
         }
       ]
     },
@@ -5846,7 +5846,7 @@
     "type": "Location"
   },
   {
-    "id": 90,
+    "id": 91,
     "slug": "a-brand-golf-club",
     "name": "A-Brand Golf Club",
     "country": "Japan",
@@ -5910,26 +5910,1586 @@
       ],
       "address": [
         {
-          "text": "Hot Spring Valley, No. 688, Yangjiao Community, Wenquan Town, Anning City, Kunming"
+          "text": "empty"
         }
       ],
       "contact": [
         {
-          "text": "Tel: 86-871-68663333"
+          "text": "empty"
         }
       ],
       "courseFee": [
         {
-          "text": "Cost per Round: Please consult the club."
+          "text": "empty"
         }
       ],
       "otherInfo": [
         {
-          "text": "1 hour is enough to get to the Golf Course from downtown Kunming by taxi."
+          "text": "empty"
         }
       ]
     },
     "rating": 2,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 92,
+    "slug": "chitose-airport-country-club",
+    "name": "Chitose Airport Country Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/chitose-airport-country-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/chitose-airport-country-club-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/chitose-airport-country-club-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "A 27-holes {with 3  distinctive 9-holes}, 0 yards Parkland, Challenging  championship golf."
+        },
+        {
+          "text": "Designed by Japanese architect Nakamura aToruyoshi Nakamura, Founded in 1971"
+        },
+        {
+          "text": "The course incorporate the envoronmental natural aesthetic beauty with the spectacular views of Mount Tarumae volcano"
+        },
+        {
+          "text": "Hakchoi course, (Swan in English) is undulating, with tree lined fairways, perfectly positioned water hazards, smart bunkering and wonderful greens."
+        },
+        {
+          "text": "Sekirei course (Wagtail in English) is longer than the Hakchoi course, a fun layout surrounded by native woodland."
+        },
+        {
+          "text": "Oshidori course (Lovebird in English) is a strategic course, requires accurate and well considered tee-shots. The green and approach are well-protected"
+        },
+        {
+          "text": "Located next to the Chitose Airport."
+        },
+        {
+          "text": "It also features a unique clubhouse with swimming pool, well-stocked pro-shop ,restaurant and terrace, serving  freshly prepared, varied menu featuring both local and international cuisine."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.8,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 93,
+    "slug": "clark-golf-country-club",
+    "name": "Clark Golf Country Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/clark-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "It is a 27-hole, 6949 yards golf course with a course  rating of  4.0 out of 5"
+        },
+        {
+          "text": "It comprises of the East Course, Middle Course and West Course"
+        },
+        {
+          "text": "The mountainside golf course is gently undulating through wooded forest"
+        },
+        {
+          "text": "It requires accuracy and good course strategy and is challenging on a variety of holes"
+        },
+        {
+          "text": "The Club house offer an ideal place to enjoy pre-round drinks or post-round dinner"
+        },
+        {
+          "text": "For a 18 hole tournament feel  it is ideal to pair the East with West Course"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 94,
+    "slug": "bibai-course",
+    "name": "Golf 5 Country - Bibai Course",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/bibai-course-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/bibai-course-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/bibai-course-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Alpen Golf Club is one of the best in Hokkaido."
+        },
+        {
+          "text": "Designed by Pete and Perry Dye"
+        },
+        {
+          "text": "Features 27 holes, 7,858 yards, a tough test in terms of length off the back tees."
+        },
+        {
+          "text": "The conditioning of the Bibai Course at Alpen Golf Club is exceptional"
+        },
+        {
+          "text": "The course is mostly flat throughout but the water combines with white sand bunkers to offer a good test of strategic golf"
+        },
+        {
+          "text": "There are several lakes around the 27 holes"
+        },
+        {
+          "text": "Bibai Course has many undulations throughout and has been designed with Scottish links courses in mind."
+        },
+        {
+          "text": "This becomes evident with the natural hazards and some of the large greens, which offer a stern test of putting if you fail to land close to the pin."
+        },
+        {
+          "text": "The Bibai Course at Alpen Golf Club is located in Hokkaido."
+        },
+        {
+          "text": "Well known for its natural hot springs and ski slopes,"
+        },
+        {
+          "text": "It is just over an hour to reach Alpen Golf Club from Sopporo"
+        },
+        {
+          "text": "The restaurant where you will find delicious Japanese cuisine and a wide range of fresh seafood to enjoy."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.8,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 95,
+    "slug": "gozensui-golf-club",
+    "name": "Gozensui Golf Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/gozensui-golf-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/gozensui-golf-club-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/gozensui-golf-club-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "If you are looking for a golf course that oozes class and quality, with a hint of tradition and a design that incorporates the natural beauty of its surroundings then you need to visit the Gozensui Golf Club."
+        },
+        {
+          "text": "Ideally located for those travelling to the area by plane, Gozensui Golf Club is located no more than 15 minutes from the Chitose International Airport in the Hokkaido region of Japan."
+        },
+        {
+          "text": "An area of outstanding natural beauty the Gozensui Golf Club blends seamlessly into the surroundings, offering a calm and tranquil lace to enjoy a round of golf."
+        },
+        {
+          "text": "The minimalistic design of the clubhouse adds to the relaxing feel of the complete club."
+        },
+        {
+          "text": "Clubhouse facilities are great, and nothing more than you would expect."
+        },
+        {
+          "text": "Large locker rooms, beautifully fitted out, a swimming pool and sauna offer guests with all the facilities needed to relax before or after the round."
+        },
+        {
+          "text": "A superb clubhouse restaurant offers a selection of local and international dishes that will not disappoint. Heavily wooded the holes cut their way through avenues of trees creating holes that are both narrow and intimate, building a sense of intrigue."
+        },
+        {
+          "text": "The designer has created a delightful course and has added water hazards where necessary, which only add to the beauty of naturalness of the course."
+        },
+        {
+          "text": "White sand bunkers have been cleverly placed to provide both a visual distraction as well as a strategic headache. The 4th is a deceivingly tricky hole, requiring a well-placed drive to leave the perfect angle from which to attack the pin. Club selection is vital, the green has three distinctive tiers and finding the correct tier is paramount if you want to walk away with a par on this hole."
+        },
+        {
+          "text": "Another superb hole is the 8th, a par 5 measuring 553-yards from the back tee. Stay left to give yourself the easiest shot for both the second and third shots. Missing right here is not an option as the land is heavily undulating making an up and down unlikely."
+        },
+        {
+          "text": "Hole 13, may well be unlucky for some. Water comes into play from the tee requiring a pin-point accurate drive that sets up a mid-iron shot into the green. Heavily undulating missing the green is not an option."
+        },
+        {
+          "text": "As you arrive on the elevated tee of the par 3 15th you are welcomed by some incredible views of the hole and the entire golf course.  Although the hole is only 168-yards long the beauty of the view might be enough to distract you from the pending challenge of the hole."
+        },
+        {
+          "text": "The general condition of Gozensui Golf Club is superb, with the maintenance team constantly working to maintain the standards.  Fast and smooth greens are wonderful to out on and the manicured fairways and rough are framed exquisitely by the mature tall trees that are a signature of this golf course."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 96,
+    "slug": "great-sapporo-country-club",
+    "name": "Great Sapporo Country Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/great-sapporo-country-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/great-sapporo-country-club-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/great-sapporo-country-club-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Great Sapporo Country Club is a hilly golf course with 18 holes. The fairways of each hole are wide and you can enjoy playing with a relaxed feeling. Surrounded by Mt. Eniwa and Mt. Tarumae, it is a location where you can overlook the vast Ishikari Plain. The course is designed to make the best use of this terrain, so it is a golf course that attracts attention from golfers who want to enjoy powerful shots. There are also ponds and valleys, so there are many places that require technique as well as distance. Fairways and trees are properly managed, so it has a reputation as a high-quality golf course. It is a golf course with many elements that can be enjoyed along with the location."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 97,
+    "slug": "hanazono-golf",
+    "name": "Hanazono Golf",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/hanazono-golf-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/hanazono-golf-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/hanazono-golf-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Hanazono Golf is an amazingly picturesque 18-hole golf course in a wonderful natural setting with stunning vistas of Mt. Yotei from all parts of the courses.  The course features a natural spring water creek and passes through the native birch forest. The course offers a great variety of different challenges with many elevation changes and you will pass through different types of terrain. This is probably the best golf course in the area and most golfers are sure to enjoy the round and will love the beauty of the course."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.1,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 98,
+    "slug": "hayakita-country-club",
+    "name": "Hayakita Country Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/hayakita-country-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/hayakita-country-club-img-2.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "A 1 hour and 15-minute drive from the Japanese city of Sapporo you will come across the Hayakita Country Club. The clubhouse and adjoining facilities are superb, with all the necessary amenities to cater for both the members and guests that choose to visit Hayakita Country Club."
+        },
+        {
+          "text": "Boasting two 18-hole golf courses, the North and South, Hayakita Country Club delivers two superb golf courses that are able to cater for golfers of all levels and abilities."
+        },
+        {
+          "text": "The gently undulating landscape, perfect for a golf course has been utilized to the maximum to create two wonderfully enjoyable golf courses."
+        },
+        {
+          "text": "The North course, measuring 7200-yards with a par of 72 is the more challenging of the two courses. Enjoying wide fairways, flanked by trees and bunkers the tee shots are not overly demanding and although the course is long it rarely tests from the tee."
+        },
+        {
+          "text": "Cleverly positioned bunkers and the use of additional water hazards blend to provide some difficulty."
+        },
+        {
+          "text": "The South course is shorter at 6941-yards and also a par 72 but is similar in design. Moving over the gently undulating terrain it is an easy walk, and much like the North course relies on the well-positioned bunkers and water hazards to provide the style and challenge to the golfers."
+        },
+        {
+          "text": "Course conditions are always good and both courses are a joy to play."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.1,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 99,
+    "slug": "hitsujigaoka-country-club",
+    "name": "Hitsujigaoka Country Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/hitsujigaoka-country-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/hitsujigaoka-country-club-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/hitsujigaoka-country-club-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Hitsujigaoka Country Club is one of the most popular golf courses in the Sapporo area and was built on the remains of the cross-country skiing courses used at the 1972 Winter Olympics. The course runs through the thick forest of birch trees which is typical of the area."
+        },
+        {
+          "text": "The course is pretty flat with not too many severe elevation changes. On the outward nine the holes are almost all dead straight with not too many bunkers so providing you are straight off the tee you should score well."
+        },
+        {
+          "text": "The inward nine is a bit more varied with a few doglegs and the pick of the holes is the par 5, 17th which is an S-shaped hole with a pond protecting the front of the green."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 100,
+    "slug": "hokkaido-brooks-country-club",
+    "name": "Hokkaido Brooks Country Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/hokkaido-brooks-country-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/hokkaido-brooks-country-club-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/hokkaido-brooks-country-club-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Hokkaido Brooks Country Club, is an incredible design that incorporates every single aspect of the natural landscape, whilst generating a golf course that is a true test of golf and worthy of championship golf being played here. Designed by Ed Sneed and Taizo Kawata Hokkaido Brooks Country Club is a top destination that has the heart of each designer stamped all over it."
+        },
+        {
+          "text": "Set in a massive 1.65 million square meters the 18 holes blends with the natural beauty of the landscape, creating two distinctive sets of 9-holes."
+        },
+        {
+          "text": "The front 9 is undulating and the holes are framed exquisitely by the Japanese Larch and white birch trees. A small brook runs throughout the course adding a tranquillity along with additional difficulty. The final 6 holes are more of a traditional Scottish links, than a parkland course as it opens out, with wide, rolling fairways, enormous bunkers and large undulating greens that somehow blend effortlessly with both the landscape and the front 9, and it is this effortless flow that really stands out when you visit Hokkaido Brooks Country Club."
+        },
+        {
+          "text": "To complete the incredible set-up is the luxurious, large clubhouse that caters for every single need, with large, spacious locker rooms, bright and airy restaurant and a well-stocked pro-shop with additional features for members. Hokkaido Brooks Country Club boasts superb driving range and putting green maintained to the same exacting standard as the golf course"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.2,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 101,
+    "slug": "hokkaido-golf-club",
+    "name": "Hokkaido Golf Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/hokkaido-golf-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/hokkaido-golf-club-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/hokkaido-golf-club-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Hokkaido is the northern island of Japan and a great place to visit for those who love nature, skiing and playing golf.  You will find a wealth of golf courses available to play in Hokkaido but arguably one of the best golf clubs in this region of Japan is Hokkaido Golf Club."
+        },
+        {
+          "text": "If you are travelling from outside Japan, you may be able to catch a direct flight to Sapporo Chitose Airport, which is Hokkaido’s only significant international airport.  You will find direct flights from China, South Korea and Thailand but for those coming from Europe and United States, you will need to fly to Tokyo and get a short connecting flight."
+        },
+        {
+          "text": "Travelling to Hokkaido to play golf is something every golfer should do at least once in their lifetime and Hokkaido Golf Club is a must on every Japan golf itinerary."
+        },
+        {
+          "text": "Hokkaido Golf Club is home to not one but two magnificent 18 hole golf courses.  Each course has been designed to replicate a traditional Scottish and American golf course and they have been named Eagle Course and Lion Course."
+        },
+        {
+          "text": "The Eagle Course at Hokkaido Golf Club is a par-72 course which plays to 6,644 yards from the championship tees and 6,211 yards from the regular tees.  This is the American style course and water is one of the main features throughout the 18 holes but is not over-whelming and can easily be avoided."
+        },
+        {
+          "text": "Water hazards come into play on the first two holes, with both the right and left sides of the opening fairway protected by water.  The approach to the green is clear of water on the first hole but the green on the second hole, which is a par-3, is protected by water to the front and left side."
+        },
+        {
+          "text": "Negotiate these two holes and you are in an excellent position to make a good score on the Eagle Course."
+        },
+        {
+          "text": "The second course at Hokkaido Golf Club is called the Lion Course and this is reminiscent of a traditional Scottish links golf course."
+        },
+        {
+          "text": "If you do not like playing around water, you will want to choose the Lion Course as there is not a single water hazard in sight."
+        },
+        {
+          "text": "However, the 18 holes feature significant undulations and mounding, with strategically placed bunkers throughout.  Several of the greens are large but well protected by sand.  Landing on the green in regulation does not mean you can relax as the putting is testing thanks to the breaks of the green."
+        },
+        {
+          "text": "In addition to two wonderful golf courses, Hokkaido Golf Club is home to a lovely, spacious club house with pro-shop, restaurant, locker room and swimming facilities.  There is also a driving range for practice before you begin your round."
+        },
+        {
+          "text": "Hokkaido Golf Club offers two distinctly different rounds of golf and you should experience both when playing golf in Japan."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.9,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 102,
+    "slug": "hokkaido-golf-club",
+    "name": "Hokkaido Golf Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/hokkaido-golf-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/hokkaido-golf-club-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/hokkaido-golf-club-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Hokkaido is the northern island of Japan and a great place to visit for those who love nature, skiing and playing golf.  You will find a wealth of golf courses available to play in Hokkaido but arguably one of the best golf clubs in this region of Japan is Hokkaido Golf Club."
+        },
+        {
+          "text": "If you are travelling from outside Japan, you may be able to catch a direct flight to Sapporo Chitose Airport, which is Hokkaido’s only significant international airport.  You will find direct flights from China, South Korea and Thailand but for those coming from Europe and United States, you will need to fly to Tokyo and get a short connecting flight."
+        },
+        {
+          "text": "Travelling to Hokkaido to play golf is something every golfer should do at least once in their lifetime and Hokkaido Golf Club is a must on every Japan golf itinerary."
+        },
+        {
+          "text": "Hokkaido Golf Club is home to not one but two magnificent 18 hole golf courses.  Each course has been designed to replicate a traditional Scottish and American golf course and they have been named Eagle Course and Lion Course."
+        },
+        {
+          "text": "The Eagle Course at Hokkaido Golf Club is a par-72 course which plays to 6,644 yards from the championship tees and 6,211 yards from the regular tees.  This is the American style course and water is one of the main features throughout the 18 holes but is not over-whelming and can easily be avoided."
+        },
+        {
+          "text": "Water hazards come into play on the first two holes, with both the right and left sides of the opening fairway protected by water.  The approach to the green is clear of water on the first hole but the green on the second hole, which is a par-3, is protected by water to the front and left side."
+        },
+        {
+          "text": "Negotiate these two holes and you are in an excellent position to make a good score on the Eagle Course."
+        },
+        {
+          "text": "The second course at Hokkaido Golf Club is called the Lion Course and this is reminiscent of a traditional Scottish links golf course."
+        },
+        {
+          "text": "If you do not like playing around water, you will want to choose the Lion Course as there is not a single water hazard in sight."
+        },
+        {
+          "text": "However, the 18 holes feature significant undulations and mounding, with strategically placed bunkers throughout.  Several of the greens are large but well protected by sand.  Landing on the green in regulation does not mean you can relax as the putting is testing thanks to the breaks of the green."
+        },
+        {
+          "text": "In addition to two wonderful golf courses, Hokkaido Golf Club is home to a lovely, spacious club house with pro-shop, restaurant, locker room and swimming facilities.  There is also a driving range for practice before you begin your round."
+        },
+        {
+          "text": "Hokkaido Golf Club offers two distinctly different rounds of golf and you should experience both when playing golf in Japan."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.9,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 103,
+    "slug": "kosaido-sapporo-country-club",
+    "name": "Kosaido Sapporo Country Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kosaido-sapporo-country-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/kosaido-sapporo-country-club-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/kosaido-sapporo-country-club-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Kosaido Sapporo Country Club is a very picturesque course which is not too far from the centre of Sapporo so this is a popular course with locals.  The course winds its way through the attractive countryside and offer great views from the top of the course."
+        },
+        {
+          "text": "The fairways are quite undulating and its not easy to find a flat lie- also, at certain times of the year the rough can get quite thick."
+        },
+        {
+          "text": "The course is not too difficult providing you can keep out of the pot bunkers which are scattered across the course and once you get in you will probably lose a shot.  The course was designed by Peter Thomson and perhaps he had some thoughts of St. Andrews when building the course"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 104,
+    "slug": "makomanai-country-club",
+    "name": "Makomanai Country Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/makomanai-country-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/makomanai-country-club-img-2.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Located around an hour from the Chitose International Airport you will find the Makomanai Golf and Country Club. Beautifully appointed the clubhouse is delightful and luxurious with everything the discerning golfer could want. The Morning Lounge is the ideal start to your golf day, with the chance to enjoy a coffee and snack before you head to the course. A large, welcoming lobby is staffed by the most pleasant of personnel and the pro-shop is extremely well-stocked with the most recognised brands of equipment and clothing. A sauna and a trio of alternative temperature baths, spacious locker and shower rooms are also available for use by the members or guests. Practice facilities are superb, a large putting green plus a further two putting greens beside the starting tees of each course will soon available. A pitching and bunker area are also available for those wishing to get their eye in before a round, or those looking to develop their short games. A large double-tiered driving range completes the wonderful off-course facilities. Makomanai Golf and Country Club boasts two beautifully designed courses, The Algae and The Kuranuma Courses. Both parkland layouts the courses are open to all and offer a great chance to enjoy the natural beauty of Japan. The Kuranuma course measures 6874-yards from the back tees, and like the Algae course has a choice of 4 tee blocks, choose your tee according to your handicap level and you will have a very enjoyable round. Trees line all the holes, creating an environment most pleasurable. The fairways are in general wide and inviting. The greens are all well protected, by numerous bunkers that frame the generally small greens. It is not a difficult track by any means, water only comes into play on a couple of holes, making this ideal for beginners. The Algae course is a little shorter at 6684-yards but is probably the more demanding of the two layouts. Water much like the Kuranuma course, is rare, although it does come into play at the 212-yard par 3 thrd hole. The hole requires a carry over the pond which sits short of the green, tress again frame the hole. The eighth hole is interesting with the course having the option of utilizing a second green to change the complexity of the par five, which can be attacked by longer hitters. Another hole that can be attacked is the short par four ninth, at just 304-yards from the back tee it is a definite chance to finish the loop with a birdie. Bunkers are well positioned around the greens to add to the difficulty of the approach shots. Mature and well maintained both courses are enjoyable to play and offer a sufficient challenge to keep all levels of golfer entertained. Well worth a visit if you are in the area."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 105,
+    "slug": "niseko-golf-course",
+    "name": "Niseko Golf Course",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/niseko-golf-course-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/niseko-golf-course-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/niseko-golf-course-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "A two-hour drive from the New Chitose Airport you will come across the Niseko Golf Course. As a sister course to the Niseko Village layout, Niseko golf course was designed by legendary American golfer Arnold Palmer. Measuring 6805-yards from the championship tees, the Niseko Golf Club is a true test of golfing ability. The majority of golfers will and most definitely should play from the forward tees, as the difficulty of the course is high. Deep, punishing rough and out of bounds on almost every hole, the championship tees demand both length and accuracy if you want to post a good score here. A particular delight are the long par threes with the shortest measuring 189-yards. Palmer´s use of water hazards, the natural landscape in the shadow of Mount Yotei and the devilishly positioned bunkers guarding both fairway and greens make Niseko Golf Course a superb choice for golfers looking for the ultimate challenge. Beautiful cherry blossoms are abundant and when in bloom offer a superb aroma and visual spectacle. The clubhouse offers the basic amenities that visiting golfers require, with shower rooms, locker rooms and well-stoked pro-shop"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.8,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 106,
+    "slug": "niseko-village-golf-course",
+    "name": "Niseko Village Golf Course",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/niseko-village-golf-course-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/niseko-village-golf-course-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/niseko-village-golf-course-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Designed by Yoshaki Tsutsumi the Niseko Village golf course was opened in 1992 and boasts a par-73 course measuring 6845-yards from the back tees. Unlike many courses in the area, Niseko Village Golf Course is relatively flat but that does not mean the course is easy. An incredible feature of the Niseko Village course is the 10th hole. A monster par 6, that measures a massive 721-yards from the back tees requiring 4 well-struck shots to reach the green. The incredible Mount Yotei creates the perfect backdrop to many of the holes that meander through the towering native trees, creating the feel of a “millionaires” golfing experience in some of the most spectacular scenery in Japan. Strategically placed water hazards, create additional difficulty to the course as well as creating yet more aesthetically pleasing holes designs. Facilities include the large hotel and clubhouse complex with various dining and accommodation options, and while the golf course is closed during the winter months the resort at the foot of the mountain is busy year-round with the ski resort.Niseko Village Golf course is a course that caters for your every need, with first class facilities, both non-golf and golf related. It is certainly a place that you must visit."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.1,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 107,
+    "slug": "rusutsu-resort-golf-72-wood-course",
+    "name": "Rusutsu Resort Golf 72 – Wood Course",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/rusutsu-resort-golf-72-wood-course-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/rusutsu-resort-golf-72-wood-course-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/rusutsu-resort-golf-72-wood-course-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Rusutsu Resort Golf 72 Wood Golf Course has a highly strategic course layout. The course was designed by Curtis Strange Pro. You can see the surrounding mountains from many of the 18 holes. In these mountains, you can feel the changes of the four seasons, so you can go around the course while enjoying the beauty of each season. The 16th hole, which is the most famous hole, is a great location where you can take a shot toward the beautiful and magnificent mountains of Hokkaido's wilderness, and you can enjoy golf very comfortably. It is a popular course in Hokkaido. Also, because the fairway is wide overall, even beginners can play rounds with peace of mind, which is one of the reasons for its popularity.Rusutsu Resort Golf 72 Wood Golf Course has a highly strategic course layout. The course was designed by Curtis Strange Pro. You can see the surrounding mountains from many of the 18 holes. In these mountains, you can feel the changes of the four seasons, so you can go around the course while enjoying the beauty of each season. The 16th hole, which is the most famous hole, is a great location where you can take a shot toward the beautiful and magnificent mountains of Hokkaido's wilderness, and you can enjoy golf very comfortably. It is a popular course in Hokkaido. Also, because the fairway is wide overall, even beginners can play rounds with peace of mind, which is one of the reasons for its popularity."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 108,
+    "slug": "sapporo-kitahiroshima-golf-club",
+    "name": "Sapporo Kitahiroshima Golf Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/sapporo-kitahiroshima-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "The South Course is longer than the East at 6587-yards, also a par 72. Following a similar theme as the East, The South has narrow fairways, cleverly positioned bunkers and, unlike the East the inclusion of water hazards to increase the difficulty level. Perhaps the most favoured course here is the West course. At 6734-yards it is the longest of the three courses and also boasts a par of 72. The stand out hole of the resort is without doubt the par 3 third of The West course, measuring 182-yards from the elevated back tee, you are afforded a perfect view of the island green below, simply stunning. Similar to the East and South the West´s main protection are the narrow tree-lined fairways, with strategically positioned bunkers and the occasional water hazard. Sapporo Kita Hiroshima Golf Club is a superb complex close to Sapporo City and is the perfect retreat from the city for both members and visitors alike. The resort boasts a large clubhouse that offers great dining options, a large well-stocked professional shop, luxury locker rooms and super attentive staff that are on-hand to assist you. Practice facilities include a large driving range, short game practice area and putting greens that can cater for the large number of golfers. At Sapporo Kita Hiroshima Golf Club you can enjoy one of 3 18-hole golf courses, The East, The West and The South course. The East Course measures 6428-yards and has a par of 72. The course weaves through trees with narrow fairways, mid-sized greens and gently undulations throughout the course is ideal for all level of golfer."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.8,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 109,
+    "slug": "sapporo-minami-golf-club",
+    "name": "Sapporo Minami Golf Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/sapporo-minami-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "The spectacular golf course at Sapporo Minami is an absolute must visit if you are ever in the area. A backdrop of mountain ranges, native trees and woodland set the course off beautifully offering breath-taking views and an air of tranquillity that you can only find in the Japanese countryside. The course weaves and undulates across the natural terrain and is by no means out of place. The designer of the original course, Chen Shimizu laid the foundations of what was to become one of the most prestigious golf courses in Japan. It was remodelled by Taro Kawada and the changes only served to increase the incredible beauty and also the challenge that the course presented to members and visitors alike. Standing on the first tee you see the beauty and spectacular landscape in all its glory, but you quickly need to focus on the task at hand. The start is tough, from the elevated tee you can see the well-protected green in the distance, the narrowing fairway flanked by trees and out of bounds to the right. It doesn´t become easier, the third is a 202-yard par 3 with a large bunker guarding the entrance to the green club selection is vital here. A particular delight is the clever use of the natural terrain, and the natural valleys are lined with beautiful blooming tress that add to the aesthetics of Sappora Minami Golf Club. Densely wooded the trees play a part in the difficulty of the course, but add mystery, they frame the holes exquisitely and create a sense of being alone on the course. The elevated tee on the thirteenth offers panoramic views of the mountains in the distance. Playing downhill, the hole plays much shorter than the card suggests and this opens up the chance of making birdie. Each hole at Sapporo Minami presents its own unique challenge, and there are no weak holes. Regardless of your ability level you will be tested at this golf course. You will not be disappointed by the course, or the facilities. The practice facilities are kept to the same exacting standard of the golf course and include a well-equipped driving range, an approach green and a putting green. Clubhouse facilities are good, although not as modern as some of the other courses and resorts in Japan, but it blends perfectly with the traditional layout of the golf course.  Boasting spacious locker rooms, swimming pool and sauna guests have the chance to relax before or after their rounds. A warm welcome from the attentive staff is always on hand. The club restaurant serves local and international dishes in a relaxed environment. Located about 45 minutes from Chitose International Airport the course s ideally located for international and local visitors with great road links. This is a course not to be missed."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.9,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 110,
+    "slug": "shin-chitose-country-club",
+    "name": "Shin-Chitose Country Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/shin-chitose-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Shin-Chitose Country Club is a very popular course not far from the international airport and around 30 minutes from the centre of Sapporo set in a very hilly location with wonderful scenery.  It is a 36-hole layout - the Hamanasu Course is a very tough course where each hole is separated by the white birch trees and Karamatsu, which has plenty of elevation changes and undulations together with numerous water hazards. The pick of the holes on the outward nine of the Hamanasu Course include the par, 4th with a large pond protecting he front of the green and the b7th which is a short dogleg par 4 with pond along the left waiting for the mishit approach.  On the inward half the par3, 15th demand an accurate tee shot over a valley to a well-protected green.  The final 18th is the toughest hole on the Hermanus course as the green has 3 tiers and several undulations – a bogey is a good score here. On the other hand, the Holoca course is a highly strategic course that demands accurate shot making because the fairways are very narrow and there are numerous bunkers protecting the greens.  The most dangerous holes include the 7th, which although it’s quite a short par 4, requires you to flirt with danger to get in the right position off the tee. The elevated green on the 13ht is difficult to hold and you can easily drop shots here."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.8,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 111,
+    "slug": "sunpark-sapporo-golf-club",
+    "name": "Sunpark Sapporo Golf Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/sunpark-sapporo-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Sun Park Sapporo Golf Course in Hokkaido is a golf course owned and operated by Pacific Golf Management and is located about 30 minutes from the centre of Sapporo. The course offers 27 holes spread over a large area with few elevation change but the holes are interspersed by plenty of water hazards of various sizes.  The course is not too difficult with very wide fairways and greens without too much protection in the way of bunkers. The pick of the holes on the East course are the par-3, 3rd hole where you tee off from a tee box surrounded by water and carry over the hazard to a green around 170 yards away.  The 9th hole is a shortish par 4 which skirts the edge of the water hazard as you approach the green so you need to play over the water with your approach to reach in regulation.  The 7th hole on the south courses requires water carry off the tee to reach the fairway and then the water hazard skirts the left edge of the fairway all the way to the green.  The 2nd hole on the West courses is avery long par-5 with water along the left and bunkers both sides of the fairway. The 8th is a long par-4 with another carry over water from the tee box and a large bunker protecting the right side of the green. The facilities, food and service in the clubhouse are excellent as you expect in Japan."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.8,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 112,
+    "slug": "the-north-country-golf-club",
+    "name": "The North Country Golf Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/the-north-country-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "The North Country Club on the Hokkaido Island of Japan is located just 15 minutes from Chitose Airport and boasts a wonderful 18-hole golf course that is presented throughout the golfing season in pristine condition. Designed by Isao Aoki, the course was opened in 1990 quickly gaining recognition for its simplistic design. At 7078-yards the 18-hole par 72 course is links-like in style. In comparison to other courses in the region, The North Country Club stands out as different, with few trees or hidden water hazards to test the golfer. Instead Aoki has created a stunning layout from the natural landscape and has sparingly used water hazards to achieve a testing course that is different each time you play it. North Country Club is, as many links courses are, at mercy to the wind and it is this that makes it stand out. No two rounds are the same here, and golfers will be challenged by the everchanging winds. Greens are well laid out and of high quality, as are the wide and generous fairways. Immense bunkers frame the rolling fairways perfectly. Clubhouse facilities are of high standard with a well-stocked professional shop, locker rooms, swimming pool and restaurant serving local delicacies and international dishes. The driving range and short game practice facilities complete the offering at North Country"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.8,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 113,
+    "slug": "tomakomai-golf-resort-72-emina-golf-club",
+    "name": "Tomakomai Golf Resort 72 - Emina Golf Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/tomakomai-golf-resort-72-emina-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "The Tomakomai Golf Emina Club is a beautiful golf resort boasting 4 golf courses set within the beautiful Japanese country side. Each course has its own unique character, offering 4 unique golfing experiences. The South Course measures 6852-yards and meanders through beautiful white birch, water hazards and bunkers, creating a challenging but highly enjoyable and picturesque golf course. At 7051-yards The East Course is a long hitters course with long holes and wide fairways offering the chance to open the shoulders. A delightful course that will test your ability from the tee and with the inclusion of water hazards you will need to be accurate to boot. Emina West Course presents a much more technical challenge for golfers to enjoy. At 6877-yards from the back tees the course demands accuracy and good course management. The fourth and final course at Tomakomai Golf Emina Club is the Iris course. It is much shorter than the other three courses at 6541-yards, and coupled with the wide fairways and fewer trees, the Iris course is more forgiving and perfect for beginners and less experienced golfers. A modern clubhouse combines the modern requirements golfers expect with Japanese tradition, creating an incredibly relaxing atmosphere.  The facilities at the club include luxurious locker rooms, banqueting rooms, swimming pool and a great practice facility including a large driving range and shot game area."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
     "type": "Location"
