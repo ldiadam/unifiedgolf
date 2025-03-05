@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import locationData from "@/data/locationData.json";
 import allData from "@/data/allData.json";
+import cityCourseData from "@/data/cityCourseData.json";
 import { encodeUrlParam } from "@/utils/url-helpers";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
@@ -180,6 +181,11 @@ export default function CountryPage({ params }: Props) {
             const cityCourses = countryCourses.filter(
               (course) => course.city === city
             );
+            const cityImageData = cityCourseData.find(
+              (item) => item.city.toLowerCase() === city.toLowerCase()
+            );
+            const cityImage = cityImageData?.image || countryData.image; // fallback to country image if city image not found
+
             return (
               <Link
                 href={`/courses/${countryData.country.toLowerCase()}/${encodeUrlParam(
@@ -191,7 +197,7 @@ export default function CountryPage({ params }: Props) {
                   {/* Background Image */}
                   <div
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                    style={{ backgroundImage: `url(${countryData.image})` }}
+                    style={{ backgroundImage: `url(${cityImage})` }}
                   ></div>
 
                   {/* Overlay */}

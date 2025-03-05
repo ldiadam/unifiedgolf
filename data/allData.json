@@ -75,14 +75,7 @@
     "rating": 4.7,
     "reviews": 190,
     "pricePerDay": 80,
-    "type": "",
-    "courseTitle": "ChengDu",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "empty"
-      }
-    ]
+    "type": ""
   },
   {
     "id": 2,
@@ -164,14 +157,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "Phom Penh Golf | Best Golf Courses in Phom Penh, Cambodia",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "empty"
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 3,
@@ -250,14 +236,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "Phom Penh Golf | Best Golf Courses in Phom Penh, Cambodia",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "empty"
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 4,
@@ -336,14 +315,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "Phom Penh Golf | Best Golf Courses in Phom Penh, Cambodia",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "empty"
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 5,
@@ -422,14 +394,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "Phom Penh Golf | Best Golf Courses in Phom Penh, Cambodia",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 6,
@@ -508,14 +473,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "Phom Penh Golf | Best Golf Courses in Phom Penh, Cambodia",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 7,
@@ -594,14 +552,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "Phom Penh Golf | Best Golf Courses in Phom Penh, Cambodia",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 8,
@@ -683,21 +634,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "Phom Penh Golf | Best Golf Courses in Phom Penh, Cambodia",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 9,
     "slug": "black-rocks-hotel-&-golf-club-belitung",
     "name": "Black Rocks Hotel & Golf Club Belitung",
     "country": "Indonesia",
-    "city": "Batam",
+    "city": "Jakarta",
     "imageUrl": [
       {
         "id": 1,
@@ -841,14 +785,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 11,
@@ -923,14 +860,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 12,
@@ -1005,14 +935,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 13,
@@ -1084,21 +1007,14 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 14,
     "slug": "jagorawi-golf-&-country-club",
     "name": "Jagorawi Golf & Country Club",
     "country": "Indonesia",
-    "city": "Bogor",
+    "city": "Jakarta",
     "imageUrl": [
       {
         "id": 1,
@@ -1166,14 +1082,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 15,
@@ -1242,14 +1151,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 16,
@@ -1321,14 +1223,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 17,
@@ -1403,14 +1298,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 18,
@@ -1485,14 +1373,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 19,
@@ -1564,14 +1445,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 20,
@@ -1643,14 +1517,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 21,
@@ -1725,14 +1592,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 22,
@@ -1810,14 +1670,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 23,
@@ -1840,7 +1693,7 @@
     "description": {
       "credential": [
         {
-          "text": "The tiny sultanate of Brunei is home to one of the most surprising and opulent courses in all of Asia. Designed by J"
+          "text": "The tiny sultanate of Brunei is home to one of the most surprising and opulent courses in all of Asia. Designed by Jack Nicklaus, this championship course offers stunning ocean views and world-class facilities."
         }
       ],
       "theCourse": [],
@@ -1873,14 +1726,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 24,
@@ -1936,14 +1782,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 25,
@@ -1999,14 +1838,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 26,
@@ -2057,14 +1889,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 27,
@@ -2115,14 +1940,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 28,
@@ -2173,14 +1991,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 29,
@@ -2231,14 +2042,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": ""
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 30,
@@ -2289,90 +2093,12 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
-    "courseTitle": "",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Bali."
-      },
-      {
-        "id": 2,
-        "text": "Bali is a paradise for golfers."
-      },
-      {
-        "id": 3,
-        "text": "The island is home to some of the best golf courses in Indonesia."
-      },
-      {
-        "id": 4,
-        "text": "The courses are designed by some of the best golf course designers in the world."
-      },
-      {
-        "id": 5,
-        "text": "The courses are set in stunning locations, with beautiful views of the ocean and the mountains."
-      },
-      {
-        "id": 6,
-        "text": "The weather in Bali is perfect for golfing, with warm temperatures and plenty of sunshine."
-      },
-      {
-        "id": 7,
-        "text": "The island is home to some of the best golf resorts in Indonesia, with luxurious accommodation and top-class facilities."
-      },
-      {
-        "id": 8,
-        "text": "The courses are suitable for golfers of all levels, from beginners to professionals."
-      },
-      {
-        "id": 9,
-        "text": "The island is a popular destination for golfers from all over the world, with many international tournaments held here every year."
-      },
-      {
-        "id": 10,
-        "text": "The island is home to some of the best golf courses in Indonesia."
-      }
-    ]
+    "type": "Location"
   },
   {
     "id": 31,
     "slug": "kunming-sunshine-golf-club",
     "name": "Kunming Sunshine Golf Club (昆明阳光高尔夫俱乐部}",
-    "courseTitle": "Kunming Golf | Best Golf Courses in Kunming, Yunnan",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Kunming."
-      },
-      {
-        "id": 2,
-        "text": "Kunming is known as 'the City of Eternal Spring' and paradise for golfing."
-      },
-      {
-        "id": 3,
-        "text": "An unique natural environment with many courses designed with topography of the terrains."
-      },
-      {
-        "id": 4,
-        "text": "It offers a more enjoyable golf experience, with sunshine, blue sky, white clouds, lake view, wildness, fun, imagination, quality. excitement and challenge."
-      },
-      {
-        "id": 5,
-        "text": "A comfortable weather for golfing"
-      },
-      {
-        "id": 6,
-        "text": "Temperature avarages  around  15℃ . (Summer average is around 19℃ and winter is 8℃)."
-      },
-      {
-        "id": 7,
-        "text": "Among all the top 10 golf courses in China, Kunming Spring City Golf & Lake Resort is ranked as the No.1 Golf Course, offering a golfing experience that capitalizes on the existing features of the property while taking advantage of the dramatic view changes in elevation and expansive nature of the site."
-      },
-      {
-        "id": 8,
-        "text": " providing travelers both the 4 best golf courses in Kunming as well as other top recommended golf courses in Yunnan Province and start planning your golf trip!"
-      }
-    ],
     "country": "China",
     "city": "Kunming",
     "imageUrl": [
@@ -2476,41 +2202,6 @@
     "id": 32,
     "slug": "kunming-spring-city-golf-and-lake-resort",
     "name": "Kunming Spring City Golf and Lake Resort (Chinese Name: 昆明春城湖畔高尔夫度假村)",
-    "courseTitle": "Kunming Golf | Best Golf Courses in Kunming, Yunnan",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Kunming."
-      },
-      {
-        "id": 2,
-        "text": "Kunming is known as 'the City of Eternal Spring' and paradise for golfing."
-      },
-      {
-        "id": 3,
-        "text": "An unique natural environment with many courses designed with topography of the terrains."
-      },
-      {
-        "id": 4,
-        "text": "It offers a more enjoyable golf experience, with sunshine, blue sky, white clouds, lake view, wildness, fun, imagination, quality. excitement and challenge."
-      },
-      {
-        "id": 5,
-        "text": "A comfortable weather for golfing"
-      },
-      {
-        "id": 6,
-        "text": "Temperature avarages  around  15℃ . (Summer average is around 19℃ and winter is 8℃)."
-      },
-      {
-        "id": 7,
-        "text": "Among all the top 10 golf courses in China, Kunming Spring City Golf & Lake Resort is ranked as the No.1 Golf Course, offering a golfing experience that capitalizes on the existing features of the property while taking advantage of the dramatic view changes in elevation and expansive nature of the site."
-      },
-      {
-        "id": 8,
-        "text": " providing travelers both the 4 best golf courses in Kunming as well as other top recommended golf courses in Yunnan Province and start planning your golf trip!"
-      }
-    ],
     "country": "China",
     "city": "Kunming",
     "imageUrl": [
@@ -2598,37 +2289,6 @@
     "id": 33,
     "slug": "blackstone-golf-course-mission-hills",
     "name": "Blackstone Golf Course Mission Hills",
-    "courseTitle": "Hainan golf courses",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Hainan"
-      },
-      {
-        "id": 2,
-        "text": "During its construction, the locals new Hainan Island as “Project 791”, now they and the world know it as Mission Hills Hainan, a staggering engineering feat that only the Chinese would have dreamt up and completed in a time frame that other places in the world would have considered “impossible”."
-      },
-      {
-        "id": 3,
-        "text": "Set on the island, that was once considered as China´s answer to Hawaii, Mission Hills Hainan is going to be at the centre of the Chinese golf tourism industry with a total of 27 courses, double what Hainan province had before the completion of the mammoth project."
-      },
-      {
-        "id": 4,
-        "text": "The brain-child of Ken Chu, son of the billionaire business-man responsible for Mission Hills in Shenzhen, the island has been transformed into a golfing paradise, with no expense spared on any aspect of the incredible feat."
-      },
-      {
-        "id": 5,
-        "text": "It is what could be described as the only golf city in the world, perhaps even the Capital City of World Golf."
-      },
-      {
-        "id": 6,
-        "text": "It is not just the Mission Hills Club, the largest golf club in the world, that creates such a central hub for golf, there are other courses that reside in the Hainan province, some of which are also very good and well worth a visit."
-      },
-      {
-        "id": 7,
-        "text": "Most notably the Jian Lake Blue Bay Golf Club, located a 30-minute drive south of the city of Lingshui this parkland layout is a superb design by Mark Hollinger.  Rated in 2016 as the 4th best course in China Jian Lake Blue Bay Golf Club is a great test of golf, offering views out across the bay."
-      }
-    ],
     "country": "China",
     "city": "Hainan",
     "imageUrl": [
@@ -2680,37 +2340,6 @@
     "id": 34,
     "slug": "lava-fields-golf-course-mission-hills",
     "name": "Lava Fields Golf Course Mission Hills",
-    "courseTitle": "Hainan golf courses",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Hainan"
-      },
-      {
-        "id": 2,
-        "text": "During its construction, the locals new Hainan Island as “Project 791”, now they and the world know it as Mission Hills Hainan, a staggering engineering feat that only the Chinese would have dreamt up and completed in a time frame that other places in the world would have considered “impossible”."
-      },
-      {
-        "id": 3,
-        "text": "Set on the island, that was once considered as China´s answer to Hawaii, Mission Hills Hainan is going to be at the centre of the Chinese golf tourism industry with a total of 27 courses, double what Hainan province had before the completion of the mammoth project."
-      },
-      {
-        "id": 4,
-        "text": "The brain-child of Ken Chu, son of the billionaire business-man responsible for Mission Hills in Shenzhen, the island has been transformed into a golfing paradise, with no expense spared on any aspect of the incredible feat."
-      },
-      {
-        "id": 5,
-        "text": "It is what could be described as the only golf city in the world, perhaps even the Capital City of World Golf."
-      },
-      {
-        "id": 6,
-        "text": "It is not just the Mission Hills Club, the largest golf club in the world, that creates such a central hub for golf, there are other courses that reside in the Hainan province, some of which are also very good and well worth a visit."
-      },
-      {
-        "id": 7,
-        "text": "Most notably the Jian Lake Blue Bay Golf Club, located a 30-minute drive south of the city of Lingshui this parkland layout is a superb design by Mark Hollinger.  Rated in 2016 as the 4th best course in China Jian Lake Blue Bay Golf Club is a great test of golf, offering views out across the bay."
-      }
-    ],
     "country": "China",
     "city": "Hainan",
     "imageUrl": [
@@ -2762,37 +2391,6 @@
     "id": 35,
     "slug": "meadow-links-golf-course-mission-hills",
     "name": "Meadow Links Golf Course Mission Hills",
-    "courseTitle": "Hainan golf courses",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Hainan"
-      },
-      {
-        "id": 2,
-        "text": "During its construction, the locals new Hainan Island as “Project 791”, now they and the world know it as Mission Hills Hainan, a staggering engineering feat that only the Chinese would have dreamt up and completed in a time frame that other places in the world would have considered “impossible”."
-      },
-      {
-        "id": 3,
-        "text": "Set on the island, that was once considered as China´s answer to Hawaii, Mission Hills Hainan is going to be at the centre of the Chinese golf tourism industry with a total of 27 courses, double what Hainan province had before the completion of the mammoth project."
-      },
-      {
-        "id": 4,
-        "text": "The brain-child of Ken Chu, son of the billionaire business-man responsible for Mission Hills in Shenzhen, the island has been transformed into a golfing paradise, with no expense spared on any aspect of the incredible feat."
-      },
-      {
-        "id": 5,
-        "text": "It is what could be described as the only golf city in the world, perhaps even the Capital City of World Golf."
-      },
-      {
-        "id": 6,
-        "text": "It is not just the Mission Hills Club, the largest golf club in the world, that creates such a central hub for golf, there are other courses that reside in the Hainan province, some of which are also very good and well worth a visit."
-      },
-      {
-        "id": 7,
-        "text": "Most notably the Jian Lake Blue Bay Golf Club, located a 30-minute drive south of the city of Lingshui this parkland layout is a superb design by Mark Hollinger.  Rated in 2016 as the 4th best course in China Jian Lake Blue Bay Golf Club is a great test of golf, offering views out across the bay."
-      }
-    ],
     "country": "China",
     "city": "Hainan",
     "imageUrl": [
@@ -2844,37 +2442,6 @@
     "id": 36,
     "slug": "sandbelt-trails-golf-course-mission-hills",
     "name": "Sandbelt Trails Golf Course Mission Hills",
-    "courseTitle": "Hainan golf courses",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Hainan"
-      },
-      {
-        "id": 2,
-        "text": "During its construction, the locals new Hainan Island as “Project 791”, now they and the world know it as Mission Hills Hainan, a staggering engineering feat that only the Chinese would have dreamt up and completed in a time frame that other places in the world would have considered “impossible”."
-      },
-      {
-        "id": 3,
-        "text": "Set on the island, that was once considered as China´s answer to Hawaii, Mission Hills Hainan is going to be at the centre of the Chinese golf tourism industry with a total of 27 courses, double what Hainan province had before the completion of the mammoth project."
-      },
-      {
-        "id": 4,
-        "text": "The brain-child of Ken Chu, son of the billionaire business-man responsible for Mission Hills in Shenzhen, the island has been transformed into a golfing paradise, with no expense spared on any aspect of the incredible feat."
-      },
-      {
-        "id": 5,
-        "text": "It is what could be described as the only golf city in the world, perhaps even the Capital City of World Golf."
-      },
-      {
-        "id": 6,
-        "text": "It is not just the Mission Hills Club, the largest golf club in the world, that creates such a central hub for golf, there are other courses that reside in the Hainan province, some of which are also very good and well worth a visit."
-      },
-      {
-        "id": 7,
-        "text": "Most notably the Jian Lake Blue Bay Golf Club, located a 30-minute drive south of the city of Lingshui this parkland layout is a superb design by Mark Hollinger.  Rated in 2016 as the 4th best course in China Jian Lake Blue Bay Golf Club is a great test of golf, offering views out across the bay."
-      }
-    ],
     "country": "China",
     "city": "Hainan",
     "imageUrl": [
@@ -2926,37 +2493,6 @@
     "id": 37,
     "slug": "shadow-dunes-golf-course-mission-hills",
     "name": "Shadow Dunes Golf Course Mission Hills",
-    "courseTitle": "Hainan golf courses",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Hainan"
-      },
-      {
-        "id": 2,
-        "text": "During its construction, the locals new Hainan Island as “Project 791”, now they and the world know it as Mission Hills Hainan, a staggering engineering feat that only the Chinese would have dreamt up and completed in a time frame that other places in the world would have considered “impossible”."
-      },
-      {
-        "id": 3,
-        "text": "Set on the island, that was once considered as China´s answer to Hawaii, Mission Hills Hainan is going to be at the centre of the Chinese golf tourism industry with a total of 27 courses, double what Hainan province had before the completion of the mammoth project."
-      },
-      {
-        "id": 4,
-        "text": "The brain-child of Ken Chu, son of the billionaire business-man responsible for Mission Hills in Shenzhen, the island has been transformed into a golfing paradise, with no expense spared on any aspect of the incredible feat."
-      },
-      {
-        "id": 5,
-        "text": "It is what could be described as the only golf city in the world, perhaps even the Capital City of World Golf."
-      },
-      {
-        "id": 6,
-        "text": "It is not just the Mission Hills Club, the largest golf club in the world, that creates such a central hub for golf, there are other courses that reside in the Hainan province, some of which are also very good and well worth a visit."
-      },
-      {
-        "id": 7,
-        "text": "Most notably the Jian Lake Blue Bay Golf Club, located a 30-minute drive south of the city of Lingshui this parkland layout is a superb design by Mark Hollinger.  Rated in 2016 as the 4th best course in China Jian Lake Blue Bay Golf Club is a great test of golf, offering views out across the bay."
-      }
-    ],
     "country": "China",
     "city": "Hainan",
     "imageUrl": [
@@ -3008,37 +2544,6 @@
     "id": 38,
     "slug": "stone-quarry-golf-course-mission-hills",
     "name": "Stone Quarry Golf Course Mission Hills",
-    "courseTitle": "Hainan golf courses",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Hainan"
-      },
-      {
-        "id": 2,
-        "text": "During its construction, the locals new Hainan Island as “Project 791”, now they and the world know it as Mission Hills Hainan, a staggering engineering feat that only the Chinese would have dreamt up and completed in a time frame that other places in the world would have considered “impossible”."
-      },
-      {
-        "id": 3,
-        "text": "Set on the island, that was once considered as China´s answer to Hawaii, Mission Hills Hainan is going to be at the centre of the Chinese golf tourism industry with a total of 27 courses, double what Hainan province had before the completion of the mammoth project."
-      },
-      {
-        "id": 4,
-        "text": "The brain-child of Ken Chu, son of the billionaire business-man responsible for Mission Hills in Shenzhen, the island has been transformed into a golfing paradise, with no expense spared on any aspect of the incredible feat."
-      },
-      {
-        "id": 5,
-        "text": "It is what could be described as the only golf city in the world, perhaps even the Capital City of World Golf."
-      },
-      {
-        "id": 6,
-        "text": "It is not just the Mission Hills Club, the largest golf club in the world, that creates such a central hub for golf, there are other courses that reside in the Hainan province, some of which are also very good and well worth a visit."
-      },
-      {
-        "id": 7,
-        "text": "Most notably the Jian Lake Blue Bay Golf Club, located a 30-minute drive south of the city of Lingshui this parkland layout is a superb design by Mark Hollinger.  Rated in 2016 as the 4th best course in China Jian Lake Blue Bay Golf Club is a great test of golf, offering views out across the bay."
-      }
-    ],
     "country": "China",
     "city": "Hainan",
     "imageUrl": [
@@ -3090,37 +2595,6 @@
     "id": 39,
     "slug": "the-vintage-golf-course-mission-hills",
     "name": "The Vintage Golf Course Mission Hills",
-    "courseTitle": "Hainan golf courses",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Hainan"
-      },
-      {
-        "id": 2,
-        "text": "During its construction, the locals new Hainan Island as “Project 791”, now they and the world know it as Mission Hills Hainan, a staggering engineering feat that only the Chinese would have dreamt up and completed in a time frame that other places in the world would have considered “impossible”."
-      },
-      {
-        "id": 3,
-        "text": "Set on the island, that was once considered as China´s answer to Hawaii, Mission Hills Hainan is going to be at the centre of the Chinese golf tourism industry with a total of 27 courses, double what Hainan province had before the completion of the mammoth project."
-      },
-      {
-        "id": 4,
-        "text": "The brain-child of Ken Chu, son of the billionaire business-man responsible for Mission Hills in Shenzhen, the island has been transformed into a golfing paradise, with no expense spared on any aspect of the incredible feat."
-      },
-      {
-        "id": 5,
-        "text": "It is what could be described as the only golf city in the world, perhaps even the Capital City of World Golf."
-      },
-      {
-        "id": 6,
-        "text": "It is not just the Mission Hills Club, the largest golf club in the world, that creates such a central hub for golf, there are other courses that reside in the Hainan province, some of which are also very good and well worth a visit."
-      },
-      {
-        "id": 7,
-        "text": "Most notably the Jian Lake Blue Bay Golf Club, located a 30-minute drive south of the city of Lingshui this parkland layout is a superb design by Mark Hollinger.  Rated in 2016 as the 4th best course in China Jian Lake Blue Bay Golf Club is a great test of golf, offering views out across the bay."
-      }
-    ],
     "country": "China",
     "city": "Hainan",
     "imageUrl": [
@@ -3172,41 +2646,6 @@
     "id": 40,
     "slug": "yunnan-lakeview-golf-club",
     "name": "Yunnan Lakeview Golf Club",
-    "courseTitle": "Kunming Golf | Best Golf Courses in Kunming, Yunnan",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Kunming."
-      },
-      {
-        "id": 2,
-        "text": "Kunming is known as 'the City of Eternal Spring' and paradise for golfing."
-      },
-      {
-        "id": 3,
-        "text": "An unique natural environment with many courses designed with topography of the terrains."
-      },
-      {
-        "id": 4,
-        "text": "It offers a more enjoyable golf experience, with sunshine, blue sky, white clouds, lake view, wildness, fun, imagination, quality. excitement and challenge."
-      },
-      {
-        "id": 5,
-        "text": "A comfortable weather for golfing"
-      },
-      {
-        "id": 6,
-        "text": "Temperature avarages  around  15℃ . (Summer average is around 19℃ and winter is 8℃)."
-      },
-      {
-        "id": 7,
-        "text": "Among all the top 10 golf courses in China, Kunming Spring City Golf & Lake Resort is ranked as the No.1 Golf Course, offering a golfing experience that capitalizes on the existing features of the property while taking advantage of the dramatic view changes in elevation and expansive nature of the site."
-      },
-      {
-        "id": 8,
-        "text": " providing travelers both the 4 best golf courses in Kunming as well as other top recommended golf courses in Yunnan Province and start planning your golf trip!"
-      }
-    ],
     "country": "China",
     "city": "Kunming",
     "imageUrl": [
@@ -3279,41 +2718,6 @@
     "id": 41,
     "slug": "kunming-lakeview-golf-club",
     "name": "Kunming Lakeview Golf Club",
-    "courseTitle": "Kunming Golf | Best Golf Courses in Kunming, Yunnan",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Kunming."
-      },
-      {
-        "id": 2,
-        "text": "Kunming is known as 'the City of Eternal Spring' and paradise for golfing."
-      },
-      {
-        "id": 3,
-        "text": "An unique natural environment with many courses designed with topography of the terrains."
-      },
-      {
-        "id": 4,
-        "text": "It offers a more enjoyable golf experience, with sunshine, blue sky, white clouds, lake view, wildness, fun, imagination, quality. excitement and challenge."
-      },
-      {
-        "id": 5,
-        "text": "A comfortable weather for golfing"
-      },
-      {
-        "id": 6,
-        "text": "Temperature avarages  around  15℃ . (Summer average is around 19℃ and winter is 8℃)."
-      },
-      {
-        "id": 7,
-        "text": "Among all the top 10 golf courses in China, Kunming Spring City Golf & Lake Resort is ranked as the No.1 Golf Course, offering a golfing experience that capitalizes on the existing features of the property while taking advantage of the dramatic view changes in elevation and expansive nature of the site."
-      },
-      {
-        "id": 8,
-        "text": " providing travelers both the 4 best golf courses in Kunming as well as other top recommended golf courses in Yunnan Province and start planning your golf trip!"
-      }
-    ],
     "country": "China",
     "city": "Kunming",
     "imageUrl": [
@@ -3384,41 +2788,6 @@
     "id": 42,
     "slug": "kunming-country-golf-club",
     "name": "Kunming Country Golf Club",
-    "courseTitle": "Kunming Golf | Best Golf Courses in Kunming, Yunnan",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Kunming."
-      },
-      {
-        "id": 2,
-        "text": "Kunming is known as 'the City of Eternal Spring' and paradise for golfing."
-      },
-      {
-        "id": 3,
-        "text": "An unique natural environment with many courses designed with topography of the terrains."
-      },
-      {
-        "id": 4,
-        "text": "It offers a more enjoyable golf experience, with sunshine, blue sky, white clouds, lake view, wildness, fun, imagination, quality. excitement and challenge."
-      },
-      {
-        "id": 5,
-        "text": "A comfortable weather for golfing"
-      },
-      {
-        "id": 6,
-        "text": "Temperature avarages  around  15℃ . (Summer average is around 19℃ and winter is 8℃)."
-      },
-      {
-        "id": 7,
-        "text": "Among all the top 10 golf courses in China, Kunming Spring City Golf & Lake Resort is ranked as the No.1 Golf Course, offering a golfing experience that capitalizes on the existing features of the property while taking advantage of the dramatic view changes in elevation and expansive nature of the site."
-      },
-      {
-        "id": 8,
-        "text": " providing travelers both the 4 best golf courses in Kunming as well as other top recommended golf courses in Yunnan Province and start planning your golf trip!"
-      }
-    ],
     "country": "China",
     "city": "Kunming",
     "imageUrl": [
@@ -3476,17 +2845,6 @@
     "id": 43,
     "slug": "lakeview-vientiane-golf-club",
     "name": "Lakeview Vientiane Golf Club",
-    "courseTitle": "Vientaine Golf | Best Golf Courses in Vientaine, Laos",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Vientaine."
-      },
-      {
-        "id": 2,
-        "text": "-"
-      }
-    ],
     "country": "Laos",
     "city": "Vientaine",
     "imageUrl": [
@@ -3551,17 +2909,6 @@
     "id": 44,
     "slug": "lao-country-club",
     "name": "Lao Country Club",
-    "courseTitle": "Vientaine Golf | Best Golf Courses in Vientaine, Laos",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Vientaine."
-      },
-      {
-        "id": 2,
-        "text": "-"
-      }
-    ],
     "country": "Laos",
     "city": "Vientaine",
     "imageUrl": [
@@ -3623,17 +2970,6 @@
     "id": 45,
     "slug": "long-vien-golf-club",
     "name": "Long Vien Golf Club",
-    "courseTitle": "Vientaine Golf | Best Golf Courses in Vientaine, Laos",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Vientaine."
-      },
-      {
-        "id": 2,
-        "text": "-"
-      }
-    ],
     "country": "Laos",
     "city": "Vientaine",
     "imageUrl": [
@@ -3695,17 +3031,6 @@
     "id": 46,
     "slug": "sea-games-golf-club",
     "name": "SEA Games Golf Club",
-    "courseTitle": "Vientaine Golf | Best Golf Courses in Vientaine, Laos",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Vientaine."
-      },
-      {
-        "id": 2,
-        "text": "-"
-      }
-    ],
     "country": "Laos",
     "city": "Vientaine",
     "imageUrl": [
@@ -3770,17 +3095,6 @@
     "id": 47,
     "slug": "luang-prabang-golf-club",
     "name": "Luang Prabang Golf Club",
-    "courseTitle": "Vientaine Golf | Best Golf Courses in Vientaine, Laos",
-    "courseDesc": [
-      {
-        "id": 1,
-        "text": "Reasons to golf in Vientaine."
-      },
-      {
-        "id": 2,
-        "text": "-"
-      }
-    ],
     "country": "Laos",
     "city": "Vientaine",
     "imageUrl": [
@@ -3837,6 +3151,2785 @@
       ]
     },
     "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 48,
+    "slug": "laguna-golf-bintan",
+    "name": "Laguna Golf Bintan",
+    "country": "Indonesia",
+    "city": "Bintan",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/laguna-golf-bintan-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Laguna Golf Bintan set on 60-hectares on the shores of the Straits of Singapore. Initially designed by Greg Norman, the Bintan golf was brought up to modern standards in 2016 by Paul Jensen.All 18 green complexes revised, and bunkers have been reduced in number and better positioned to more strategic locations. Also, low maintenance features such as grass depressions, fairway tiers, and mounds have been added to enhance the playing strategy and shot variety. Wider fairways not only benefit average golfers but also open up new possibilities for serious golfers looking for birdie opportunities. However, accurate approach play is required to score well and avoid the longish grass found on most holes."
+        },
+        {
+          "text": "The Laguna Bintan layout, comprising two out-and-back 9-hole loops, is more undulating on the front-nine, flatter on the back, and contains some memorable holes. The golf course starts with unique sea views on the 2nd to 4th holes, then wraps around a series of lagoons on holes 6 to 8. The 9th is another challenging hole as it plays long and uphill back towards the clubhouse."
+        },
+        {
+          "text": "The back nine plays on the other side of the resort and opens with holes 10 to 15 playing through dense jungle and the unique rock outcroppings. The highlight of the golf course is the long par-4 sixteenth through the forest back towards the sea. The signature hole is the 17th. The spectacular and tough par-3 requires a shot across the beach, over an impressive rocky shore and onto a tree-surrounded and well-guarded green. The impact of this visually intimidating hole eased by the beautiful backdrop of the sea and the Banyan Tree Resort on the hillside."
+        },
+        {
+          "text": "The traditional Indonesian-style clubhouse sits at the highest point of the property and looks out over the golf course.  Refurbished in 2016, it retains much of the tropical island design feel, modern luxuries and conveniences have been added to pamper all golfers. The terrace café offers a selection of local and international dishes catered as part of the Banyan Tree. A well-stocked pro shop has a decent selection of logoed golf apparel, supplies, and equipment."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 49,
+    "slug": "ria-bintan-golf-club",
+    "name": "Ria Bintan Golf Club",
+    "country": "Indonesia",
+    "city": "Bintan",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/ria-bintan-golf-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/ria-bintan-golf-club-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/ria-bintan-golf-club-img-3.jpg",
+        "alt": ""
+      },
+      {
+        "id": 4,
+        "url": "/ria-bintan-golf-club-img-4.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Ria Bintan Golf Club is a 27-hole championship golf course designed by Gary Player. The 18-hole Ocean Course and the first nine holes of the 18-hole Forest Course opened for play in October 1998 and December 2000, respectively."
+        },
+        {
+          "text": "The Ocean golf course at Ria Bintan offers two distinct playing atmospheres. The course cuts through the native jungle of Riau, where you are more likely to come upon monkeys, small deer, or wild boar than other humans. It also has its seaside holes, and it's these holes will be best remembered by visiting golfers. At the par-five 7th (voted best par 5 in Asia), the sea revealed to the golfer halfway down the fairway. From here, you get closer to the sea via the short dogleg 8th and then play along with it at the par-three 9th. This famous hole, photographed extensively, is a must-play hole requiring a medium iron played over the beach to an archipelago green. The last view of the sea is the par-four 10th, where the beach parallels the fairway."
+        },
+        {
+          "text": "Ria Bintan's Ocean Course conditioning and presentation is the best in Indonesia and is as good as the best courses in nearby Singapore. The course measures 6,470 meters from the championship tees."
+        },
+        {
+          "text": "Ria Bintan Golf Club has made it to the official ranking of the Top 100 Golf Courses published by Golf Digest Magazine. Ria Bintan Golf club clinched first-winner awards in the Asian Golf Monthly Awards 2008 for Best Golf Course in Asia, Best Course in Indonesia, and Best Par 4 in Asia."
+        },
+        {
+          "text": "Overall, Ria Bintan is one of the best course designs in Asia."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 50,
+    "slug": "bintan-lagoon-resort",
+    "name": "Bintan Lagoon Resort",
+    "country": "Indonesia",
+    "city": "Bintan",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Ria Bintan Golf Club is a 27-hole championship golf course designed by Gary Player. The 18-hole Ocean Course and the first nine holes of the 18-hole Forest Course opened for play in October 1998 and December 2000, respectively."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 51,
+    "slug": "padang-golf-sukajadi",
+    "name": "Padang Golf Sukajadi",
+    "country": "Indonesia",
+    "city": "Batam",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/padang-golf-sukajadi-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Padang Golf Sukajadi is a 18 hole championship course originally designed and created by reputed golf course designer THOMSON, WOLVERIDGE & PERRET. Due to the latest development, the course was later altered and renovated by PT. Flora Tjipta Sarana, Jakarta. Opened in 2009, Padang Golf Sukajadi is a semi private course. Located strategically in the heart of Batam city. The Par 72 Padang Golf Sukajadi measures 6,340 meters with four different tee locations. The grass used on the course is Salam Seashore Paspalum, will be the perfect club to host a professional golf events."
+        },
+        {
+          "text": "Located conveniently near downtown Batam, Padang Golf Sukajadi is an impressive 18-hole par-72 course, originally crafted by popular designers Thomson, Wolveridge, and Perrett in the late 1980s."
+        },
+        {
+          "text": "In 2014, Golf Digest Singapore ranked it the second-best golf course in Batam. It has proudly hosted prestigious events like the Indonesian Golf Association Amateur Open Golf Championship and the Women's Amateur Open Golf Championship."
+        },
+        {
+          "text": "Situated at the heart of Batam City, this Batam golf haven is easily accessible, just 16-minute drive from Hang Nadim Batam International Airport, 13 minutes from Batam International Ferry Terminal, and a mere hop from Batam City Centre"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 52,
+    "slug": "palm-springs-golf-country-club",
+    "name": "Palm Springs Golf & Country Club",
+    "country": "Indonesia",
+    "city": "Batam",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/palm-springs-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Established in 1995, Palm Spring Golf and Country Club stands as Batam's premier golf destination. Crafted by Larry Nelson and the International Management Group, the 27-hole par 72/36 course is a masterpiece divided into three distinctive sets: the Island Course, Resort Course, and Palm Course Notably, its picturesque layout features numerous man-made lakes and ponds, creating a captivating water-centric ambiance throughout the 27 holes. Crowned as the best golf course in Batam, Palm Spring offers a breathtaking experience."
+        },
+        {
+          "text": "Located 7 minutes from Nongsapura Ferry Terminal, the clubhouse provides access to stunning views, including Nongsa Beach and Singapore's modern skyscrapers. These form an exquisite backdrop for an unforgettable round of golf."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 53,
+    "slug": "tamarin-santana-golf-club",
+    "name": "Tamarin Santana Golf Club",
+    "country": "Indonesia",
+    "city": "Batam",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/tamarin-santana-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Tamarin Santana Golf Course, crafted by the legendary Jack Nicklaus, offers a unique twist with its deliberate choice of having just nine challenging holes across its expansive 60-hectare expanse. Despite its compact size, this course is a formidable challenge for golfers, whether they are amateurs or seasoned professionals. To ease the game, providing female caddy facilities and buggy rentals adds a touch of convenience."
+        },
+        {
+          "text": "Located a mere 5 minutes from the Nongsapura International Ferry terminal, accessibility is a breeze, with additional access points just 15 minutes from Hang Nadim Airport and 41 minutes from the Harbour Bay Ferry terminal in Batu Ampar, not forgetting a quick 34-minute drive from the Batam Centre Ferry terminal"
+        },
+        {
+          "text": "18-Hole Fun and Challenging Golf Course designed by Jack Nicklaus. Located at Nongsa, Batam Island, surrounded by 4 star Hotels and Marina."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 54,
+    "slug": "indah-puri-golf-resort",
+    "name": "Indah Puri Golf Resort",
+    "country": "Indonesia",
+    "city": "Batam",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/indah-puri-golf-resort-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Indah Puri Golf Resort is one of Batam's most stunning courses. Built in 1993 and designed by the well-known Ron Fream, it offers great value and challenges golfers of all levels. While it does not claim the same prestige as some others, it holds its own."
+        },
+        {
+          "text": "Conveniently located near Batam Centre and Sekupang, it's an ideal choice for those hopping over from Singapore via ferry. Just a 22-minute drive from Nagoya, accessibility is key for golf enthusiasts seeking the lush greens and scenic beauty that Indah Puri Golf Resort promises. This Batam golf course is a solid choice for a rewarding golf experience without the fuss."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 55,
+    "slug": "batam-hills-golf-resort",
+    "name": "Batam Hills Golf Resort",
+    "country": "Indonesia",
+    "city": "Batam",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/batam-hills-golf-resort-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Located in the scenic Waterfront City of Batam Island, Batam Hills Golf Resort, formerly Paradise Bay Golf Club, traces its roots back to 1993. After a significant makeover in 2006, this 18-hole golf course, designed by Max Wheeler, beckons golf enthusiasts with its par-72 layout spanning 6,225 metres. Despite its modest length, the course offers diverse holes, promising challenges for golfers of all levels."
+        },
+        {
+          "text": "Once well-known for its lacklustre upkeep, this Batam golf course has undergone substantial improvements. Now, it stands as a testament to meticulous maintenance. Easily accessible, the resort is a mere 25-minute journey from Nagoya. Whether you're a seasoned golfer or just looking for a delightful round, this charming retreat is worth the visit."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 56,
+    "slug": "tering-bay-golf-and-country-club",
+    "name": "Tering Bay Golf and Country Club",
+    "country": "Indonesia",
+    "city": "Batam",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Tering Bay, a gem in Batam's golf scene, boasts an 18-hole par-72 course envisioned by nGreg Normanin 1995. Nestled on 167 hectares of land, this course unfolds captivating ocean views, embracing a scenic bay north of Batam."
+        },
+        {
+          "text": "With four tee box options, it caters to golfers of varied skills, ensuring an enjoyable round for all. Access is a breeze—just a 10-minute drive from Nongspura ferry terminal or a quick 35-minute trip from Batam Centre."
+        },
+        {
+          "text": "So, if you're up for an amazing Batam golf experience with a touch of Norman's genius, Tering Bay is the place to be!"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 57,
+    "slug": "southlinks-country-club",
+    "name": "Southlinks Country Club",
+    "country": "Indonesia",
+    "city": "Batam",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Located in downtown Batam, Southlinks Country Club invites golfers to play an 18-hole course tailored to all skill levels. Created by Japanese golf course architect Hisamitsu Ohnishi, the design reflects a mix of accessibility for amateurs and exciting challenges for professionals."
+        },
+        {
+          "text": "Set on mostly flat terrain, the start of the course prioritises creating variety and challenge. Just 20 kilometres southeast of Singapore, this Batam golf paradise attracts locals and visitors alike. Its proximity to Sekupang and Nagoya further adds to its appeal, making Southlinks Country Club a comfortable and enjoyable choice for playing golf in the heart of Batam."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 58,
+    "slug": "borneo-golf-country-club",
+    "name": "Borneo Golf Country Club",
+    "country": "Indonesia",
+    "city": "Surabaya",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/borneo-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Jack Nicklaus"
+        },
+        {
+          "text": "7159 yards | Links-style"
+        },
+        {
+          "text": " 4.0 out of 5"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 59,
+    "slug": "dalit-bay-golf-country-club",
+    "name": "Dalit Bay Golf Country Club",
+    "country": "Indonesia",
+    "city": "Surabaya",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/dalit-bay-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Ted Parslow"
+        },
+        {
+          "text": "6369 yards | Parkland"
+        },
+        {
+          "text": " 4.0 out of 5"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 60,
+    "slug": "nexus-resort-karambunai-golf-course",
+    "name": "Nexus Resort Karambunai Golf Course",
+    "country": "Indonesia",
+    "city": "Surabaya",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/nexus-resort-karambunai-golf-course-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Price on application"
+        },
+        {
+          "text": "Ronald Fream"
+        },
+        {
+          "text": "6173 yards | Parkland"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 61,
+    "slug": "sabah-golf-country-club",
+    "name": "Sabah Golf Country Club",
+    "country": "Indonesia",
+    "city": "Surabaya",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/sabah-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Robert Muir Graves - Nelson & Haworth"
+        },
+        {
+          "text": "6928 yards | Parkland"
+        },
+        {
+          "text": " 4.0 out of 5"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 62,
+    "slug": "sutera-harbour-golf-country-club",
+    "name": "Sutera Harbour Golf Country Club",
+    "country": "Indonesia",
+    "city": "Surabaya",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/sutera-harbour-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Graham Marsh"
+        },
+        {
+          "text": "6907 yards | Parkland"
+        },
+        {
+          "text": " 4.1 out of 5"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 63,
+    "slug": "keningau-golf-country-club",
+    "name": "Keningau Golf & Country Club",
+    "country": "Indonesia",
+    "city": "Surabaya",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/keningau-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "(well recognized parkland golf course)"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 64,
+    "slug": "kudat-golf-club",
+    "name": "Kudat Golf Club",
+    "country": "Indonesia",
+    "city": "Surabaya",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kudat-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "(oldest Sabah golf course was once part of St. Andrews Scotland)"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 65,
+    "slug": "lahad-datu-golf-country-club",
+    "name": "Lahad Datu Golf & Country Club",
+    "country": "Indonesia",
+    "city": "Surabaya",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/lahad-datu-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "(all-Bermuda golf course in Sabah)"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 66,
+    "slug": "sutera-harbour-golf-n-country-club",
+    "name": "Sutera Harbour Golf & Country Club",
+    "country": "Indonesia",
+    "city": "Surabaya",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/sutera-harbour-golf-n-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "(27-hole scenic and well-maintained layout)"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 67,
+    "slug": "bukit-pandawa-golf-country-club",
+    "name": "Bukit Pandawa Golf & Country Club",
+    "country": "Indonesia",
+    "city": "Bali",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/bali-national-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "A hugely enjoyable par-3 course with stunning views overlooking the ocean, and the ideal place to tune up your short game  The newest addition to the Bali golfing scene, having opening in 2016, Bukit Pandawa Golf & Country Club is located high up on top of the limestone cliffs near the Bukit Peninsula, offering wonderful views of the ocean and the breaking waves. It’s an unusual golf course in that it consists of 18 par-3 holes, but don’t mistake this as some cheap 'pitch & putt' course as it is maintained to very high standards. It’s an ideal golf course to play when you are on holiday as it offers panoramic views from all over the course."
+        },
+        {
+          "text": "It is a par 54 layout and most people get around in about two hours. There's enough water and sand in play to penalise wayward tee shots while providing a pleasing aesthetic contrast to the lush paspalum playing surfaces that ensure good year-round conditions, although the greens are fairly generous, which is a good thing given the swirling coastal winds."
+        },
+        {
+          "text": "While you'll be taking a mid iron off most of the tees, there are a few shorter holes where you only need a nine-iron or a wedge, and two longer holes where you'll likely need a wood, with the 2nd hole playing to 244 yards from the back tees."
+        },
+        {
+          "text": "The most exciting hole is the signature 13th, which measures just under 150 yards and is surrounded by bunkers with curved stone walls in front and a ornate tower behind it. The rest of the golf course is extremely picturesque with dramatic rocky outcrops, terraced paddy fields and great views over the white-sand beaches."
+        },
+        {
+          "text": "The clubhouse is reminiscent of a Balinese temple but includes all of the facilities you expect including locker rooms, a pro shop and a number of restaurants and bars. As expected, the welcome and customer service is of a high standard. Overall, it's well worth the short trip from Nusa Dua for a round at Bukit Pandawa Golf & Country Club, as it'll prove a hugely enjoyable day out on your next golf holiday in Bali."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "10 mins from Nusa Dua"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "$SGD 143 (~$107 USD) for 18 Holes + Caddie + Shared Cart"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 68,
+    "slug": "borneo-golf-country-club-bandung",
+    "name": "Borneo Golf Country Club",
+    "country": "Indonesia",
+    "city": "Bandung",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/borneo-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Jack Nicklaus"
+        },
+        {
+          "text": "7159 yards | Links-style"
+        },
+        {
+          "text": " 4.0 out of 5"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 69,
+    "slug": "dalit-bay-golf-country-club-bandung",
+    "name": "Dalit Bay Golf Country Club",
+    "country": "Indonesia",
+    "city": "Bandung",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/dalit-bay-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Ted Parslow"
+        },
+        {
+          "text": "6369 yards | Parkland"
+        },
+        {
+          "text": " 4.0 out of 5"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 70,
+    "slug": "nexus-resort-karambunai-golf-course-bandung",
+    "name": "Nexus Resort Karambunai Golf Course",
+    "country": "Indonesia",
+    "city": "Bandung",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/nexus-resort-karambunai-golf-course-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Price on application"
+        },
+        {
+          "text": "Ronald Fream"
+        },
+        {
+          "text": "6173 yards | Parkland"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 71,
+    "slug": "sabah-golf-country-club-bandung",
+    "name": "Sabah Golf Country Club",
+    "country": "Indonesia",
+    "city": "Bandung",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/sabah-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Robert Muir Graves - Nelson & Haworth"
+        },
+        {
+          "text": "6928 yards | Parkland"
+        },
+        {
+          "text": " 4.0 out of 5"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 72,
+    "slug": "sutera-harbour-golf-country-club-bandung",
+    "name": "Sutera Harbour Golf Country Club",
+    "country": "Indonesia",
+    "city": "Bandung",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/sutera-harbour-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Graham Marsh"
+        },
+        {
+          "text": "6907 yards | Parkland"
+        },
+        {
+          "text": " 4.1 out of 5"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 73,
+    "slug": "keningau-golf-country-club-bandung",
+    "name": "Keningau Golf & Country Club",
+    "country": "Indonesia",
+    "city": "Bandung",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/keningau-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "(well recognized parkland golf course)"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 74,
+    "slug": "kudat-golf-club-bandung",
+    "name": "Kudat Golf Club",
+    "country": "Indonesia",
+    "city": "Bandung",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kudat-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "(oldest Sabah golf course was once part of St. Andrews Scotland)"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 75,
+    "slug": "lahad-datu-golf-country-club-bandung",
+    "name": "Lahad Datu Golf & Country Club",
+    "country": "Indonesia",
+    "city": "Bandung",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/lahad-datu-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "(all-Bermuda golf course in Sabah)"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 76,
+    "slug": "sutera-harbour-golf-n-country-club-bandung",
+    "name": "Sutera Harbour Golf & Country Club",
+    "country": "Indonesia",
+    "city": "Bandung",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/sutera-harbour-golf-n-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "(27-hole scenic and well-maintained layout)"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 77,
+    "slug": "emeralda-golf-club",
+    "name": "Emeralda Golf Club",
+    "country": "Indonesia",
+    "city": "Bogor",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/emeralda-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Designed by Arnold Palmer and Jack Nicklaus"
+        },
+        {
+          "text": "A 27-hole course venue host to several Indonesian Opens, the Johnnie Walker Super Tour, Dunhill Asian Masters, and the Volvo Masters Asia."
+        },
+        {
+          "text": "Very convenient for  those coming off the toll road from Jakarta or Bogor "
+        },
+        {
+          "text": "Comprising the Lake Course and the River Course."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 78,
+    "slug": "gunung-geulis-country-club",
+    "name": "Gunung Geulis Country Club",
+    "country": "Indonesia",
+    "city": "Bogor",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/gunung-geulis-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Spectacular 36 hole Peter Thomson course in the Bogor Mountains."
+        },
+        {
+          "text": "The club is 45 minutes off Jagorawi Highway and about 50 kilometers center of Jakarta."
+        },
+        {
+          "text": "Sprawled over 450 hectares the 36-hole golf resort is in the hills 450 meters above sea level."
+        },
+        {
+          "text": "Fresh air and excellent views are ever present"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 79,
+    "slug": "klub-golf-bogor-raya",
+    "name": "Klub Golf Bogor Raya",
+    "country": "Indonesia",
+    "city": "Bogor",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/klub-golf-bogor-raya-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Refreshing garden course, 1,000 feet above sea level"
+        },
+        {
+          "text": "About 1:20 hour from Jakarta off the Jagorawi toll road."
+        },
+        {
+          "text": "One of the more scenic areas in the Bogor, enroute to the course."
+        },
+        {
+          "text": "The golf course built into the hills surrounding Bogor"
+        },
+        {
+          "text": " Pleasantly cool all year-round for golfers."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 80,
+    "slug": "rainbow-hills-golf-club",
+    "name": "Rainbow Hills Golf Club",
+    "country": "Indonesia",
+    "city": "Bogor",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/rainbow-hills-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Designed by famous US-based golf architect Bob Moore of J"
+        },
+        {
+          "text": "Impressive mountainous JMP designed and VIP course"
+        },
+        {
+          "text": "Located in the low lands on the way to the Bogor Region.  "
+        },
+        {
+          "text": "Cool temperatures and fewer crowds."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 81,
+    "slug": "rancamaya-golf-country-club",
+    "name": "Rancamaya Golf & Country Club",
+    "country": "Indonesia",
+    "city": "Bogor",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/rancamaya-golf-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "An excellent parkland course designed by Ted Robinson."
+        },
+        {
+          "text": "Spectacular volcano views of the extinct Mount Salak."
+        },
+        {
+          "text": "Located 1.5 hours from Jakarta and 20 minutes from Bogor."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 82,
+    "slug": "riverside-golf-club",
+    "name": "Riverside Golf Club",
+    "country": "Indonesia",
+    "city": "Bogor",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/riverside-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "The first Greg Norman-designed course in Indonesia that opened in 1994."
+        },
+        {
+          "text": "A challenging 18-hole par 72 course jungle course."
+        },
+        {
+          "text": "Course routing through the original hardwood rain forested jungle offer players a real test."
+        },
+        {
+          "text": "About 30 kilometers from central Jakarta.  "
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 83,
+    "slug": "sentul-highlands-golf-club",
+    "name": "Sentul Highlands Golf Club",
+    "country": "Indonesia",
+    "city": "Bogor",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/sentul-highlands-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Designed by Gary Player"
+        },
+        {
+          "text": "It is located in Bogor inside the Sentul City residential development. "
+        },
+        {
+          "text": "About 1 hour from Jakarta via the Jagorawi toll road and 30 minutes from Bogor city."
+        },
+        {
+          "text": "Previously known as Mentari Golf Bukit Sentul."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 84,
+    "slug": "yunnan-oct-clouds-valley-golf-club ",
+    "name": "Yunnan OCT Clouds Valley Golf Club",
+    "country": "China",
+    "city": "Kunming",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kunming-sunshine-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "This18-hole, 7217 yards, pars 72, golf course was designed by Robert Trent Jones Jr. "
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "First 9 holes are easy. Second 9 holes are challenging. Hole 14 is unforegttable and exciitng"
+        },
+        {
+          "text": "The 14th hole is unforgettable and exciting."
+        },
+        {
+          "text": "The course preserves the topography of the natural landscape, and surrounding woody hills"
+        },
+        {
+          "text": "The rocks, jungles, pinewood and lakes, are natural barriers, challenging and fun."
+        },
+        {
+          "text": "It also has  4 man-made lakes, 59 bunkers and 40 bay lighted driving range. "
+        },
+        {
+          "text": "Excellent condition and favorable climate to golf and relax with family or business friend"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "Lake Yangzonghai, Tangchi Town, Yiliang County, Kunming"
+        }
+      ],
+      "contact": [
+        {
+          "text": "Tel: 86-871-68389111"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "Cost per Round: CNY 480"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 85,
+    "slug": "kunming-jade-dragon-bay-golf-course",
+    "name": "Kunming Jade Dragon Bay Golf Course",
+    "country": "China",
+    "city": "Kunming",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kunming-sunshine-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "This 18-hole, 7217 yards, pars 72, golf course was designed by Robert Trent Jones Jr. "
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "First 9 holes are easy. Second 9 holes are challenging. Hole 14 is unforegttable and exciitng"
+        },
+        {
+          "text": "The 14th hole is unforgettable and exciting."
+        },
+        {
+          "text": "The course preserves the topography of the natural landscape, and surrounding woody hills"
+        },
+        {
+          "text": "The rocks, jungles, pinewood and lakes, are natural barriers, challenging and fun."
+        },
+        {
+          "text": "It also has  4 man-made lakes, 59 bunkers and 40 bay lighted driving range. "
+        },
+        {
+          "text": "Excellent condition and favorable climate to golf and relax with family or business friend"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "Nanbu Puhe Village, Lianran Town, Anning City, Kunming"
+        }
+      ],
+      "contact": [
+        {
+          "text": "Tel: 86-871-66391666"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "Cost per Round: CNY 950 from 7:00 to 8:30; CNY 2,130 from 8:30 to 14:00"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "50 minutes are enough to get there from downtown by taxi"
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 86,
+    "slug": "kunming-wanda-golf-club",
+    "name": "Kunming Wanda Golf Club",
+    "country": "China",
+    "city": "Kunming",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kunming-sunshine-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "This 18-hole, 7217 yards, pars 72, golf course was designed by Robert Trent Jones Jr. "
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "First 9 holes are easy. Second 9 holes are challenging. Hole 14 is unforegttable and exciitng"
+        },
+        {
+          "text": "The 14th hole is unforgettable and exciting."
+        },
+        {
+          "text": "The course preserves the topography of the natural landscape, and surrounding woody hills"
+        },
+        {
+          "text": "The rocks, jungles, pinewood and lakes, are natural barriers, challenging and fun."
+        },
+        {
+          "text": "It also has  4 man-made lakes, 59 bunkers and 40 bay lighted driving range. "
+        },
+        {
+          "text": "Excellent condition and favorable climate to golf and relax with family or business friend"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "No. 12, East Hongta Road, Dianchi Lake National Tourist Resort, Kunming"
+        }
+      ],
+      "contact": [
+        {
+          "text": "Tel: 86-871-64322999"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "Cost per Round: CNY 759 – 859 from 6:30 to 9:00; CNY 939 – 1,039 from 9:00 to 14:30"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "The Club is about 30 minutes’ car journey from the downtown."
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 87,
+    "slug": "kunming-peixing-east-coast-golf-course",
+    "name": "Kunming Peixing East Coast Golf Course",
+    "country": "China",
+    "city": "Kunming",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kunming-sunshine-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "This 18-hole, 7217 yards, pars 72, golf course was designed by Robert Trent Jones Jr. "
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "First 9 holes are easy. Second 9 holes are challenging. Hole 14 is unforegttable and exciitng"
+        },
+        {
+          "text": "The 14th hole is unforgettable and exciting."
+        },
+        {
+          "text": "The course preserves the topography of the natural landscape, and surrounding woody hills"
+        },
+        {
+          "text": "The rocks, jungles, pinewood and lakes, are natural barriers, challenging and fun."
+        },
+        {
+          "text": "It also has  4 man-made lakes, 59 bunkers and 40 bay lighted driving range. "
+        },
+        {
+          "text": "Excellent condition and favorable climate to golf and relax with family or business friend"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "No. 866, East Huanhu Road, Kunming"
+        }
+      ],
+      "contact": [
+        {
+          "text": "Tel: 86-871-65951107"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "Cost per Round: Please consult the club."
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "It takes about 1 hour to get there from downtown Kunming by car."
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 88,
+    "slug": "kunming-meadow-lake-golf-course",
+    "name": "Kunming Meadow Lake Golf Course",
+    "country": "China",
+    "city": "Kunming",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kunming-sunshine-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "This 18-hole, 7217 yards, pars 72, golf course was designed by Robert Trent Jones Jr. "
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "First 9 holes are easy. Second 9 holes are challenging. Hole 14 is unforegttable and exciitng"
+        },
+        {
+          "text": "The 14th hole is unforgettable and exciting."
+        },
+        {
+          "text": "The course preserves the topography of the natural landscape, and surrounding woody hills"
+        },
+        {
+          "text": "The rocks, jungles, pinewood and lakes, are natural barriers, challenging and fun."
+        },
+        {
+          "text": "It also has  4 man-made lakes, 59 bunkers and 40 bay lighted driving range. "
+        },
+        {
+          "text": "Excellent condition and favorable climate to golf and relax with family or business friend"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "Livestock Breeding Farm, Xiaoshao Village, Guandu District, Kunming"
+        }
+      ],
+      "contact": [
+        {
+          "text": "Tel: 86-871-67399688"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "Cost per Round: Please consult the club."
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "You can get there in less than an hour from downtown area by taxi."
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 89,
+    "slug": "yunnan-hot-spring-golf-course",
+    "name": "Yunnan Hot Spring Golf Course",
+    "country": "China",
+    "city": "Kunming",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kunming-sunshine-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "This 18-hole, 7217 yards, pars 72, golf course was designed by Robert Trent Jones Jr. "
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "First 9 holes are easy. Second 9 holes are challenging. Hole 14 is unforegttable and exciitng"
+        },
+        {
+          "text": "The 14th hole is unforgettable and exciting."
+        },
+        {
+          "text": "The course preserves the topography of the natural landscape, and surrounding woody hills"
+        },
+        {
+          "text": "The rocks, jungles, pinewood and lakes, are natural barriers, challenging and fun."
+        },
+        {
+          "text": "It also has  4 man-made lakes, 59 bunkers and 40 bay lighted driving range. "
+        },
+        {
+          "text": "Excellent condition and favorable climate to golf and relax with family or business friend"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "Hot Spring Valley, No. 688, Yangjiao Community, Wenquan Town, Anning City, Kunming"
+        }
+      ],
+      "contact": [
+        {
+          "text": "Tel: 86-871-68663333"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "Cost per Round: Please consult the club."
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "1 hour is enough to get to the Golf Course from downtown Kunming by taxi."
+        }
+      ]
+    },
+    "rating": 4.6,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 90,
+    "slug": "katsura-golf-club",
+    "name": "Katsura Golf Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/katsura-golf-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/katsura-golf-club-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/katsura-golf-club-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "A 18 holes, Par 72, 7116 Yards Course Parkland, opened in 1993."
+        },
+        {
+          "text": "Designed by Robert Trent Jones, Jr."
+        },
+        {
+          "text": "Regarded as one of the top golf courses in Japan."
+        },
+        {
+          "text": "Features undulating fairways plus strategically placed dry creeks and water hazards."
+        },
+        {
+          "text": "A pleasant playing environment throughout the 18 holes."
+        },
+        {
+          "text": "Situated in Tomakomaishi, Hokkaido, 25 minutes from Sapporo International Airport"
+        },
+        {
+          "text": "About 70 minutes from the city of Sapporo."
+        },
+        {
+          "text": "Japanese Katsura endemic tree species grows naturally around the golf course."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "Hot Spring Valley, No. 688, Yangjiao Community, Wenquan Town, Anning City, Kunming"
+        }
+      ],
+      "contact": [
+        {
+          "text": "Tel: 86-871-68663333"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "Cost per Round: Please consult the club."
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "1 hour is enough to get to the Golf Course from downtown Kunming by taxi."
+        }
+      ]
+    },
+    "rating": 2,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 90,
+    "slug": "a-brand-golf-club",
+    "name": "A-Brand Golf Club",
+    "country": "Japan",
+    "city": "Hokkaido",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/a-brand-golf-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/a-brand-golf-club-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/a-brand-golf-club-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "A 18 Holes, 7002 yards Golf/Hotel Resort"
+        },
+        {
+          "text": "Designed by Sato"
+        },
+        {
+          "text": "One of Hokkaido’s premiers, and incredibly well recommended club and hotel"
+        },
+        {
+          "text": "Course is expertly crafted  with slick and well undulated greens"
+        },
+        {
+          "text": "Clubhouse was designed after a luxurious northern European castle, with marble floors ans real stuffed Polar Bears and Wolves in the main hall."
+        },
+        {
+          "text": "The hotel has 4 different styles of twin rooms elegantly and impressively decorated throughout"
+        },
+        {
+          "text": "Local, seasonal cuisine are on offer in the main dining room."
+        },
+        {
+          "text": "The resort features luxurious log cabins throughout the course for rental during the summer months"
+        },
+        {
+          "text": "It is easily accessible from the famous nearby Port town and tourist area of Otaru."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "Hot Spring Valley, No. 688, Yangjiao Community, Wenquan Town, Anning City, Kunming"
+        }
+      ],
+      "contact": [
+        {
+          "text": "Tel: 86-871-68663333"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "Cost per Round: Please consult the club."
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "1 hour is enough to get to the Golf Course from downtown Kunming by taxi."
+        }
+      ]
+    },
+    "rating": 2,
     "reviews": 170,
     "pricePerDay": 75,
     "type": "Location"

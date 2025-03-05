@@ -2,6 +2,7 @@
 import { notFound } from "next/navigation";
 import locationData from "@/data/locationData.json";
 import allData from "@/data/allData.json";
+import cityCourseData from "@/data/cityCourseData.json";
 import { decodeUrlParam, encodeUrlParam } from "@/utils/url-helpers";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
@@ -58,6 +59,13 @@ export default function CityPage({ params }: PageProps) {
 
   // Get courses for this city
   const cityCourses = allData.filter((course) => course.city === decodedCity);
+
+  // Find the city data
+  const cityData = cityCourseData.find(
+    (city) =>
+      city.country.toLowerCase() === country.toLowerCase() &&
+      city.city.toLowerCase() === decodedCity.toLowerCase()
+  );
 
   const scroll = (direction: "left" | "right") => {
     if (scrollContainerRef.current) {
@@ -177,18 +185,22 @@ export default function CityPage({ params }: PageProps) {
         </div>
         <Separator />
 
-        <h1 className="text-2xl font-bold mt-1">
-          Golf Courses in {decodedCity}, {countryData.country}
+        <h1 className="text-2xl font-bold mt-2">
+          {cityData?.title ||
+            `Golf Courses in ${decodedCity}, ${countryData.country}`}
         </h1>
-        <div className="flex justify-start items-center py-2">
-          <p className="text-base">
-            {countryData.country}, a hidden gem in Southeast Asia, offers a
-            unique and tranquil golfing experience surrounded by breathtaking
-            landscapes.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+        <div className="flex justify-start items-center py-2"></div>
+        <p className="text-base font-bold">{`Reasons to golf in ${decodedCity}:`}</p>
+        <ul className="space-y-1 list-disc ml-4 mb-2">
+          {cityData?.desc?.map((desc, index) => (
+            <li key={index} className="text-base mt-2">
+              {desc.text}
+            </li>
+          ))}
+        </ul>
+        {/* If there are additional descriptions, render them */}
+        <Separator />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mt-2">
           {cityCourses.map((course, index) => (
             <Link href={`/course-detail/${course.slug}`} key={index}>
               <div className="relative h-80 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">

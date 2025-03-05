@@ -24,8 +24,6 @@ interface Course {
   id: number;
   slug: string;
   name: string;
-  courseTitle: string;
-  courseDesc: { id: number; text: string }[];
   country: string;
   city: string;
   imageUrl: Image[];

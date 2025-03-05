@@ -2,6 +2,8 @@
   {
     "id": 1,
     "country": "China",
+    "title": "Golf Courses in China",
+    "desc": "China, a hidden gem in Southeast Asia, offers a unique and tranquil golfing experience surrounded by breathtaking landscapes.",
     "image": "/loc-2.jpg",
     "city": [
       "Cheng Du",
@@ -31,12 +33,16 @@
   {
     "id": 2,
     "country": "Cambodia",
+    "title": "Golf Courses in Cambodia",
+    "desc": "Cambodia, a hidden gem in Southeast Asia, offers a unique and tranquil golfing experience surrounded by breathtaking landscapes.",
     "image": "/loc-1.jpg",
     "city": ["Phom Penh", "Siem Reap"]
   },
   {
     "id": 3,
     "country": "Indonesia",
+    "title": "Golf Courses in Indonesia",
+    "desc": "Indonesia, a hidden gem in Southeast Asia, offers a unique and tranquil golfing experience surrounded by breathtaking landscapes.",
     "image": "/loc-3.jpg",
     "city": [
       "Java",
@@ -52,18 +58,24 @@
   {
     "id": 4,
     "country": "Japan",
+    "title": "Golf Courses in Japan",
+    "desc": "Japan, a hidden gem in Southeast Asia, offers a unique and tranquil golfing experience surrounded by breathtaking landscapes.",
     "image": "/loc-4.jpg",
     "city": ["Nara", "Okinawa", "Ciba", "Osaka", "Hokkaido"]
   },
   {
     "id": 5,
     "country": "Laos",
+    "title": "Golf Courses in Laos",
+    "desc": "Laos, a hidden gem in Southeast Asia, offers a unique and tranquil golfing experience surrounded by breathtaking landscapes.",
     "image": "/loc-5.jpg",
     "city": ["Vientaine"]
   },
   {
     "id": 6,
     "country": "Malaysia",
+    "title": "Golf Courses in Malaysia",
+    "desc": "Malaysia, a hidden gem in Southeast Asia, offers a unique and tranquil golfing experience surrounded by breathtaking landscapes.",
     "image": "/loc-6.jpg",
     "city": [
       "Johor",
@@ -79,36 +91,48 @@
   {
     "id": 7,
     "country": "Myanmar",
+    "title": "Golf Courses in Myanmar",
+    "desc": "Myanmar, a hidden gem in Southeast Asia, offers a unique and tranquil golfing experience surrounded by breathtaking landscapes.",
     "image": "/long-vien-golf-club-img-1.jpg",
     "city": ["Yangon"]
   },
   {
     "id": 8,
     "country": "Philippines",
+    "title": "Golf Courses in Philippines",
+    "desc": "Philippines, a hidden gem in Southeast Asia, offers a unique and tranquil golfing experience surrounded by breathtaking landscapes.",
     "image": "/royal-phnom-penh-golf-club-img-1.jpg",
     "city": ["Makati", "Manila", "Cebu", "Bagio", "Iloilo"]
   },
   {
     "id": 9,
     "country": "Singapore",
+    "title": "Golf Courses in Singapore",
+    "desc": "Singapore, a hidden gem in Southeast Asia, offers a unique and tranquil golfing experience surrounded by breathtaking landscapes.",
     "image": "/pantai-mentiri-img-1.jpg",
     "city": ["Singapore"]
   },
   {
     "id": 10,
     "country": "Thailand",
+    "title": "Golf Courses in Thailand",
+    "desc": "Thailand, a hidden gem in Southeast Asia, offers a unique and tranquil golfing experience surrounded by breathtaking landscapes.",
     "image": "/sea-games-golf-club-img-1.jpg",
     "city": ["Bangkok", "Hua Hin", "Chengmai", "Chengrai", "Phuket", "Pataya"]
   },
   {
     "id": 11,
     "country": "Vietnam",
+    "title": "Golf Courses in Vietnam",
+    "desc": "Vietnam, a hidden gem in Southeast Asia, offers a unique and tranquil golfing experience surrounded by breathtaking landscapes.",
     "image": "/sandbelt-trails-golf-course-mission-hills-img-1.jpg",
     "city": ["Hanoi", "Ho Chi Min", "Nha Trang", "Dalat", "Danang"]
   },
   {
     "id": 12,
     "country": "Brunei",
+    "title": "Golf Courses in Brunei",
+    "desc": "Brunei, a hidden gem in Southeast Asia, offers a unique and tranquil golfing experience surrounded by breathtaking landscapes.",
     "image": "/imperial-klub-golf-img-1.jpg",
     "city": ["Brunei"]
   }
