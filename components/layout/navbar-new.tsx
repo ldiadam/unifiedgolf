@@ -69,11 +69,13 @@ const routeList: RouteProps[] = [
     id: 3,
     href: "/standard-packages",
     label: "C. Standard Packages",
+    hasChildren: true,
   },
   {
     id: 4,
     href: "/course-booking",
     label: "D. Course Booking",
+    hasChildren: true,
   },
   {
     id: 5,
@@ -149,16 +151,24 @@ export const NavbarNew = () => {
     setActiveMobileCity(activeMobileCity === cityName ? null : cityName);
   };
 
-  // Handle navigation with menu collapse
+  // Modify the existing navigateAndCollapse function
   const navigateAndCollapse = (href: string) => {
-    // Close all menus
+    // Close all menus for mobile
     setIsOpen(false);
     setActiveMobileMenu(null);
     setActiveMobileCountry(null);
     setActiveMobileCity(null);
 
+    // Reset desktop menu selection states
+    setSelectedCountry(null);
+    setSelectedCity(null);
+
     // Navigate to the selected page
     router.push(href);
+  };
+  // Add a new handler for desktop menu navigation
+  const handleDesktopNavigation = (href: string) => {
+    navigateAndCollapse(href);
   };
   // If not mounted yet, return a simpler version to avoid hydration errors
   if (!mounted) {
@@ -477,7 +487,11 @@ export const NavbarNew = () => {
               <div className="flex flex-shrink-0 justify-between items-center">
                 <NavigationMenu
                   className="hidden lg:block md:block"
-                  onMouseLeave={handleMenuReset}
+                  delayDuration={0}
+                  onMouseLeave={() => {
+                    setSelectedCountry(null);
+                    setSelectedCity(null);
+                  }}
                 >
                   <NavigationMenuList>
                     {routeList.map((route) => (
@@ -508,6 +522,12 @@ export const NavbarNew = () => {
                                           href={`${getCountryUrl(
                                             country.name
                                           )}`}
+                                          onClick={(e) => {
+                                            e.preventDefault();
+                                            navigateAndCollapse(
+                                              `${getCountryUrl(country.name)}`
+                                            );
+                                          }}
                                         >
                                           <span>{country.name}</span>
                                         </Link>
@@ -541,6 +561,14 @@ export const NavbarNew = () => {
                                               href={`/courses/${selectedCountry.toLowerCase()}/${encodeUrlParam(
                                                 city
                                               )}`}
+                                              onClick={(e) => {
+                                                e.preventDefault();
+                                                navigateAndCollapse(
+                                                  `/courses/${selectedCountry.toLowerCase()}/${encodeUrlParam(
+                                                    city
+                                                  )}`
+                                                );
+                                              }}
                                             >
                                               <span>{city}</span>
                                             </Link>
@@ -563,6 +591,10 @@ export const NavbarNew = () => {
                                         <li key={course.title}>
                                           <Link
                                             href={course.href}
+                                            onClick={(e) => {
+                                              e.preventDefault();
+                                              navigateAndCollapse(course.href);
+                                            }}
                                             className="px-4 py-2 block hover:bg-primary/20 transition-colors"
                                           >
                                             {course.title}
@@ -584,7 +616,15 @@ export const NavbarNew = () => {
                             asChild
                             className={navigationMenuTriggerStyle()}
                           >
-                            <Link href={route.href}>{route.label}</Link>
+                            <Link
+                              href={route.href}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                navigateAndCollapse(route.href);
+                              }}
+                            >
+                              {route.label}
+                            </Link>
                           </NavigationMenuLink>
                         )}
                       </NavigationMenuItem>
