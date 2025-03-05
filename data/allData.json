@@ -7493,5 +7493,1673 @@
     "reviews": 170,
     "pricePerDay": 75,
     "type": "Location"
+  },
+  {
+    "id": 114,
+    "slug": "chibana-golf-course",
+    "name": "Chibana Golf Course",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/chibana-golf-course-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/chibana-golf-course-img-2.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Come enjoy a great game of golf on our beautiful course! Located just outside of Kadena Air Base gate three situated in the relaxing country atmosphere of Okinawa is Chibana Golf Course; a challenging, executive course."
+        },
+        {
+          "text": "Good challenging par 3 course with good Driving Range. Ideal for warming upon arrival & last flight before Departure"
+        },
+        {
+          "text": "Chibana Golf Course are open to all active-duty military, retired military, reservists, civilian employees, family members, and guests. We offer the services and programs: Nine-hole course, Chipping greens, Rental Clubs, Pro Shop, Club Pull Carts, Chippers Snack Bar, Driving range, Putting greens, Adult & Junior lessons"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.8,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 115,
+    "slug": "shigira-bay-country-club",
+    "name": "Shigira Bay Country Club",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/shigira-bay-country-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/shigira-bay-country-club-img-2.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Located along the coastal  Shigira Bay"
+        },
+        {
+          "text": "Designed to blend perfectly into its surroundings."
+        },
+        {
+          "text": "Each hole offers views of the deep blue sea of Shigira Bay."
+        },
+        {
+          "text": "Specticular view of the  Incredible colours of the natural flora."
+        },
+        {
+          "text": "Gently undulating terrain, dotted with native trees, and blooms"
+        },
+        {
+          "text": "Wonderful bunkers that pair perfectly with the natural setting"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "Luxurious locker and shower rooms"
+        },
+        {
+          "text": "Well-stocked professional shop"
+        },
+        {
+          "text": "Incredible restaurant serving local sourced food from the Island."
+        },
+        {
+          "text": "The resort spa"
+        },
+        {
+          "text": "The natural hot spring is the perfect way to end your day."
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "The sea breezes can play a lot tougher and a challenge."
+        },
+        {
+          "text": "Requires good course management "
+        },
+        {
+          "text": "Some tricky holes requires the need to resist temptation when it calls"
+        },
+        {
+          "text": "Golfers may use buggies on the fairways, the only course in the region to allow this."
+        }
+      ]
+    },
+    "rating": 3.8,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 116,
+    "slug": "emerald-coast-golf-links",
+    "name": "Emerald Coast Golf Links",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/emerald-coast-golf-links-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/emerald-coast-golf-links-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/emerald-coast-golf-links-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "Okinawa Prefecture is home to some of the best golf courses in Japan. The prefecture has over 100 different islands Including one of the largest islands, which is called Miyakojima. Also known as simply Miyako island, it is the biggest and most populous island Among the Miyako islands of Okinawa Prefecture."
+        },
+        {
+          "text": "The tropical climate makes Miyako island a great place for a holiday and the perfect location for a round of golf. One of the top golf courses on the island is Emerald Coast Golf Links which was established in 1988. Located on the South Coast of Miyako island, Emerald Coast Golf Links provides lovely views of the ocean throughout the round. You will struggle to find a better location for a round of golf anywhere in Japan."
+        },
+        {
+          "text": "Reaching Emerald Coast Golf Links is easy thanks to the direct flights available from Tokyo. The 18 hole par-72 golf course please to just over 6400 yards from the back tee but there are three tee boxes to choose from on each hole. Five of the first nine holes have an ocean view with the 5th hole considered to be the toughest of the outward nine."
+        },
+        {
+          "text": "The 5th hole is a par-4 which plays to 377 yards from the back tee and features water along the right side of the fairway. There is also out of bounds on the left of the fairway so playing an accurate tee shot is more important than distance on this hole. The fairway narrows considerably close to the landing area so club selection is important when considering this fact."
+        },
+        {
+          "text": "Two bunkers protect the triangular shaped green, one on the left side and one on the right side of the putting surface."
+        },
+        {
+          "text": "Water comes into play on several holes at Emerald Coast Golf Links, with the 6th hole being a good example. This par-4 hole has three separate bodies of water along the right side of the fairway and the approach shot to the green must be played over water. The long green is protected by three bunkers."
+        },
+        {
+          "text": "Arguably the most spectacular hole on the golf course is the 16th. This features a tee shot which must be played over the ocean to the fairway on the other side. The fairway is wide but the pressure is on and if the wind picks up this can be a very testing tee shot. Emerald Coast Golf Links maybe mostly flat throughout but there are many strategic challenges to overcome."
+        },
+        {
+          "text": "Having completed a round of golf, you can enjoy a fine meal in the clubhouse restaurant. There are lovely views of the ocean and golf course from the clubhouse which you can enjoy while eating your food."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.8,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 117,
+    "slug": "pgm-golf-resort-okinawa",
+    "name": "PGM Golf Resort Okinawa",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/pgm-golf-resort-okinawa-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/pgm-golf-resort-okinawa-img-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "url": "/pgm-golf-resort-okinawa-img-3.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "The warm climate makes Okinawa are prime choice for a golf holiday in Japan.  Okinawa is a Japanese Prefecture which includes over 150 islands in the East China Sea.  The stunning beaches and coral reefs attract visitors from all over the world but the golf courses are also one of the leading attractions. PGM Golf Resort is a great example and this and the golf course can be found on the main island of the prefecture, also called Okinawa.  PGM Golf Resort is an hour away from Naha Airport and very easy to reach along the E58 road. PGM Golf Resort opened in April 2017 following a series of renovations which have made a huge difference to the playing experience at this venue.  There are three sets of 9 holes, making the golf course 27 holes in total and you combine any two sets of 9 holes to make a complete round of golf.  The three individual sets of 9 holes have been named Hibiscus Course, Deigo Course and Bougainvillea Course. All three enjoy an enviable location on the coast and there are tremendous views of the East China Sea, the Harukabu Peninsula and Ie Island. Professional golfer, Isao Aoki, was on hand to help with the renovation of the golf course and he has helped to produce a fantastic playing environment.  The remodelling of the course has made PGM Golf Resort a tougher test of golf, with mounding, water and bunkering offering a more strategic challenge than ever before. There is a choice of four tee boxes on each hole, making it suitable for players of all abilities.  The first hole on the Deigo Course gives players a good idea of what to expect when playing at PGM Golf Resort.  It is a par-5 hole and plays downhill, towards the East China Sea.  There is plenty of mounding to deal with on this hole and it plays to 518 yards from the back tee.  There is out of bounds on both sides of the fairway but it is wide enough not to have to worry too much about that.  Having found the fairway off the tee, you have the option of attacking the green or laying up on the fairway in-front of the green.  There is a strategically placed bunker protecting the front of the green so you cannot afford to be short on your approach to a large green. You will see water throughout the 27 holes but it only really comes into play on a few holes.  The bunkers and mounds are the main obstacles at PGM Golf Resort. In addition to the golf course, the clubhouse at PGM Golf Resort has also enjoyed a facelift.  Inside the luxurious building you will find a restaurant, pro shop, locker rooms, bathing area and even a gallery.  PGM Golf Resort has developed into a world class golf resort and is a must-play when in Okinawa."
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.8,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 118,
+    "slug": "ocean-links-miyakojima",
+    "name": "Ocean Links, Miyakojima",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/ocean-links-miyakojima-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/ocean-links-miyakojima-img-2.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.8,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 119,
+    "slug": "banyan-tree-golf-course",
+    "name": "Banyan Tree Golf Course",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-3.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/loc-4.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 3.8,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 120,
+    "slug": "kumejima-seaside-park-golf-club",
+    "name": "Kumejima Seaside Park Golf Club",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kumejima-seaside-park-golf-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 121,
+    "slug": "shurei-country-club",
+    "name": "Shurei Country Club",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/shurei-country-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/shurei-country-club-img-2.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 122,
+    "slug": "palm-hills-golf-resort-club",
+    "name": "Palm Hills Golf Resort Club",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/palm-hills-golf-resort-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/palm-hills-golf-resort-club-img-2.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 123,
+    "slug": "kanucha-golf-course",
+    "name": "Kanucha Golf Course",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-5.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 124,
+    "slug": "kohamajima-country-club",
+    "name": "Kohamajima Country Club",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kohamajima-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 125,
+    "slug": "ginoza-country-club",
+    "name": "Ginoza Country Club",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/ginoza-country-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/ginoza-country-club-img-2.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 126,
+    "slug": "bell-beach-golf-club",
+    "name": "Bell Beach Golf Club",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/bell-beach-golf-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/bell-beach-golf-club-img-2.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 127,
+    "slug": "kanahide-kise-country-club",
+    "name": "Kanahide Kise Country Club",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kanahide-kise-country-club-img-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "url": "/kanahide-kise-country-club-img-2.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 128,
+    "slug": "kushidake-golf-garden",
+    "name": "Kushidake Golf Garden",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/kushidake-golf-garden-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 129,
+    "slug": "okinawa-country-club",
+    "name": "Okinawa Country Club",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/okinawa-country-club-img-1.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 130,
+    "slug": "okinawa-royal-golf-club",
+    "name": "Okinawa Royal Golf Club",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-4.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 131,
+    "slug": "kanna-park-golf-course",
+    "name": "Kanna Park Golf Course",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-4.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 132,
+    "slug": "public=golf-urasoe",
+    "name": "Public Golf Urasoe",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-4.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 133,
+    "slug": "aloha-golf-center",
+    "name": "Aloha Golf Center",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-4.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 134,
+    "slug": "koza-driving-range",
+    "name": "Koza Driving Range",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-4.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 135,
+    "slug": "bashofu-course",
+    "name": "Bashofu Course",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-4.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 136,
+    "slug": "kyoda-golf-club",
+    "name": "Kyoda Golf Club",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-4.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 137,
+    "slug": "short-course-tamagusuku",
+    "name": "Short Course Tamagusuku",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-4.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 138,
+    "slug": "yonabaru-park-golf-course",
+    "name": "Yonabaru Park Golf Course",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-4.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 139,
+    "slug": "kunigami-kaganji-park-golf-course",
+    "name": "Kunigami Kaganji Park Golf Course",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-4.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 140,
+    "slug": "higashiyama-country-club",
+    "name": "Higashiyama Country Club",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-4.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
+  },
+  {
+    "id": 141,
+    "slug": "omari-park",
+    "name": "Omari Park",
+    "country": "Japan",
+    "city": "Okinawa",
+    "imageUrl": [
+      {
+        "id": 1,
+        "url": "/loc-4.jpg",
+        "alt": ""
+      }
+    ],
+    "description": {
+      "credential": [
+        {
+          "text": "empty"
+        }
+      ],
+      "theCourse": [
+        {
+          "text": "empty"
+        }
+      ],
+      "accomodation": [
+        {
+          "text": "empty"
+        }
+      ],
+      "address": [
+        {
+          "text": "empty"
+        }
+      ],
+      "contact": [
+        {
+          "text": "empty"
+        }
+      ],
+      "courseFee": [
+        {
+          "text": "empty"
+        }
+      ],
+      "otherInfo": [
+        {
+          "text": "empty"
+        }
+      ]
+    },
+    "rating": 4,
+    "reviews": 170,
+    "pricePerDay": 75,
+    "type": "Location"
   }
 ]
