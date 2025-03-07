@@ -2,92 +2,96 @@ import { NavItem } from "@/lib/types";
 import TestImage from "@/public/vercel.svg";
 export type User = {
   id: number;
-  name: string;
-  company: string;
-  role: string;
-  verified: boolean;
-  status: string;
+  company_name: string;
+  company_code: string;
+  company_address: string;
+  company_address_building: string;
+  company_street_number: number;
+  company_street_name: string;
+  company_building_no: number;
+  company_building_unit: string;
+  company_building_name: string;
+  company_city: string;
+  company_state: string;
+  company_country: string;
+  company_zip_code: number;
+  company_fax: string;
+  company_website: string;
+  company_pic: string;
+  company_designation: string;
+  company_email: string;
+  company_phone: string;
+  company_timestamp: string;
 };
 export const users: User[] = [
   {
     id: 1,
-    name: "Candice Schiner",
-    company: "Dell",
-    role: "Frontend Developer",
-    verified: false,
-    status: "Active",
+    company_name: "ABC Pte Ltd",
+    company_code: "Trx001",
+    company_address: "st. Louis",
+    company_address_building: "st. Louis",
+    company_street_number: 12,
+    company_street_name: "st. Louis",
+    company_building_no: 12,
+    company_building_unit: "3A",
+    company_building_name: "Tower Building",
+    company_city: "Johar",
+    company_state: "Johar",
+    company_country: "Malaysia",
+    company_zip_code: 12510,
+    company_fax: "xxxxx",
+    company_website: "xxxx",
+    company_pic: "Xxxx",
+    company_designation: "xxxxx",
+    company_email: "xxxxxx",
+    company_phone: "Xxxxxx",
+    company_timestamp: "07-03-2025",
   },
   {
     id: 2,
-    name: "John Doe",
-    company: "TechCorp",
-    role: "Backend Developer",
-    verified: true,
-    status: "Active",
+    company_name: "ABC Pte Ltd",
+    company_code: "Trx002",
+    company_address: "st. Louis",
+    company_address_building: "st. Louis",
+    company_street_number: 12,
+    company_street_name: "st. Louis",
+    company_building_no: 12,
+    company_building_unit: "3A",
+    company_building_name: "Tower Building",
+    company_city: "Johar",
+    company_state: "Johar",
+    company_country: "Malaysia",
+    company_zip_code: 12510,
+    company_fax: "xxxxx",
+    company_website: "xxxx",
+    company_pic: "Xxxx",
+    company_designation: "xxxxx",
+    company_email: "xxxxxx",
+    company_phone: "Xxxxxx",
+    company_timestamp: "07-03-2025",
   },
   {
     id: 3,
-    name: "Alice Johnson",
-    company: "WebTech",
-    role: "UI Designer",
-    verified: true,
-    status: "Active",
-  },
-  {
-    id: 4,
-    name: "David Smith",
-    company: "Innovate Inc.",
-    role: "Fullstack Developer",
-    verified: false,
-    status: "Inactive",
-  },
-  {
-    id: 5,
-    name: "Emma Wilson",
-    company: "TechGuru",
-    role: "Product Manager",
-    verified: true,
-    status: "Active",
-  },
-  {
-    id: 6,
-    name: "James Brown",
-    company: "CodeGenius",
-    role: "QA Engineer",
-    verified: false,
-    status: "Active",
-  },
-  {
-    id: 7,
-    name: "Laura White",
-    company: "SoftWorks",
-    role: "UX Designer",
-    verified: true,
-    status: "Active",
-  },
-  {
-    id: 8,
-    name: "Michael Lee",
-    company: "DevCraft",
-    role: "DevOps Engineer",
-    verified: false,
-    status: "Active",
-  },
-  {
-    id: 9,
-    name: "Olivia Green",
-    company: "WebSolutions",
-    role: "Frontend Developer",
-    verified: true,
-    status: "Active",
-  },
-  {
-    id: 10,
-    name: "Robert Taylor",
-    company: "DataTech",
-    role: "Data Analyst",
-    verified: false,
-    status: "Active",
+    company_name: "ABC Pte Ltd",
+    company_code: "Trx003",
+    company_address: "st. Louis",
+    company_address_building: "st. Louis",
+    company_street_number: 12,
+    company_street_name: "st. Louis",
+    company_building_no: 12,
+    company_building_unit: "3A",
+    company_building_name: "Tower Building",
+    company_city: "Johar",
+    company_state: "Johar",
+    company_country: "Malaysia",
+    company_zip_code: 12510,
+    company_fax: "xxxxx",
+    company_website: "xxxx",
+    company_pic: "Xxxx",
+    company_designation: "xxxxx",
+    company_email: "xxxxxx",
+    company_phone: "Xxxxxx",
+    company_timestamp: "07-03-2025",
   },
 ];
 // export type Slider = {
