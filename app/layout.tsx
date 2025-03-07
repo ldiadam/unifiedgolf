@@ -26,7 +26,6 @@ export default function RootLayout({
             <CartProvider>
               <NavbarNew />
               {children}
-              <FooterSection />
             </CartProvider>
           </SearchProvider>
         </ThemeProvider>

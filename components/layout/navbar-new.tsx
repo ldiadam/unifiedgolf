@@ -87,6 +87,11 @@ const routeList: RouteProps[] = [
     href: "/maintenance",
     label: "F. Contact",
   },
+  {
+    id: 7,
+    href: "/admin-panel",
+    label: "Admin Panel",
+  },
 ];
 
 export const NavbarNew = () => {
