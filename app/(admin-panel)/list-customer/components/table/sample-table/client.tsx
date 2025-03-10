@@ -8,18 +8,18 @@ import { Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { columns } from "./columns";
 
-interface ProductsClientProps {
+interface CustomerClientProps {
   data: User[];
 }
 
-export const UserClient: React.FC<ProductsClientProps> = ({ data }) => {
+export const CustomerClient: React.FC<CustomerClientProps> = ({ data }) => {
   const router = useRouter();
 
   return (
     <>
       <div className="flex flex-col gap-2">
         <div className="flex justify-items-end">
-          <h1 className="text-3xl font-bold tracking-tight">Customers Data</h1>
+          <h1 className="text-3xl font-bold tracking-tight">Customers List</h1>
         </div>
         <Separator />
         <DataTable searchKey="company_name" columns={columns} data={data} />

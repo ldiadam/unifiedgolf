@@ -89,7 +89,7 @@ const routeList: RouteProps[] = [
   },
   {
     id: 7,
-    href: "/admin-panel",
+    href: "/list-customer",
     label: "Admin Panel",
   },
 ];
@@ -113,7 +113,7 @@ export const NavbarNew = () => {
   // Fix hydration mismatch by only rendering dynamic content on the client side
   useEffect(() => {
     setMounted(true);
-    setIsOpen(true); // Set default state after mounting
+    setIsOpen(false); // Set default state after mounting
   }, []);
 
   // Function to check if a city has courses

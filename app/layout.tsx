@@ -6,6 +6,7 @@ import { FooterSection } from "@/components/layout/sections/footer";
 import { SearchProvider } from "@/hook/search-context";
 import { CartProvider } from "@/hook/booking-context";
 import { NavbarNew } from "@/components/layout/navbar-new";
+import { Toaster } from "@/components/ui/sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -26,6 +27,7 @@ export default function RootLayout({
             <CartProvider>
               <NavbarNew />
               {children}
+              <Toaster />
             </CartProvider>
           </SearchProvider>
         </ThemeProvider>
