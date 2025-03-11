@@ -24,7 +24,12 @@ export const CustomerClient: React.FC<CustomerClientProps> = ({ data }) => {
           <h1 className="text-3xl font-bold tracking-tight">Customers List</h1>
         </div>
         <Separator />
-        <DataTable searchKey="company_name" columns={columns} data={data} />
+        <DataTable
+          searchKey="company_name"
+          filterKey="company_category"
+          columns={columns}
+          data={data}
+        />
       </div>
     </>
   );

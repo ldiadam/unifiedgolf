@@ -25,8 +25,12 @@ export const columns: ColumnDef<User>[] = [
     enableHiding: false,
   },
   {
+    accessorKey: "company_category",
+    header: "COMPANY CATEGORY",
+  },
+  {
     accessorKey: "company_name",
-    header: "NAME",
+    header: "COMPANY NAME",
   },
   {
     accessorKey: "company_code",

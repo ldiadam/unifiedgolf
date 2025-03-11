@@ -21,17 +21,26 @@ import { Button } from "./button";
 import { ScrollArea, ScrollBar } from "./scroll-area";
 import { Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "./select";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
   searchKey: string;
+  filterKey: string;
 }
 
 export function DataTable<TData, TValue>({
   columns,
   data,
   searchKey,
+  filterKey,
 }: DataTableProps<TData, TValue>) {
   const table = useReactTable({
     data,
@@ -42,20 +51,53 @@ export function DataTable<TData, TValue>({
 
   const router = useRouter();
 
-  /* this can be used to get the selectedrows 
-  console.log("value", table.getFilteredSelectedRowModel()); */
+  // Updated category extraction with logging
+  const uniqueCategories = Array.from(
+    new Set(
+      data
+        .map((item: any) => {
+          // console.log("Item:", item); // Debug log
+          return item[filterKey];
+        })
+        .filter(Boolean) // Remove null/undefined values
+    )
+  );
+  // console.log("Unique categories:", uniqueCategories); // Debug log
 
   return (
     <>
-      <div className="flex justify-between items-center">
-        <Input
-          placeholder={`Search...`}
-          value={(table.getColumn(searchKey)?.getFilterValue() as string) ?? ""}
-          onChange={(event) =>
-            table.getColumn(searchKey)?.setFilterValue(event.target.value)
-          }
-          className="w-full md:max-w-sm"
-        />
+      <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center">
+          <Input
+            placeholder={`Search...`}
+            value={
+              (table.getColumn(searchKey)?.getFilterValue() as string) ?? ""
+            }
+            onChange={(event) =>
+              table.getColumn(searchKey)?.setFilterValue(event.target.value)
+            }
+            className="w-full md:max-w-sm"
+          />
+          <Select
+            onValueChange={(value) =>
+              table
+                .getColumn(filterKey)
+                ?.setFilterValue(value === "all" ? "" : value)
+            }
+          >
+            <SelectTrigger className="w-full md:w-[240px]">
+              <SelectValue placeholder="Select Category" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">All Categories</SelectItem>
+              {uniqueCategories.map((category) => (
+                <SelectItem key={category} value={category}>
+                  {category}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
         <Button
           className="text-xs md:text-sm"
           onClick={() => router.push(`/add-customer`)}
