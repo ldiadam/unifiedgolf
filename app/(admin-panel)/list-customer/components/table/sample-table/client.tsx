@@ -7,8 +7,10 @@ import { User } from "@/data/data";
 import { Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { columns } from "./columns";
+import { Customer } from "@/types/customer";
 
 interface CustomerClientProps {
+  // data: Customer[];
   data: User[];
 }
 

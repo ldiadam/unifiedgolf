@@ -16,25 +16,19 @@ export const HeroSection = () => {
         layout="fill"
         objectFit="cover"
         quality={100}
-        className="z-0 opacity-60 -mb-32"
+        className="z-0 opacity-90 -mb-32"
       />
       <div className="relative z-10 container flex flex-col gap-5 items-center justify-center h-full">
-        {/* <div className="flex flex-col mb-10">
-          <h1 className="text-md md:text-xl lg:text-2xl font-bold text-white text-center">
-            Book Discount Golf Holidays Online
-          </h1>
-          <p className="text-sm md:text-md lg:text-xl text-white text-center">
-            The trusted choice for golf tee times & holiday across Asia
-          </p>
-        </div> */}
         <div className="flex flex-row gap-1 items-center justify-center">
           <h2 className="text-sm md:text-lg lg:text-xl text-white">
-            Golf Package
+            Golf Packages
           </h2>
           <h2 className="text-sm md:text-lg lg:text-xl text-white">|</h2>
-          <h2 className="text-sm md:text-lg lg:text-xl text-white">Booking</h2>
+          <h2 className="text-sm md:text-lg lg:text-xl text-white">
+            Course Booking
+          </h2>
           <h2 className="text-sm md:text-lg lg:text-xl text-white">|</h2>
-          <h2 className="text-sm md:text-lg lg:text-xl text-white">Holiday</h2>
+          <h2 className="text-sm md:text-lg lg:text-xl text-white">Holiday </h2>
           <h2 className="text-sm md:text-lg lg:text-xl text-white">|</h2>
           <h2 className="text-sm md:text-lg lg:text-xl text-white">Planner</h2>
         </div>
@@ -43,14 +37,19 @@ export const HeroSection = () => {
             <div>
               <div className="flex flex-row gap-3 md:gap-6 lg:gap-10 items-center justify-center">
                 <h2 className="text-sm md:text-lg lg:text-xl text-white">
-                  Professional
-                </h2>
-                <h2 className="text-sm md:text-lg lg:text-xl text-white">
                   Reliable
                 </h2>
+                <h2 className="text-sm md:text-lg lg:text-xl text-white">|</h2>
                 <h2 className="text-sm md:text-lg lg:text-xl text-white">
-                  Complete
+                  Comprehensive
                 </h2>
+                <h2 className="text-sm md:text-lg lg:text-xl text-white">|</h2>
+
+                <h2 className="text-sm md:text-lg lg:text-xl text-white">
+                  Professional
+                </h2>
+                <h2 className="text-sm md:text-lg lg:text-xl text-white">|</h2>
+
                 <h2 className="text-sm md:text-lg lg:text-xl text-white">
                   Integrity
                 </h2>

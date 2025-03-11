@@ -67,8 +67,8 @@ const routeList: RouteProps[] = [
   },
   {
     id: 3,
-    href: "/standard-packages",
-    label: "C. Standard Packages",
+    href: "/maintenance",
+    label: "C. Golf Packages",
     hasChildren: true,
   },
   {
@@ -482,7 +482,9 @@ export const NavbarNew = () => {
                   className="text-xs font-bold"
                 >
                   <Button variant={"link"}>
-                    Email: theunifiedgolf@gmail.com
+                    <span className="text-white">
+                      Email: theunifiedgolf@gmail.com
+                    </span>
                   </Button>
                 </Link>
               </div>
