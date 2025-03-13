@@ -28,10 +28,6 @@ const data = {
           title: "Add Address Book",
           url: "/add-address-book",
         },
-        // {
-        //   title: "Edit Address Book",
-        //   url: "/edit-address-book",
-        // },
       ],
     },
   ],
