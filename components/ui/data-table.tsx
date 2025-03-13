@@ -21,13 +21,7 @@ import { Button } from "./button";
 import { ScrollArea, ScrollBar } from "./scroll-area";
 import { Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "./select";
+import { CategoryFilter } from "../../app/(admin-panel)/list-address-book/components/table/sample-table/category-filter";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -49,19 +43,6 @@ export function DataTable<TData, TValue>({
 
   const router = useRouter();
 
-  // Updated category extraction with logging
-  // const uniqueCategories = Array.from(
-  //   new Set(
-  //     data
-  //       .map((item: any) => {
-  //         // console.log("Item:", item); // Debug log
-  //         return item[filterKey];
-  //       })
-  //       .filter(Boolean) // Remove null/undefined values
-  //   )
-  // );
-  // console.log("Unique categories:", uniqueCategories); // Debug log
-
   return (
     <>
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -76,25 +57,7 @@ export function DataTable<TData, TValue>({
             }
             className="w-full md:max-w-sm"
           />
-          {/* <Select
-            onValueChange={(value) =>
-              table
-                .getColumn(filterKey)
-                ?.setFilterValue(value === "all" ? "" : value)
-            }
-          >
-            <SelectTrigger className="w-full md:w-[240px]">
-              <SelectValue placeholder="Select Category" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Categories</SelectItem>
-              {uniqueCategories.map((category) => (
-                <SelectItem key={category} value={category}>
-                  {category}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select> */}
+          <CategoryFilter table={table} />
         </div>
         <Button
           className="text-xs md:text-sm"

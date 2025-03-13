@@ -6,4 +6,4 @@ export const COMPANY_CATEGORIES = [
   { id: 5, label: "Tour Company" },
   { id: 6, label: "Restaurant" },
   { id: 7, label: "Golf Course" },
-] as const;
+];

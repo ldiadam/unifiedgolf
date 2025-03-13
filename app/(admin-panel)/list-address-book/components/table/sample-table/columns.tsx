@@ -30,16 +30,23 @@ export const columns: ColumnDef<Company>[] = [
     header: "COMPANY CATEGORY",
     cell: ({ row }) => {
       const categories = row.original.categories
-        .map((cat) => cat.category_name)
-        .join(", ");
+        ? row.original.categories.map((cat) => cat.category_name).join(", ")
+        : "";
       return <div>{categories}</div>;
     },
-    // filterFn: (row, id, filterValue) => {
-    //   if (!filterValue || filterValue === "all") return true;
-    //   return row.original.categories.some(
-    //     (cat) => cat.category_name === filterValue
-    //   );
-    // },
+    filterFn: (row, id, filterValue) => {
+      if (
+        !filterValue ||
+        !Array.isArray(filterValue) ||
+        filterValue.length === 0
+      )
+        return true;
+
+      const rowCategories = row.original.categories.map(
+        (cat) => cat.category_name
+      );
+      return filterValue.some((category) => rowCategories.includes(category));
+    },
   },
   {
     accessorKey: "company_name",
