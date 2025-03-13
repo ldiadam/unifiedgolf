@@ -3,33 +3,31 @@ import { Button } from "@/components/ui/button";
 import { DataTable } from "@/components/ui/data-table";
 // import { Heading } from '@/components/ui/heading';
 import { Separator } from "@/components/ui/separator";
-import { User } from "@/data/data";
 import { Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { columns } from "./columns";
-import { Customer } from "@/types/customer";
+import { Company } from "@/types/company";
 
-interface CustomerClientProps {
-  // data: Customer[];
-  data: User[];
+interface AddressBookClientProps {
+  data: Company[];
+  // data: User[];
 }
 
-export const CustomerClient: React.FC<CustomerClientProps> = ({ data }) => {
+export const AddressBookClient: React.FC<AddressBookClientProps> = ({
+  data,
+}) => {
   const router = useRouter();
 
   return (
     <>
       <div className="flex flex-col gap-2">
         <div className="flex justify-items-end">
-          <h1 className="text-3xl font-bold tracking-tight">Customers List</h1>
+          <h1 className="text-3xl font-bold tracking-tight">
+            List Address Book
+          </h1>
         </div>
         <Separator />
-        <DataTable
-          searchKey="company_name"
-          filterKey="company_category"
-          columns={columns}
-          data={data}
-        />
+        <DataTable searchKey="company_name" columns={columns} data={data} />
       </div>
     </>
   );

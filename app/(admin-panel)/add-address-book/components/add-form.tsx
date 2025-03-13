@@ -3,7 +3,7 @@ import * as z from "zod";
 import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { Check, ChevronsUpDown, Trash } from "lucide-react";
+import { Check, ChevronsUpDown, X } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -16,9 +16,26 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from "@/components/ui/command";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { Badge } from "@/components/ui/badge";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import { COMPANY_CATEGORIES } from "@/constants/categories";
+import axios from "axios";
+import { API_BASE_URL } from "@/config/api";
 
 const formSchema = z.object({
   company_name: z
@@ -33,15 +50,11 @@ const formSchema = z.object({
   company_address_building: z
     .string()
     .min(3, { message: "Field must be at least 3 characters" }),
-  company_street_number: z
-    .number()
-    .min(3, { message: "Field must be at least 3 characters" }),
+  company_street_number: z.string().transform((val) => Number(val) || 0),
   company_street_name: z
     .string()
     .min(3, { message: "Field must be at least 3 characters" }),
-  company_building_no: z
-    .number()
-    .min(3, { message: "Field must be at least 3 characters" }),
+  company_building_no: z.string().transform((val) => Number(val) || 0),
   company_building_unit: z
     .string()
     .min(3, { message: "Field must be at least 3 characters" }),
@@ -57,12 +70,8 @@ const formSchema = z.object({
   company_country: z
     .string()
     .min(3, { message: "Field must be at least 3 characters" }),
-  company_zip_code: z
-    .number()
-    .min(3, { message: "Field must be at least 3 characters" }),
-  company_fax: z
-    .number()
-    .min(3, { message: "Field must be at least 3 characters" }),
+  company_zip_code: z.string().transform((val) => Number(val) || 0),
+  company_fax: z.string().transform((val) => Number(val) || 0),
   company_website: z
     .string()
     .min(3, { message: "Field must be at least 3 characters" }),
@@ -72,35 +81,39 @@ const formSchema = z.object({
   company_designation: z
     .string()
     .min(3, { message: "Field must be at least 3 characters" }),
-  company_email: z
-    .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
+  company_email: z.string().email({ message: "Field must be email address" }),
   company_phone: z
     .string()
     .min(3, { message: "Field must be at least 3 characters" }),
+  categories: z.array(z.number()).default([]),
 });
 
-type AddCustomerFormValues = z.infer<typeof formSchema>;
+type AddFormValues = z.infer<typeof formSchema>;
 
-interface AddCustomerFormProps {
+interface AddFormProps {
   initialData: any | null;
 }
 
-export const AddCustomerForm: React.FC<AddCustomerFormProps> = ({
-  initialData,
-}) => {
+export const AddForm: React.FC<AddFormProps> = ({ initialData }) => {
   const params = useParams();
   const router = useRouter();
-  //   const { toast } = useToast();
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-  //   const title = initialData ? "Edit slider" : "Create slider";
-  //   const description = initialData ? "Edit a slider." : "Add a new slider";
-  //   const toastMessage = initialData ? "Data updated." : "Data created.";
   const action = initialData ? "Save changes" : "Create";
 
+  // Ensure initialData.categories is an array if it exists
+  const initialCategories =
+    initialData && initialData.categories
+      ? Array.isArray(initialData.categories)
+        ? initialData.categories
+        : []
+      : [];
+
   const defaultValues = initialData
-    ? initialData
+    ? {
+        ...initialData,
+        categories: initialCategories, // Use the safely processed categories
+      }
     : {
         company_name: "",
         company_code: "",
@@ -120,80 +133,83 @@ export const AddCustomerForm: React.FC<AddCustomerFormProps> = ({
         company_pic: "",
         company_email: "",
         company_phone: "",
+        categories: [],
       };
-  //   console.log(defaultValues);
 
-  const form = useForm<AddCustomerFormValues>({
+  const form = useForm<AddFormValues>({
     resolver: zodResolver(formSchema),
     defaultValues,
   });
 
-  const onSubmit = async (data: AddCustomerFormValues) => {
+  const onSubmit = async (data: AddFormValues) => {
     try {
       setLoading(true);
-      console.log(data);
+      // Ensure categories is always an array
+      const safeData = {
+        ...data,
+        categories: Array.isArray(data.categories) ? data.categories : [],
+      };
 
-      toast("Create Success", {
-        description: "Create has been successed",
+      if (initialData) {
+        await axios.post(
+          `/api/products/edit-product/${initialData._id}`,
+          safeData
+        );
+      } else {
+        const res = await axios.post(`${API_BASE_URL}/customer`, safeData);
+        console.log("customer", res);
+      }
+
+      toast("Submit Success", {
+        description: "Submit has been successful",
       });
-      //   toast({
-      //     variant: "destructive",
-      //     title: "Submit Success",
-      //   });
-      // if (initialData) {
-      //   // await axios.post(`/api/products/edit-product/${initialData._id}`, data);
-      // } else {
-      //   // const res = await axios.post(`/api/products/create-product`, data);
-      //   // console.log("product", res);
-      // }
+
       router.refresh();
-      router.push(`/slider`);
-      // toast({
-      //   variant: 'destructive',
-      //   title: 'Uh oh! Something went wrong.',
-      //   description: 'There was a problem with your request.'
-      // });
+      router.push(`/list-address-book`);
     } catch (error: any) {
       toast("Uh oh! Something went wrong.", {
         description: "There was a problem with your request.",
       });
-      //   toast({
-      //     variant: "destructive",
-      //     title: "Uh oh! Something went wrong.",
-      //     description: "There was a problem with your request.",
-      //   });
     } finally {
       setLoading(false);
     }
   };
 
-  const onDelete = async () => {
-    try {
-      setLoading(true);
-      //   await axios.delete(`/api/${params.storeId}/products/${params.productId}`);
-      router.refresh();
-      router.push(`/${params.storeId}/products`);
-    } catch (error: any) {
-    } finally {
-      setLoading(false);
-      setOpen(false);
-    }
+  // Helper function to handle category selection
+  const toggleCategory = (categoryId: number) => {
+    const currentCategories = form.getValues().categories || [];
+    // Ensure currentCategories is an array
+    const safeCurrentCategories = Array.isArray(currentCategories)
+      ? currentCategories
+      : [];
+
+    const updated = safeCurrentCategories.includes(categoryId)
+      ? safeCurrentCategories.filter((id) => id !== categoryId)
+      : [...safeCurrentCategories, categoryId];
+
+    form.setValue("categories", updated, { shouldValidate: true });
   };
+
+  // Get selected category names for display with safeguards against undefined
+  const selectedCategories = form.watch("categories") || [];
+
+  // Ensure we're working with an array
+  const safeSelectedCategories = Array.isArray(selectedCategories)
+    ? selectedCategories
+    : [];
+
+  const selectedCategoryLabels = COMPANY_CATEGORIES.filter((cat) =>
+    safeSelectedCategories.includes(cat.id)
+  ).map((cat) => cat.label);
 
   return (
     <>
-      {/* <AlertModal
-        isOpen={open}
-        onClose={() => setOpen(false)}
-        onConfirm={onDelete}
-        loading={loading}
-      /> */}
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
           className="w-full space-y-8"
         >
-          <div className="gap-5 md:grid">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <FormField
               control={form.control}
               name="company_name"
@@ -218,7 +234,7 @@ export const AddCustomerForm: React.FC<AddCustomerFormProps> = ({
                 <FormItem>
                   <FormLabel>Company Code</FormLabel>
                   <FormControl>
-                    <Textarea
+                    <Input
                       disabled={loading}
                       placeholder="Company Code..."
                       {...field}
@@ -272,6 +288,7 @@ export const AddCustomerForm: React.FC<AddCustomerFormProps> = ({
                     <Input
                       disabled={loading}
                       placeholder="Company Street Number..."
+                      type="number"
                       {...field}
                     />
                   </FormControl>
@@ -306,6 +323,7 @@ export const AddCustomerForm: React.FC<AddCustomerFormProps> = ({
                     <Input
                       disabled={loading}
                       placeholder="Company Building No..."
+                      type="number"
                       {...field}
                     />
                   </FormControl>
@@ -398,7 +416,6 @@ export const AddCustomerForm: React.FC<AddCustomerFormProps> = ({
                 </FormItem>
               )}
             />
-
             <FormField
               control={form.control}
               name="company_zip_code"
@@ -409,6 +426,7 @@ export const AddCustomerForm: React.FC<AddCustomerFormProps> = ({
                     <Input
                       disabled={loading}
                       placeholder="Company Zip Code..."
+                      type="number"
                       {...field}
                     />
                   </FormControl>
@@ -426,6 +444,7 @@ export const AddCustomerForm: React.FC<AddCustomerFormProps> = ({
                     <Input
                       disabled={loading}
                       placeholder="Company Fax..."
+                      type="number"
                       {...field}
                     />
                   </FormControl>
@@ -513,6 +532,95 @@ export const AddCustomerForm: React.FC<AddCustomerFormProps> = ({
                       placeholder="Company Phone.."
                       {...field}
                     />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="categories"
+              render={() => (
+                <FormItem className="">
+                  <FormLabel>Company Categories</FormLabel>
+                  <FormControl>
+                    <div className="space-y-2">
+                      <Popover open={open} onOpenChange={setOpen}>
+                        <PopoverTrigger asChild>
+                          <Button
+                            variant="outline"
+                            role="combobox"
+                            aria-expanded={open}
+                            className="w-full justify-between"
+                          >
+                            {selectedCategoryLabels.length > 0
+                              ? `${selectedCategoryLabels.length} categories selected`
+                              : "Select categories..."}
+                            <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                          </Button>
+                        </PopoverTrigger>
+                        <PopoverContent className="w-full p-0">
+                          <Command>
+                            <CommandInput placeholder="Search categories..." />
+                            <CommandEmpty>No category found.</CommandEmpty>
+                            <CommandList className="w-full">
+                              <CommandGroup>
+                                <ScrollArea className="h-60">
+                                  {COMPANY_CATEGORIES.map((category) => (
+                                    <CommandItem
+                                      key={category.id}
+                                      value={category.label}
+                                      onSelect={() => {
+                                        toggleCategory(category.id);
+                                        setOpen(false);
+                                      }}
+                                    >
+                                      <Check
+                                        className={`mr-2 h-4 w-4 ${
+                                          safeSelectedCategories.includes(
+                                            category.id
+                                          )
+                                            ? "opacity-100"
+                                            : "opacity-0"
+                                        }`}
+                                      />
+                                      {category.label}
+                                    </CommandItem>
+                                  ))}
+                                </ScrollArea>
+                              </CommandGroup>
+                            </CommandList>
+                          </Command>
+                        </PopoverContent>
+                      </Popover>
+
+                      <div className="flex flex-wrap gap-2">
+                        {selectedCategoryLabels.map((label) => (
+                          <Badge
+                            key={label}
+                            variant="secondary"
+                            className="text-xs"
+                          >
+                            {label}
+                            <Button
+                              type="button"
+                              variant="ghost"
+                              size="sm"
+                              className="h-4 w-4 p-0 ml-1 rounded-full"
+                              onClick={() => {
+                                const categoryId = COMPANY_CATEGORIES.find(
+                                  (cat) => cat.label === label
+                                )?.id;
+                                if (categoryId) toggleCategory(categoryId);
+                              }}
+                            >
+                              <X className="h-3 w-3" />
+                              <span className="sr-only">Remove {label}</span>
+                            </Button>
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
                   </FormControl>
                   <FormMessage />
                 </FormItem>

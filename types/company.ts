@@ -1,4 +1,4 @@
-export interface Customer {
+export interface Company {
   id: number;
   company_name: string;
   company_code: string;
@@ -19,7 +19,7 @@ export interface Customer {
   company_designation: string;
   company_email: string;
   company_phone: string;
-  company_timestamp: string;
+  categories: Category[];
   active_status_id: string;
   created_at: string;
   created_by: string | null;
@@ -27,9 +27,14 @@ export interface Customer {
   updated_by: string | null;
 }
 
-export interface CustomerResponse {
+export interface Category {
+  id: number;
+  category_name: string;
+}
+
+export interface CompanyResponse {
   code: number;
   status: string;
   error: null | string;
-  data: Customer[];
+  data: Company[];
 }

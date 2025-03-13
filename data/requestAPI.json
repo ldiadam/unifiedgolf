@@ -1,0 +1,22 @@
+{
+  "company_name": "ABC Company",
+  "company_code": "NTCO",
+  "company_address": "123 Test Street",
+  "company_address_building": "Main Building",
+  "company_street_number": 123,
+  "company_street_name": "Test Street",
+  "company_building_no": 4,
+  "company_building_unit": "B52",
+  "company_building_name": "Test Tower",
+  "company_city": "Test City",
+  "company_state": "Test State",
+  "company_country": "Test Country",
+  "company_zip_code": 12345,
+  "company_fax": 5551234,
+  "company_website": "www.testcompany.com",
+  "company_pic": "John Smith",
+  "company_designation": "CEO",
+  "company_email": "john@testcompany.com",
+  "company_phone": "6281234567890",
+  "categories": [1, 2, 5]
+}

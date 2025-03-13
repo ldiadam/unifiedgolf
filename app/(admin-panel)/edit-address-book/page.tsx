@@ -4,19 +4,16 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { CustomerClient } from "./components/table/sample-table/client";
-import { Breadcrumbs } from "@/components/layout/breadcrumb";
-import { getCustomers } from "@/services/customer";
 import { users } from "@/data/data";
+import { Breadcrumbs } from "@/components/layout/breadcrumb";
+import { EditAddressBookClient } from "./components/edit-address-book-client";
 
-export default async function ListCustomerPage() {
-  // const { data: customers } = await getCustomers();
-
+export default function EditAddressBookPage() {
   const breadcrumbItems = [
-    { title: "Admin Panel", link: "/list-customer" },
-    { title: "List Customer", link: "/list-customer" },
+    { title: "Admin Panel", link: "/address-book" },
+    { title: "Edit Address Book", link: "/edit-address-book" },
+    // { title: 'User', link: '/dashboard/user' }
   ];
-
   return (
     <>
       <SidebarInset>
@@ -27,8 +24,8 @@ export default async function ListCustomerPage() {
             <Breadcrumbs items={breadcrumbItems} />
           </div>
         </div>
-        <div className="container mx-auto ">
-          <CustomerClient data={users} />
+        <div className="container max-h-screen ">
+          <EditAddressBookClient />
         </div>
       </SidebarInset>
     </>

@@ -1,10 +1,11 @@
 "use client";
 import { ColumnDef } from "@tanstack/react-table";
 import { CellAction } from "./cell-action";
-import { User } from "@/data/data";
+// import { User } from "@/data/data";
 import { Checkbox } from "@/components/ui/checkbox";
+import { Company } from "@/types/company";
 
-export const columns: ColumnDef<User>[] = [
+export const columns: ColumnDef<Company>[] = [
   {
     id: "select",
     header: ({ table }) => (
@@ -25,8 +26,20 @@ export const columns: ColumnDef<User>[] = [
     enableHiding: false,
   },
   {
-    accessorKey: "company_category",
+    accessorKey: "categories",
     header: "COMPANY CATEGORY",
+    cell: ({ row }) => {
+      const categories = row.original.categories
+        .map((cat) => cat.category_name)
+        .join(", ");
+      return <div>{categories}</div>;
+    },
+    // filterFn: (row, id, filterValue) => {
+    //   if (!filterValue || filterValue === "all") return true;
+    //   return row.original.categories.some(
+    //     (cat) => cat.category_name === filterValue
+    //   );
+    // },
   },
   {
     accessorKey: "company_name",
@@ -105,7 +118,7 @@ export const columns: ColumnDef<User>[] = [
     header: "PHONE",
   },
   {
-    accessorKey: "company_timestamp",
+    accessorKey: "created_at",
     header: "TIMESTAMP",
   },
   {

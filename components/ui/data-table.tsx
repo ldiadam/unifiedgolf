@@ -33,14 +33,12 @@ interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
   searchKey: string;
-  filterKey: string;
 }
 
 export function DataTable<TData, TValue>({
   columns,
   data,
   searchKey,
-  filterKey,
 }: DataTableProps<TData, TValue>) {
   const table = useReactTable({
     data,
@@ -52,16 +50,16 @@ export function DataTable<TData, TValue>({
   const router = useRouter();
 
   // Updated category extraction with logging
-  const uniqueCategories = Array.from(
-    new Set(
-      data
-        .map((item: any) => {
-          // console.log("Item:", item); // Debug log
-          return item[filterKey];
-        })
-        .filter(Boolean) // Remove null/undefined values
-    )
-  );
+  // const uniqueCategories = Array.from(
+  //   new Set(
+  //     data
+  //       .map((item: any) => {
+  //         // console.log("Item:", item); // Debug log
+  //         return item[filterKey];
+  //       })
+  //       .filter(Boolean) // Remove null/undefined values
+  //   )
+  // );
   // console.log("Unique categories:", uniqueCategories); // Debug log
 
   return (
@@ -69,7 +67,7 @@ export function DataTable<TData, TValue>({
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div className="flex flex-col gap-4 md:flex-row md:items-center">
           <Input
-            placeholder={`Search...`}
+            placeholder={`Search Company Name...`}
             value={
               (table.getColumn(searchKey)?.getFilterValue() as string) ?? ""
             }
@@ -78,7 +76,7 @@ export function DataTable<TData, TValue>({
             }
             className="w-full md:max-w-sm"
           />
-          <Select
+          {/* <Select
             onValueChange={(value) =>
               table
                 .getColumn(filterKey)
@@ -96,7 +94,7 @@ export function DataTable<TData, TValue>({
                 </SelectItem>
               ))}
             </SelectContent>
-          </Select>
+          </Select> */}
         </div>
         <Button
           className="text-xs md:text-sm"

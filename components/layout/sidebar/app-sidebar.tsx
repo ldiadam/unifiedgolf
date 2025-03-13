@@ -15,22 +15,22 @@ import {
 const data = {
   navMain: [
     {
-      title: "Customer",
-      url: "/list-customer",
+      title: "Address Book",
+      url: "/list-address-book",
       icon: User,
       isActive: true,
       items: [
         {
-          title: "List Customer",
-          url: "/list-customer",
+          title: "List Address Book",
+          url: "/list-address-book",
         },
         {
-          title: "Add Customer",
-          url: "/add-customer",
+          title: "Add Address Book",
+          url: "/add-address-book",
         },
         {
-          title: "Edit Customer",
-          url: "/edit-customer",
+          title: "Edit Address Book",
+          url: "/edit-address-book",
         },
       ],
     },

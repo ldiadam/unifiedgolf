@@ -6,12 +6,12 @@ import {
 } from "@/components/ui/sidebar";
 import { users } from "@/data/data";
 import { Breadcrumbs } from "@/components/layout/breadcrumb";
-import { EditCustomerClient } from "./components/edit-customer-client";
+import { AddAddressBookClient } from "./components/add-address-book-client";
 
-export default function EditCustomerPage() {
+export default function AddCustomerPage() {
   const breadcrumbItems = [
-    { title: "Admin Panel", link: "/list-customer" },
-    { title: "Edit Customer", link: "/Edit-customer" },
+    { title: "Admin Panel", link: "list-address-book" },
+    { title: "Add Customer", link: "/add-address-book" },
     // { title: 'User', link: '/dashboard/user' }
   ];
   return (
@@ -25,7 +25,7 @@ export default function EditCustomerPage() {
           </div>
         </div>
         <div className="container max-h-screen ">
-          <EditCustomerClient />
+          <AddAddressBookClient />
         </div>
       </SidebarInset>
     </>

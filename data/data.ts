@@ -1,6 +1,6 @@
 import { NavItem } from "@/lib/types";
 import TestImage from "@/public/vercel.svg";
-export type User = {
+export type Company = {
   id: number;
   company_name: string;
   company_code: string;
@@ -22,9 +22,9 @@ export type User = {
   company_email: string;
   company_phone: string;
   company_timestamp: string;
-  company_category: string;
+  company_category: { id: number; cat: string }[];
 };
-export const users: User[] = [
+export const users: Company[] = [
   {
     id: 1,
     company_name: "ABC Pte Ltd",
@@ -46,7 +46,12 @@ export const users: User[] = [
     company_designation: "xxxxx",
     company_email: "xxxxxx",
     company_phone: "Xxxxxx",
-    company_category: "Customer",
+    company_category: [
+      {
+        id: 1,
+        cat: "Customer",
+      },
+    ],
     company_timestamp: "07-03-2025",
   },
   {
@@ -70,8 +75,16 @@ export const users: User[] = [
     company_designation: "xxxxx",
     company_email: "xxxxxx",
     company_phone: "Xxxxxx",
-    company_category: "Vendors",
-
+    company_category: [
+      {
+        id: 1,
+        cat: "Customer",
+      },
+      {
+        id: 2,
+        cat: "Vendors",
+      },
+    ],
     company_timestamp: "07-03-2025",
   },
   {
@@ -95,7 +108,16 @@ export const users: User[] = [
     company_designation: "xxxxx",
     company_email: "xxxxxx",
     company_phone: "Xxxxxx",
-    company_category: "Hotels",
+    company_category: [
+      {
+        id: 1,
+        cat: "Hotels",
+      },
+      {
+        id: 2,
+        cat: "Vendors",
+      },
+    ],
     company_timestamp: "07-03-2025",
   },
   {
@@ -119,7 +141,16 @@ export const users: User[] = [
     company_designation: "xxxxx",
     company_email: "xxxxxx",
     company_phone: "Xxxxxx",
-    company_category: "Tranportation",
+    company_category: [
+      {
+        id: 1,
+        cat: "Transportation",
+      },
+      {
+        id: 2,
+        cat: "Hotels",
+      },
+    ],
     company_timestamp: "07-03-2025",
   },
   {
@@ -143,7 +174,16 @@ export const users: User[] = [
     company_designation: "xxxxx",
     company_email: "xxxxxx",
     company_phone: "Xxxxxx",
-    company_category: "Tour Company",
+    company_category: [
+      {
+        id: 1,
+        cat: "Hotels",
+      },
+      {
+        id: 2,
+        cat: "Tour Company",
+      },
+    ],
     company_timestamp: "07-03-2025",
   },
   {
@@ -167,7 +207,16 @@ export const users: User[] = [
     company_designation: "xxxxx",
     company_email: "xxxxxx",
     company_phone: "Xxxxxx",
-    company_category: "Restaurant",
+    company_category: [
+      {
+        id: 1,
+        cat: "Restaurant",
+      },
+      {
+        id: 2,
+        cat: "Hotels",
+      },
+    ],
     company_timestamp: "07-03-2025",
   },
   {
@@ -191,7 +240,20 @@ export const users: User[] = [
     company_designation: "xxxxx",
     company_email: "xxxxxx",
     company_phone: "Xxxxxx",
-    company_category: "Golf Course",
+    company_category: [
+      {
+        id: 1,
+        cat: "Golf Course",
+      },
+      {
+        id: 2,
+        cat: "Hotels",
+      },
+      {
+        id: 3,
+        cat: "Restaurant",
+      },
+    ],
     company_timestamp: "07-03-2025",
   },
 ];

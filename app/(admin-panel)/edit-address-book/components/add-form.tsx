@@ -19,6 +19,7 @@ import {
 
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import axios from "axios";
 
 const formSchema = z.object({
   company_name: z
@@ -80,15 +81,13 @@ const formSchema = z.object({
     .min(3, { message: "Field must be at least 3 characters" }),
 });
 
-type AddCustomerFormValues = z.infer<typeof formSchema>;
+type AddFormValues = z.infer<typeof formSchema>;
 
-interface AddCustomerFormProps {
+interface AddFormProps {
   initialData: any | null;
 }
 
-export const AddCustomerForm: React.FC<AddCustomerFormProps> = ({
-  initialData,
-}) => {
+export const AddForm: React.FC<AddFormProps> = ({ initialData }) => {
   const params = useParams();
   const router = useRouter();
   //   const { toast } = useToast();
@@ -123,31 +122,31 @@ export const AddCustomerForm: React.FC<AddCustomerFormProps> = ({
       };
   //   console.log(defaultValues);
 
-  const form = useForm<AddCustomerFormValues>({
+  const form = useForm<AddFormValues>({
     resolver: zodResolver(formSchema),
     defaultValues,
   });
 
-  const onSubmit = async (data: AddCustomerFormValues) => {
+  const onSubmit = async (data: AddFormValues) => {
     try {
       setLoading(true);
       console.log(data);
 
-      toast("Create Success", {
-        description: "Create has been successed",
+      toast("Submit Success", {
+        description: "Submit has been successed",
       });
       //   toast({
       //     variant: "destructive",
       //     title: "Submit Success",
       //   });
-      // if (initialData) {
-      //   // await axios.post(`/api/products/edit-product/${initialData._id}`, data);
-      // } else {
-      //   // const res = await axios.post(`/api/products/create-product`, data);
-      //   // console.log("product", res);
-      // }
+      if (initialData) {
+        await axios.post(`/api/products/edit-product/${initialData._id}`, data);
+      } else {
+        const res = await axios.post(`/api/products/create-product`, data);
+        console.log("product", res);
+      }
       router.refresh();
-      router.push(`/slider`);
+      router.push(`/list-address-book`);
       // toast({
       //   variant: 'destructive',
       //   title: 'Uh oh! Something went wrong.',
@@ -167,27 +166,8 @@ export const AddCustomerForm: React.FC<AddCustomerFormProps> = ({
     }
   };
 
-  const onDelete = async () => {
-    try {
-      setLoading(true);
-      //   await axios.delete(`/api/${params.storeId}/products/${params.productId}`);
-      router.refresh();
-      router.push(`/${params.storeId}/products`);
-    } catch (error: any) {
-    } finally {
-      setLoading(false);
-      setOpen(false);
-    }
-  };
-
   return (
     <>
-      {/* <AlertModal
-        isOpen={open}
-        onClose={() => setOpen(false)}
-        onConfirm={onDelete}
-        loading={loading}
-      /> */}
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
