@@ -7,6 +7,8 @@ import { SearchProvider } from "@/hook/search-context";
 import { CartProvider } from "@/hook/booking-context";
 import { NavbarNew } from "@/components/layout/navbar-new";
 import { Toaster } from "@/components/ui/sonner";
+import { CompanyProvider } from "@/contexts/CompanyContext";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -25,9 +27,11 @@ export default function RootLayout({
         >
           <SearchProvider>
             <CartProvider>
-              <NavbarNew />
-              {children}
-              <Toaster />
+              <CompanyProvider>
+                <NavbarNew />
+                {children}
+                <Toaster />
+              </CompanyProvider>
             </CartProvider>
           </SearchProvider>
         </ThemeProvider>

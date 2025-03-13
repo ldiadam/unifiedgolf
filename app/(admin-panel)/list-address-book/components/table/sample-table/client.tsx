@@ -1,22 +1,18 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import { DataTable } from "@/components/ui/data-table";
-// import { Heading } from '@/components/ui/heading';
 import { Separator } from "@/components/ui/separator";
-import { Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { columns } from "./columns";
-import { Company } from "@/types/company";
+import { useEffect } from "react";
+import { useCompany } from "@/contexts/CompanyContext";
 
-interface AddressBookClientProps {
-  data: Company[];
-  // data: User[];
-}
-
-export const AddressBookClient: React.FC<AddressBookClientProps> = ({
-  data,
-}) => {
+export const AddressBookClient: React.FC = () => {
   const router = useRouter();
+  const { companyData, fetchCompanyData } = useCompany();
+
+  useEffect(() => {
+    fetchCompanyData();
+  }, [fetchCompanyData]);
 
   return (
     <>
@@ -27,7 +23,11 @@ export const AddressBookClient: React.FC<AddressBookClientProps> = ({
           </h1>
         </div>
         <Separator />
-        <DataTable searchKey="company_name" columns={columns} data={data} />
+        <DataTable
+          searchKey="company_name"
+          columns={columns}
+          data={companyData}
+        />
       </div>
     </>
   );

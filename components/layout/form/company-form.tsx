@@ -36,6 +36,7 @@ import { toast } from "sonner";
 import { COMPANY_CATEGORIES } from "@/constants/categories";
 import axios from "axios";
 import { API_BASE_URL } from "@/config/api";
+import { useCompany } from "@/contexts/CompanyContext";
 
 const formSchema = z.object({
   company_name: z
@@ -112,6 +113,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const action = isUpdate ? "Save changes" : "Create";
+  const { fetchCompanyData } = useCompany();
 
   // Transform API categories format to expected format
   const transformInitialCategories = (data: any) => {
@@ -176,7 +178,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
         });
       }
 
-      router.refresh();
+      await fetchCompanyData(); // Refresh data
       router.push(`/list-address-book`);
     } catch (error: any) {
       console.error("Error submitting form:", error);

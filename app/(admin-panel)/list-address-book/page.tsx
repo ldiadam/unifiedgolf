@@ -6,12 +6,9 @@ import {
 } from "@/components/ui/sidebar";
 import { AddressBookClient } from "./components/table/sample-table/client";
 import { Breadcrumbs } from "@/components/layout/breadcrumb";
-import { getCompany } from "@/services/company";
 // import { users } from "@/data/data";
 
-export default async function ListAddressBookPage() {
-  const { data: company } = await getCompany();
-
+export default function ListAddressBookPage() {
   const breadcrumbItems = [
     { title: "Admin Panel", link: "#" },
     { title: "List Address Book", link: "/list-address-book" },
@@ -28,7 +25,7 @@ export default async function ListAddressBookPage() {
           </div>
         </div>
         <div className="container mx-auto ">
-          <AddressBookClient data={company} />
+          <AddressBookClient />
         </div>
       </SidebarInset>
     </>

@@ -9,6 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { API_BASE_URL } from "@/config/api";
+import { useCompany } from "@/contexts/CompanyContext";
 import { Company } from "@/types/company";
 import axios from "axios";
 import { Edit, MoreHorizontal, Trash } from "lucide-react";
@@ -24,16 +25,17 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
   const router = useRouter();
+  const { fetchCompanyData } = useCompany();
 
   const onConfirm = async () => {
     try {
+      setLoading(true);
       await axios.delete(`${API_BASE_URL}/customer/${data.id}`);
-      // console.log(data.id);
+      await fetchCompanyData(); // Refresh data
       toast("Delete Success", {
         description: "Company has been deleted",
       });
       setOpen(false);
-      router.refresh();
     } catch (error: any) {
       console.error("Error deleting item:", error);
       toast("Uh oh! Something went wrong.", {
@@ -41,6 +43,8 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
           error.response?.data?.message ||
           "There was a problem with your request.",
       });
+    } finally {
+      setLoading(false);
     }
   };
 
