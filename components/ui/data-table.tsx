@@ -98,7 +98,7 @@ export function DataTable<TData, TValue>({
         </div>
         <Button
           className="text-xs md:text-sm"
-          onClick={() => router.push(`/add-customer`)}
+          onClick={() => router.push(`/add-address-book`)}
         >
           <Plus className="mr-2 h-4 w-4" /> Add New
         </Button>
