@@ -89,7 +89,7 @@ const routeList: RouteProps[] = [
   },
   {
     id: 7,
-    href: "/list-customer",
+    href: "/list-address-book",
     label: "Admin Panel",
   },
 ];
