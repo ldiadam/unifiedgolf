@@ -3,8 +3,15 @@
 import { Separator } from "@/components/ui/separator";
 import { CompanyForm } from "@/components/layout/form/company-form";
 
-export const EditAddressBookClient: React.FC = () => {
+interface EditAddressBookClientProps {
+  initialData: any; // Replace 'any' with the actual type of initialData
+}
+
+export const EditAddressBookClient: React.FC<EditAddressBookClientProps> = ({
+  initialData,
+}) => {
   // const router = useRouter();
+  // console.log(initialData);
 
   return (
     <>
@@ -15,7 +22,7 @@ export const EditAddressBookClient: React.FC = () => {
           </h1>
         </div>
         <Separator />
-        <CompanyForm initialData={null} isUpdate={true} />
+        <CompanyForm initialData={initialData} isUpdate={true} />
       </div>
     </>
   );

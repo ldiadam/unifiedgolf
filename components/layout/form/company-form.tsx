@@ -50,11 +50,15 @@ const formSchema = z.object({
   company_address_building: z
     .string()
     .min(3, { message: "Field must be at least 3 characters" }),
-  company_street_number: z.string().transform((val) => Number(val) || 0),
+  company_street_number: z
+    .preprocess((val) => (val === "" ? undefined : Number(val)), z.number())
+    .refine((val) => !isNaN(val), { message: "Must be a valid number" }),
   company_street_name: z
     .string()
     .min(3, { message: "Field must be at least 3 characters" }),
-  company_building_no: z.string().transform((val) => Number(val) || 0),
+  company_building_no: z
+    .preprocess((val) => (val === "" ? undefined : Number(val)), z.number())
+    .refine((val) => !isNaN(val), { message: "Must be a valid number" }),
   company_building_unit: z
     .string()
     .min(3, { message: "Field must be at least 3 characters" }),
@@ -70,8 +74,12 @@ const formSchema = z.object({
   company_country: z
     .string()
     .min(3, { message: "Field must be at least 3 characters" }),
-  company_zip_code: z.string().transform((val) => Number(val) || 0),
-  company_fax: z.string().transform((val) => Number(val) || 0),
+  company_zip_code: z
+    .preprocess((val) => (val === "" ? undefined : Number(val)), z.number())
+    .refine((val) => !isNaN(val), { message: "Must be a valid number" }),
+  company_fax: z
+    .preprocess((val) => (val === "" ? undefined : Number(val)), z.number())
+    .refine((val) => !isNaN(val), { message: "Must be a valid number" }),
   company_website: z
     .string()
     .min(3, { message: "Field must be at least 3 characters" }),
@@ -105,18 +113,17 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
   const [loading, setLoading] = useState(false);
   const action = isUpdate ? "Save changes" : "Create";
 
-  // Ensure initialData.categories is an array if it exists
-  const initialCategories =
-    initialData && initialData.categories
-      ? Array.isArray(initialData.categories)
-        ? initialData.categories
-        : []
-      : [];
+  // Transform API categories format to expected format
+  const transformInitialCategories = (data: any) => {
+    if (!data || !data.categories) return [];
+    return data.categories.map((cat: any) => cat.id);
+  };
 
   const defaultValues = initialData
     ? {
         ...initialData,
-        categories: initialCategories, // Use the safely processed categories
+        // Transform categories to array of IDs
+        categories: transformInitialCategories(initialData),
       }
     : {
         company_name: "",
@@ -156,7 +163,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
 
       if (isUpdate && initialData) {
         await axios.put(
-          `${API_BASE_URL}/customer/${initialData._id}`,
+          `${API_BASE_URL}/customer/update/${initialData.id}`,
           safeData
         );
         toast("Update Success", {

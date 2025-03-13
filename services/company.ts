@@ -5,21 +5,17 @@ export async function getCompany(): Promise<CompanyResponse> {
   const response = await fetch(`${API_BASE_URL}/customer`, fetchConfig);
 
   if (!response.ok) {
-    throw new Error("Failed to fetch customers");
+    throw new Error("Failed to fetch companies");
   }
 
   return response.json();
 }
 
-export async function createCompany(data: any): Promise<CompanyResponse> {
-  const response = await fetch(`${API_BASE_URL}/customer`, {
-    ...fetchConfig,
-    method: "POST",
-    body: JSON.stringify(data),
-  });
+export async function getCompanyId(id: any): Promise<CompanyResponse> {
+  const response = await fetch(`${API_BASE_URL}/customer/${id}`, fetchConfig);
 
   if (!response.ok) {
-    throw new Error("Failed to create customer");
+    throw new Error("Failed to fetch company id");
   }
 
   return response.json();
