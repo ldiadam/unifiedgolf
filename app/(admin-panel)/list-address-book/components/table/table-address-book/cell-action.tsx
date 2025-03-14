@@ -9,7 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { API_BASE_URL } from "@/config/api";
-import { useCompany } from "@/contexts/CompanyContext";
+import { useCompany } from "@/hook/company-context";
 import { Company } from "@/types/company";
 import axios from "axios";
 import { Edit, MoreHorizontal, Trash } from "lucide-react";

@@ -1,5 +1,5 @@
 "use client";
-import { SearchFilters } from "@/lib/types";
+import { SearchFilters } from "@/types/search";
 import React, { createContext, useCallback, useContext, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 

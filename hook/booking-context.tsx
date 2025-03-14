@@ -1,5 +1,5 @@
 "use client";
-import { BookingItem, Location } from "@/lib/types";
+import { BookingItem } from "@/types/booking";
 import React, { createContext, useContext, useReducer } from "react";
 
 // Define cart state

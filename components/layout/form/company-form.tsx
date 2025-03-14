@@ -36,7 +36,7 @@ import { toast } from "sonner";
 import { COMPANY_CATEGORIES } from "@/constants/categories";
 import axios from "axios";
 import { API_BASE_URL } from "@/config/api";
-import { useCompany } from "@/contexts/CompanyContext";
+import { useCompany } from "@/hook/company-context";
 
 const formSchema = z.object({
   company_name: z

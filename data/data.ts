@@ -1,5 +1,3 @@
-import { NavItem } from "@/lib/types";
-import TestImage from "@/public/vercel.svg";
 export type Company = {
   id: number;
   company_name: string;

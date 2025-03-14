@@ -35,7 +35,7 @@ export const EnhancedSearchPanel = () => {
 
   const handleSearch = () => {
     // Update both location and searchTerm when searching
-    setFilters((prev) => ({
+    setFilters((prev: any) => ({
       ...prev,
       searchTerm: prev.location, // Use location as search term
     }));
@@ -93,7 +93,7 @@ export const EnhancedSearchPanel = () => {
                             key={loc.country}
                             value={loc.country}
                             onSelect={(currentValue) => {
-                              setFilters((prev) => ({
+                              setFilters((prev: any) => ({
                                 ...prev,
                                 location:
                                   currentValue === filters.location
@@ -154,7 +154,10 @@ export const EnhancedSearchPanel = () => {
                     mode="single"
                     selected={filters.checkInDate}
                     onSelect={(date) =>
-                      setFilters((prev) => ({ ...prev, checkInDate: date }))
+                      setFilters((prev: any) => ({
+                        ...prev,
+                        checkInDate: date,
+                      }))
                     }
                     initialFocus
                     disabled={(date) => date <= addDays(new Date(), 1)}
@@ -192,7 +195,10 @@ export const EnhancedSearchPanel = () => {
                     mode="single"
                     selected={filters.checkOutDate}
                     onSelect={(date) =>
-                      setFilters((prev) => ({ ...prev, checkOutDate: date }))
+                      setFilters((prev: any) => ({
+                        ...prev,
+                        checkOutDate: date,
+                      }))
                     }
                     initialFocus
                     disabled={(date) =>

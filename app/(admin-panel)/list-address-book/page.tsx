@@ -4,7 +4,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { AddressBookClient } from "./components/table/sample-table/client";
+import { AddressBookClient } from "./components/table/table-address-book/client";
 import { Breadcrumbs } from "@/components/layout/breadcrumb";
 // import { users } from "@/data/data";
 

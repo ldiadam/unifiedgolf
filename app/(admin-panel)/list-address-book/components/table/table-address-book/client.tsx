@@ -1,10 +1,10 @@
 "use client";
-import { DataTable } from "@/components/ui/data-table";
+import { DataTable } from "./data-table";
 import { Separator } from "@/components/ui/separator";
 import { useRouter } from "next/navigation";
 import { columns } from "./columns";
 import { useEffect } from "react";
-import { useCompany } from "@/contexts/CompanyContext";
+import { useCompany } from "@/hook/company-context";
 
 export const AddressBookClient: React.FC = () => {
   const router = useRouter();
