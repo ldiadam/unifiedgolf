@@ -20,7 +20,14 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "../ui/collapsible";
-import { ChevronDown, ChevronUp, ArrowLeft, ChevronRight } from "lucide-react";
+import {
+  ChevronDown,
+  ChevronUp,
+  ArrowLeft,
+  ChevronRight,
+  Phone,
+  Mail,
+} from "lucide-react";
 import locationData from "@/data/locationData.json"; // Import location data
 import allData from "@/data/allData.json"; // Import course data
 import { encodeUrlParam, getCountryUrl } from "@/utils/url-helpers";
@@ -210,11 +217,8 @@ export const NavbarNew = () => {
       <div className="lg:hidden md:hidden flex justify-center">
         <header className="shadow-inner bg-opacity-15 mx-auto border border-secondary rounded-md bg-card flex flex-col w-full max-w-md">
           {/* Top section with logo and actions */}
-          <div className="flex flex-col items-center p-2">
-            <Link
-              href="/"
-              className="flex flex-col items-start py-4 mx-2 gap-1"
-            >
+          <div className="flex flex-col items-start p-1">
+            <Link href="/" className="flex flex-col items-start mx-2 gap-1">
               <Image
                 src={"/company-logo.jpg"}
                 width={80}
@@ -222,9 +226,9 @@ export const NavbarNew = () => {
                 alt="Company Logo"
                 className="rounded-md"
               />
-              <span className="text-xs font-bold">
-                Street No, Building No. Name, unit no, Province, City, Country,
-                Postal Code
+              <h1 className="font-bold">Unified Golf Pte Ltd</h1>
+              <span className="text-xs font-bold pb-1">
+                1, Thomson Road #04-330G, Singapore, 300001
               </span>
             </Link>
 
@@ -234,8 +238,14 @@ export const NavbarNew = () => {
               onOpenChange={setIsOpen}
               className="w-full space-y-2"
             >
-              <div className="flex items-center justify-between px-4">
-                <h4 className="text-sm font-semibold">Menu</h4>
+              <div className="flex items-center justify-between">
+                <Button
+                  variant="ghost"
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="text-sm font-semibold hover:bg-transparent"
+                >
+                  <h4>Menu</h4>
+                </Button>
                 <CollapsibleTrigger asChild>
                   <Button variant="ghost" size="sm" className="w-9 p-0">
                     {isOpen ? (
@@ -440,13 +450,32 @@ export const NavbarNew = () => {
 
                 <Separator />
 
-                <div className="flex w-full items-start">
+                <div className="flex w-full items-start flex-col">
+                  <Link href={"tel:+6586929998"} className="text-xs font-bold">
+                    <Button variant={"link"}>
+                      <span className="text-white flex items-center gap-2">
+                        <Phone className="h-4 w-4" />
+                        +65 8692 9998
+                      </span>
+                    </Button>
+                  </Link>
+                  <Link href={"tel:+60125499839"} className="text-xs font-bold">
+                    <Button variant={"link"}>
+                      <span className="text-white flex items-center gap-2">
+                        <Phone className="h-4 w-4" />
+                        +6012 549 9839
+                      </span>
+                    </Button>
+                  </Link>
                   <Link
                     href={"mailto:theunifiedgolf@gmail.com"}
                     className="text-xs font-bold"
                   >
-                    <Button variant="link">
-                      Email: theunifiedgolf@gmail.com
+                    <Button variant={"link"}>
+                      <span className="text-white flex items-center gap-2">
+                        <Mail className="h-4 w-4" />
+                        theunifiedgolf@gmail.com
+                      </span>
                     </Button>
                   </Link>
                 </div>
@@ -471,19 +500,37 @@ export const NavbarNew = () => {
                     className="rounded-md"
                   />
                 </Link>
-                <span className="text-xs font-bold">
-                  Street No, Building No. Name, unit no, Province, City,
-                  Country, Postal Code
+                <h1 className="font-bold">Unified Golf Pte Ltd</h1>
+                <span className="text-xs font-bold pb-1">
+                  1, Thomson Road #04-330G, Singapore, 300001
                 </span>
               </div>
-              <div className="flex h-full mt-14">
+              <div className="h-full mt-20 flex-col gap-1">
+                <Link href={"tel:+6586929998"} className="text-xs font-bold">
+                  <Button variant={"link"}>
+                    <span className="text-white flex items-center gap-2">
+                      <Phone className="h-4 w-4" />
+                      +65 8692 9998
+                    </span>
+                  </Button>
+                </Link>
+                <Link href={"tel:+60125499839"} className="text-xs font-bold">
+                  <Button variant={"link"}>
+                    <span className="text-white flex items-center gap-2">
+                      <Phone className="h-4 w-4" />
+                      +6012 549 9839
+                    </span>
+                  </Button>
+                </Link>
+
                 <Link
                   href={"mailto:theunifiedgolf@gmail.com"}
                   className="text-xs font-bold"
                 >
                   <Button variant={"link"}>
-                    <span className="text-white">
-                      Email: theunifiedgolf@gmail.com
+                    <span className="text-white flex items-center gap-2">
+                      <Mail className="h-4 w-4" />
+                      theunifiedgolf@gmail.com
                     </span>
                   </Button>
                 </Link>

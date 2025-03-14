@@ -35,7 +35,7 @@ export const HeroSection = () => {
         <div className="mt-5 bg-black bg-opacity-50 w-full p-6">
           <div className="flex flex-col gap-5 items-center justify-center">
             <div>
-              <div className="flex flex-row gap-3 md:gap-6 lg:gap-10 items-center justify-center">
+              <div className="flex flex-row gap-2 md:gap-6 lg:gap-10 items-center justify-center">
                 <h2 className="text-sm md:text-lg lg:text-xl text-white">
                   Reliable
                 </h2>
