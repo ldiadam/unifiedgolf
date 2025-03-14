@@ -91,7 +91,7 @@ const routeList: RouteProps[] = [
   },
   {
     id: 6,
-    href: "/maintenance",
+    href: "/contact",
     label: "F. Contact",
   },
   {
@@ -199,10 +199,40 @@ export const NavbarNew = () => {
                     className="rounded-md"
                   />
                 </Link>
-                <span className="text-xs font-bold">
-                  Street No, Building No. Name, unit no, Province, City,
-                  Country, Postal Code
+                <h1 className="font-bold">Unified Golf Pte Ltd</h1>
+                <span className="text-xs font-bold pb-1">
+                  1, Thomson Road #04-330G, Singapore, 300001
                 </span>
+              </div>
+              <div className="h-full mt-20 flex-col gap-1">
+                <Link href={"tel:+6586929998"} className="text-xs font-bold">
+                  <Button variant={"link"}>
+                    <span className="text-white flex items-center gap-2">
+                      <Phone className="h-4 w-4" />
+                      +65 8692 9998
+                    </span>
+                  </Button>
+                </Link>
+                <Link href={"tel:+60125499839"} className="text-xs font-bold">
+                  <Button variant={"link"}>
+                    <span className="text-white flex items-center gap-2">
+                      <Phone className="h-4 w-4" />
+                      +6012 549 9839
+                    </span>
+                  </Button>
+                </Link>
+
+                <Link
+                  href={"mailto:theunifiedgolf@gmail.com"}
+                  className="text-xs font-bold"
+                >
+                  <Button variant={"link"}>
+                    <span className="text-white flex items-center gap-2">
+                      <Mail className="h-4 w-4" />
+                      theunifiedgolf@gmail.com
+                    </span>
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
