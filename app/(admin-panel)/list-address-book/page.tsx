@@ -24,8 +24,10 @@ export default function ListAddressBookPage() {
             <Breadcrumbs items={breadcrumbItems} />
           </div>
         </div>
-        <div className="container mx-auto ">
-          <AddressBookClient />
+        <div className="px-4 w-full">
+          <div className="w-full overflow-x-auto rounded-md">
+            <AddressBookClient />
+          </div>
         </div>
       </SidebarInset>
     </>

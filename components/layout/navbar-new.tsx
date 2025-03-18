@@ -248,21 +248,6 @@ export const NavbarNew = () => {
         <header className="shadow-inner bg-opacity-15 mx-auto border border-secondary rounded-md bg-card flex flex-col w-full max-w-md">
           {/* Top section with logo and actions */}
           <div className="flex flex-col items-start p-1">
-            <Link href="/" className="flex flex-col items-start mx-2 gap-1">
-              <Image
-                src={"/company-logo.jpg"}
-                width={80}
-                height={30}
-                alt="Company Logo"
-                className="rounded-md"
-              />
-              <h1 className="font-bold">Unified Golf Pte Ltd</h1>
-              <span className="text-xs font-bold pb-1">
-                1, Thomson Road #04-330G, Singapore, 300001
-              </span>
-            </Link>
-
-            <Separator />
             <Collapsible
               open={isOpen}
               onOpenChange={setIsOpen}
@@ -511,6 +496,27 @@ export const NavbarNew = () => {
                 </div>
               </CollapsibleContent>
             </Collapsible>
+            <Separator className={cn(isOpen && "hidden")} />
+            <Link
+              href="/"
+              className="flex flex-col items-start mx-2 mt-1 gap-1"
+            >
+              <Image
+                src={"/company-logo.jpg"}
+                width={80}
+                height={30}
+                alt="Company Logo"
+                className={cn("rounded-md", isOpen && "hidden")}
+              />
+              <h1 className={cn("font-bold", isOpen && "hidden")}>
+                Unified Golf Pte Ltd
+              </h1>
+              <span
+                className={cn("text-xs font-bold pb-1", isOpen && "hidden")}
+              >
+                1, Thomson Road #04-330G, Singapore, 300001
+              </span>
+            </Link>
           </div>
         </header>
       </div>

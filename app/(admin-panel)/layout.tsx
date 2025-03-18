@@ -13,9 +13,11 @@ export default function ListCustomerLayout({
 }) {
   return (
     <>
-      <SidebarProvider className="pt-44 lg:pt-36">
-        <AppSidebar className="pt-44 lg:pt-36" />
-        {children}
+      <SidebarProvider className="pt-44 lg:pt-38">
+        <AppSidebar className="pt-44 lg:pt-44" />
+        <div className="px-4 w-full">
+          <div className="w-full overflow-x-auto rounded-md">{children}</div>
+        </div>
       </SidebarProvider>
     </>
   );

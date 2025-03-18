@@ -8,7 +8,7 @@ import { useCompany } from "@/hook/company-context";
 
 export const AddressBookClient: React.FC = () => {
   const router = useRouter();
-  const { companyData, fetchCompanyData } = useCompany();
+  const { companyData, loading, fetchCompanyData } = useCompany();
 
   useEffect(() => {
     fetchCompanyData();
@@ -27,6 +27,7 @@ export const AddressBookClient: React.FC = () => {
           searchKey="company_name"
           columns={columns}
           data={companyData}
+          loading={loading}
         />
       </div>
     </>
