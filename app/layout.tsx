@@ -6,7 +6,7 @@ import { SearchProvider } from "@/hook/search-context";
 import { NavbarNew } from "@/components/layout/navbar-new";
 import { Toaster } from "@/components/ui/sonner";
 import { CompanyProvider } from "@/hook/company-context";
-
+import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -17,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn("min-h-screen bg-background", inter.className)}>
+        <Analytics />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
