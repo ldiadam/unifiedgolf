@@ -74,7 +74,7 @@ const routeList: RouteProps[] = [
   },
   {
     id: 3,
-    href: "/maintenance",
+    href: "/golf-packages",
     label: "C. Golf Packages",
     hasChildren: true,
   },
@@ -243,6 +243,12 @@ export const NavbarNew = () => {
 
   return (
     <div className="fixed z-50 w-full">
+      {/* Style untuk memperbaiki posisi menu Golf Packages */}
+      <style jsx global>{`
+        .golf-packages-menu [data-radix-popper-content-wrapper] {
+          transform: translateX(-25%) !important;
+        }
+      `}</style>
       {/* Mobile Mode */}
       <div className="lg:hidden md:hidden flex justify-center">
         <header className="shadow-inner bg-opacity-15 mx-auto border border-secondary rounded-md bg-card flex flex-col w-full max-w-md">
@@ -359,7 +365,8 @@ export const NavbarNew = () => {
                                   {/* Cities */}
                                   {country.cities.map((city) => (
                                     <div key={city} className="py-1">
-                                      {cityHasCourses(city) ? (
+                                      {cityHasCourses(city) &&
+                                      route.label !== "C. Golf Packages" ? (
                                         <Collapsible
                                           className="w-full"
                                           open={activeMobileCity === city}
@@ -384,42 +391,31 @@ export const NavbarNew = () => {
                                             </Button>
                                           </CollapsibleTrigger>
                                           <CollapsibleContent className="ml-4 border-l border-gray-200 pl-2">
-                                            {/* Link to city courses */}
-                                            {/* <Button
-                                              variant="ghost"
-                                              size="sm"
-                                              className="w-full text-left justify-start items-center flex py-0.5 text-primary text-xs"
-                                              onClick={() =>
-                                                navigateAndCollapse(
-                                                  `/courses/${
-                                                    country.name
-                                                  }/${encodeUrlParam(city)}`
-                                                )
-                                              }
-                                            >
-                                              <span>
-                                                View All {city} Courses
-                                              </span>
-                                            </Button> */}
-
                                             {/* Courses */}
-                                            {courseDetails[city]?.map(
-                                              (course) => (
-                                                <Button
-                                                  key={course.title}
-                                                  variant="ghost"
-                                                  size="sm"
-                                                  className="w-full text-left justify-start text-xs hover:text-primary px-2"
-                                                  onClick={() =>
-                                                    navigateAndCollapse(
-                                                      course.href
-                                                    )
-                                                  }
-                                                >
-                                                  {course.title}
-                                                </Button>
-                                              )
-                                            )}
+                                            {route.label !==
+                                              "C. Golf Packages" &&
+                                              courseDetails[city]?.map(
+                                                (course) => (
+                                                  <Button
+                                                    key={course.title}
+                                                    variant="ghost"
+                                                    size="sm"
+                                                    className="w-full text-left justify-start text-xs hover:text-primary px-2"
+                                                    onClick={() =>
+                                                      navigateAndCollapse(
+                                                        route.label ===
+                                                          "C. Golf Packages"
+                                                          ? `/golf-packages/detail/${course.href
+                                                              .split("/")
+                                                              .pop()}`
+                                                          : course.href
+                                                      )
+                                                    }
+                                                  >
+                                                    {course.title}
+                                                  </Button>
+                                                )
+                                              )}
                                           </CollapsibleContent>
                                         </Collapsible>
                                       ) : (
@@ -429,9 +425,13 @@ export const NavbarNew = () => {
                                           className="w-full text-left justify-start items-center flex py-0.5"
                                           onClick={() =>
                                             navigateAndCollapse(
-                                              `/courses/${country.name.toLowerCase()}/${encodeUrlParam(
-                                                city
-                                              )}`
+                                              route.label === "C. Golf Packages"
+                                                ? `/golf-packages/${country.name.toLowerCase()}/${encodeUrlParam(
+                                                    city
+                                                  )}`
+                                                : `/courses/${country.name.toLowerCase()}/${encodeUrlParam(
+                                                    city
+                                                  )}`
                                             )
                                           }
                                         >
@@ -585,7 +585,12 @@ export const NavbarNew = () => {
                 >
                   <NavigationMenuList>
                     {routeList.map((route) => (
-                      <NavigationMenuItem key={route.id}>
+                      <NavigationMenuItem
+                        key={route.id}
+                        className={
+                          route.id === 3 ? "relative golf-packages-menu" : ""
+                        }
+                      >
                         {route.hasChildren ? (
                           <>
                             <NavigationMenuTrigger>
@@ -609,13 +614,19 @@ export const NavbarNew = () => {
                                         }
                                       >
                                         <Link
-                                          href={`${getCountryUrl(
-                                            country.name
-                                          )}`}
+                                          href={
+                                            route.id === 3
+                                              ? `/golf-packages/${country.name.toLowerCase()}`
+                                              : `${getCountryUrl(country.name)}`
+                                          }
                                           onClick={(e) => {
                                             e.preventDefault();
                                             navigateAndCollapse(
-                                              `${getCountryUrl(country.name)}`
+                                              route.id === 3
+                                                ? `/golf-packages/${country.name.toLowerCase()}`
+                                                : `${getCountryUrl(
+                                                    country.name
+                                                  )}`
                                             );
                                           }}
                                         >
@@ -648,23 +659,34 @@ export const NavbarNew = () => {
                                             }
                                           >
                                             <Link
-                                              href={`/courses/${selectedCountry.toLowerCase()}/${encodeUrlParam(
-                                                city
-                                              )}`}
+                                              href={
+                                                route.id === 3
+                                                  ? `/golf-packages/${selectedCountry.toLowerCase()}/${encodeUrlParam(
+                                                      city
+                                                    )}`
+                                                  : `/courses/${selectedCountry.toLowerCase()}/${encodeUrlParam(
+                                                      city
+                                                    )}`
+                                              }
                                               onClick={(e) => {
                                                 e.preventDefault();
                                                 navigateAndCollapse(
-                                                  `/courses/${selectedCountry.toLowerCase()}/${encodeUrlParam(
-                                                    city
-                                                  )}`
+                                                  route.id === 3
+                                                    ? `/golf-packages/${selectedCountry.toLowerCase()}/${encodeUrlParam(
+                                                        city
+                                                      )}`
+                                                    : `/courses/${selectedCountry.toLowerCase()}/${encodeUrlParam(
+                                                        city
+                                                      )}`
                                                 );
                                               }}
                                             >
                                               <span>{city}</span>
                                             </Link>
-                                            {cityHasCourses(city) && (
-                                              <ChevronRight className="h-4 w-4" />
-                                            )}
+                                            {cityHasCourses(city) &&
+                                              route.id !== 3 && (
+                                                <ChevronRight className="h-4 w-4" />
+                                              )}
                                           </li>
                                         ))}
                                     </ul>
@@ -672,7 +694,7 @@ export const NavbarNew = () => {
                                 )}
 
                                 {/* Course Details Column */}
-                                {selectedCity && (
+                                {selectedCity && !(route.id === 3) && (
                                   <div className="bg-background p-0 w-[250px] min-h-[400px] rounded-r-md">
                                     <ul className="py-2 px-0">
                                       {courseDetails[
@@ -680,10 +702,22 @@ export const NavbarNew = () => {
                                       ]?.map((course) => (
                                         <li key={course.title}>
                                           <Link
-                                            href={course.href}
+                                            href={
+                                              route.id === 3
+                                                ? `/golf-packages/detail/${course.href
+                                                    .split("/")
+                                                    .pop()}`
+                                                : course.href
+                                            }
                                             onClick={(e) => {
                                               e.preventDefault();
-                                              navigateAndCollapse(course.href);
+                                              navigateAndCollapse(
+                                                route.id === 3
+                                                  ? `/golf-packages/detail/${course.href
+                                                      .split("/")
+                                                      .pop()}`
+                                                  : course.href
+                                              );
                                             }}
                                             className="px-4 py-2 block hover:bg-primary/20 transition-colors"
                                           >
