@@ -55,14 +55,6 @@ export default function StandardPackagesPage() {
     setSelectedCountry(location);
   };
 
-  const handleCityClick = (city: string) => {
-    if (selectedCountry) {
-      console.log(`City clicked: ${city}`);
-      const slug = createCitySlug(selectedCountry.country, city);
-      router.push(`/maintenance`);
-    }
-  };
-
   const renderCityList = (cities: string[], country: string) => {
     if (!cities.length) {
       return (
@@ -86,10 +78,13 @@ export default function StandardPackagesPage() {
           gridTemplateColumns: `repeat(${numberOfColumns}, minmax(0, 1fr))`,
         }}
       >
+        {" "}
         {cities.map((city, index) => (
           <Link
             key={index}
-            href={`/golf-packages/${encodeUrlParam(city)}`}
+            href={`/golf-packages/${country.toLowerCase()}/${encodeUrlParam(
+              city
+            )}`}
             className="block p-2 hover:bg-primary rounded-md transition-colors"
           >
             <li className="">{city}</li>
@@ -101,7 +96,7 @@ export default function StandardPackagesPage() {
 
   return (
     <>
-      <div className="container mx-auto pt-40">
+      <div className="container mx-auto pt-40 md:pt-48 lg:pt-40">
         <div className="flex flex-col space-y-4 mt-6">
           <h1 className="text-3xl font-bold">C. Golf Packages</h1>
 

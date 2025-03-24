@@ -18,7 +18,7 @@ export const GolfPackageClient = () => {
         quality={100}
         className="z-0 opacity-90 -mb-32"
       />
-      <div className="relative z-10 container flex flex-col gap-5 items-center justify-center h-full">
+      <div className="relative container flex flex-col gap-5 items-center justify-center h-full">
         <div className="flex flex-col gap-8 items-center justify-center">
           <h1 className="text-xl md:text-2xl lg:text-4xl text-white font-bold">
             Golf Packages
