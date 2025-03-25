@@ -82,7 +82,6 @@ const routeList: RouteProps[] = [
     id: 4,
     href: "/course-booking",
     label: "D. Course Booking",
-    hasChildren: true,
   },
   {
     id: 5,
@@ -243,12 +242,6 @@ export const NavbarNew = () => {
 
   return (
     <div className="fixed z-50 w-full">
-      {/* Style untuk memperbaiki posisi menu Golf Packages */}
-      <style jsx global>{`
-        .golf-packages-menu [data-radix-popper-content-wrapper] {
-          transform: translateX(-25%) !important;
-        }
-      `}</style>
       {/* Mobile Mode */}
       <div className="lg:hidden md:hidden flex justify-center">
         <header className="shadow-inner bg-opacity-15 mx-auto border border-secondary rounded-md bg-card flex flex-col w-full max-w-md">
@@ -599,7 +592,7 @@ export const NavbarNew = () => {
                             <NavigationMenuContent className="max-h-96 overflow-y-auto">
                               <div className="flex">
                                 {/* Countries Column */}
-                                <div className="bg-background p-0 w-[200px] min-h-[400px] rounded-l-md border-r border-gray-200">
+                                <div className="bg-background p-0 w-[200px] min-h-[500px] rounded-l-md border-r border-gray-200">
                                   <ul className="py-2 px-0">
                                     {countries.map((country) => (
                                       <li
@@ -695,7 +688,7 @@ export const NavbarNew = () => {
 
                                 {/* Course Details Column */}
                                 {selectedCity && !(route.id === 3) && (
-                                  <div className="bg-background p-0 w-[250px] min-h-[400px] rounded-r-md">
+                                  <div className="bg-background p-0 w-[380px] min-h-[400px] rounded-r-md">
                                     <ul className="py-2 px-0">
                                       {courseDetails[
                                         selectedCity as keyof typeof courseDetails
