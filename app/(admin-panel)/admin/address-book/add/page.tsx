@@ -6,30 +6,12 @@ import {
 } from "@/components/ui/sidebar";
 import { users } from "@/data/data";
 import { Breadcrumbs } from "@/components/layout/breadcrumb";
-import { EditAddressBookClient } from "./components/edit-address-book-client";
-import axios from "axios";
-import { API_BASE_URL } from "@/config/api";
+import { AddAddressBookClient } from "./components/add-address-book-client";
 
-export default async function EditAddressBookPage({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
-  const { id } = await params;
-  let data;
-  try {
-    const res = await axios.get(`${API_BASE_URL}/customer/${id}`);
-    data = res.data.data;
-  } catch (error) {
-    console.log(error);
-  }
-  // console.log(id);
-
-  // console.log(res.data);
-
+export default function AddCustomerPage() {
   const breadcrumbItems = [
-    { title: "Admin Panel", link: "/address-book" },
-    { title: "Edit Address Book", link: "/edit-address-book" },
+    { title: "Admin Panel", link: "/admin/address-book/list" },
+    { title: "Add Customer", link: "/admin/address-book/add" },
     // { title: 'User', link: '/dashboard/user' }
   ];
   return (
@@ -42,8 +24,8 @@ export default async function EditAddressBookPage({
             <Breadcrumbs items={breadcrumbItems} />
           </div>
         </div>
-        <div className="container max-h-screen ">
-          <EditAddressBookClient initialData={data} />
+        <div className="container">
+          <AddAddressBookClient />
         </div>
       </SidebarInset>
     </>

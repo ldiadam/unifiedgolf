@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { User } from "lucide-react";
+import { User, Map, ListCollapse } from "lucide-react";
 
 import { NavMain } from "./nav-main";
 import {
@@ -18,15 +18,27 @@ const data = {
       title: "Address Book",
       url: "/list-address-book",
       icon: User,
-      isActive: true,
+      isActive: false,
       items: [
         {
           title: "List Address Book",
-          url: "/list-address-book",
+          url: "/admin/address-book/list",
         },
         {
           title: "Add Address Book",
-          url: "/add-address-book",
+          url: "/admin/address-book/add",
+        },
+      ],
+    },
+    {
+      title: "Quotation",
+      url: "/admin/costing-table",
+      icon: ListCollapse,
+      isActive: true,
+      items: [
+        {
+          title: "Costing Table",
+          url: "/admin/costing-table",
         },
       ],
     },

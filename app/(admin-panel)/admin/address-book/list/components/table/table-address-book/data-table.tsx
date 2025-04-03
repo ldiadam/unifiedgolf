@@ -65,7 +65,7 @@ export function DataTable<TData, TValue>({
         </div>
         <Button
           className="text-xs md:text-sm"
-          onClick={() => router.push(`/add-address-book`)}
+          onClick={() => router.push(`/admin/address-book/new`)}
           disabled={loading}
         >
           <Plus className="mr-2 h-4 w-4" /> Add New
