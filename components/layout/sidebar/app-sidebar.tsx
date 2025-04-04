@@ -16,9 +16,9 @@ const data = {
   navMain: [
     {
       title: "Address Book",
-      url: "/list-address-book",
+      url: "/admin/address-book/list",
       icon: User,
-      isActive: false,
+      isActive: true,
       items: [
         {
           title: "List Address Book",

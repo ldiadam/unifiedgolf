@@ -26,7 +26,7 @@ export const CompanyProvider = ({
   const fetchCompanyData = useCallback(async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`${API_BASE_URL}/customer/`);
+      const response = await axios.get(`${API_BASE_URL}/customer`);
       setCompanyData(response.data.data);
     } catch (error) {
       console.error("Error fetching company data:", error);

@@ -11,7 +11,7 @@ import { Breadcrumbs } from "@/components/layout/breadcrumb";
 export default function ListAddressBookPage() {
   const breadcrumbItems = [
     { title: "Admin Panel", link: "#" },
-    { title: "List Address Book", link: "/list-address-book" },
+    { title: "List Address Book", link: "/admin/address-book/list" },
   ];
 
   return (

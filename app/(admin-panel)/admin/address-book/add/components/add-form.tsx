@@ -165,7 +165,7 @@ export const AddForm: React.FC<AddFormProps> = ({ initialData }) => {
       });
 
       router.refresh();
-      router.push(`/list-address-book`);
+      router.push(`/admin/address-book/list`);
     } catch (error: any) {
       toast("Uh oh! Something went wrong.", {
         description: "There was a problem with your request.",

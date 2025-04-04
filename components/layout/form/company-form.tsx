@@ -179,7 +179,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
       }
 
       await fetchCompanyData(); // Refresh data
-      router.push(`/list-address-book`);
+      router.push(`/admin/address-book/list`);
     } catch (error: any) {
       console.error("Error submitting form:", error);
       toast("Uh oh! Something went wrong.", {
@@ -224,9 +224,9 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="w-full space-y-8"
+          className="w-full space-y-1"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
             <FormField
               control={form.control}
               name="company_name"
