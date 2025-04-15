@@ -236,7 +236,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Name..."
+                      // placeholder="Company Name..."
                       className="rounded-none"
                       {...field}
                     />
@@ -254,7 +254,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Code..."
+                      // placeholder="Company Code..."
                       className="rounded-none"
                       {...field}
                     />
@@ -272,7 +272,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Address..."
+                      // placeholder="Company Address..."
                       className="rounded-none"
                       {...field}
                     />
@@ -290,7 +290,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Address Building..."
+                      // placeholder="Company Address Building..."
                       className="rounded-none"
                       {...field}
                     />
@@ -308,7 +308,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Street Number..."
+                      // placeholder="Company Street Number..."
                       type="number"
                       className="rounded-none"
                       {...field}
@@ -327,7 +327,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Street Name..."
+                      // placeholder="Company Street Name..."
                       className="rounded-none"
                       {...field}
                     />
@@ -345,7 +345,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Building No..."
+                      // placeholder="Company Building No..."
                       type="number"
                       className="rounded-none"
                       {...field}
@@ -364,7 +364,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Building Unit..."
+                      // placeholder="Company Building Unit..."
                       className="rounded-none"
                       {...field}
                     />
@@ -382,7 +382,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Building Name..."
+                      // placeholder="Company Building Name..."
                       className="rounded-none"
                       {...field}
                     />
@@ -400,7 +400,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company City..."
+                      // placeholder="Company City..."
                       className="rounded-none"
                       {...field}
                     />
@@ -418,7 +418,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company State..."
+                      // placeholder="Company State..."
                       className="rounded-none"
                       {...field}
                     />
@@ -436,7 +436,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Country..."
+                      // placeholder="Company Country..."
                       className="rounded-none"
                       {...field}
                     />
@@ -454,7 +454,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Zip Code..."
+                      // placeholder="Company Zip Code..."
                       type="number"
                       className="rounded-none"
                       {...field}
@@ -473,7 +473,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Fax..."
+                      // placeholder="Company Fax..."
                       type="number"
                       className="rounded-none"
                       {...field}
@@ -492,7 +492,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Website..."
+                      // placeholder="Company Website..."
                       className="rounded-none"
                       {...field}
                     />
@@ -510,7 +510,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company PIC..."
+                      // placeholder="Company PIC..."
                       className="rounded-none"
                       {...field}
                     />
@@ -528,7 +528,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Designation..."
+                      // placeholder="Company Designation..."
                       className="rounded-none"
                       {...field}
                     />
@@ -546,7 +546,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Email..."
+                      // placeholder="Company Email..."
                       className="rounded-none"
                       {...field}
                     />
@@ -564,7 +564,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={loading}
-                      placeholder="Company Phone.."
+                      // placeholder="Company Phone.."
                       className="rounded-none"
                       {...field}
                     />
