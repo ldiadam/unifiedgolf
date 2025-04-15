@@ -174,22 +174,22 @@ export default function CountryMap({
 
   // Load mapboxgl dynamically on client side only
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      import("mapbox-gl")
-        .then((mapboxModule) => {
-          // Set the access token
-          mapboxModule.default.accessToken =
-            "pk.eyJ1IjoibGRpYWRhbSIsImEiOiJjancxaHZsaGMwazNwNDNtcDZyMTQwM2o5In0.oqd_kF8J4o22yRzKuYHoIg";
-          setMapboxgl(mapboxModule);
-        })
-        .catch((err) => {
-          console.error("Failed to load mapbox-gl:", err);
-          setError(
-            "Failed to load map library. Please check your network connection."
-          );
-          setIsLoading(false);
-        });
-    }
+    // if (typeof window !== "undefined") {
+    //   import("mapbox-gl")
+    //     .then((mapboxModule) => {
+    //       // Set the access token
+    //       mapboxModule.default.accessToken =
+    //         "pk.eyJ1IjoibGRpYWRhbSIsImEiOiJjancxaHZsaGMwazNwNDNtcDZyMTQwM2o5In0.oqd_kF8J4o22yRzKuYHoIg";
+    //       setMapboxgl(mapboxModule);
+    //     })
+    //     .catch((err) => {
+    //       console.error("Failed to load mapbox-gl:", err);
+    //       setError(
+    //         "Failed to load map library. Please check your network connection."
+    //       );
+    //       setIsLoading(false);
+    //     });
+    // }
   }, []);
 
   // Update available cities when country changes
