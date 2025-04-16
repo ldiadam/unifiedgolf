@@ -32,13 +32,17 @@ const data = {
     },
     {
       title: "Quotation",
-      url: "/admin/costing-table",
+      url: "/admin/course-cost",
       icon: ListCollapse,
       isActive: true,
       items: [
         {
           title: "Costing Table",
-          url: "/admin/costing-table",
+          url: "/admin/course-cost/list",
+        },
+        {
+          title: "Add Course Cost",
+          url: "/admin/course-cost/add",
         },
       ],
     },
