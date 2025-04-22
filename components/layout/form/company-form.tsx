@@ -126,6 +126,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
         company_pic: "",
         company_email: "",
         company_phone: "",
+        company_designation: "",
         categories: [],
       };
 
