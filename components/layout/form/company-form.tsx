@@ -39,61 +39,35 @@ import { API_BASE_URL } from "@/config/api";
 import { useCompany } from "@/hook/company-context";
 
 const formSchema = z.object({
-  company_name: z
-    .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
-  company_code: z
-    .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
-  company_address: z
-    .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
+  company_name: z.string().min(1, { message: "Field must be fill" }),
+  company_code: z.string().min(1, { message: "Field must be fill" }),
+  company_address: z.string().min(1, { message: "Field must be fill" }),
   company_address_building: z
     .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
+    .min(1, { message: "Field must be fill" }),
   company_street_number: z
     .preprocess((val) => (val === "" ? undefined : Number(val)), z.number())
     .refine((val) => !isNaN(val), { message: "Must be a valid number" }),
-  company_street_name: z
-    .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
+  company_street_name: z.string().min(1, { message: "Field must be fill" }),
   company_building_no: z
     .preprocess((val) => (val === "" ? undefined : Number(val)), z.number())
     .refine((val) => !isNaN(val), { message: "Must be a valid number" }),
-  company_building_unit: z
-    .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
-  company_building_name: z
-    .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
-  company_city: z
-    .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
-  company_state: z
-    .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
-  company_country: z
-    .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
+  company_building_unit: z.string().min(1, { message: "Field must be fill" }),
+  company_building_name: z.string().min(1, { message: "Field must be fill" }),
+  company_city: z.string().min(1, { message: "Field must be fill" }),
+  company_state: z.string().min(1, { message: "Field must be fill" }),
+  company_country: z.string().min(1, { message: "Field must be fill" }),
   company_zip_code: z
     .preprocess((val) => (val === "" ? undefined : Number(val)), z.number())
     .refine((val) => !isNaN(val), { message: "Must be a valid number" }),
   company_fax: z
     .preprocess((val) => (val === "" ? undefined : Number(val)), z.number())
     .refine((val) => !isNaN(val), { message: "Must be a valid number" }),
-  company_website: z
-    .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
-  company_pic: z
-    .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
-  company_designation: z
-    .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
+  company_website: z.string().min(1, { message: "Field must be fill" }),
+  company_pic: z.string().min(1, { message: "Field must be fill" }),
+  company_designation: z.string().min(1, { message: "Field must be fill" }),
   company_email: z.string().email({ message: "Field must be email address" }),
-  company_phone: z
-    .string()
-    .min(3, { message: "Field must be at least 3 characters" }),
+  company_phone: z.string().min(1, { message: "Field must be fill" }),
   categories: z.array(z.number()).default([]),
 });
 
