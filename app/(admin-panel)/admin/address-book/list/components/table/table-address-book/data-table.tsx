@@ -6,6 +6,7 @@ import {
   getCoreRowModel,
   getFilteredRowModel,
   useReactTable,
+  getPaginationRowModel,
 } from "@tanstack/react-table";
 
 import {
@@ -19,7 +20,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { Plus, Loader2 } from "lucide-react";
+import { Plus, Loader2, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { CategoryFilter } from "./category-filter";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -42,6 +43,12 @@ export function DataTable<TData, TValue>({
     columns,
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
+    getPaginationRowModel: getPaginationRowModel(),
+    initialState: {
+      pagination: {
+        pageSize: 7,
+      },
+    },
   });
 
   const router = useRouter();
@@ -145,27 +152,47 @@ export function DataTable<TData, TValue>({
             <Skeleton className="h-5 w-36" />
           ) : (
             <>
-              {table.getFilteredSelectedRowModel().rows.length} of{" "}
-              {table.getFilteredRowModel().rows.length} row(s) selected.
+              Page {table.getState().pagination.pageIndex + 1} of{" "}
+              {table.getPageCount()} ({table.getFilteredRowModel().rows.length}{" "}
+              total items)
             </>
           )}
         </div>
-        <div className="space-x-2">
+        <div className="space-x-2 flex items-center">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => table.setPageIndex(0)}
+            disabled={!table.getCanPreviousPage() || loading}
+          >
+            First
+          </Button>
           <Button
             variant="outline"
             size="sm"
             onClick={() => table.previousPage()}
             disabled={!table.getCanPreviousPage() || loading}
           >
-            Previous
+            <ChevronLeft className="h-4 w-4" />
           </Button>
+          <span className="text-sm px-2">
+            {table.getState().pagination.pageIndex + 1} / {table.getPageCount()}
+          </span>
           <Button
             variant="outline"
             size="sm"
             onClick={() => table.nextPage()}
             disabled={!table.getCanNextPage() || loading}
           >
-            Next
+            <ChevronRight className="h-4 w-4" />
+          </Button>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => table.setPageIndex(table.getPageCount() - 1)}
+            disabled={!table.getCanNextPage() || loading}
+          >
+            Last
           </Button>
         </div>
       </div>
