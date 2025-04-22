@@ -87,7 +87,10 @@ const formSchema = z.object({
     (val) => (val === "" ? "null" : val),
     z.string()
   ),
-  company_email: z.preprocess((val) => (val === "" ? "null" : val), z.string()),
+  company_email: z.preprocess(
+    (val) => (val === "" ? "noEmail@email.com" : val),
+    z.string()
+  ),
   company_phone: z.string().min(1, { message: "Field must be fill" }),
   categories: z.array(z.number()).default([]),
 });
