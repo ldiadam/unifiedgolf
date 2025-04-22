@@ -42,9 +42,7 @@ const formSchema = z.object({
   company_name: z.string().min(1, { message: "Field must be fill" }),
   company_code: z.string().nullable(),
   company_address: z.string().min(1, { message: "Field must be fill" }),
-  company_address_building: z
-    .string()
-    .min(1, { message: "Field must be fill" }),
+  company_address_building: z.string().nullable(),
   company_street_number: z.preprocess(
     (val) => (val === "" ? null : Number(val)),
     z.number().nullable()
@@ -74,7 +72,7 @@ const formSchema = z.object({
   company_website: z.string().nullable(),
   company_pic: z.string().min(1, { message: "Field must be fill" }),
   company_designation: z.string().nullable(),
-  company_email: z.string().min(1, { message: "Field must be fill" }),
+  company_email: z.string().nullable(),
   company_phone: z.string().min(1, { message: "Field must be fill" }),
   categories: z.array(z.number()).default([]),
 });
