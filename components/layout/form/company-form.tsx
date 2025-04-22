@@ -40,39 +40,54 @@ import { useCompany } from "@/hook/company-context";
 
 const formSchema = z.object({
   company_name: z.string().min(1, { message: "Field must be fill" }),
-  company_code: z.string().nullable(),
+  company_code: z.preprocess((val) => (val === "" ? "null" : val), z.string()),
   company_address: z.string().min(1, { message: "Field must be fill" }),
-  company_address_building: z.string().nullable(),
+  company_address_building: z.preprocess(
+    (val) => (val === "" ? "null" : val),
+    z.string()
+  ),
   company_street_number: z.preprocess(
-    (val) => (val === "" ? null : Number(val)),
-    z.number().nullable()
+    (val) => (val === "" ? 0 : Number(val)),
+    z.number()
   ),
   // .refine((val) => !isNaN(val), { message: "Must be a valid number" }),
   company_street_name: z.string().min(1, { message: "Field must be fill" }),
   company_building_no: z.preprocess(
-    (val) => (val === "" ? null : Number(val)),
-    z.number().nullable()
+    (val) => (val === "" ? 0 : Number(val)),
+    z.number()
   ),
   // .refine((val) => !isNaN(val), { message: "Must be a valid number" }),
-  company_building_unit: z.string().nullable(),
-  company_building_name: z.string().nullable(),
+  company_building_unit: z.preprocess(
+    (val) => (val === "" ? "null" : val),
+    z.string()
+  ),
+  company_building_name: z.preprocess(
+    (val) => (val === "" ? "null" : val),
+    z.string()
+  ),
   company_city: z.string().min(1, { message: "Field must be fill" }),
   company_state: z.string().min(1, { message: "Field must be fill" }),
   company_country: z.string().min(1, { message: "Field must be fill" }),
   company_zip_code: z.preprocess(
-    (val) => (val === "" ? null : Number(val)),
-    z.number().nullable()
+    (val) => (val === "" ? 0 : Number(val)),
+    z.number()
   ),
   // .refine((val) => !isNaN(val), { message: "Must be a valid number" }),
   company_fax: z.preprocess(
-    (val) => (val === "" ? null : Number(val)),
-    z.number().nullable()
+    (val) => (val === "" ? 0 : Number(val)),
+    z.number()
   ),
   // .refine((val) => !isNaN(val), { message: "Must be a valid number" }),
-  company_website: z.string().nullable(),
+  company_website: z.preprocess(
+    (val) => (val === "" ? "null" : val),
+    z.string()
+  ),
   company_pic: z.string().min(1, { message: "Field must be fill" }),
-  company_designation: z.string().nullable(),
-  company_email: z.string().nullable(),
+  company_designation: z.preprocess(
+    (val) => (val === "" ? "null" : val),
+    z.string()
+  ),
+  company_email: z.preprocess((val) => (val === "" ? "null" : val), z.string()),
   company_phone: z.string().min(1, { message: "Field must be fill" }),
   categories: z.array(z.number()).default([]),
 });
@@ -220,7 +235,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company Name..."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -239,7 +254,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company Code..."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -258,7 +273,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company Address..."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -277,7 +292,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company Address Building..."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -297,7 +312,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       type="number"
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -316,7 +331,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company Street Name..."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -336,7 +351,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       type="number"
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -355,7 +370,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company Building Unit..."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -374,7 +389,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company Building Name..."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -393,7 +408,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company City..."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -412,7 +427,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company State..."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -431,7 +446,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company Country..."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -451,7 +466,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       type="number"
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -471,7 +486,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       type="number"
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -490,7 +505,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company Website..."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -509,7 +524,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company PIC..."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -528,7 +543,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company Designation..."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -547,7 +562,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company Email..."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
@@ -566,7 +581,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({
                       // placeholder="Company Phone.."
                       className="rounded-none"
                       {...field}
-                      value={field.value !== null ? field.value : ""}
+                      value={field.value}
                     />
                   </FormControl>
                   <FormMessage />
