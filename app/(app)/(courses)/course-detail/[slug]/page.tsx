@@ -1,22 +1,12 @@
-// app/course-detail/[slug]/page.tsx
 "use client";
 
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
-import {
-  ChevronLeft,
-  Star,
-  Calendar,
-  DollarSign,
-  MapPin,
-  Info,
-} from "lucide-react";
+import { ChevronLeft, Star, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import courseData from "@/data/allData.json";
 import ImageCarousel from "./components/image-carousel-course-detail";
 
@@ -26,7 +16,7 @@ interface Course {
   name: string;
   country: string;
   city: string;
-  imageUrl: Image[];
+  imageUrl: CourseImage[];
   description: {
     credential: { text: string }[];
     theCourse: { text: string }[];
@@ -41,7 +31,7 @@ interface Course {
   pricePerDay: number;
   type: string;
 }
-interface Image {
+interface CourseImage {
   id: number;
   url: string;
   alt: string;
@@ -156,25 +146,34 @@ export default function CourseDetailPage() {
         </Button>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Left column - course details */}
         <div className="lg:col-span-2">
-          <ImageCarousel images={course.imageUrl} />
+          <ImageCarousel
+            images={course.imageUrl}
+            courseInfo={{
+              name: course.name,
+              country: course.country,
+              city: course.city,
+              description: course.description,
+              type: course.type,
+            }}
+          />
 
-          <h1 className="text-3xl font-bold mb-3">{course.name}</h1>
+          {/* <h1 className="text-3xl font-bold mb-3">{course.name}</h1> */}
 
-          <div className="flex items-center mb-6">
+          {/* <div className="flex items-center mb-6">
             <MapPin className="h-5 w-5 mr-2 text-muted-foreground" />
             <span>
               {course.city}, {course.country}
             </span>
-          </div>
+          </div> */}
 
-          <div className="mb-6">{renderStars(course.rating)}</div>
+          {/* <div className="mb-6">{renderStars(course.rating)}</div> */}
 
-          <Separator className="my-6" />
+          {/* <Separator className="my-6" /> */}
 
-          <div className="w-full bg-card rounded-md">
+          {/* <div className="w-full bg-card rounded-md">
             <div className="flex flex-col gap-1">
               <div className="flex flex-col justify-center items-center py-2 px-2">
                 <h1 className="text-lg font-bold mb-2">Description</h1>
@@ -219,7 +218,7 @@ export default function CourseDetailPage() {
                     <h2 className="font-bold">Address/Location</h2>
                     <div className="flex justify-start items-center pb-4 px-4">
                       <ul className="space-y-1 list-disc ml-4">
-                        {course.description.accomodation.map(
+                        {course.description.address.map(
                           (desc, index) =>
                             desc.text && <li key={index}>{desc.text}</li>
                         )}{" "}
@@ -261,46 +260,12 @@ export default function CourseDetailPage() {
                   </div>
                 </div>
               </div>
-              {/* <div className="flex justify-start items-center pb-4 px-4">
-                <ul className="space-y-4 list-disc ml-4">
-                  {course.description.map(
-                    (desc) => desc.text && <li key={desc.id}>{desc.text}</li>
-                  )}{" "}
-                </ul>
-              </div> */}
             </div>
-          </div>
-
-          {/* <Tabs
-            value={activeTab}
-            onValueChange={setActiveTab}
-            className="w-full"
-          >
-            <TabsList className="w-full">
-              <TabsTrigger value="overview" className="flex-1">
-                Overview
-              </TabsTrigger>
-              <TabsTrigger value="description" className="flex-1">
-                Description
-              </TabsTrigger>
-            </TabsList>
-            <TabsContent value="overview" className="mt-6">
-              <div className="space-y-4">
-                <p className="text-lg">{course.description[0]?.text}</p>
-              </div>
-            </TabsContent>
-            <TabsContent value="description" className="mt-6">
-              <ul className="space-y-4 list-disc ml-4">
-                {course.description.map(
-                  (desc) => desc.text && <li key={desc.id}>{desc.text}</li>
-                )}{" "}
-              </ul>
-            </TabsContent>
-          </Tabs> */}
+          </div> */}
         </div>
 
         {/* Right column - booking card */}
-        <div>
+        {/* <div>
           <Card className="sticky top-8">
             <CardContent className="p-6">
               <h2 className="text-2xl font-bold mb-6">Book Your Tee Time</h2>
@@ -358,7 +323,7 @@ export default function CourseDetailPage() {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
       </div>
     </div>
   );
