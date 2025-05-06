@@ -91,7 +91,7 @@ export default function CountryPage({ params }: Props) {
     );
   };
   return (
-    <div className="container mx-auto pt-48 lg:pt-40">
+    <div className="container mx-auto pt-48 lg:pt-42">
       <div className="flex flex-col gap-1">
         <div className="flex justify-start">
           <Button

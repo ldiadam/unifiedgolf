@@ -56,16 +56,16 @@ export default function ImageCarousel({
   const courseFeeHighlight = courseInfo.description.courseFee || "";
   const otherInfoHighlight = courseInfo.description.otherInfo || "";
   return (
-    <Carousel className="relative h-full md:h-[1024px] w-full mb-6">
+    <Carousel className="relative w-full mb-6">
       <CarouselContent>
         {images.map((image, index) => (
           <CarouselItem key={index}>
-            <div className="relative h-full md:h-[1024px] w-full overflow-hidden rounded-lg group">
+            <div className="relative h-[500px] sm:h-[550px] md:h-[600px] lg:h-[720px] w-full overflow-hidden rounded-lg group">
               <Image
                 src={image.url ? image.url : "/no-image.jpg"}
                 alt={image.alt}
                 fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105 opacity-90"
+                className="object-cover transition-transform duration-300 group-hover:scale-105 opacity-95"
                 priority={index === 0}
                 quality={100}
               />
@@ -92,172 +92,175 @@ export default function ImageCarousel({
                     </span>
                   </div>
 
-                  <div className="hidden md:block space-y-2 mt-2">
+                  {/* Details section with consistent styling across all screen sizes */}
+                  <div className="space-y-2 mt-2 max-h-[200px] sm:max-h-[250px] md:max-h-[300px] overflow-y-auto pr-2">
                     {credetialHighlight && (
-                      <div className="flex flex-col items-start gap-2">
+                      <div className="flex flex-col items-start gap-1">
                         <Badge className="bg-primary/70 text-white">
-                          <div className="flex flex-row gap-2">
-                            <Info className="h-4 w-4  mt-0.5 flex-shrink-0" />
-                            <span className="text-sm font-bold line-clamp-2">
+                          <div className="flex flex-row gap-1">
+                            <Info className="h-3 w-3 mt-0.5 flex-shrink-0" />
+                            <span className="text-xs font-bold">
                               Credential
                             </span>
                           </div>
                         </Badge>
 
-                        <ul className="space-y-1 list-disc ml-8">
+                        <ul className="space-y-0.5 list-disc ml-4">
                           {credetialHighlight.map(
                             (desc, index) =>
                               desc.text && (
                                 <li key={index}>
-                                  <span className="text-xs">{desc.text}</span>
+                                  <span className="text-[10px]">
+                                    {desc.text}
+                                  </span>
                                 </li>
                               )
-                          )}{" "}
+                          )}
                         </ul>
                       </div>
                     )}
                     {courseHighlight && (
-                      <div className="flex flex-col items-start gap-2">
+                      <div className="flex flex-col items-start gap-1">
                         <Badge className="bg-primary/70 text-white">
-                          <div className="flex flex-row gap-2">
-                            <Info className="h-4 w-4  mt-0.5 flex-shrink-0" />
-                            <span className="text-sm font-bold line-clamp-2">
+                          <div className="flex flex-row gap-1">
+                            <Info className="h-3 w-3 mt-0.5 flex-shrink-0" />
+                            <span className="text-xs font-bold">
                               The Course
                             </span>
                           </div>
                         </Badge>
-                        <ul className="space-y-1 list-disc ml-8">
+                        <ul className="space-y-0.5 list-disc ml-4">
                           {courseHighlight.map(
                             (desc, index) =>
                               desc.text && (
                                 <li key={index}>
-                                  <span className="text-xs">{desc.text}</span>
+                                  <span className="text-[10px]">
+                                    {desc.text}
+                                  </span>
                                 </li>
                               )
-                          )}{" "}
+                          )}
                         </ul>
                       </div>
                     )}
                     {accommodationHighlight && (
-                      <div className="flex flex-col items-start gap-2">
+                      <div className="flex flex-col items-start gap-1">
                         <Badge className="bg-primary/70 text-white">
-                          <div className="flex flex-row gap-2">
-                            <Info className="h-4 w-4  mt-0.5 flex-shrink-0" />
-                            <span className="text-sm font-bold line-clamp-2">
+                          <div className="flex flex-row gap-1">
+                            <Info className="h-3 w-3 mt-0.5 flex-shrink-0" />
+                            <span className="text-xs font-bold">
                               Accomodation
                             </span>
                           </div>
                         </Badge>
-                        <ul className="space-y-1 list-disc ml-8">
+                        <ul className="space-y-0.5 list-disc ml-4">
                           {accommodationHighlight.map(
                             (desc, index) =>
                               desc.text && (
                                 <li key={index}>
-                                  <span className="text-xs">{desc.text}</span>
+                                  <span className="text-[10px]">
+                                    {desc.text}
+                                  </span>
                                 </li>
                               )
-                          )}{" "}
+                          )}
                         </ul>
                       </div>
                     )}
                     {addressHighlight && (
-                      <div className="flex flex-col items-start gap-2">
+                      <div className="flex flex-col items-start gap-1">
                         <Badge className="bg-primary/70 text-white">
-                          <div className="flex flex-row gap-2">
-                            <Info className="h-4 w-4  mt-0.5 flex-shrink-0" />
-                            <span className="text-sm font-bold line-clamp-2">
+                          <div className="flex flex-row gap-1">
+                            <Info className="h-3 w-3 mt-0.5 flex-shrink-0" />
+                            <span className="text-xs font-bold">
                               Address / Location
                             </span>
                           </div>
                         </Badge>
-                        <ul className="space-y-1 list-disc ml-8">
+                        <ul className="space-y-0.5 list-disc ml-4">
                           {addressHighlight.map(
                             (desc, index) =>
                               desc.text && (
                                 <li key={index}>
-                                  <span className="text-xs">{desc.text}</span>
+                                  <span className="text-[10px]">
+                                    {desc.text}
+                                  </span>
                                 </li>
                               )
-                          )}{" "}
+                          )}
                         </ul>
                       </div>
                     )}
                     {contactHighlight && (
-                      <div className="flex flex-col items-start gap-2">
+                      <div className="flex flex-col items-start gap-1">
                         <Badge className="bg-primary/70 text-white">
-                          <div className="flex flex-row gap-2">
-                            <Info className="h-4 w-4  mt-0.5 flex-shrink-0" />
-                            <span className="text-sm font-bold line-clamp-2">
-                              Contact
-                            </span>
+                          <div className="flex flex-row gap-1">
+                            <Info className="h-3 w-3 mt-0.5 flex-shrink-0" />
+                            <span className="text-xs font-bold">Contact</span>
                           </div>
                         </Badge>
-                        <ul className="space-y-1 list-disc ml-8">
+                        <ul className="space-y-0.5 list-disc ml-4">
                           {contactHighlight.map(
                             (desc, index) =>
                               desc.text && (
                                 <li key={index}>
-                                  <span className="text-xs">{desc.text}</span>
+                                  <span className="text-[10px]">
+                                    {desc.text}
+                                  </span>
                                 </li>
                               )
-                          )}{" "}
+                          )}
                         </ul>
                       </div>
                     )}
                     {courseFeeHighlight && (
-                      <div className="flex flex-col items-start gap-2">
+                      <div className="flex flex-col items-start gap-1">
                         <Badge className="bg-primary/70 text-white">
-                          <div className="flex flex-row gap-2">
-                            <Info className="h-4 w-4  mt-0.5 flex-shrink-0" />
-                            <span className="text-sm font-bold line-clamp-2">
+                          <div className="flex flex-row gap-1">
+                            <Info className="h-3 w-3 mt-0.5 flex-shrink-0" />
+                            <span className="text-xs font-bold">
                               Course Fee
                             </span>
                           </div>
                         </Badge>
-                        <ul className="space-y-1 list-disc ml-8">
+                        <ul className="space-y-0.5 list-disc ml-4">
                           {courseFeeHighlight.map(
                             (desc, index) =>
                               desc.text && (
                                 <li key={index}>
-                                  <span className="text-xs">{desc.text}</span>
+                                  <span className="text-[10px]">
+                                    {desc.text}
+                                  </span>
                                 </li>
                               )
-                          )}{" "}
+                          )}
                         </ul>
                       </div>
                     )}
                     {otherInfoHighlight && (
-                      <div className="flex flex-col items-start gap-2">
+                      <div className="flex flex-col items-start gap-1">
                         <Badge className="bg-primary/70 text-white">
-                          <div className="flex flex-row gap-2">
-                            <Info className="h-4 w-4  mt-0.5 flex-shrink-0" />
-                            <span className="text-sm font-bold line-clamp-2">
+                          <div className="flex flex-row gap-1">
+                            <Info className="h-3 w-3 mt-0.5 flex-shrink-0" />
+                            <span className="text-xs font-bold">
                               Other Information
                             </span>
                           </div>
                         </Badge>
-                        <ul className="space-y-1 list-disc ml-8">
+                        <ul className="space-y-0.5 list-disc ml-4">
                           {otherInfoHighlight.map(
                             (desc, index) =>
                               desc.text && (
                                 <li key={index}>
-                                  <span className="text-xs">{desc.text}</span>
+                                  <span className="text-[10px]">
+                                    {desc.text}
+                                  </span>
                                 </li>
                               )
-                          )}{" "}
+                          )}
                         </ul>
                       </div>
                     )}
-
-                    {/* {accommodationHighlight && (
-                      <div className="flex items-start gap-2">
-                        <Info className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                        <p className="text-sm line-clamp-2">
-                          <span className="font-semibold">Accommodation:</span>{" "}
-                          {accommodationHighlight}
-                        </p>
-                      </div>
-                    )} */}
                   </div>
                 </div>
               </div>
@@ -265,8 +268,8 @@ export default function ImageCarousel({
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="left-4" />
-      <CarouselNext className="right-4" />
+      <CarouselPrevious className="left-2 md:left-4 bg-black/50 text-white hover:bg-black/70" />
+      <CarouselNext className="right-2 md:right-4 bg-black/50 text-white hover:bg-black/70" />
     </Carousel>
   );
 }

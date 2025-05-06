@@ -157,7 +157,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 3,
@@ -236,7 +236,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 4,
@@ -315,7 +315,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 5,
@@ -394,7 +394,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 6,
@@ -473,7 +473,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 7,
@@ -552,7 +552,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 8,
@@ -634,7 +634,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 9,
@@ -706,7 +706,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location",
+    "type": "Golf Course",
     "courseTitle": "",
     "courseDesc": [
       {
@@ -785,7 +785,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 11,
@@ -860,7 +860,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 12,
@@ -935,7 +935,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 13,
@@ -1007,7 +1007,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 14,
@@ -1082,7 +1082,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 15,
@@ -1151,7 +1151,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 16,
@@ -1223,7 +1223,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 17,
@@ -1298,7 +1298,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 18,
@@ -1373,7 +1373,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 19,
@@ -1445,7 +1445,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 20,
@@ -1517,7 +1517,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 21,
@@ -1592,7 +1592,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 22,
@@ -1670,7 +1670,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 23,
@@ -1726,7 +1726,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 24,
@@ -1782,7 +1782,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 25,
@@ -1838,7 +1838,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 26,
@@ -1889,7 +1889,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 27,
@@ -1940,7 +1940,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 28,
@@ -1991,7 +1991,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 29,
@@ -2042,7 +2042,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 30,
@@ -2093,7 +2093,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 31,
@@ -2196,7 +2196,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 32,
@@ -2283,7 +2283,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 33,
@@ -2334,7 +2334,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 34,
@@ -2385,7 +2385,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 35,
@@ -2436,7 +2436,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 36,
@@ -2487,7 +2487,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 37,
@@ -2538,7 +2538,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 38,
@@ -2589,7 +2589,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 39,
@@ -2640,7 +2640,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 40,
@@ -2712,7 +2712,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 41,
@@ -2782,7 +2782,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 42,
@@ -2839,7 +2839,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 43,
@@ -2903,7 +2903,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 44,
@@ -2964,7 +2964,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 45,
@@ -3025,7 +3025,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 46,
@@ -3089,7 +3089,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 47,
@@ -3153,7 +3153,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 48,
@@ -3217,7 +3217,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 49,
@@ -3299,7 +3299,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 50,
@@ -3354,7 +3354,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 51,
@@ -3418,7 +3418,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 52,
@@ -3476,7 +3476,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 53,
@@ -3537,7 +3537,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 54,
@@ -3595,7 +3595,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 55,
@@ -3653,7 +3653,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 56,
@@ -3714,7 +3714,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 57,
@@ -3772,7 +3772,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 58,
@@ -3833,7 +3833,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 59,
@@ -3894,7 +3894,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 60,
@@ -3955,7 +3955,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 61,
@@ -4016,7 +4016,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 62,
@@ -4077,7 +4077,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 63,
@@ -4132,7 +4132,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 64,
@@ -4187,7 +4187,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 65,
@@ -4242,7 +4242,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 66,
@@ -4297,7 +4297,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 67,
@@ -4364,7 +4364,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 68,
@@ -4425,7 +4425,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 69,
@@ -4486,7 +4486,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 70,
@@ -4547,7 +4547,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 71,
@@ -4608,7 +4608,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 72,
@@ -4669,7 +4669,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 73,
@@ -4724,7 +4724,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 74,
@@ -4779,7 +4779,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 75,
@@ -4834,7 +4834,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 76,
@@ -4889,7 +4889,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 77,
@@ -4953,7 +4953,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 78,
@@ -5017,7 +5017,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 79,
@@ -5084,7 +5084,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 80,
@@ -5148,7 +5148,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 81,
@@ -5209,7 +5209,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 82,
@@ -5273,7 +5273,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 83,
@@ -5337,7 +5337,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 84,
@@ -5407,7 +5407,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 85,
@@ -5477,7 +5477,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 86,
@@ -5547,7 +5547,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 87,
@@ -5617,7 +5617,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 88,
@@ -5687,7 +5687,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 89,
@@ -5757,7 +5757,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 90,
@@ -5843,7 +5843,7 @@
     "rating": 2,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 91,
@@ -5932,7 +5932,7 @@
     "rating": 2,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 92,
@@ -6018,7 +6018,7 @@
     "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 93,
@@ -6088,7 +6088,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 94,
@@ -6186,7 +6186,7 @@
     "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 95,
@@ -6287,7 +6287,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 96,
@@ -6352,7 +6352,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 97,
@@ -6417,7 +6417,7 @@
     "rating": 4.1,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 98,
@@ -6495,7 +6495,7 @@
     "rating": 4.1,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 99,
@@ -6566,7 +6566,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 100,
@@ -6640,7 +6640,7 @@
     "rating": 4.2,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 101,
@@ -6738,7 +6738,7 @@
     "rating": 3.9,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 102,
@@ -6836,7 +6836,7 @@
     "rating": 3.9,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 103,
@@ -6907,7 +6907,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 104,
@@ -6967,7 +6967,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 105,
@@ -7032,7 +7032,7 @@
     "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 106,
@@ -7097,7 +7097,7 @@
     "rating": 4.1,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 107,
@@ -7162,7 +7162,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 108,
@@ -7217,7 +7217,7 @@
     "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 109,
@@ -7272,7 +7272,7 @@
     "rating": 3.9,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 110,
@@ -7327,7 +7327,7 @@
     "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 111,
@@ -7382,7 +7382,7 @@
     "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 112,
@@ -7437,7 +7437,7 @@
     "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 113,
@@ -7492,7 +7492,7 @@
     "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 114,
@@ -7558,7 +7558,7 @@
     "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 115,
@@ -7654,7 +7654,7 @@
     "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 116,
@@ -7740,7 +7740,7 @@
     "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 117,
@@ -7805,7 +7805,7 @@
     "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 118,
@@ -7865,7 +7865,7 @@
     "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 119,
@@ -7925,7 +7925,7 @@
     "rating": 3.8,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 120,
@@ -7980,7 +7980,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 121,
@@ -8040,7 +8040,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 122,
@@ -8100,7 +8100,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 123,
@@ -8155,7 +8155,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 124,
@@ -8210,7 +8210,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 125,
@@ -8270,7 +8270,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 126,
@@ -8330,7 +8330,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 127,
@@ -8390,7 +8390,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 128,
@@ -8445,7 +8445,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 129,
@@ -8500,7 +8500,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 130,
@@ -8555,7 +8555,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 131,
@@ -8610,7 +8610,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 132,
@@ -8665,7 +8665,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 133,
@@ -8720,7 +8720,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 134,
@@ -8775,7 +8775,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 135,
@@ -8830,7 +8830,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 136,
@@ -8885,7 +8885,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 137,
@@ -8940,7 +8940,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 138,
@@ -8995,7 +8995,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 139,
@@ -9050,7 +9050,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 140,
@@ -9105,7 +9105,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 141,
@@ -9160,7 +9160,7 @@
     "rating": 4,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 142,
@@ -9221,7 +9221,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 143,
@@ -9282,7 +9282,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 144,
@@ -9343,7 +9343,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 145,
@@ -9404,7 +9404,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 146,
@@ -9465,7 +9465,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 147,
@@ -9520,7 +9520,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 148,
@@ -9575,7 +9575,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 149,
@@ -9630,7 +9630,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 150,
@@ -9685,7 +9685,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 151,
@@ -9746,7 +9746,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 152,
@@ -9807,7 +9807,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 153,
@@ -9868,7 +9868,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 154,
@@ -9929,7 +9929,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 155,
@@ -9990,7 +9990,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 156,
@@ -10045,7 +10045,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 157,
@@ -10100,7 +10100,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 158,
@@ -10155,7 +10155,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 159,
@@ -10210,7 +10210,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 160,
@@ -10271,7 +10271,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 161,
@@ -10332,7 +10332,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 162,
@@ -10393,7 +10393,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 163,
@@ -10454,7 +10454,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 164,
@@ -10515,7 +10515,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 165,
@@ -10570,7 +10570,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 166,
@@ -10625,7 +10625,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 167,
@@ -10680,7 +10680,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 167,
@@ -10735,7 +10735,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 168,
@@ -10796,7 +10796,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 169,
@@ -10857,7 +10857,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 170,
@@ -10918,7 +10918,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 171,
@@ -10979,7 +10979,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 172,
@@ -11040,7 +11040,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 173,
@@ -11095,7 +11095,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 174,
@@ -11150,7 +11150,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 175,
@@ -11205,7 +11205,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 176,
@@ -11260,7 +11260,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 178,
@@ -11321,7 +11321,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 179,
@@ -11382,7 +11382,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 180,
@@ -11443,7 +11443,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 181,
@@ -11504,7 +11504,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 182,
@@ -11565,7 +11565,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 183,
@@ -11620,7 +11620,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 184,
@@ -11675,7 +11675,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 185,
@@ -11730,7 +11730,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 186,
@@ -11785,7 +11785,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 187,
@@ -11843,7 +11843,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 188,
@@ -11901,7 +11901,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 189,
@@ -11962,7 +11962,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 190,
@@ -12023,7 +12023,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 191,
@@ -12078,7 +12078,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 192,
@@ -12133,7 +12133,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 193,
@@ -12194,7 +12194,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 194,
@@ -12252,7 +12252,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 195,
@@ -12316,7 +12316,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 196,
@@ -12377,7 +12377,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 197,
@@ -12432,7 +12432,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 198,
@@ -12487,7 +12487,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 199,
@@ -12542,7 +12542,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 200,
@@ -12597,7 +12597,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 201,
@@ -12652,7 +12652,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 202,
@@ -12707,7 +12707,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 203,
@@ -12762,7 +12762,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 204,
@@ -12817,7 +12817,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 205,
@@ -12872,7 +12872,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 206,
@@ -12927,7 +12927,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 207,
@@ -12982,7 +12982,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 208,
@@ -13037,7 +13037,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 209,
@@ -13092,7 +13092,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 210,
@@ -13147,7 +13147,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 211,
@@ -13202,7 +13202,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 212,
@@ -13257,7 +13257,7 @@
     "rating": 4.6,
     "reviews": 170,
     "pricePerDay": 75,
-    "type": "Location"
+    "type": "Golf Course"
   },
   {
     "id": 213,
