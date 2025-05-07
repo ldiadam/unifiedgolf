@@ -268,8 +268,8 @@ export default function ImageCarousel({
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="left-2 md:left-4 bg-black/50 text-white hover:bg-black/70" />
-      <CarouselNext className="right-2 md:right-4 bg-black/50 text-white hover:bg-black/70" />
+      <CarouselPrevious className="left-2 md:left-4 bg-black/20 text-white hover:bg-black/50" />
+      <CarouselNext className="right-2 md:right-4 bg-black/20 text-white hover:bg-black/50" />
     </Carousel>
   );
 }
