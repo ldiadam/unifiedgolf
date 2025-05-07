@@ -15,13 +15,6 @@ import {
 } from "@/components/ui/popover";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
 interface Props {
   params: {
@@ -74,7 +67,6 @@ export default function CountryPage({ params }: Props) {
         </div>
       );
     }
-    // Create array of arrays, each inner array has 5 cities max
     const itemsPerColumn = 5;
     const numberOfColumns =
       cities.length <= 5 ? 1 : Math.ceil(cities.length / itemsPerColumn);
@@ -98,7 +90,6 @@ export default function CountryPage({ params }: Props) {
       </div>
     );
   };
-
   return (
     <div className="container mx-auto pt-48 lg:pt-42">
       <div className="flex flex-col gap-1">
@@ -178,73 +169,57 @@ export default function CountryPage({ params }: Props) {
         </h2>
         <div className="flex justify-start items-center py-2">
           <p className="text-base">
-            {countryData.country}, a hidden gem in Asia, offers a unique and
-            tranquil golfing experience surrounded by breathtaking landscapes.
+            {countryData.country}, a hidden gem in Southeast Asia, offers a
+            unique and tranquil golfing experience surrounded by breathtaking
+            landscapes.
           </p>
         </div>
 
         {/* Country Grid */}
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2"> */}
-        <Carousel className="relative">
-          <CarouselContent>
-            {countryData.city.map((city) => {
-              const cityCourses = countryCourses.filter(
-                (course) => course.city === city
-              );
-              const cityImageData = cityCourseData.find(
-                (item) => item.city.toLowerCase() === city.toLowerCase()
-              );
-              const cityImage = cityImageData?.image || countryData.image; // fallback to country image if city image not found
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+          {countryData.city.map((city) => {
+            const cityCourses = countryCourses.filter(
+              (course) => course.city === city
+            );
+            const cityImageData = cityCourseData.find(
+              (item) => item.city.toLowerCase() === city.toLowerCase()
+            );
+            const cityImage = cityImageData?.image || countryData.image; // fallback to country image if city image not found
 
-              return (
-                <CarouselItem key={city}>
-                  <div className="relative h-80 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
-                    {/* Background Image */}
-                    <div
-                      className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                      style={{ backgroundImage: `url(${cityImage})` }}
-                    ></div>
+            return (
+              <Link
+                href={`/courses/${countryData.country.toLowerCase()}/${encodeUrlParam(
+                  city
+                )}`}
+                key={city}
+              >
+                <div className="relative h-80 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
+                  {/* Background Image */}
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                    style={{ backgroundImage: `url(${cityImage})` }}
+                  ></div>
 
-                    {/* Overlay */}
-                    <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
-
-                    {/* Content */}
-                    <div className="absolute top-0 left-0 right-0 p-10 text-white">
-                      <div className="bg-green-700 rounded-xl mb-6">
-                        <div className="flex justify-center items-center text-sm md:text-base gap-2">
-                          <MapPin className="h-4 w-4 lg:h-6 lg:w-6" />
-                          <h2 className="text-md lg:text-2xl font-bold mb-1">
-                            {city} Golf Courses
-                          </h2>
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300">
+                    <div className="space-y-2">
+                      {/* Content */}
+                      <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <div className="flex items-center text-sm md:text-base">
+                          <MapPin className="h-5 w-5 mr-1" />
+                          <h2 className="text-xl font-bold mb-1">{city}</h2>
                         </div>
-                      </div>
-
-                      <div className="mt-2 h-[175px] bg-card/50 rounded-xl p-2">
-                        <div className="flex flex-col flex-wrap gap-1 max-h-40">
-                          {cityCourses.map((item, index) => (
-                            <Link
-                              key={index}
-                              href={`/course-detail/${item.slug}`}
-                              className="w-1/3 min-w-24 pr-2"
-                            >
-                              <span className="bg-green-700/60 hover:bg-green-600 px-2 py-1 rounded text-sm lg:text-md transition-colors duration-200 hover:text-white truncate block">
-                                {item.name}
-                              </span>
-                            </Link>
-                          ))}
-                        </div>
+                        <p className="text-md">
+                          {cityCourses.length} courses available
+                        </p>
                       </div>
                     </div>
                   </div>
-                </CarouselItem>
-              );
-            })}
-          </CarouselContent>
-          <CarouselPrevious className="left-2 md:left-4 bg-black/20 text-white hover:bg-black/50" />
-          <CarouselNext className="right-2 md:right-4 bg-black/20 text-white hover:bg-black/50" />
-        </Carousel>
-
-        {/* </div> */}
+                </div>
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"; // Assuming Shadcn provides Carousel component
+import { encodeUrlParam } from "@/utils/url-helpers";
 
 export default function CoursesPage() {
   return (
@@ -37,8 +38,8 @@ export default function CoursesPage() {
                   <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
 
                   {/* Content */}
-                  <div className="absolute top-0 left-0 right-0 p-6 text-white">
-                    <div className="bg-green-700 rounded-xl">
+                  <div className="absolute top-0 left-0 right-0 p-10 text-white">
+                    <div className="bg-green-700 rounded-xl mb-6">
                       <div className="flex justify-center items-center text-sm md:text-base gap-2">
                         <MapPin className="h-4 w-4 lg:h-6 lg:w-6" />
                         <h2 className="text-md lg:text-2xl font-bold mb-1">
@@ -47,32 +48,23 @@ export default function CoursesPage() {
                       </div>
                     </div>
 
-                    <div className="space-y-2 mt-2 max-h-[100px] sm:max-h-[150px] md:max-h-[210px] overflow-y-auto pr-2 bg-card/50 rounded-xl">
-                      <ul className="space-y-1 list-disc ml-4 pl-4 ">
+                    <div className="mt-2 h-[175px] bg-card/50 rounded-xl p-2">
+                      <div className="flex flex-col flex-wrap gap-1 max-h-40">
                         {country.city.map((city, index) => (
-                          <li key={index}>
-                            <Link
-                              href={`/courses/${country.country.toLowerCase()}/${city.toLowerCase()}`}
-                            >
-                              <span className="hover:underline text-sm lg:text-md">
-                                {city}
-                              </span>
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    {/* <div className="text-sm flex flex-wrap items-center">
-                      {country.city.map((city, index) => (
-                        <React.Fragment key={index}>
                           <Link
-                            href={`/courses/${country.country.toLowerCase()}/${city.toLowerCase()}`}
+                            key={index}
+                            href={`/courses/${country.country.toLowerCase()}/${encodeUrlParam(
+                              city
+                            )}`}
+                            className="w-1/5 min-w-24 pr-2"
                           >
-                            <span className="hover:underline">{city}</span>
+                            <span className="bg-green-700/60 hover:bg-green-600 px-2 py-1 rounded text-sm lg:text-md transition-colors duration-200 hover:text-white truncate block">
+                              {city}
+                            </span>
                           </Link>
-                        </React.Fragment>
-                      ))}
-                    </div> */}
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CarouselItem>
