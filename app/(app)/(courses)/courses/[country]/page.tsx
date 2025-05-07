@@ -201,14 +201,19 @@ export default function CountryPage({ params }: Props) {
                   ></div>
 
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
-
-                  {/* Content */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h2 className="text-xl font-bold mb-2">{city}</h2>
-                    <p className="text-md">
-                      {cityCourses.length} courses available
-                    </p>
+                  <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300">
+                    <div className="space-y-2">
+                      {/* Content */}
+                      <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <div className="flex items-center text-sm md:text-base">
+                          <MapPin className="h-5 w-5 mr-1" />
+                          <h2 className="text-xl font-bold mb-1">{city}</h2>
+                        </div>
+                        <p className="text-md">
+                          {cityCourses.length} courses available
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </Link>
