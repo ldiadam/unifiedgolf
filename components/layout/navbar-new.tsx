@@ -65,24 +65,24 @@ const routeList: RouteProps[] = [
   {
     id: 1,
     href: "/company",
-    label: "A. Company Profile",
+    label: "Company Profile",
   },
   {
     id: 2,
     href: "/courses",
-    label: "B. Course Detail",
+    label: "Course Detail",
     hasChildren: true,
   },
   {
     id: 3,
     href: "/golf-packages",
-    label: "C. Golf Packages",
+    label: "Golf Packages",
     hasChildren: true,
   },
   {
     id: 4,
     href: "/course-booking",
-    label: "D. Course Booking",
+    label: "Course Booking",
   },
 ];
 
@@ -91,15 +91,35 @@ const moreMenuItems = [
   {
     id: 1,
     href: "/maintenance",
-    label: "E. Enquiry",
+    label: "Booking",
   },
   {
     id: 2,
-    href: "/contact",
-    label: "F. Contact",
+    href: "/maintenance",
+    label: "Quotation",
   },
   {
     id: 3,
+    href: "/maintenance",
+    label: "Planner",
+  },
+  {
+    id: 4,
+    href: "/maintenance",
+    label: "Email",
+  },
+  {
+    id: 5,
+    href: "/maintenance",
+    label: "Enquiry",
+  },
+  {
+    id: 6,
+    href: "/contact",
+    label: "Contact",
+  },
+  {
+    id: 7,
     href: "/admin/address-book/list",
     label: "Admin Panel",
   },

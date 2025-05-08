@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/popover";
 import { Card, CardContent } from "@/components/ui/card";
 import { useRef, useState } from "react";
+import Image from "next/image";
 
 interface PageProps {
   params: {
@@ -77,40 +78,40 @@ export default function CityPage({ params }: PageProps) {
     }
   };
 
-  const renderCityList = (cities: string[], country: string) => {
-    if (!cities.length) {
-      return (
-        <div className="py-8 text-center">
-          <MapPin className="mx-auto h-12 w-12 text-gray-400 mb-3" />
-          <p className="text-sm text-gray-500">
-            No cities available in this country yet
-          </p>
-        </div>
-      );
-    }
-    const itemsPerColumn = 5;
-    const numberOfColumns =
-      cities.length <= 5 ? 1 : Math.ceil(cities.length / itemsPerColumn);
+  // const renderCityList = (cities: string[], country: string) => {
+  //   if (!cities.length) {
+  //     return (
+  //       <div className="py-8 text-center">
+  //         <MapPin className="mx-auto h-12 w-12 text-gray-400 mb-3" />
+  //         <p className="text-sm text-gray-500">
+  //           No cities available in this country yet
+  //         </p>
+  //       </div>
+  //     );
+  //   }
+  //   const itemsPerColumn = 5;
+  //   const numberOfColumns =
+  //     cities.length <= 5 ? 1 : Math.ceil(cities.length / itemsPerColumn);
 
-    return (
-      <div
-        className="grid gap-4"
-        style={{
-          gridTemplateColumns: `repeat(${numberOfColumns}, minmax(0, 1fr))`,
-        }}
-      >
-        {cities.map((city, index) => (
-          <Link
-            key={index}
-            href={`/courses/${country.toLowerCase()}/${encodeUrlParam(city)}`}
-            className="block p-2 hover:bg-primary rounded-md transition-colors"
-          >
-            <li className="">{city}</li>
-          </Link>
-        ))}
-      </div>
-    );
-  };
+  //   return (
+  //     <div
+  //       className="grid gap-4"
+  //       style={{
+  //         gridTemplateColumns: `repeat(${numberOfColumns}, minmax(0, 1fr))`,
+  //       }}
+  //     >
+  //       {cities.map((city, index) => (
+  //         <Link
+  //           key={index}
+  //           href={`/courses/${country.toLowerCase()}/${encodeUrlParam(city)}`}
+  //           className="block p-2 hover:bg-primary rounded-md transition-colors"
+  //         >
+  //           <li className="">{city}</li>
+  //         </Link>
+  //       ))}
+  //     </div>
+  //   );
+  // };
   return (
     <div className="container mx-auto pt-48 lg:pt-42">
       <div className="flex flex-col gap-1">
@@ -118,7 +119,7 @@ export default function CityPage({ params }: PageProps) {
           <Button
             variant="ghost"
             asChild
-            className="mb-2 text-base hover:bg-primary"
+            className="mb-2 text-base hover:bg-green-700/50"
             size={"sm"}
           >
             <Link href={`/courses/${countryData.country.toLowerCase()}`}>
@@ -127,7 +128,7 @@ export default function CityPage({ params }: PageProps) {
             </Link>
           </Button>
         </div>
-        <div className="relative">
+        {/* <div className="relative">
           {locationData.length > 4 && (
             <Button
               variant="ghost"
@@ -197,38 +198,77 @@ export default function CityPage({ params }: PageProps) {
               {desc.text}
             </li>
           ))}
-        </ul>
+        </ul> */}
         {/* If there are additional descriptions, render them */}
-        <Separator />
+        {/* <Separator /> */}
         <div className="relative">
-          <div className="relative h-80 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
+          <div className="relative h-[25rem] rounded-lg">
             {/* Background Image */}
-            <div
+            {/* <div
               className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
               style={{ backgroundImage: `url(${locationData[3].image})` }}
-            ></div>
-
+            ></div> */}
+            <div className="fixed inset-0 -z-10">
+              <Image
+                src="/jagorawi-golf-&-country-club-img-3.jpg"
+                alt="Golf course background"
+                fill
+                className="object-cover opacity-50"
+                priority
+              />
+            </div>
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
+            {/* <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div> */}
 
             {/* Content */}
-            <div className="absolute top-0 left-0 right-0 p-10 text-white">
-              <div className="bg-green-700 rounded-xl mb-6">
-                <div className="flex justify-center items-center text-sm md:text-base gap-2">
-                  <MapPin className="h-4 w-4 lg:h-6 lg:w-6" />
-                  <h2 className="text-md lg:text-2xl font-bold mb-1">
+            <div className="absolute top-0 left-0 right-0 p-2 text-white">
+              <div className="bg-green-700/70 rounded-xl mb-6 p-1 max-w-xs">
+                <div className="flex justify-center items-center text-sm md:text-base gap-1">
+                  <MapPin className="h-4 w-4 lg:h-5 lg:w-5" />
+                  <h2 className="text-md lg:text-2xl font-bold">
                     {decodedCity} Golf Courses
                   </h2>
                 </div>
               </div>
 
-              <div className="mt-2 h-[175px] bg-card/50 rounded-xl p-2">
-                <div className="flex flex-col flex-wrap gap-1 max-h-40">
+              <div className="my-5 bg-black bg-opacity-50 w-full p-4">
+                <div className="flex flex-col gap-5 items-center justify-center">
+                  <div>
+                    <div className="flex flex-row gap-1 md:gap-6 lg:gap-10 items-center justify-center">
+                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
+                        Reliable
+                      </h2>
+                      <h2 className="text-sm md:text-lg lg:text-xl text-white">
+                        |
+                      </h2>
+                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
+                        Comprehensive
+                      </h2>
+                      <h2 className="text-sm md:text-lg lg:text-xl text-white">
+                        |
+                      </h2>
+
+                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
+                        Professional
+                      </h2>
+                      <h2 className="text-sm md:text-lg lg:text-xl text-white">
+                        |
+                      </h2>
+
+                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
+                        Integrity
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-2 h-[250px] md:h-[175px] bg-card/50 rounded-xl p-2">
+                <div className="flex flex-col flex-wrap gap-1 max-h-56 md:max-h-40 overflow-x-auto md:overflow-x-hidden">
                   {cityCourses.map((item, index) => (
                     <Link
                       key={index}
                       href={`/course-detail/${item.slug}`}
-                      className="w-1/3 min-w-24 pr-2"
+                      className="w-1/2 md:w-1/4 min-w-24 pr-2"
                     >
                       <span className="bg-green-700/60 hover:bg-green-600 px-2 py-1 rounded text-sm lg:text-md transition-colors duration-200 hover:text-white truncate block">
                         {item.name}

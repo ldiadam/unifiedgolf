@@ -3,37 +3,74 @@ import Link from "next/link";
 import locationData from "@/data/locationData.json";
 import { Separator } from "@/components/ui/separator";
 import { MapPin } from "lucide-react";
+import Image from "next/image";
 
 export default function CoursesPage() {
   return (
     <div className="container mx-auto pt-44">
       <div className="flex flex-col gap-2">
-        <h1 className="text-3xl font-bold">B. Course Details</h1>
+        {/* <h1 className="text-3xl font-bold">B. Course Details</h1>
         <Separator />
         <p className="text-lg mb-2">
           Select a country to view available golf courses:
-        </p>
+        </p> */}
 
-        {/* Shadcn Carousel Component for Images */}
-        <div className="relative">
-          <div className="relative h-80 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
+        <div className="relative pt-3">
+          <div className="relative h-[30rem] rounded-lg overflow-hidden">
             {/* Background Image */}
-            <div
+            {/* <div
               className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
               style={{ backgroundImage: `url(${locationData[0].image})` }}
-            ></div>
-
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
-
+            ></div> */}
+            <div className="fixed inset-0 -z-10">
+              <Image
+                src="/jagorawi-golf-&-country-club-img-1.jpg"
+                alt="Golf course background"
+                fill
+                className="object-cover opacity-50"
+                priority
+              />
+            </div>
             {/* Content */}
-            <div className="absolute top-0 left-0 right-0 p-10 text-white">
-              <div className="bg-green-700 rounded-xl mb-6">
-                <div className="flex justify-center items-center text-sm md:text-base gap-2">
-                  <MapPin className="h-4 w-4 lg:h-6 lg:w-6" />
-                  <h2 className="text-md lg:text-2xl font-bold mb-1">
-                    Country of Golf Courses
+            <div className="absolute top-0 left-0 right-0 p-2 text-white">
+              <div className="bg-green-700/70 rounded-xl mb-6 p-1 max-w-xs">
+                <div className="flex justify-center items-center text-sm md:text-base gap-2 ">
+                  <MapPin className="h-4 w-4 lg:h-5 lg:w-5" />
+                  <h2 className="text-md lg:text-2xl font-bold">
+                    Country Golf Courses
                   </h2>
+                </div>
+              </div>
+
+              <div className="my-5 bg-black bg-opacity-50 w-full p-4">
+                <div className="flex flex-col gap-2 items-center justify-center">
+                  <div>
+                    <div className="flex flex-row gap-1 md:gap-6 lg:gap-10 items-center justify-center">
+                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
+                        Reliable
+                      </h2>
+                      <h2 className="text-sm md:text-lg lg:text-xl text-white">
+                        |
+                      </h2>
+                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
+                        Comprehensive
+                      </h2>
+                      <h2 className="text-sm md:text-lg lg:text-xl text-white">
+                        |
+                      </h2>
+
+                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
+                        Professional
+                      </h2>
+                      <h2 className="text-sm md:text-lg lg:text-xl text-white">
+                        |
+                      </h2>
+
+                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
+                        Integrity
+                      </h2>
+                    </div>
+                  </div>
                 </div>
               </div>
 

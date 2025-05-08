@@ -133,7 +133,7 @@ export default function CourseDetailPage() {
         <Button
           variant="ghost"
           asChild
-          className="mb-4 text-base hover:bg-primary"
+          className="mb-4 text-base hover:bg-green-700/50"
         >
           <Link
             href={`/courses/${createCountrySlug(
