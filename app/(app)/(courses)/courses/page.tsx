@@ -43,7 +43,7 @@ export default function CoursesPage() {
                     <Link
                       key={index}
                       href={`/courses/${item.country.toLowerCase()}`}
-                      className="w-1/5 min-w-24 pr-2"
+                      className="w-1/3 min-w-24 pr-2"
                     >
                       <span className="bg-green-700/60 hover:bg-green-600 px-2 py-1 rounded text-sm lg:text-md transition-colors duration-200 hover:text-white truncate block">
                         {item.country}
