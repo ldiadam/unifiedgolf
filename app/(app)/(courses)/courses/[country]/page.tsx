@@ -185,64 +185,48 @@ export default function CountryPage({ params }: Props) {
 
         {/* Country Grid */}
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2"> */}
-        <Carousel className="relative">
-          <CarouselContent>
-            {countryData.city.map((city) => {
-              const cityCourses = countryCourses.filter(
-                (course) => course.city === city
-              );
-              const cityImageData = cityCourseData.find(
-                (item) => item.city.toLowerCase() === city.toLowerCase()
-              );
-              const cityImage = cityImageData?.image || countryData.image; // fallback to country image if city image not found
+        <div className="relative">
+          <div className="relative h-80 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
+            {/* Background Image */}
+            <div
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+              style={{ backgroundImage: `url(${countryData.image})` }}
+            ></div>
 
-              return (
-                <CarouselItem key={city}>
-                  <div className="relative h-80 rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-xl">
-                    {/* Background Image */}
-                    <div
-                      className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                      style={{ backgroundImage: `url(${cityImage})` }}
-                    ></div>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
 
-                    {/* Overlay */}
-                    <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div>
+            {/* Content */}
+            <div className="absolute top-0 left-0 right-0 p-10 text-white">
+              <div className="bg-green-700 rounded-xl mb-6">
+                <div className="flex justify-center items-center text-sm md:text-base gap-2">
+                  <MapPin className="h-4 w-4 lg:h-6 lg:w-6" />
+                  <h2 className="text-md lg:text-2xl font-bold mb-1">
+                    {countryData.country} Golf Courses
+                  </h2>
+                </div>
+              </div>
 
-                    {/* Content */}
-                    <div className="absolute top-0 left-0 right-0 p-10 text-white">
-                      <div className="bg-green-700 rounded-xl mb-6">
-                        <div className="flex justify-center items-center text-sm md:text-base gap-2">
-                          <MapPin className="h-4 w-4 lg:h-6 lg:w-6" />
-                          <h2 className="text-md lg:text-2xl font-bold mb-1">
-                            {city} Golf Courses
-                          </h2>
-                        </div>
-                      </div>
-
-                      <div className="mt-2 h-[175px] bg-card/50 rounded-xl p-2">
-                        <div className="flex flex-col flex-wrap gap-1 max-h-40">
-                          {cityCourses.map((item, index) => (
-                            <Link
-                              key={index}
-                              href={`/course-detail/${item.slug}`}
-                              className="w-1/3 min-w-24 pr-2"
-                            >
-                              <span className="bg-green-700/60 hover:bg-green-600 px-2 py-1 rounded text-sm lg:text-md transition-colors duration-200 hover:text-white truncate block">
-                                {item.name}
-                              </span>
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-              );
-            })}
-          </CarouselContent>
-          <CarouselPrevious className="left-2 md:left-4 bg-black/20 text-white hover:bg-black/50" />
-          <CarouselNext className="right-2 md:right-4 bg-black/20 text-white hover:bg-black/50" />
-        </Carousel>
+              <div className="mt-2 h-[175px] bg-card/50 rounded-xl p-2">
+                <div className="flex flex-col flex-wrap gap-1 max-h-40">
+                  {countryData.city.map((city) => (
+                    <Link
+                      key={city}
+                      href={`/courses/${countryData.country.toLowerCase()}/${encodeUrlParam(
+                        city
+                      )}`}
+                      className="w-1/3 min-w-24 pr-2"
+                    >
+                      <span className="bg-green-700/60 hover:bg-green-600 px-2 py-1 rounded text-sm lg:text-md transition-colors duration-200 hover:text-white truncate block">
+                        {city}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* </div> */}
       </div>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Separator } from "../ui/separator";
 import Link from "next/link";
 import Image from "next/image";
@@ -28,6 +28,7 @@ import {
   Phone,
   Mail,
 } from "lucide-react";
+import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import locationData from "@/data/locationData.json"; // Import location data
 import allData from "@/data/allData.json"; // Import course data
 import { encodeUrlParam, getCountryUrl } from "@/utils/url-helpers";
@@ -83,18 +84,22 @@ const routeList: RouteProps[] = [
     href: "/course-booking",
     label: "D. Course Booking",
   },
+];
+
+// Add a new array for the items in the "More" dropdown
+const moreMenuItems = [
   {
-    id: 5,
+    id: 1,
     href: "/maintenance",
     label: "E. Enquiry",
   },
   {
-    id: 6,
+    id: 2,
     href: "/contact",
     label: "F. Contact",
   },
   {
-    id: 7,
+    id: 3,
     href: "/admin/address-book/list",
     label: "Admin Panel",
   },
@@ -104,6 +109,7 @@ export const NavbarNew = () => {
   // Client-side only state initialization using useEffect
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
   const [selectedCity, setSelectedCity] = useState<string | null>(null);
   const [activeMobileMenu, setActiveMobileMenu] = useState<string | null>(null);
@@ -166,6 +172,7 @@ export const NavbarNew = () => {
   const navigateAndCollapse = (href: string) => {
     // Close all menus for mobile
     setIsOpen(false);
+    setMoreOpen(false);
     setActiveMobileMenu(null);
     setActiveMobileCountry(null);
     setActiveMobileCity(null);
@@ -177,10 +184,12 @@ export const NavbarNew = () => {
     // Navigate to the selected page
     router.push(href);
   };
+
   // Add a new handler for desktop menu navigation
   const handleDesktopNavigation = (href: string) => {
     navigateAndCollapse(href);
   };
+
   // If not mounted yet, return a simpler version to avoid hydration errors
   if (!mounted) {
     return (
@@ -274,6 +283,7 @@ export const NavbarNew = () => {
 
               <CollapsibleContent className="space-y-2 max-h-96 overflow-y-auto">
                 <nav className="flex flex-col w-full justify-center items-start py-2 pl-3">
+                  {/* Main menu items */}
                   {routeList.map((route) => (
                     <div key={route.id} className="w-full mb-2">
                       {route.hasChildren ? (
@@ -301,19 +311,7 @@ export const NavbarNew = () => {
                             </div>
                           </CollapsibleTrigger>
                           <CollapsibleContent className="ml-4 border-l border-gray-200 pl-2 mt-1">
-                            {/* Link to all courses */}
-                            {/* <Button
-                              variant="ghost"
-                              size="sm"
-                              className="w-full text-left justify-start items-center flex py-1 text-primary"
-                              onClick={() => navigateAndCollapse(route.href)}
-                            >
-                              <span className="text-sm font-medium">
-                                View All Courses
-                              </span>
-                            </Button> */}
-
-                            {/* Countries */}
+                            {/* Existing code for countries and cities */}
                             {countries.map((country) => (
                               <Collapsible
                                 key={country.name}
@@ -341,20 +339,6 @@ export const NavbarNew = () => {
                                   </Button>
                                 </CollapsibleTrigger>
                                 <CollapsibleContent className="ml-4 border-l border-gray-200 pl-2">
-                                  {/* Link to country courses */}
-                                  {/* <Button
-                                    variant="ghost"
-                                    size="sm"
-                                    className="w-full text-left justify-start items-center flex py-1 text-primary text-xs"
-                                    onClick={() =>
-                                      navigateAndCollapse(
-                                        `/courses/${country.name}`
-                                      )
-                                    }
-                                  >
-                                    <span>View All {country.name} Courses</span>
-                                  </Button> */}
-
                                   {/* Cities */}
                                   {country.cities.map((city) => (
                                     <div key={city} className="py-1">
@@ -454,6 +438,47 @@ export const NavbarNew = () => {
                       )}
                     </div>
                   ))}
+
+                  {/* More dropdown for mobile */}
+                  <div className="w-full mb-2">
+                    <Collapsible
+                      className="w-full"
+                      open={activeMobileMenu === "More"}
+                      onOpenChange={() => toggleMobileMenu("More")}
+                    >
+                      <CollapsibleTrigger className="w-full">
+                        <div className="w-full">
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            className="w-full text-left justify-between items-center flex"
+                          >
+                            <span className="hover:text-primary">More</span>
+                            {activeMobileMenu === "More" ? (
+                              <ChevronUp className="h-4 w-4" />
+                            ) : (
+                              <ChevronDown className="h-4 w-4" />
+                            )}
+                          </Button>
+                        </div>
+                      </CollapsibleTrigger>
+                      <CollapsibleContent className="ml-4 border-l border-gray-200 pl-2 mt-1">
+                        {moreMenuItems.map((item) => (
+                          <Button
+                            key={item.id}
+                            variant="ghost"
+                            size="sm"
+                            className="w-full text-left justify-start rounded-md py-1"
+                            onClick={() => navigateAndCollapse(item.href)}
+                          >
+                            <span className="hover:text-primary">
+                              {item.label}
+                            </span>
+                          </Button>
+                        ))}
+                      </CollapsibleContent>
+                    </Collapsible>
+                  </div>
                 </nav>
 
                 <Separator />
@@ -746,6 +771,35 @@ export const NavbarNew = () => {
                         )}
                       </NavigationMenuItem>
                     ))}
+
+                    {/* More dropdown using Popover */}
+                    <NavigationMenuItem>
+                      <Popover open={moreOpen} onOpenChange={setMoreOpen}>
+                        <PopoverTrigger asChild>
+                          <Button
+                            variant="ghost"
+                            className={navigationMenuTriggerStyle()}
+                          >
+                            More <ChevronDown className="h-4 w-4 ml-1" />
+                          </Button>
+                        </PopoverTrigger>
+                        <PopoverContent className="w-[200px] p-0">
+                          <ul className="grid gap-1 p-2">
+                            {moreMenuItems.map((item) => (
+                              <li key={item.id}>
+                                <Button
+                                  variant="ghost"
+                                  className="w-full justify-start text-left rounded-md p-2"
+                                  onClick={() => navigateAndCollapse(item.href)}
+                                >
+                                  {item.label}
+                                </Button>
+                              </li>
+                            ))}
+                          </ul>
+                        </PopoverContent>
+                      </Popover>
+                    </NavigationMenuItem>
                   </NavigationMenuList>
                 </NavigationMenu>
               </div>
