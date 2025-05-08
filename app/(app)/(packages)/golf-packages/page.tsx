@@ -97,10 +97,10 @@ export default function StandardPackagesPage() {
   return (
     <>
       <div className="container mx-auto pt-40 md:pt-48 lg:pt-40">
-        <div className="flex flex-col space-y-4 mt-6">
-          <h1 className="text-3xl font-bold">C. Golf Packages</h1>
+        {/* <div className="flex flex-col space-y-4 mt-6"> */}
+        {/* <h1 className="text-3xl font-bold">Golf Packages</h1> */}
 
-          <div className="relative">
+        {/* <div className="relative">
             {locationData.length > 4 && (
               <Button
                 variant="ghost"
@@ -155,9 +155,9 @@ export default function StandardPackagesPage() {
                 <ChevronRight className="h-4 w-4" />
               </Button>
             )}
-          </div>
-          <Separator />
-        </div>
+          </div> */}
+        {/* <Separator /> */}
+        {/* </div> */}
       </div>
       <GolfPackageClient />
     </>

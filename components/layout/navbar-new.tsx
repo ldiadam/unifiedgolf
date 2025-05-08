@@ -71,17 +71,17 @@ const routeList: RouteProps[] = [
     id: 2,
     href: "/courses",
     label: "Course Detail",
-    hasChildren: true,
+    // hasChildren: true,
   },
   {
     id: 3,
     href: "/golf-packages",
     label: "Golf Packages",
-    hasChildren: true,
+    // hasChildren: true,
   },
   {
     id: 4,
-    href: "/course-booking",
+    href: "/maintenance",
     label: "Course Booking",
   },
 ];

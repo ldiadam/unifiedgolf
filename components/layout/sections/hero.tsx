@@ -16,9 +16,9 @@ export const HeroSection = () => {
         layout="fill"
         objectFit="cover"
         quality={100}
-        className="z-0 opacity-90 -mb-32"
+        className="-z-10 opacity-90 -mb-32"
       />
-      <div className="relative z-10 container flex flex-col gap-5 items-center justify-center h-full">
+      <div className="relative -z-9 container flex flex-col gap-5 items-center justify-center h-full">
         <div className="flex flex-row gap-1 items-center justify-center">
           <h2 className="text-xs md:text-lg lg:text-xl text-white">
             Golf Packages

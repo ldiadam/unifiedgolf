@@ -13,9 +13,9 @@ export default async function Home() {
   return (
     <>
       <HeroSection />
-      <SearchSection />
+      {/* <SearchSection />
       <DestionationSection />
-      <TestimonialSection />
+      <TestimonialSection /> */}
     </>
   );
 }
