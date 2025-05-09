@@ -160,7 +160,7 @@ export const NavbarNew = () => {
       className="flex items-center gap-2 hover:bg-none"
       asChild
     >
-      <Link href="/">
+      <Link href="/" className="text-white">
         <ArrowLeft className="h-4 w-4" />
         Back to Home
       </Link>
@@ -273,7 +273,8 @@ export const NavbarNew = () => {
     <div className="fixed z-50 w-full">
       {/* Mobile Mode */}
       <div className="lg:hidden md:hidden flex justify-center">
-        <header className="shadow-inner bg-opacity-15 mx-auto border border-secondary rounded-md bg-card flex flex-col w-full max-w-md">
+        {/* <header className="shadow-inner bg-opacity-15 mx-auto border border-secondary rounded-md bg-card flex flex-col w-full max-w-md"> */}
+        <header className="mx-auto border border-secondary bg-card/80 flex flex-col w-full max-w-md">
           {/* Top section with logo and actions */}
           <div className="flex flex-col items-start p-1">
             <Collapsible
@@ -561,7 +562,8 @@ export const NavbarNew = () => {
 
       {/* Desktop Mode */}
       <div className="hidden lg:block md:block">
-        <header className="shadow-inner bg-opacity-15 border border-secondary rounded-md p-1 bg-card">
+        {/* <header className="shadow-inner bg-opacity-15 border border-secondary rounded-md p-1 bg-card"> */}
+        <header className="border border-secondary rounded-md p-1 bg-card/80">
           <div className="flex flex-col w-full">
             <div className="flex flex-nowrap justify-between items-center w-full ml-1">
               <div className="flex flex-col items-start gap-1">

@@ -30,7 +30,7 @@ export default function CoursesPage() {
             ></div> */}
             <div className="fixed inset-0 -z-10">
               <Image
-                src="/jagorawi-golf-&-country-club-img-1.jpg"
+                src="/jagorawi-golf-&-country-club-img-2.jpg"
                 alt="Golf course background"
                 fill
                 className="object-cover opacity-50"
