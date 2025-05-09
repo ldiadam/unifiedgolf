@@ -63,11 +63,11 @@ export default function StandardPackagesPage() {
                 </div>
               </div>
             </div>
-            <div className="mt-4 px-4">
+            <div className="mt-4 px-4 h-[10rem]">
               {/* <h3 className="text-white text-lg md:text-xl font-semibold mb-2">
                 Key Features:
               </h3> */}
-              <div className="flex flex-wrap max-h-[120px]">
+              <div className="">
                 {country.map((item, index) => (
                   <Link
                     key={index}

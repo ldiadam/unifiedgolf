@@ -802,13 +802,13 @@ export const NavbarNew = () => {
                             More <ChevronDown className="h-4 w-4 ml-1" />
                           </Button>
                         </PopoverTrigger>
-                        <PopoverContent className="w-[200px] p-0">
+                        <PopoverContent className="w-[200px] p-0 bg-transparent border-none">
                           <ul className="grid gap-1 p-2">
                             {moreMenuItems.map((item) => (
                               <li key={item.id}>
                                 <Button
                                   variant="ghost"
-                                  className="w-full justify-start text-left rounded-md p-2"
+                                  className="w-full justify-start text-left rounded-md p-2 bg-green-700"
                                   onClick={() => navigateAndCollapse(item.href)}
                                 >
                                   {item.label}

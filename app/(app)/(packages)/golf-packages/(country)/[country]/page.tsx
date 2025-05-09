@@ -16,7 +16,7 @@ export default function PackageCountryPage({ params }: Props) {
   const data = [
     {
       country: "China",
-      city: ["Wei Hai", "Qing Dao", "Yantai"],
+      city: ["Wei Hai", "Qing Dao", "Yantai", "Beijing"],
     },
     {
       country: "Indonesia",
@@ -28,7 +28,7 @@ export default function PackageCountryPage({ params }: Props) {
     },
     {
       country: "Malaysia",
-      city: ["Johor"],
+      city: ["Johor", "Malaysia"],
     },
   ];
 
