@@ -206,7 +206,7 @@ export default function CountryPage({ params }: Props) {
 
             {/* Content */}
             <div className="absolute top-0 left-0 right-0 p-2 text-white">
-              <div className="bg-green-700/70 rounded-xl mb-6 p-1 max-w-xs">
+              <div className="bg-red-700/70 rounded-sm mb-6 p-1 max-w-xs">
                 <div className="flex justify-center items-center text-sm md:text-base gap-2 ">
                   <MapPin className="h-4 w-4 lg:h-5 lg:w-5" />
                   <h2 className="text-md lg:text-2xl font-bold">
@@ -246,28 +246,25 @@ export default function CountryPage({ params }: Props) {
                   </div>
                 </div>
               </div>
-              <div className="mt-2 h-[250px] md:h-[175px] bg-card/50 rounded-xl p-2">
-                <div className="flex flex-col flex-wrap gap-1 max-h-56 md:max-h-40 overflow-x-auto md:overflow-x-hidden">
-                  {countryData.city.map((city) => (
-                    <Link
-                      key={city}
-                      href={`/courses/${countryData.country.toLowerCase()}/${encodeUrlParam(
-                        city
-                      )}`}
-                      className="w-1/3 md:w-1/5 min-w-24 pr-2"
-                    >
-                      <span className="bg-green-700/60 hover:bg-green-600 px-2 py-1 rounded text-sm lg:text-md transition-colors duration-200 hover:text-white truncate block">
-                        {city}
-                      </span>
-                    </Link>
-                  ))}
-                </div>
+              <div className="mt-4 px-4 h-[10rem] flex flex-wrap">
+                {countryData.city.map((city) => (
+                  <Link
+                    key={city}
+                    href={`/courses/${countryData.country.toLowerCase()}/${encodeUrlParam(
+                      city
+                    )}`}
+                    className="w-1/2 md:w-1/3 lg:w-1/4 flex items-start p-1"
+                  >
+                    <div className="bg-green-600 rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
+                    <span className="text-white text-sm md:text-base">
+                      {city}
+                    </span>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
         </div>
-
-        {/* </div> */}
       </div>
     </div>
   );

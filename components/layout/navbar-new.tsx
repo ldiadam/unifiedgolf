@@ -65,7 +65,7 @@ const routeList: RouteProps[] = [
   {
     id: 1,
     href: "/company",
-    label: "Company Profile",
+    label: "Home",
   },
   {
     id: 2,

@@ -13,7 +13,7 @@ export default function CompanyProfilePage() {
           priority
         />
       </div>
-      <div className="container mx-auto px-4 py-2 relative z-10">
+      <div className="container mx-auto px-4 py-2 relative z-0">
         {/* Hero Section */}
         {/* <div className="relative rounded-3xl overflow-hidden mb-16">
           <div className="absolute inset-0">
@@ -42,7 +42,7 @@ export default function CompanyProfilePage() {
         <section className="">
           <div className="gap-10 items-center">
             <div className="w-full">
-              <div className="bg-green-700/70 rounded-lg p-1 flex justify-center items-center max-w-xs">
+              <div className="bg-red-700/70 rounded-sm p-1 flex justify-center items-center max-w-xs">
                 <h2 className="text-3xl font-bold">Company Profile</h2>
               </div>
 
