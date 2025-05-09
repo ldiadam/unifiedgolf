@@ -278,7 +278,7 @@ export const NavbarNew = () => {
           {/* Top section with logo and actions */}
           <div className="flex flex-col items-start p-1">
             <Collapsible
-              open={isOpen}
+              open={!isOpen}
               onOpenChange={setIsOpen}
               className="w-full space-y-2"
             >
