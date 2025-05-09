@@ -97,30 +97,25 @@ export default function PackageCityPage({ params }: Props) {
                 </div>
               </div>
             </div>
-            <div className="my-1 bg-black bg-opacity-50 w-full p-4">
+            <div className="my-1  w-full p-4">
               <div className="flex flex-col gap-2 items-center justify-center">
-                <div>
-                  <div className="flex flex-row gap-1 md:gap-6 lg:gap-10 items-center justify-center">
+                <div className="flex flex-row gap-2 md:gap-6 lg:gap-10 items-center justify-center">
+                  <div className="bg-black p-2">
                     <h2 className="text-xs md:text-lg lg:text-xl text-white">
                       Reliable
                     </h2>
-                    <h2 className="text-sm md:text-lg lg:text-xl text-white">
-                      |
-                    </h2>
+                  </div>
+                  <div className="bg-black p-2">
                     <h2 className="text-xs md:text-lg lg:text-xl text-white">
                       Comprehensive
                     </h2>
-                    <h2 className="text-sm md:text-lg lg:text-xl text-white">
-                      |
-                    </h2>
-
+                  </div>
+                  <div className="bg-black p-2">
                     <h2 className="text-xs md:text-lg lg:text-xl text-white">
                       Professional
                     </h2>
-                    <h2 className="text-sm md:text-lg lg:text-xl text-white">
-                      |
-                    </h2>
-
+                  </div>
+                  <div className="bg-black p-2">
                     <h2 className="text-xs md:text-lg lg:text-xl text-white">
                       Integrity
                     </h2>

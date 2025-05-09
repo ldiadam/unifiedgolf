@@ -235,7 +235,7 @@ export default function CityPage({ params }: PageProps) {
               <div className="my-5 bg-black bg-opacity-50 w-full p-4">
                 <div className="flex flex-col gap-5 items-center justify-center">
                   <div>
-                    <div className="flex flex-row gap-1 md:gap-6 lg:gap-10 items-center justify-center">
+                    {/* <div className="flex flex-row gap-1 md:gap-6 lg:gap-10 items-center justify-center">
                       <h2 className="text-xs md:text-lg lg:text-xl text-white">
                         Reliable
                       </h2>
@@ -259,7 +259,7 @@ export default function CityPage({ params }: PageProps) {
                       <h2 className="text-xs md:text-lg lg:text-xl text-white">
                         Integrity
                       </h2>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -270,7 +270,7 @@ export default function CityPage({ params }: PageProps) {
                     href={`/course-detail/${item.slug}`}
                     className="w-1/2 md:w-1/3 lg:w-1/4 flex items-start p-1"
                   >
-                    <div className="bg-green-600 rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
+                    <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
                     <span className="text-white text-sm md:text-base">
                       {item.name}
                     </span>
