@@ -23,7 +23,7 @@ export default function StandardPackagesPage() {
             </div>
             {/* content */}
             <div className="top-0 left-0 right-0 p-2 text-white">
-              <div className="bg-green-700/70 rounded-xl mb-6 p-1 max-w-xs">
+              <div className="bg-red-700/70 rounded-xl mb-6 p-1 max-w-xs">
                 <div className="flex justify-center items-center text-sm md:text-base gap-2 ">
                   <MapPin className="h-4 w-4 lg:h-5 lg:w-5" />
                   <h2 className="text-md lg:text-2xl font-bold">
