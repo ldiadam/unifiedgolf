@@ -23,6 +23,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import { Metadata } from "next";
 
 interface Props {
   params: {

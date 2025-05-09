@@ -4,6 +4,12 @@ import locationData from "@/data/locationData.json";
 import { Separator } from "@/components/ui/separator";
 import { MapPin } from "lucide-react";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Golf Courses",
+  description: "",
+};
 
 export default function CoursesPage() {
   return (

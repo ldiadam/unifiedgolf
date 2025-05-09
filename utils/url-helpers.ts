@@ -16,3 +16,7 @@ export const encodeCountryParam = (country: string): string => {
 export const getCountryUrl = (country: string): string => {
   return `/courses/${encodeCountryParam(country)}`;
 };
+
+export const capitalizeFirstLetter = (str: string): string => {
+  return str.replace(/^\w/, (c) => c.toUpperCase());
+};

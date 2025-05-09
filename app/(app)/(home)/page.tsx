@@ -5,7 +5,7 @@ import { TestimonialSection } from "@/components/layout/sections/testimonial";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Landing Page",
+  title: "Unified Golf",
   description: "",
 };
 

@@ -16,6 +16,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { useRef, useState } from "react";
 import Image from "next/image";
+import { Metadata } from "next";
 
 interface PageProps {
   params: {
