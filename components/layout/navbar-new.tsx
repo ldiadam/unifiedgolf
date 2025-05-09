@@ -798,10 +798,7 @@ export const NavbarNew = () => {
                     <NavigationMenuItem>
                       <Popover open={moreOpen} onOpenChange={setMoreOpen}>
                         <PopoverTrigger asChild>
-                          <Button
-                            variant="ghost"
-                            className={navigationMenuTriggerStyle()}
-                          >
+                          <Button variant="ghost" className="bg-green-700">
                             More <ChevronDown className="h-4 w-4 ml-1" />
                           </Button>
                         </PopoverTrigger>
