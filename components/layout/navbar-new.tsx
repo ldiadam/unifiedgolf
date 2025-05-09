@@ -79,11 +79,11 @@ const routeList: RouteProps[] = [
     label: "Golf Packages",
     // hasChildren: true,
   },
-  {
-    id: 4,
-    href: "/maintenance",
-    label: "Course Booking",
-  },
+  // {
+  //   id: 4,
+  //   href: "/maintenance",
+  //   label: "Course Booking",
+  // },
 ];
 
 // Add a new array for the items in the "More" dropdown
@@ -474,7 +474,7 @@ export const NavbarNew = () => {
                             size="sm"
                             className="w-full text-left justify-between items-center flex"
                           >
-                            <span className="hover:text-primary">More</span>
+                            <span className="hover:text-primary">Link</span>
                             {activeMobileMenu === "More" ? (
                               <ChevronUp className="h-4 w-4" />
                             ) : (
