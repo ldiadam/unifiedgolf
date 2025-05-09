@@ -129,7 +129,7 @@ export const NavbarNew = () => {
   // Client-side only state initialization using useEffect
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [moreOpen, setMoreOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(true);
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
   const [selectedCity, setSelectedCity] = useState<string | null>(null);
   const [activeMobileMenu, setActiveMobileMenu] = useState<string | null>(null);
@@ -795,7 +795,7 @@ export const NavbarNew = () => {
                     ))}
 
                     {/* More dropdown using Popover */}
-                    <NavigationMenuItem>
+                    {/* <NavigationMenuItem>
                       <Popover open={moreOpen} onOpenChange={setMoreOpen}>
                         <PopoverTrigger asChild>
                           <Button variant="ghost" className="bg-green-700">
@@ -818,11 +818,37 @@ export const NavbarNew = () => {
                           </ul>
                         </PopoverContent>
                       </Popover>
-                    </NavigationMenuItem>
+                    </NavigationMenuItem> */}
                   </NavigationMenuList>
                 </NavigationMenu>
               </div>
-              {!isHomePage && <BackButton />}
+              <div>
+                {/* <NavigationMenuItem> */}
+                <Popover open={moreOpen} onOpenChange={setMoreOpen}>
+                  <PopoverTrigger asChild>
+                    <Button variant="ghost" className="bg-green-700">
+                      More <ChevronDown className="h-4 w-4 ml-1" />
+                    </Button>
+                  </PopoverTrigger>
+                  <PopoverContent className="w-[200px] p-0 bg-transparent border-none">
+                    <ul className="grid gap-1 p-2">
+                      {moreMenuItems.map((item) => (
+                        <li key={item.id}>
+                          <Button
+                            variant="ghost"
+                            className="w-full justify-start text-left rounded-md p-2 bg-green-700"
+                            onClick={() => navigateAndCollapse(item.href)}
+                          >
+                            {item.label}
+                          </Button>
+                        </li>
+                      ))}
+                    </ul>
+                  </PopoverContent>
+                </Popover>
+                {/* </NavigationMenuItem> */}
+              </div>
+              {/* {!isHomePage && <BackButton />} */}
             </div>
           </div>
         </header>

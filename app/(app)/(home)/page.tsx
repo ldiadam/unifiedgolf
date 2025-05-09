@@ -51,7 +51,7 @@ export default function CompanyProfilePage() {
                   <div className="flex flex-row gap-2 md:gap-6 lg:gap-10 items-center justify-center">
                     <div className="bg-black p-2">
                       <h2 className="text-xs md:text-lg lg:text-xl text-white">
-                        Reliable
+                        Professional
                       </h2>
                     </div>
                     <div className="bg-black p-2">
@@ -61,7 +61,7 @@ export default function CompanyProfilePage() {
                     </div>
                     <div className="bg-black p-2">
                       <h2 className="text-xs md:text-lg lg:text-xl text-white">
-                        Professional
+                        Reliable
                       </h2>
                     </div>
                     <div className="bg-black p-2">

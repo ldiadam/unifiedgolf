@@ -92,6 +92,28 @@ export default function ImageCarousel({
                     </span>
                   </div>
 
+                  <div className="flex flex-row gap-2 md:gap-6 lg:gap-10 items-center justify-center">
+                    <div className="bg-black p-2">
+                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
+                        Professional
+                      </h2>
+                    </div>
+                    <div className="bg-black p-2">
+                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
+                        Comprehensive
+                      </h2>
+                    </div>
+                    <div className="bg-black p-2">
+                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
+                        Reliable
+                      </h2>
+                    </div>
+                    <div className="bg-black p-2">
+                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
+                        Integrity
+                      </h2>
+                    </div>
+                  </div>
                   {/* Details section with consistent styling across all screen sizes */}
                   <div className="space-y-2 mt-2 max-h-[200px] sm:max-h-[250px] md:max-h-[300px] overflow-y-auto pr-2">
                     {credetialHighlight && (
