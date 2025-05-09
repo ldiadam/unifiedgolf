@@ -85,7 +85,7 @@ export default function CoursesPage() {
               {/* <h3 className="text-white text-lg md:text-xl font-semibold mb-2">
                 Key Features:
               </h3> */}
-              <div className="mt-4 px-4 h-[10rem]">
+              <div className="mt-4 px-4 h-[10rem] flex flex-wrap">
                 {locationData.map((item, index) => (
                   <Link
                     key={index}
