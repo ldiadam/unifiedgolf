@@ -5,18 +5,7 @@ import Image from "next/image";
 import { MapPin } from "lucide-react";
 
 export default function StandardPackagesPage() {
-  const country = [
-    "Australia",
-    "Cambodia",
-    "China",
-    "Indonesia",
-    "Japan",
-    "Laos",
-    "New Zealand",
-    "Singapore",
-    "Thailand",
-    "Vietnam",
-  ];
+  const country = ["China", "Indonesia", "Malaysia", "Singapore"];
 
   return (
     <>

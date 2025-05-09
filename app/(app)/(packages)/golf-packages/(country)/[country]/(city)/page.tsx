@@ -9,26 +9,51 @@ import { notFound } from "next/navigation";
 interface Props {
   params: {
     country: string;
+    city: string;
   };
 }
 
-export default function PackageCountryPage({ params }: Props) {
+export default function PackageCityPage({ params }: Props) {
   const data = [
+    {
+      country: "Australia",
+      city: ["Canbera"],
+    },
+    {
+      country: "Cambodia",
+      city: ["Phom Penh"],
+    },
     {
       country: "China",
       city: ["Wei Hai", "Qing Dao", "Yantai"],
     },
     {
       country: "Indonesia",
-      city: ["Batam"],
+      city: ["Jakarta", "Bandung", "Bali", "Batam"],
+    },
+    {
+      country: "Japan",
+      city: ["Hokkaido"],
+    },
+    {
+      country: "Laos",
+      city: [""],
+    },
+    {
+      country: "New Zealand",
+      city: [""],
     },
     {
       country: "Singapore",
       city: ["Singapore"],
     },
     {
-      country: "Malaysia",
-      city: ["Johor"],
+      country: "Thailand",
+      city: ["Phuket"],
+    },
+    {
+      country: "Vietnam",
+      city: ["Hanoi"],
     },
   ];
 
