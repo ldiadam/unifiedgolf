@@ -274,36 +274,36 @@ export const NavbarNew = () => {
       {/* Mobile Mode */}
       <div className="lg:hidden md:hidden">
         {/* <header className="shadow-inner bg-opacity-15 border border-secondary rounded-md p-1 bg-card"> */}
-        <header className="border border-secondary rounded-md p-1 bg-card/80">
+        <header className="p-1 bg-card/80">
           <div className="flex flex-col w-full">
             <div className="flex flex-nowrap justify-between items-center w-full ml-1">
               <div className="flex flex-col items-start gap-1">
                 <Link href="/" className="flex items-center">
                   <Image
                     src={"/company-logo.jpg"}
-                    width={80}
-                    height={30}
+                    width={50}
+                    height={10}
                     alt=""
                     className="rounded-md"
                   />
                 </Link>
-                <h1 className="font-bold">Unified Golf Pte Ltd</h1>
+                <h1 className="font-bold text-sm">Unified Golf Pte Ltd</h1>
                 <span className="text-xs font-bold pb-1">
                   1, Thomson Road #04-330G, Singapore, 300001
                 </span>
               </div>
-              <div className="h-full mt-20 flex-col gap-1">
-                <Link href={"tel:+6586929998"} className="text-xs font-bold">
+              <div className="h-full mt-1 flex-col">
+                <Link href={"tel:+6586929998"}>
                   <Button variant={"link"}>
-                    <span className="text-white flex items-center gap-2">
+                    <span className="text-white flex items-center gap-2 text-xs font-bold">
                       <Phone className="h-4 w-4" />
                       +65 8692 9998
                     </span>
                   </Button>
                 </Link>
-                <Link href={"tel:+60125499839"} className="text-xs font-bold">
+                <Link href={"tel:+60125499839"}>
                   <Button variant={"link"}>
-                    <span className="text-white flex items-center gap-2">
+                    <span className="text-white flex items-center gap-2 text-xs font-bold">
                       <Phone className="h-4 w-4" />
                       +6012 549 9839
                     </span>
@@ -489,7 +489,7 @@ export const NavbarNew = () => {
                         ) : (
                           <NavigationMenuLink
                             asChild
-                            className={navigationMenuTriggerStyle()}
+                            className={navigationMenuTriggerStyle() + " h-7"}
                           >
                             <Link
                               href={route.href}
@@ -540,8 +540,8 @@ export const NavbarNew = () => {
                   onOpenChange={() => toggleMobileMenu("More")}
                 >
                   <PopoverTrigger asChild>
-                    <Button variant="ghost" className="bg-green-700">
-                      More <ChevronDown className="h-4 w-4 ml-1" />
+                    <Button variant="ghost" className="bg-green-700 h-7">
+                      Link <ChevronDown className="h-4 w-4 ml-1" />
                     </Button>
                   </PopoverTrigger>
                   <PopoverContent className="w-[200px] p-0 bg-transparent border-none">
@@ -835,7 +835,7 @@ export const NavbarNew = () => {
                 <Popover open={moreOpen} onOpenChange={setMoreOpen}>
                   <PopoverTrigger asChild>
                     <Button variant="ghost" className="bg-green-700">
-                      More <ChevronDown className="h-4 w-4 ml-1" />
+                      Link <ChevronDown className="h-4 w-4 ml-1" />
                     </Button>
                   </PopoverTrigger>
                   <PopoverContent className="w-[200px] p-0 bg-transparent border-none">
