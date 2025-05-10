@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function CoursesPage() {
   return (
-    <div className="container mx-auto pt-44">
+    <div className="container mx-auto pt-[2rem] md:pt-42 lg:pt-42">
       <div className="flex flex-col gap-2">
         {/* <h1 className="text-3xl font-bold">B. Course Details</h1>
         <Separator />

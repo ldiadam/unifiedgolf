@@ -53,7 +53,7 @@ export default function PackageDetailsPage() {
   // }
 
   return (
-    <div className="container mx-auto pt-48 lg:pt-42">
+    <div className="container mx-auto pt-[2rem] md:pt-38 lg:pt-38">
       {/* Package image card */}
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="relative h-full w-full">

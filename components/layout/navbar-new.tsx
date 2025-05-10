@@ -64,7 +64,7 @@ const courseDetails = allData.reduce(
 const routeList: RouteProps[] = [
   {
     id: 1,
-    href: "/company",
+    href: "/",
     label: "Home",
   },
   {
@@ -129,7 +129,7 @@ export const NavbarNew = () => {
   // Client-side only state initialization using useEffect
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [moreOpen, setMoreOpen] = useState(true);
+  const [moreOpen, setMoreOpen] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
   const [selectedCity, setSelectedCity] = useState<string | null>(null);
   const [activeMobileMenu, setActiveMobileMenu] = useState<string | null>(null);
@@ -270,7 +270,7 @@ export const NavbarNew = () => {
   }
 
   return (
-    <div className="fixed z-50 w-full">
+    <div className="relative z-50 w-full">
       {/* Mobile Mode */}
       <div className="lg:hidden md:hidden flex justify-center">
         {/* <header className="shadow-inner bg-opacity-15 mx-auto border border-secondary rounded-md bg-card flex flex-col w-full max-w-md"> */}
@@ -282,7 +282,7 @@ export const NavbarNew = () => {
               onOpenChange={setIsOpen}
               className="w-full space-y-2"
             >
-              <div className="flex items-center justify-between">
+              {/* <div className="flex items-center justify-between">
                 <Button
                   variant="ghost"
                   onClick={() => setIsOpen(!isOpen)}
@@ -300,7 +300,7 @@ export const NavbarNew = () => {
                   </Button>
                 </CollapsibleTrigger>
               </div>
-              {isOpen ? <Separator /> : null}
+              {isOpen ? <Separator /> : null} */}
 
               <CollapsibleContent className="space-y-2 max-h-96 overflow-y-auto">
                 <nav className="flex flex-col w-full justify-center items-start py-2 pl-3">

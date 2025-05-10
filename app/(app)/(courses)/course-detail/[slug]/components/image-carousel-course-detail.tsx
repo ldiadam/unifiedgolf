@@ -93,22 +93,22 @@ export default function ImageCarousel({
                   </div>
 
                   <div className="flex flex-row gap-2 md:gap-6 lg:gap-10 items-center justify-center">
-                    <div className="bg-black p-2">
+                    <div className="bg-black md:p-2 p-1">
                       <h2 className="text-xs md:text-lg lg:text-xl text-white">
                         Professional
                       </h2>
                     </div>
-                    <div className="bg-black p-2">
+                    <div className="bg-black md:p-2 p-1">
                       <h2 className="text-xs md:text-lg lg:text-xl text-white">
                         Comprehensive
                       </h2>
                     </div>
-                    <div className="bg-black p-2">
+                    <div className="bg-black md:p-2 p-1">
                       <h2 className="text-xs md:text-lg lg:text-xl text-white">
                         Reliable
                       </h2>
                     </div>
-                    <div className="bg-black p-2">
+                    <div className="bg-black md:p-2 p-1 ">
                       <h2 className="text-xs md:text-lg lg:text-xl text-white">
                         Integrity
                       </h2>

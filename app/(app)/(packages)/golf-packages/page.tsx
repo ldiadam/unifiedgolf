@@ -9,7 +9,7 @@ export default function StandardPackagesPage() {
 
   return (
     <>
-      <div className="container mx-auto pt-48 lg:pt-42">
+      <div className="container mx-auto pt-[2rem] md:pt-42 lg:pt-42">
         <div className="relative h-[20rem]">
           <div className="h-full">
             <div className="fixed inset-0 -z-10">

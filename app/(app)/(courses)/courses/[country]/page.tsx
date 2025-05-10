@@ -102,7 +102,7 @@ export default function CountryPage({ params }: Props) {
   };
 
   return (
-    <div className="container mx-auto pt-48 lg:pt-42">
+    <div className="container mx-auto pt-[2rem] md:pt-42 lg:pt-42">
       <div className="flex flex-col gap-1">
         <div className="flex justify-start">
           <Button
@@ -188,7 +188,7 @@ export default function CountryPage({ params }: Props) {
         {/* Country Grid */}
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2"> */}
         <div className="relative">
-          <div className="relative h-[25rem] rounded-lg">
+          <div className="relative h-[30rem] lg:h-[25rem] rounded-lg">
             {/* Background Image */}
             {/* <div
               className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
