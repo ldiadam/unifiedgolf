@@ -24,6 +24,7 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import { Metadata } from "next";
+import Tag from "@/components/layout/tag";
 
 interface Props {
   params: {
@@ -102,9 +103,8 @@ export default function CountryPage({ params }: Props) {
   };
 
   return (
-    <div className="container mx-auto pt-[2rem] md:pt-42 lg:pt-42">
-      <div className="flex flex-col gap-1">
-        <div className="flex justify-start">
+    <div className="md:container mx-auto pt-[0.5rem] md:pt-34 lg:pt-34">
+      {/* <div className="flex justify-start">
           <Button
             variant="ghost"
             asChild
@@ -116,8 +116,8 @@ export default function CountryPage({ params }: Props) {
               Back to Course Selection
             </Link>
           </Button>
-        </div>
-        {/* <div className="relative">
+        </div> */}
+      {/* <div className="relative">
           {locationData.length > 4 && (
             <Button
               variant="ghost"
@@ -185,70 +185,45 @@ export default function CountryPage({ params }: Props) {
           </p>
         </div> */}
 
-        {/* Country Grid */}
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2"> */}
-        <div className="relative">
-          <div className="relative h-[30rem] lg:h-[25rem] rounded-lg">
-            {/* Background Image */}
-            {/* <div
+      {/* Country Grid */}
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2"> */}
+      <div className="relative">
+        <div className="relative h-[30rem] lg:h-[25rem] rounded-lg">
+          {/* Background Image */}
+          {/* <div
               className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
               style={{ backgroundImage: `url(${countryData.image})` }}
             ></div> */}
-            <div className="fixed inset-0 -z-10">
-              <Image
-                src="/jagorawi-golf-&-country-club-img-2.jpg"
-                alt="Golf course background"
-                fill
-                className="object-cover opacity-50"
-                priority
-              />
+          <div className="fixed inset-0 -z-10">
+            <Image
+              src="/jagorawi-golf-&-country-club-img-2.jpg"
+              alt="Golf course background"
+              fill
+              className="object-cover opacity-50"
+              priority
+            />
+          </div>
+
+          {/* Content */}
+          <div className="absolute top-0 left-0 right-0 p-2 text-white">
+            <div className="bg-red-700 rounded-none md:mb-6 p-1 w-[13rem] md:w-[20rem]">
+              <div className="flex justify-start items-center text-sm md:text-base">
+                <h2 className="text-md lg:text-2xl font-bold">
+                  {countryData.country} Golf Courses
+                </h2>
+              </div>
             </div>
 
-            {/* Content */}
-            <div className="absolute top-0 left-0 right-0 p-2 text-white">
-              <div className="bg-red-700/70 rounded-sm mb-6 p-1 max-w-xs">
-                <div className="flex justify-center items-center text-sm md:text-base gap-2 ">
-                  <MapPin className="h-4 w-4 lg:h-5 lg:w-5" />
-                  <h2 className="text-md lg:text-2xl font-bold">
-                    {countryData.country} Golf Courses
-                  </h2>
-                </div>
-              </div>
-
-              <div className="my-5 w-full p-4">
-                <div className="flex flex-col gap-5 items-center justify-center">
-                  <div className="flex flex-row gap-2 md:gap-6 lg:gap-10 items-center justify-center">
-                    <div className="bg-black p-2">
-                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
-                        Professional
-                      </h2>
-                    </div>
-                    <div className="bg-black p-2">
-                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
-                        Comprehensive
-                      </h2>
-                    </div>
-                    <div className="bg-black p-2">
-                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
-                        Reliable
-                      </h2>
-                    </div>
-                    <div className="bg-black p-2">
-                      <h2 className="text-xs md:text-lg lg:text-xl text-white">
-                        Integrity
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-4 px-4 h-[10rem] flex flex-wrap">
+            <Tag />
+            <div className="px-4 h-[10rem]">
+              <div className="flex flex-wrap w-[70%] md:w-[50%]">
                 {countryData.city.map((city) => (
                   <Link
                     key={city}
                     href={`/courses/${countryData.country.toLowerCase()}/${encodeUrlParam(
                       city
                     )}`}
-                    className="w-1/2 md:w-1/3 lg:w-1/4 flex items-start p-1"
+                    className="w-[50%] md:w-[33%] flex items-start p-1"
                   >
                     <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
                     <span className="text-white text-sm md:text-base">
