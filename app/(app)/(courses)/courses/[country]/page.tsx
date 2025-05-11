@@ -214,7 +214,7 @@ export default function CountryPage({ params }: Props) {
               </div>
             </div>
 
-            <Tag />
+            {/* <Tag /> */}
             <div className="px-4 h-[10rem]">
               <div className="flex flex-wrap w-[70%] md:w-[50%]">
                 {countryData.city.map((city) => (

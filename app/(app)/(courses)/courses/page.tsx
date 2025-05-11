@@ -8,7 +8,7 @@ import { Metadata } from "next";
 import Tag from "@/components/layout/tag";
 
 export const metadata: Metadata = {
-  title: "Golf Courses",
+  title: "Country Golf Courses",
   description: "",
 };
 
@@ -40,7 +40,7 @@ export default function CoursesPage() {
           </div>
           {/* Content */}
           <div className="absolute top-0 left-0 right-0 p-2 text-white">
-            <div className="bg-red-700 rounded-none md:mb-6 p-1 max-w-xs">
+            <div className="bg-red-700 rounded-none md:mb-3 p-1 w-[13rem] md:w-[20rem]">
               <div className="flex justify-start items-center text-sm md:text-base">
                 <h2 className="text-md lg:text-2xl font-bold">
                   Country Golf Courses
@@ -48,7 +48,7 @@ export default function CoursesPage() {
               </div>
             </div>
 
-            <Tag />
+            {/* <Tag /> */}
 
             {/* <div className="mt-2 h-[175px] bg-card/50 rounded-xl p-2"> */}
             {/* <div className="mt-4 px-4 h-[10rem]"> */}

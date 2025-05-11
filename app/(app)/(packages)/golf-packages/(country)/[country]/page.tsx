@@ -42,7 +42,7 @@ export default function PackageCountryPage({ params }: Props) {
   }
   return (
     <>
-      <div className="container mx-auto pt-[2rem] md:pt-42 lg:pt-42">
+      <div className="md:container mx-auto pt-[0.5rem] md:pt-34 lg:pt-34">
         <div className="relative h-[20rem]">
           <div className="h-full">
             <div className="fixed inset-0 -z-10">
@@ -56,42 +56,16 @@ export default function PackageCountryPage({ params }: Props) {
             </div>
             {/* content */}
             <div className="top-0 left-0 right-0 p-2 text-white">
-              <div className="bg-red-700/70 rounded-xl mb-6 p-1 max-w-xs">
-                <div className="flex justify-center items-center text-sm md:text-base gap-2 ">
-                  <MapPin className="h-4 w-4 lg:h-5 lg:w-5" />
+              <div className="bg-red-700 rounded-none md:mb-3 p-1 w-[13rem] md:w-[20rem]">
+                <div className="flex justify-start items-center text-sm md:text-base gap-2 ">
                   <h2 className="text-md lg:text-2xl font-bold">
-                    {capitalizeFirstLetter(country)} Golf Package
+                    {capitalizeFirstLetter(country)} Golf Packages
                   </h2>
                 </div>
               </div>
             </div>
-            <div className="my-1 w-full p-4">
-              <div className="flex flex-col gap-2 items-center justify-center">
-                <div className="flex flex-row gap-2 md:gap-6 lg:gap-10 items-center justify-center">
-                  <div className="bg-black p-2">
-                    <h2 className="text-xs md:text-lg lg:text-xl text-white">
-                      Reliable
-                    </h2>
-                  </div>
-                  <div className="bg-black p-2">
-                    <h2 className="text-xs md:text-lg lg:text-xl text-white">
-                      Comprehensive
-                    </h2>
-                  </div>
-                  <div className="bg-black p-2">
-                    <h2 className="text-xs md:text-lg lg:text-xl text-white">
-                      Professional
-                    </h2>
-                  </div>
-                  <div className="bg-black p-2">
-                    <h2 className="text-xs md:text-lg lg:text-xl text-white">
-                      Integrity
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="mt-4 px-4 h-[10rem]">
+
+            <div className="px-4 h-[10rem]">
               {/* <h3 className="text-white text-lg md:text-xl font-semibold mb-2">
                 Key Features:
               </h3> */}

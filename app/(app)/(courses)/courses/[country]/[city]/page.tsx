@@ -231,7 +231,7 @@ export default function CityPage({ params }: PageProps) {
               </div>
             </div>
 
-            <Tag />
+            {/* <Tag /> */}
             <div className="px-4 h-[10rem]">
               <div className=" flex flex-wrap w-[50%] md:w-[50%]">
                 {cityCourses.map((item, index) => (

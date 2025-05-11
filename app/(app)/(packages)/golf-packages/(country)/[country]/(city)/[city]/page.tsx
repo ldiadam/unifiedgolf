@@ -17,19 +17,30 @@ interface Props {
   };
 }
 
+interface PackageData {
+  id: number;
+  package: string[];
+  country: string;
+  city: string[];
+}
+
 export default function PackageCityPage({ params }: Props) {
-  const data = [
+  // Indexed data structure for better lookup
+  const data: PackageData[] = [
     {
+      id: 1,
       package: ["Weh Hai Qing Dao Yantai Golf Holiday"],
       country: "China",
       city: ["Wei Hai", "Qing Dao", "Yantai"],
     },
     {
+      id: 2,
       package: ["Beijing Golf Holiday"],
       country: "China",
       city: ["Beijing"],
     },
     {
+      id: 3,
       package: [
         "2 Days 1 Night Weekdays Golf Package in Batam",
         "3 Days 2 Nights Weekdays Golf Package in Batam",
@@ -38,11 +49,13 @@ export default function PackageCityPage({ params }: Props) {
       city: ["Batam"],
     },
     {
+      id: 4,
       package: ["Singapore Malaysia Golf Holiday"],
       country: "Singapore",
       city: ["Singapore"],
     },
     {
+      id: 5,
       package: [
         "Singapore Malaysia Golf Holiday",
         "Malaysia Johor Golf Package",
@@ -54,27 +67,49 @@ export default function PackageCityPage({ params }: Props) {
 
   const { country } = params;
   const decodedCity = decodeUrlParam(params.city);
-  const countryData = data.find(
-    (c) => c.country.toLowerCase() === country.toLowerCase()
-  );
 
-  const cityExists = countryData?.city.includes(decodedCity);
-  // console.log(cityExists);
+  // Create lookup maps for faster and more reliable access
+  const countryMap = new Map<string, PackageData[]>();
 
-  // Find packages for the current city
-  const cityPackages =
-    data
-      .filter((item) => item.country.toLowerCase() === country.toLowerCase())
-      .find((item) => item.city.includes(decodedCity))?.package || [];
+  // Build an index of data by country
+  data.forEach((item) => {
+    const lowercaseCountry = item.country.toLowerCase();
+    if (!countryMap.has(lowercaseCountry)) {
+      countryMap.set(lowercaseCountry, []);
+    }
+    countryMap.get(lowercaseCountry)?.push(item);
+  });
 
-  if (!countryData || !cityExists) {
+  // Get all items for the requested country
+  const countryItems = countryMap.get(country.toLowerCase()) || [];
+
+  if (countryItems.length === 0) {
     notFound();
   }
-  // console.log(cityExists);
+
+  // Now find packages for this city
+  const packagesForCity: string[] = [];
+  let cityExists = false;
+
+  for (const item of countryItems) {
+    // Check if this city exists in the current item
+    const cityMatch = item.city.find(
+      (city) => city.toLowerCase() === decodedCity.toLowerCase()
+    );
+
+    if (cityMatch) {
+      cityExists = true;
+      packagesForCity.push(...item.package);
+    }
+  }
+
+  if (!cityExists) {
+    notFound();
+  }
 
   return (
     <>
-      <div className="container mx-auto pt-[2rem] md:pt-42 lg:pt-42">
+      <div className="md:container mx-auto pt-[0.5rem] md:pt-34 lg:pt-34">
         <div className="relative h-[20rem]">
           <div className="h-full">
             <div className="fixed inset-0 -z-10">
@@ -88,55 +123,27 @@ export default function PackageCityPage({ params }: Props) {
             </div>
             {/* content */}
             <div className="top-0 left-0 right-0 p-2 text-white">
-              <div className="bg-red-700/70 rounded-xl mb-6 p-1 max-w-xs">
-                <div className="flex justify-center items-center text-sm md:text-base gap-2 ">
-                  {/* <MapPin className="h-4 w-4 lg:h-5 lg:w-5" /> */}
+              <div className="bg-red-700 rounded-none md:mb-3 p-1 w-[13rem] md:w-[20rem]">
+                <div className="flex justify-start items-center text-sm md:text-base gap-2 ">
                   <h2 className="text-md lg:text-2xl font-bold">
                     {decodedCity} Golf Packages
                   </h2>
                 </div>
               </div>
             </div>
-            <div className="my-1  w-full p-4">
-              <div className="flex flex-col gap-2 items-center justify-center">
-                <div className="flex flex-row gap-2 md:gap-6 lg:gap-10 items-center justify-center">
-                  <div className="bg-black p-2">
-                    <h2 className="text-xs md:text-lg lg:text-xl text-white">
-                      Professional
-                    </h2>
-                  </div>
-                  <div className="bg-black p-2">
-                    <h2 className="text-xs md:text-lg lg:text-xl text-white">
-                      Comprehensive
-                    </h2>
-                  </div>
-                  <div className="bg-black p-2">
-                    <h2 className="text-xs md:text-lg lg:text-xl text-white">
-                      Reliable
-                    </h2>
-                  </div>
-                  <div className="bg-black p-2">
-                    <h2 className="text-xs md:text-lg lg:text-xl text-white">
-                      Integrity
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="mt-4 px-4 h-[10rem]">
-              {cityPackages.length > 0 ? (
+
+            <div className="px-4 h-[10rem]">
+              {packagesForCity.length > 0 ? (
                 <ul className="space-y-2">
-                  {cityPackages.map((packageName, index) => (
+                  {packagesForCity.map((packageName, index) => (
                     <li key={index} className="flex items-start">
                       <Link
-                        href={`/golf-packages/${
-                          countryData.country
-                        }/${encodeUrlParam(decodedCity)}/${encodeUrlParam(
-                          packageName
-                        )}`}
+                        href={`/golf-packages/${country}/${encodeUrlParam(
+                          decodedCity
+                        )}/${encodeUrlParam(packageName)}`}
                         className="flex flex-row"
                       >
-                        <div className="bg-green-600 rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
+                        <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
                         <span className="text-white text-sm md:text-base">
                           {packageName}
                         </span>
