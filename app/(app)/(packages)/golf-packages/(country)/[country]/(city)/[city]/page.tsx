@@ -9,6 +9,7 @@ import {
   encodeUrlParam,
 } from "@/utils/url-helpers";
 import { notFound } from "next/navigation";
+import Tag from "@/components/layout/tag";
 
 interface Props {
   params: {
@@ -131,6 +132,7 @@ export default function PackageCityPage({ params }: Props) {
                 </div>
               </div>
             </div>
+            <Tag />
 
             <div className="px-4 h-[10rem]">
               {packagesForCity.length > 0 ? (

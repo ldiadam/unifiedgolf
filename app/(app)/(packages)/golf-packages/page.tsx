@@ -3,6 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin } from "lucide-react";
+import Tag from "@/components/layout/tag";
 
 export default function StandardPackagesPage() {
   const country = ["China", "Indonesia", "Malaysia", "Singapore"];
@@ -31,6 +32,7 @@ export default function StandardPackagesPage() {
                 </div>
               </div>
             </div>
+            <Tag />
 
             <div className="px-4 h-[10rem]">
               {/* <h3 className="text-white text-lg md:text-xl font-semibold mb-2">

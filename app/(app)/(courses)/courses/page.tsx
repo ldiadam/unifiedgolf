@@ -48,7 +48,7 @@ export default function CoursesPage() {
               </div>
             </div>
 
-            {/* <Tag /> */}
+            <Tag />
 
             {/* <div className="mt-2 h-[175px] bg-card/50 rounded-xl p-2"> */}
             {/* <div className="mt-4 px-4 h-[10rem]"> */}

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { MapPin } from "lucide-react";
 import { capitalizeFirstLetter, encodeUrlParam } from "@/utils/url-helpers";
 import { notFound } from "next/navigation";
+import Tag from "@/components/layout/tag";
 
 interface Props {
   params: {
@@ -64,6 +65,7 @@ export default function PackageCountryPage({ params }: Props) {
                 </div>
               </div>
             </div>
+            <Tag />
 
             <div className="px-4 h-[10rem]">
               {/* <h3 className="text-white text-lg md:text-xl font-semibold mb-2">

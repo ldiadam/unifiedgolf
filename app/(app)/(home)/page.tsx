@@ -45,8 +45,8 @@ export default function CompanyProfilePage() {
             <h2 className="text-md lg:text-2xl font-bold">Company Profile</h2>
           </div>
 
-          {/* <Tag /> */}
-          <div className="px-2 mt-4">
+          <Tag />
+          <div className="px-2 mt-2">
             <p className="text-white mb-4">
               We are established with the aim to offer golf holiday packages
               tailored to our cliets exact requirements, competitively, and with
