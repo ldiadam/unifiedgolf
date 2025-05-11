@@ -546,6 +546,7 @@ export const NavbarNew = () => {
                         <li key={item.id}>
                           <Button
                             variant="ghost"
+                            size="sm"
                             className="w-full justify-start text-left rounded-none p-1 bg-green-700 "
                             onClick={() => navigateAndCollapse(item.href)}
                           >
@@ -644,7 +645,7 @@ export const NavbarNew = () => {
                         <li key={item.id}>
                           <Button
                             variant="ghost"
-                            className="w-full justify-start text-left rounded-none bg-green-700 focus-visible:ring-transparent"
+                            className="w-full justify-start text-left rounded-none bg-green-700 focus-visible:ring-0"
                             onClick={() => navigateAndCollapse(item.href)}
                           >
                             {item.label}

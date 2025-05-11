@@ -234,7 +234,7 @@ export default function CityPage({ params }: PageProps) {
 
               <Tag />
               <div className="px-4 h-[20rem]">
-                <div className=" flex flex-wrap w-[80%] md:w-[70%]">
+                <div className=" flex flex-wrap w-[80%] md:w-[90%]">
                   {cityCourses.map((item, index) => (
                     <Link
                       key={index}

@@ -3,7 +3,7 @@ import { FooterSection } from "@/components/layout/sections/footer";
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      {children}
+      <div className="max-w-6xl">{children}</div>
       <FooterSection />
     </>
   );
