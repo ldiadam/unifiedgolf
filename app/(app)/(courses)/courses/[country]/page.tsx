@@ -206,7 +206,7 @@ export default function CountryPage({ params }: Props) {
 
           {/* Content */}
           <div className="absolute top-0 left-0 right-0 p-2 text-white">
-            <div className="bg-red-700 rounded-none mb-1 md:mb-6 p-1 w-[13rem] md:w-[20rem]">
+            <div className="bg-red-700 rounded-none mb-3 md:mb-6 p-1 w-[13rem] md:w-[20rem]">
               <div className="flex justify-start items-center text-sm md:text-base">
                 <h2 className="text-md lg:text-2xl font-bold">
                   {countryData.country} Golf Courses

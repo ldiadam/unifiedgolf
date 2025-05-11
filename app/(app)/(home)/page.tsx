@@ -41,7 +41,7 @@ export default function CompanyProfilePage() {
 
         {/* Company Introduction Section */}
         <section className="w-full">
-          <div className="bg-red-700 rounded-none p-1 w-[9rem] md:w-[18rem]">
+          <div className="bg-red-700 rounded-none p-1 w-[9rem] md:w-[18rem] mb-3">
             <h2 className="text-md lg:text-2xl font-bold">Company Profile</h2>
           </div>
 

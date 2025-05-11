@@ -24,7 +24,7 @@ export default function StandardPackagesPage() {
             </div>
             {/* content */}
             <div className="top-0 left-0 right-0 p-2 text-white">
-              <div className="bg-red-700 rounded-none md:mb-4 p-1 w-[13rem] md:w-[20rem]">
+              <div className="bg-red-700 rounded-none md:mb-1 p-1 w-[13rem] md:w-[20rem]">
                 <div className="flex justify-start items-center text-sm md:text-base">
                   <h2 className="text-md lg:text-2xl font-bold">
                     Country Golf Packages
