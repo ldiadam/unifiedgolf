@@ -203,49 +203,51 @@ export default function CityPage({ params }: PageProps) {
         </ul> */}
         {/* If there are additional descriptions, render them */}
         {/* <Separator /> */}
-        <div className="relative h-[28rem]">
-          {/* Background Image */}
-          {/* <div
+        <div className="relative">
+          <div className="relative h-[50rem] md:h-[30rem]">
+            {/* Background Image */}
+            {/* <div
               className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
               style={{ backgroundImage: `url(${locationData[3].image})` }}
             ></div> */}
-          <div className="fixed inset-0 -z-10">
-            <Image
-              src="/jagorawi-golf-&-country-club-img-3.jpg"
-              alt="Golf course background"
-              fill
-              className="object-cover opacity-50"
-              priority
-            />
-          </div>
-          {/* Overlay */}
-          {/* <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div> */}
-
-          {/* Content */}
-          <div className="absolute top-0 left-0 right-0 p-2 text-white">
-            <div className="bg-red-700 rounded-none md:mb-6 p-1 w-[15rem] md:max-w-xs">
-              <div className="flex justify-start items-center text-sm md:text-base gap-1">
-                <h2 className="text-md lg:text-2xl font-bold">
-                  {decodedCity} Golf Courses
-                </h2>
-              </div>
+            <div className="fixed inset-0 -z-10">
+              <Image
+                src="/jagorawi-golf-&-country-club-img-3.jpg"
+                alt="Golf course background"
+                fill
+                className="object-cover opacity-50"
+                priority
+              />
             </div>
+            {/* Overlay */}
+            {/* <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div> */}
 
-            {/* <Tag /> */}
-            <div className="px-4 h-[10rem]">
-              <div className=" flex flex-wrap w-[50%] md:w-[50%]">
-                {cityCourses.map((item, index) => (
-                  <Link
-                    key={index}
-                    href={`/course-detail/${item.slug}`}
-                    className="w-[75%] flex items-start py-2"
-                  >
-                    <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
-                    <span className="text-white text-sm md:text-base">
-                      {item.name}
-                    </span>
-                  </Link>
-                ))}
+            {/* Content */}
+            <div className="absolute top-0 left-0 right-0 p-2 text-white">
+              <div className="bg-red-700 rounded-none mb-1 md:mb-6 p-1 w-[15rem] md:w-[20rem]">
+                <div className="flex justify-start items-center text-sm md:text-base gap-1">
+                  <h2 className="text-md lg:text-2xl font-bold">
+                    {decodedCity} Golf Courses
+                  </h2>
+                </div>
+              </div>
+
+              {/* <Tag /> */}
+              <div className="px-4 h-[20rem]">
+                <div className=" flex flex-wrap w-[80%] md:w-[70%]">
+                  {cityCourses.map((item, index) => (
+                    <Link
+                      key={index}
+                      href={`/course-detail/${item.slug}`}
+                      className="w-[50%] md:w-[30%] flex items-start py-2"
+                    >
+                      <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
+                      <span className="text-white text-sm md:text-base">
+                        {item.name}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
