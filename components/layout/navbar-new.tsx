@@ -70,7 +70,7 @@ const routeList: RouteProps[] = [
   {
     id: 2,
     href: "/courses",
-    label: "Course Detail",
+    label: "Golf Course Detail",
     // hasChildren: true,
   },
   {
@@ -270,11 +270,11 @@ export const NavbarNew = () => {
   }
 
   return (
-    <div className="relative z-50 w-max-screen">
+    <div className="relative z-50 w-full">
       {/* Mobile Mode */}
       <div className="lg:hidden md:hidden">
         {/* <header className="shadow-inner bg-opacity-15 border border-secondary rounded-md p-1 bg-card"> */}
-        <header className="p-1 bg-card/80">
+        <header className="bg-card/80">
           <div className="flex flex-col w-full">
             <div className="flex flex-nowrap justify-between items-center w-full ml-1">
               <div className="flex flex-col items-start gap-1">
@@ -324,8 +324,8 @@ export const NavbarNew = () => {
               </div>
             </div>
             <Separator />
-            <div className="flex justify-between items-center pt-1">
-              <div className="flex flex-shrink-0 justify-between items-center">
+            <div className="flex justify-between items-center bg-red-700">
+              <div className="flex flex-shrink-0 justify-between items-center ">
                 <NavigationMenu
                   className="block lg:block md:block"
                   delayDuration={0}
@@ -489,7 +489,9 @@ export const NavbarNew = () => {
                         ) : (
                           <NavigationMenuLink
                             asChild
-                            className={navigationMenuTriggerStyle() + " h-7"}
+                            className={
+                              navigationMenuTriggerStyle() + " h-7 rounded-none"
+                            }
                           >
                             <Link
                               href={route.href}
@@ -540,17 +542,20 @@ export const NavbarNew = () => {
                   onOpenChange={() => toggleMobileMenu("More")}
                 >
                   <PopoverTrigger asChild>
-                    <Button variant="ghost" className="bg-green-700 h-7">
+                    <Button
+                      variant="ghost"
+                      className="bg-green-700 h-7 rounded-none"
+                    >
                       Link <ChevronDown className="h-4 w-4 ml-1" />
                     </Button>
                   </PopoverTrigger>
                   <PopoverContent className="w-[200px] p-0 bg-transparent border-none">
-                    <ul className="grid gap-1 p-2">
+                    <ul className="grid gap-1">
                       {moreMenuItems.map((item) => (
                         <li key={item.id}>
                           <Button
                             variant="ghost"
-                            className="w-full justify-start text-left rounded-md p-2 bg-green-700"
+                            className="w-full justify-start text-left rounded-none p-2 bg-green-700"
                             onClick={() => navigateAndCollapse(item.href)}
                           >
                             {item.label}
@@ -571,7 +576,7 @@ export const NavbarNew = () => {
       {/* Desktop Mode */}
       <div className="hidden lg:block md:block">
         {/* <header className="shadow-inner bg-opacity-15 border border-secondary rounded-md p-1 bg-card"> */}
-        <header className="border border-secondary rounded-md p-1 bg-card/80">
+        <header className="border border-secondary bg-card/80">
           <div className="flex flex-col w-full">
             <div className="flex flex-nowrap justify-between items-center w-full ml-1">
               <div className="flex flex-col items-start gap-1">
@@ -621,220 +626,24 @@ export const NavbarNew = () => {
               </div>
             </div>
             <Separator />
-            <div className="flex justify-between items-center pt-1">
-              <div className="flex flex-shrink-0 justify-between items-center">
-                <NavigationMenu
-                  className="hidden lg:block md:block"
-                  delayDuration={0}
-                  onMouseLeave={() => {
-                    setSelectedCountry(null);
-                    setSelectedCity(null);
-                  }}
-                >
-                  <NavigationMenuList>
-                    {routeList.map((route) => (
-                      <NavigationMenuItem
-                        key={route.id}
-                        className={
-                          route.id === 3 ? "relative golf-packages-menu" : ""
-                        }
-                      >
-                        {route.hasChildren ? (
-                          <>
-                            <NavigationMenuTrigger>
-                              <Link href={route.href}>{route.label}</Link>
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent className="max-h-96 overflow-y-auto">
-                              <div className="flex">
-                                {/* Countries Column */}
-                                <div className="bg-background p-0 w-[200px] min-h-[500px] rounded-l-md border-r border-gray-200">
-                                  <ul className="py-2 px-0">
-                                    {countries.map((country) => (
-                                      <li
-                                        key={country.name}
-                                        className={cn(
-                                          "px-4 py-2 flex justify-between items-center cursor-pointer hover:bg-primary/20 transition-colors",
-                                          selectedCountry === country.name &&
-                                            "bg-primary/10 font-medium"
-                                        )}
-                                        onMouseEnter={() =>
-                                          setSelectedCountry(country.name)
-                                        }
-                                      >
-                                        <Link
-                                          href={
-                                            route.id === 3
-                                              ? `/golf-packages/${country.name.toLowerCase()}`
-                                              : `${getCountryUrl(country.name)}`
-                                          }
-                                          onClick={(e) => {
-                                            e.preventDefault();
-                                            navigateAndCollapse(
-                                              route.id === 3
-                                                ? `/golf-packages/${country.name.toLowerCase()}`
-                                                : `${getCountryUrl(
-                                                    country.name
-                                                  )}`
-                                            );
-                                          }}
-                                        >
-                                          <span>{country.name}</span>
-                                        </Link>
-                                        {country.cities.length > 0 && (
-                                          <ChevronRight className="h-4 w-4" />
-                                        )}
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </div>
-
-                                {/* Cities Column */}
-                                {selectedCountry && (
-                                  <div className="bg-background p-0 w-[200px] min-h-[400px] border-r border-gray-200">
-                                    <ul className="py-2 px-0">
-                                      {countries
-                                        .find((c) => c.name === selectedCountry)
-                                        ?.cities.map((city) => (
-                                          <li
-                                            key={city}
-                                            className={cn(
-                                              "px-4 py-2 flex justify-between items-center cursor-pointer hover:bg-primary/20 transition-colors",
-                                              selectedCity === city &&
-                                                "bg-primary/10 font-medium"
-                                            )}
-                                            onMouseEnter={() =>
-                                              setSelectedCity(city)
-                                            }
-                                          >
-                                            <Link
-                                              href={
-                                                route.id === 3
-                                                  ? `/golf-packages/${selectedCountry.toLowerCase()}/${encodeUrlParam(
-                                                      city
-                                                    )}`
-                                                  : `/courses/${selectedCountry.toLowerCase()}/${encodeUrlParam(
-                                                      city
-                                                    )}`
-                                              }
-                                              onClick={(e) => {
-                                                e.preventDefault();
-                                                navigateAndCollapse(
-                                                  route.id === 3
-                                                    ? `/golf-packages/${selectedCountry.toLowerCase()}/${encodeUrlParam(
-                                                        city
-                                                      )}`
-                                                    : `/courses/${selectedCountry.toLowerCase()}/${encodeUrlParam(
-                                                        city
-                                                      )}`
-                                                );
-                                              }}
-                                            >
-                                              <span>{city}</span>
-                                            </Link>
-                                            {cityHasCourses(city) &&
-                                              route.id !== 3 && (
-                                                <ChevronRight className="h-4 w-4" />
-                                              )}
-                                          </li>
-                                        ))}
-                                    </ul>
-                                  </div>
-                                )}
-
-                                {/* Course Details Column */}
-                                {selectedCity && !(route.id === 3) && (
-                                  <div className="bg-background p-0 w-[380px] min-h-[400px] rounded-r-md">
-                                    <ul className="py-2 px-0">
-                                      {courseDetails[
-                                        selectedCity as keyof typeof courseDetails
-                                      ]?.map((course) => (
-                                        <li key={course.title}>
-                                          <Link
-                                            href={
-                                              route.id === 3
-                                                ? `/golf-packages/detail/${course.href
-                                                    .split("/")
-                                                    .pop()}`
-                                                : course.href
-                                            }
-                                            onClick={(e) => {
-                                              e.preventDefault();
-                                              navigateAndCollapse(
-                                                route.id === 3
-                                                  ? `/golf-packages/detail/${course.href
-                                                      .split("/")
-                                                      .pop()}`
-                                                  : course.href
-                                              );
-                                            }}
-                                            className="px-4 py-2 block hover:bg-primary/20 transition-colors"
-                                          >
-                                            {course.title}
-                                          </Link>
-                                        </li>
-                                      )) || (
-                                        <li className="px-4 py-2">
-                                          No courses available
-                                        </li>
-                                      )}
-                                    </ul>
-                                  </div>
-                                )}
-                              </div>
-                            </NavigationMenuContent>
-                          </>
-                        ) : (
-                          <NavigationMenuLink
-                            asChild
-                            className={navigationMenuTriggerStyle()}
-                          >
-                            <Link
-                              href={route.href}
-                              onClick={(e) => {
-                                e.preventDefault();
-                                navigateAndCollapse(route.href);
-                              }}
-                            >
-                              {route.label}
-                            </Link>
-                          </NavigationMenuLink>
-                        )}
-                      </NavigationMenuItem>
-                    ))}
-
-                    {/* More dropdown using Popover */}
-                    {/* <NavigationMenuItem>
-                      <Popover open={moreOpen} onOpenChange={setMoreOpen}>
-                        <PopoverTrigger asChild>
-                          <Button variant="ghost" className="bg-green-700">
-                            More <ChevronDown className="h-4 w-4 ml-1" />
-                          </Button>
-                        </PopoverTrigger>
-                        <PopoverContent className="w-[200px] p-0 bg-transparent border-none">
-                          <ul className="grid gap-1 p-2">
-                            {moreMenuItems.map((item) => (
-                              <li key={item.id}>
-                                <Button
-                                  variant="ghost"
-                                  className="w-full justify-start text-left rounded-md p-2 bg-green-700"
-                                  onClick={() => navigateAndCollapse(item.href)}
-                                >
-                                  {item.label}
-                                </Button>
-                              </li>
-                            ))}
-                          </ul>
-                        </PopoverContent>
-                      </Popover>
-                    </NavigationMenuItem> */}
-                  </NavigationMenuList>
-                </NavigationMenu>
-              </div>
+            <div className="flex justify-between gap-3 items-center px-1 bg-red-700">
+              {routeList.map((item) => (
+                <div key={item.id}>
+                  <Link href={item.href}>
+                    <Button variant={"ghost"} className="rounded-none -ml-1">
+                      {item.label}
+                    </Button>
+                  </Link>
+                </div>
+              ))}
               <div>
                 {/* <NavigationMenuItem> */}
                 <Popover open={moreOpen} onOpenChange={setMoreOpen}>
                   <PopoverTrigger asChild>
-                    <Button variant="ghost" className="bg-green-700">
+                    <Button
+                      variant="ghost"
+                      className="bg-green-700 rounded-none -mr-1"
+                    >
                       Link <ChevronDown className="h-4 w-4 ml-1" />
                     </Button>
                   </PopoverTrigger>
