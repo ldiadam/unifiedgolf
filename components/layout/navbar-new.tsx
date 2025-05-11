@@ -16,13 +16,7 @@ import {
   navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
 import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "../ui/collapsible";
-import {
   ChevronDown,
-  ChevronUp,
   ArrowLeft,
   ChevronRight,
   Phone,
@@ -125,11 +119,37 @@ const moreMenuItems = [
   },
 ];
 
+// Add a hook to detect viewport size
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768); // md breakpoint is typically 768px
+    };
+
+    // Check on initial load
+    checkIsMobile();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", checkIsMobile);
+
+    // Clean up
+    return () => window.removeEventListener("resize", checkIsMobile);
+  }, []);
+
+  return isMobile;
+};
+
 export const NavbarNew = () => {
+  // Add this near the beginning of the NavbarNew component
+  const isMobile = useIsMobile();
   // Client-side only state initialization using useEffect
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [moreOpen, setMoreOpen] = useState(false);
+  // Remove or comment out these lines
+  // const [moreOpenMobile, setMoreOpenMobile] = useState(false);
+  // const [moreOpenDesktop, setMoreOpenDesktop] = useState(true);
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
   const [selectedCity, setSelectedCity] = useState<string | null>(null);
   const [activeMobileMenu, setActiveMobileMenu] = useState<string | null>(null);
@@ -192,7 +212,8 @@ export const NavbarNew = () => {
   const navigateAndCollapse = (href: string) => {
     // Close all menus for mobile
     setIsOpen(false);
-    setMoreOpen(false);
+    // Remove these lines
+    // setMoreOpenMobile(false);
     setActiveMobileMenu(null);
     setActiveMobileCountry(null);
     setActiveMobileCity(null);
@@ -506,56 +527,26 @@ export const NavbarNew = () => {
                         )}
                       </NavigationMenuItem>
                     ))}
-
-                    {/* More dropdown using Popover */}
-                    {/* <NavigationMenuItem>
-                      <Popover open={moreOpen} onOpenChange={setMoreOpen}>
-                        <PopoverTrigger asChild>
-                          <Button variant="ghost" className="bg-green-700">
-                            More <ChevronDown className="h-4 w-4 ml-1" />
-                          </Button>
-                        </PopoverTrigger>
-                        <PopoverContent className="w-[200px] p-0 bg-transparent border-none">
-                          <ul className="grid gap-1 p-2">
-                            {moreMenuItems.map((item) => (
-                              <li key={item.id}>
-                                <Button
-                                  variant="ghost"
-                                  className="w-full justify-start text-left rounded-md p-2 bg-green-700"
-                                  onClick={() => navigateAndCollapse(item.href)}
-                                >
-                                  {item.label}
-                                </Button>
-                              </li>
-                            ))}
-                          </ul>
-                        </PopoverContent>
-                      </Popover>
-                    </NavigationMenuItem> */}
                   </NavigationMenuList>
                 </NavigationMenu>
               </div>
               <div>
-                {/* <NavigationMenuItem> */}
-                <Popover
-                  open={activeMobileMenu === "More"}
-                  onOpenChange={() => toggleMobileMenu("More")}
-                >
+                <Popover open={isMobile}>
                   <PopoverTrigger asChild>
                     <Button
                       variant="ghost"
                       className="bg-green-700 h-7 rounded-none"
                     >
-                      Link <ChevronDown className="h-4 w-4 ml-1" />
+                      Link
                     </Button>
                   </PopoverTrigger>
-                  <PopoverContent className="w-[200px] p-0 bg-transparent border-none">
+                  <PopoverContent className="w-[110px] bg-transparent border-none -mt-4">
                     <ul className="grid gap-1">
                       {moreMenuItems.map((item) => (
                         <li key={item.id}>
                           <Button
                             variant="ghost"
-                            className="w-full justify-start text-left rounded-none p-2 bg-green-700"
+                            className="w-full justify-start text-left rounded-none p-1 bg-green-700 "
                             onClick={() => navigateAndCollapse(item.href)}
                           >
                             {item.label}
@@ -565,9 +556,7 @@ export const NavbarNew = () => {
                     </ul>
                   </PopoverContent>
                 </Popover>
-                {/* </NavigationMenuItem> */}
               </div>
-              {/* {!isHomePage && <BackButton />} */}
             </div>
           </div>
         </header>
@@ -575,7 +564,6 @@ export const NavbarNew = () => {
 
       {/* Desktop Mode */}
       <div className="hidden lg:block md:block">
-        {/* <header className="shadow-inner bg-opacity-15 border border-secondary rounded-md p-1 bg-card"> */}
         <header className="border border-secondary bg-card/80">
           <div className="flex flex-col w-full">
             <div className="flex flex-nowrap justify-between items-center w-full ml-1">
@@ -637,23 +625,26 @@ export const NavbarNew = () => {
                 </div>
               ))}
               <div>
-                {/* <NavigationMenuItem> */}
-                <Popover open={moreOpen} onOpenChange={setMoreOpen}>
+                <Popover open={!isMobile}>
                   <PopoverTrigger asChild>
                     <Button
                       variant="ghost"
-                      className="bg-green-700 rounded-none -mr-1"
+                      className="bg-green-700 rounded-none -mr-1 w-[120px]"
                     >
-                      Link <ChevronDown className="h-4 w-4 ml-1" />
+                      Link
                     </Button>
                   </PopoverTrigger>
-                  <PopoverContent className="w-[200px] p-0 bg-transparent border-none">
-                    <ul className="grid gap-1 p-2">
+                  <PopoverContent
+                    className="w-[124px] p-0 bg-transparent border-none"
+                    align="start"
+                    sideOffset={0}
+                  >
+                    <ul className="grid gap-1 p-1">
                       {moreMenuItems.map((item) => (
                         <li key={item.id}>
                           <Button
                             variant="ghost"
-                            className="w-full justify-start text-left rounded-md p-2 bg-green-700"
+                            className="w-full justify-start text-left rounded-none bg-green-700 focus-visible:ring-transparent"
                             onClick={() => navigateAndCollapse(item.href)}
                           >
                             {item.label}
@@ -663,9 +654,7 @@ export const NavbarNew = () => {
                     </ul>
                   </PopoverContent>
                 </Popover>
-                {/* </NavigationMenuItem> */}
               </div>
-              {/* {!isHomePage && <BackButton />} */}
             </div>
           </div>
         </header>
