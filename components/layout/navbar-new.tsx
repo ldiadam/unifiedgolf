@@ -297,7 +297,7 @@ export const NavbarNew = () => {
         {/* <header className="shadow-inner bg-opacity-15 border border-secondary rounded-md p-1 bg-card"> */}
         <header className="bg-card/80">
           <div className="flex flex-col w-full">
-            <div className="flex flex-nowrap justify-between items-center w-full ml-1">
+            {/* <div className="flex flex-nowrap justify-between items-center w-full ml-1">
               <div className="flex flex-col items-start gap-1">
                 <Link href="/" className="flex items-center">
                   <Image
@@ -343,8 +343,8 @@ export const NavbarNew = () => {
                   </Button>
                 </Link>
               </div>
-            </div>
-            <Separator />
+            </div> */}
+            {/* <Separator /> */}
             <div className="flex justify-between items-center bg-red-700">
               <div className="flex flex-shrink-0 justify-between items-center ">
                 <NavigationMenu
