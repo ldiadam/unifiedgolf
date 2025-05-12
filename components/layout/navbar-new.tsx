@@ -295,7 +295,7 @@ export const NavbarNew = () => {
       {/* Mobile Mode */}
       <div className="lg:hidden md:hidden">
         {/* <header className="shadow-inner bg-opacity-15 border border-secondary rounded-md p-1 bg-card"> */}
-        <header className="bg-card/80">
+        <header className="bg-transparant">
           <div className="flex flex-col w-full">
             {/* <div className="flex flex-nowrap justify-between items-center w-full ml-1">
               <div className="flex flex-col items-start gap-1">
@@ -345,6 +345,7 @@ export const NavbarNew = () => {
               </div>
             </div> */}
             {/* <Separator /> */}
+            <div className="my-2"></div>
             <div className="flex justify-between items-center bg-red-700">
               <div className="flex flex-shrink-0 justify-between items-center ">
                 <NavigationMenu
@@ -565,9 +566,9 @@ export const NavbarNew = () => {
 
       {/* Desktop Mode */}
       <div className="hidden lg:block md:block">
-        <header className="border border-secondary bg-card/80">
+        <header className="bg-transparent">
           <div className="flex flex-col w-full">
-            <div className="flex flex-nowrap justify-between items-center w-full ml-1">
+            {/* <div className="flex flex-nowrap justify-between items-center w-full ml-1">
               <div className="flex flex-col items-start gap-1">
                 <Link href="/" className="flex items-center">
                   <Image
@@ -613,8 +614,10 @@ export const NavbarNew = () => {
                   </Button>
                 </Link>
               </div>
-            </div>
-            <Separator />
+            </div> */}
+            {/* <Separator /> */}
+            <div className="my-2"></div>
+
             <div className="flex justify-between gap-3 items-center px-1 bg-red-700">
               {routeList.map((item) => (
                 <div key={item.id}>

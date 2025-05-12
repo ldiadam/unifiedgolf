@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function CompanyProfilePage() {
   return (
-    <div className="relative min-h-screen pt-[1rem] md:pt-34 lg:pt-34">
+    <div className="relative pt-[1rem] md:pt-34 lg:pt-34">
       {/* Background Image */}
       <div className="fixed inset-0 -z-10">
         <Image
@@ -46,7 +46,7 @@ export default function CompanyProfilePage() {
           </div>
 
           <Tag />
-          <div className="mr-16 px-2 mt-2">
+          <div className="mr-16 px-2 mt-2 ">
             <p className="text-white mb-4">
               We are established with the aim to offer golf holiday packages
               tailored to our cliets exact requirements, competitively, and with

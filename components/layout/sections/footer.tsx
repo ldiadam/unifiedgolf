@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const FooterSection = () => {
   return (
-    <footer id="footer" className="w-full mt-4">
+    <footer id="footer" className="w-full mt-4 bottom-0">
       <div className="p-5 bg-card/80 border border-secondary">
         <div className="flex flex-col w-full">
           <div className="flex flex-nowrap justify-between items-center w-full ml-1">
