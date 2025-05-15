@@ -115,7 +115,7 @@ export default function CityPage({ params }: PageProps) {
   //   );
   // };
   return (
-    <div className="md:container mx-auto pt-[0.5rem] md:pt-34 lg:pt-34">
+    <div className="md:container mx-auto pt-[0.5rem] md:pt-34 lg:pt-34 overflow-x-hidden">
       <div className="flex flex-col">
         {/* <div className="flex justify-start">
           <Button
@@ -242,7 +242,7 @@ export default function CityPage({ params }: PageProps) {
                       className="w-[50%] md:w-[30%] flex items-start py-2"
                     >
                       <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
-                      <span className="text-white text-sm md:text-base">
+                      <span className="text-white text-xs md:text-base">
                         {item.name}
                       </span>
                     </Link>

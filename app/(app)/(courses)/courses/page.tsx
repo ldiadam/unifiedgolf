@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function CoursesPage() {
   return (
-    <div className="md:container mx-auto pt-[0.5rem] md:pt-34 lg:pt-34">
+    <div className="md:container mx-auto pt-[0.5rem] md:pt-34 lg:pt-34 overflow-x-hidden">
       <div className="flex flex-col">
         {/* <h1 className="text-3xl font-bold">B. Course Details</h1>
         <Separator />
@@ -40,7 +40,7 @@ export default function CoursesPage() {
           </div>
           {/* Content */}
           <div className="absolute top-0 left-0 right-0 p-2 text-white">
-            <div className="bg-red-700 rounded-none mb-3 md:mb-3 p-1 w-[13rem] md:w-[20rem]">
+            <div className="bg-red-700 rounded-none mb-3 md:mb-3 p-1 w-[14rem] md:w-[20rem]">
               <div className="flex justify-start items-center text-sm md:text-base">
                 <h2 className="text-md lg:text-2xl font-bold">
                   Country Golf Courses
@@ -63,7 +63,7 @@ export default function CoursesPage() {
                     href={`/courses/${item.country.toLowerCase()}`}
                     className="w-1/2 flex items-start py-2"
                   >
-                    <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
+                    <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-1 flex-shrink-0"></div>
                     <span className="text-white text-sm md:text-base">
                       {item.country}
                     </span>

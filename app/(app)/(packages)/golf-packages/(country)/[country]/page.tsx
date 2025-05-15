@@ -43,7 +43,7 @@ export default function PackageCountryPage({ params }: Props) {
   }
   return (
     <>
-      <div className="md:container mx-auto pt-[0.5rem] md:pt-34 lg:pt-34">
+      <div className="md:container mx-auto pt-[0.5rem] md:pt-34 lg:pt-34 overflow-x-hidden">
         <div className="relative h-[20rem]">
           <div className="h-full">
             <div className="fixed inset-0 -z-10">

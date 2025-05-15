@@ -103,7 +103,7 @@ export default function CountryPage({ params }: Props) {
   };
 
   return (
-    <div className="md:container mx-auto pt-[0.5rem] md:pt-34 lg:pt-34">
+    <div className="md:container mx-auto pt-[0.5rem] md:pt-34 lg:pt-34 overflow-x-hidden">
       {/* <div className="flex justify-start">
           <Button
             variant="ghost"
@@ -226,7 +226,7 @@ export default function CountryPage({ params }: Props) {
                     className="w-[50%] md:w-[33%] flex items-start p-1"
                   >
                     <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
-                    <span className="text-white text-sm md:text-base">
+                    <span className="text-white text-xs md:text-base">
                       {city}
                     </span>
                   </Link>
