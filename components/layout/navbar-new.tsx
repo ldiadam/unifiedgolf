@@ -15,14 +15,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
-import {
-  ChevronDown,
-  ArrowLeft,
-  ChevronRight,
-  Phone,
-  Mail,
-} from "lucide-react";
-import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
+import { ArrowLeft, ChevronRight, Phone, Mail } from "lucide-react";
 import locationData from "@/data/locationData.json"; // Import location data
 import allData from "@/data/allData.json"; // Import course data
 import { encodeUrlParam, getCountryUrl } from "@/utils/url-helpers";
@@ -168,46 +161,6 @@ export const NavbarNew = () => {
     setIsOpen(false); // Set default state after mounting
   }, []);
 
-  // Function to check if a city has courses
-  const cityHasCourses = (city: string) => {
-    return courseDetails[city as keyof typeof courseDetails] !== undefined;
-  };
-
-  const BackButton = () => (
-    <Button
-      variant="link"
-      size="sm"
-      className="flex items-center gap-2 hover:bg-none"
-      asChild
-    >
-      <Link href="/" className="text-white">
-        <ArrowLeft className="h-4 w-4" />
-        Back to Home
-      </Link>
-    </Button>
-  );
-
-  // Reset sequential selections when menu closes
-  const handleMenuReset = () => {
-    setSelectedCountry(null);
-    setSelectedCity(null);
-  };
-
-  // Handle mobile menu toggles
-  const toggleMobileMenu = (menuName: string) => {
-    setActiveMobileMenu(activeMobileMenu === menuName ? null : menuName);
-  };
-
-  const toggleMobileCountry = (countryName: string) => {
-    setActiveMobileCountry(
-      activeMobileCountry === countryName ? null : countryName
-    );
-  };
-
-  const toggleMobileCity = (cityName: string) => {
-    setActiveMobileCity(activeMobileCity === cityName ? null : cityName);
-  };
-
   // Modify the existing navigateAndCollapse function
   const navigateAndCollapse = (href: string) => {
     // Close all menus for mobile
@@ -233,71 +186,16 @@ export const NavbarNew = () => {
 
   // If not mounted yet, return a simpler version to avoid hydration errors
   if (!mounted) {
-    return (
-      <div className="fixed z-50 w-full">
-        <header className="shadow-inner bg-opacity-15 border border-secondary rounded-md p-2 bg-card">
-          <div className="flex flex-col w-full">
-            <div className="flex flex-nowrap justify-between items-center w-full ml-1">
-              <div className="flex flex-col items-start gap-1">
-                <Link href="/" className="flex items-center">
-                  <Image
-                    src={"/company-logo.jpg"}
-                    width={80}
-                    height={30}
-                    alt="Company Logo"
-                    className="rounded-md"
-                  />
-                </Link>
-                <h1 className="font-bold">Unified Golf Pte Ltd</h1>
-                <span className="text-xs font-bold pb-1">
-                  1, Thomson Road #04-330G, Singapore, 300001
-                </span>
-              </div>
-              <div className="h-full mt-20 flex-col gap-1">
-                <Link href={"tel:+6586929998"} className="text-xs font-bold">
-                  <Button variant={"link"}>
-                    <span className="text-white flex items-center gap-2">
-                      <Phone className="h-4 w-4" />
-                      +65 8692 9998
-                    </span>
-                  </Button>
-                </Link>
-                <Link href={"tel:+60125499839"} className="text-xs font-bold">
-                  <Button variant={"link"}>
-                    <span className="text-white flex items-center gap-2">
-                      <Phone className="h-4 w-4" />
-                      +6012 549 9839
-                    </span>
-                  </Button>
-                </Link>
-
-                <Link
-                  href={"mailto:theunifiedgolf@gmail.com"}
-                  className="text-xs font-bold"
-                >
-                  <Button variant={"link"}>
-                    <span className="text-white flex items-center gap-2">
-                      <Mail className="h-4 w-4" />
-                      theunifiedgolf@gmail.com
-                    </span>
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </header>
-      </div>
-    );
+    return null;
   }
 
   return (
     <div className="relative z-50">
       {/* Mobile Mode */}
-      <div className="lg:hidden md:hidden w-[28rem]">
-        {/* <header className="shadow-inner bg-opacity-15 border border-secondary rounded-md p-1 bg-card"> */}
-        <header className="bg-card/80 ">
-          <div className="flex flex-col w-full">
-            <div className="flex flex-nowrap justify-between items-center w-full pl-1">
+      <div className="lg:hidden md:hidden">
+        <header className="bg-card/80 w-full">
+          <div className="flex flex-col w-full max-w-full">
+            <div className="flex flex-nowrap justify-between items-center w-full px-2">
               <div className="flex flex-col items-start gap-1">
                 <Link href="/" className="flex items-center">
                   <Image
@@ -345,188 +243,26 @@ export const NavbarNew = () => {
               </div>
             </div>
             <Separator />
-            <div className="flex justify-around items-center bg-orange-700">
-              <NavigationMenu
-                className="block lg:block md:block"
-                delayDuration={0}
-                onMouseLeave={() => {
-                  setSelectedCountry(null);
-                  setSelectedCity(null);
-                }}
-              >
-                <NavigationMenuList className="gap-4">
-                  {routeList.map((route) => (
-                    <NavigationMenuItem
-                      key={route.id}
-                      className={
-                        route.id === 3 ? "relative golf-packages-menu" : ""
-                      }
-                    >
-                      {route.hasChildren ? (
-                        <>
-                          <NavigationMenuTrigger>
-                            <Link href={route.href}>{route.label}</Link>
-                          </NavigationMenuTrigger>
-                          <NavigationMenuContent className="max-h-96 overflow-y-auto">
-                            <div className="flex">
-                              {/* Countries Column */}
-                              <div className="bg-background p-0 w-[200px] min-h-[500px] rounded-l-md border-r border-gray-200">
-                                <ul className="py-2 px-0">
-                                  {countries.map((country) => (
-                                    <li
-                                      key={country.name}
-                                      className={cn(
-                                        "px-4 py-2 flex justify-between items-center cursor-pointer hover:bg-primary/20 transition-colors",
-                                        selectedCountry === country.name &&
-                                          "bg-primary/10 font-medium"
-                                      )}
-                                      onMouseEnter={() =>
-                                        setSelectedCountry(country.name)
-                                      }
-                                    >
-                                      <Link
-                                        href={
-                                          route.id === 3
-                                            ? `/golf-packages/${country.name.toLowerCase()}`
-                                            : `${getCountryUrl(country.name)}`
-                                        }
-                                        onClick={(e) => {
-                                          e.preventDefault();
-                                          navigateAndCollapse(
-                                            route.id === 3
-                                              ? `/golf-packages/${country.name.toLowerCase()}`
-                                              : `${getCountryUrl(country.name)}`
-                                          );
-                                        }}
-                                      >
-                                        <span>{country.name}</span>
-                                      </Link>
-                                      {country.cities.length > 0 && (
-                                        <ChevronRight className="h-4 w-4" />
-                                      )}
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-
-                              {/* Cities Column */}
-                              {selectedCountry && (
-                                <div className="bg-background p-0 w-[200px] min-h-[400px] border-r border-gray-200">
-                                  <ul className="py-2 px-0">
-                                    {countries
-                                      .find((c) => c.name === selectedCountry)
-                                      ?.cities.map((city) => (
-                                        <li
-                                          key={city}
-                                          className={cn(
-                                            "px-4 py-2 flex justify-between items-center cursor-pointer hover:bg-primary/20 transition-colors",
-                                            selectedCity === city &&
-                                              "bg-primary/10 font-medium"
-                                          )}
-                                          onMouseEnter={() =>
-                                            setSelectedCity(city)
-                                          }
-                                        >
-                                          <Link
-                                            href={
-                                              route.id === 3
-                                                ? `/golf-packages/${selectedCountry.toLowerCase()}/${encodeUrlParam(
-                                                    city
-                                                  )}`
-                                                : `/courses/${selectedCountry.toLowerCase()}/${encodeUrlParam(
-                                                    city
-                                                  )}`
-                                            }
-                                            onClick={(e) => {
-                                              e.preventDefault();
-                                              navigateAndCollapse(
-                                                route.id === 3
-                                                  ? `/golf-packages/${selectedCountry.toLowerCase()}/${encodeUrlParam(
-                                                      city
-                                                    )}`
-                                                  : `/courses/${selectedCountry.toLowerCase()}/${encodeUrlParam(
-                                                      city
-                                                    )}`
-                                              );
-                                            }}
-                                          >
-                                            <span>{city}</span>
-                                          </Link>
-                                          {cityHasCourses(city) &&
-                                            route.id !== 3 && (
-                                              <ChevronRight className="h-4 w-4" />
-                                            )}
-                                        </li>
-                                      ))}
-                                  </ul>
-                                </div>
-                              )}
-
-                              {/* Course Details Column */}
-                              {selectedCity && !(route.id === 3) && (
-                                <div className="bg-background p-0 w-[380px] min-h-[400px] rounded-r-md">
-                                  <ul className="py-2 px-0">
-                                    {courseDetails[
-                                      selectedCity as keyof typeof courseDetails
-                                    ]?.map((course) => (
-                                      <li key={course.title}>
-                                        <Link
-                                          href={
-                                            route.id === 3
-                                              ? `/golf-packages/detail/${course.href
-                                                  .split("/")
-                                                  .pop()}`
-                                              : course.href
-                                          }
-                                          onClick={(e) => {
-                                            e.preventDefault();
-                                            navigateAndCollapse(
-                                              route.id === 3
-                                                ? `/golf-packages/detail/${course.href
-                                                    .split("/")
-                                                    .pop()}`
-                                                : course.href
-                                            );
-                                          }}
-                                          className="px-4 py-2 block hover:bg-primary/20 transition-colors"
-                                        >
-                                          {course.title}
-                                        </Link>
-                                      </li>
-                                    )) || (
-                                      <li className="px-4 py-2">
-                                        No courses available
-                                      </li>
-                                    )}
-                                  </ul>
-                                </div>
-                              )}
-                            </div>
-                          </NavigationMenuContent>
-                        </>
-                      ) : (
-                        <NavigationMenuLink
-                          asChild
-                          className={
-                            navigationMenuTriggerStyle() +
-                            " h-7 rounded-none bg-red-700"
-                          }
+            <div className=" bg-orange-700">
+              <div className="block lg:block md:block">
+                <div className="gap-4 w-full flex justify-between">
+                  {routeList.map((route, index) => (
+                    <div key={index}>
+                      <Button className=" h-7 rounded-none bg-red-700">
+                        <Link
+                          href={route.href}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            navigateAndCollapse(route.href);
+                          }}
                         >
-                          <Link
-                            href={route.href}
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigateAndCollapse(route.href);
-                            }}
-                          >
-                            {route.label}
-                          </Link>
-                        </NavigationMenuLink>
-                      )}
-                    </NavigationMenuItem>
+                          {route.label}
+                        </Link>
+                      </Button>
+                    </div>
                   ))}
-                </NavigationMenuList>
-              </NavigationMenu>
+                </div>
+              </div>
             </div>
 
             <div className="fixed bottom-1 right-1 z-[100]">
