@@ -65,7 +65,9 @@ export default function PackageCountryPage({ params }: Props) {
                 </div>
               </div>
             </div>
-            <Tag />
+            <div className="pl-2">
+              <Tag />
+            </div>
 
             <div className="px-4 h-[10rem]">
               {/* <h3 className="text-white text-lg md:text-xl font-semibold mb-2">

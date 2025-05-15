@@ -124,7 +124,7 @@ export default function PackageCityPage({ params }: Props) {
             </div>
             {/* content */}
             <div className="top-0 left-0 right-0 p-2 text-white">
-              <div className="bg-red-700 rounded-none mb-1 md:mb-1 p-1 w-[13rem] md:w-[20rem]">
+              <div className="bg-red-700 rounded-none mb-1 md:mb-0.5 p-1 w-[13rem] md:w-[20rem]">
                 <div className="flex justify-start items-center text-sm md:text-base gap-2 ">
                   <h2 className="text-md lg:text-2xl font-bold">
                     {decodedCity} Golf Packages
@@ -132,7 +132,9 @@ export default function PackageCityPage({ params }: Props) {
                 </div>
               </div>
             </div>
-            <Tag />
+            <div className="pl-2">
+              <Tag />
+            </div>
 
             <div className="mt-3 px-4 h-[10rem]">
               {packagesForCity.length > 0 ? (

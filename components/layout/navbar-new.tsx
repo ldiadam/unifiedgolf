@@ -291,13 +291,13 @@ export const NavbarNew = () => {
   }
 
   return (
-    <div className="relative z-50 w-full">
+    <div className="relative z-50">
       {/* Mobile Mode */}
       <div className="lg:hidden md:hidden">
         {/* <header className="shadow-inner bg-opacity-15 border border-secondary rounded-md p-1 bg-card"> */}
-        <header className="bg-transparant mt-2">
-          <div className="flex flex-none w-full bg-orange-700">
-            {/* <div className="flex flex-nowrap justify-between items-center w-full ml-1">
+        <header className="bg-card/80">
+          <div className="flex flex-col w-full">
+            <div className="flex flex-nowrap justify-between items-center w-full pl-1">
               <div className="flex flex-col items-start gap-1">
                 <Link href="/" className="flex items-center">
                   <Image
@@ -343,9 +343,9 @@ export const NavbarNew = () => {
                   </Button>
                 </Link>
               </div>
-            </div> */}
-            {/* <Separator /> */}
-            <div className="flex justify-between items-center">
+            </div>
+            <Separator />
+            <div className="flex justify-between items-center bg-orange-700 pl-1">
               <NavigationMenu
                 className="block lg:block md:block"
                 delayDuration={0}
@@ -509,7 +509,7 @@ export const NavbarNew = () => {
                           asChild
                           className={
                             navigationMenuTriggerStyle() +
-                            " h-7 rounded-none bg-red-700 ml-3"
+                            " h-7 rounded-none bg-red-700"
                           }
                         >
                           <Link
@@ -529,8 +529,8 @@ export const NavbarNew = () => {
               </NavigationMenu>
             </div>
 
-            <div className="fixed bottom-9 md:bottom-0 right-1 z-[100]">
-              <div className="w-[110px] bg-transparent border-none -mt-4">
+            <div className="fixed bottom-1 right-1 z-[100]">
+              <div className="w-[90px] bg-transparent border-none -mt-4">
                 <ul className="grid gap-1">
                   {moreMenuItems.map((item) => (
                     <li key={item.id}>
@@ -553,9 +553,9 @@ export const NavbarNew = () => {
 
       {/* Desktop Mode */}
       <div className="hidden lg:block md:block">
-        <header className="bg-transparent">
+        <header className="bg-card/80">
           <div className="flex flex-col w-full">
-            {/* <div className="flex flex-nowrap justify-between items-center w-full ml-1">
+            <div className="flex flex-nowrap justify-between items-center w-full pl-1">
               <div className="flex flex-col items-start gap-1">
                 <Link href="/" className="flex items-center">
                   <Image
@@ -601,8 +601,8 @@ export const NavbarNew = () => {
                   </Button>
                 </Link>
               </div>
-            </div> */}
-            {/* <Separator /> */}
+            </div>
+            <Separator />
             <div className="my-2"></div>
 
             <div className="flex justify-between gap-3 items-center px-1 bg-orange-700">
