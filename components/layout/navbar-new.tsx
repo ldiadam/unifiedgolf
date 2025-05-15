@@ -210,19 +210,13 @@ export const NavbarNew = () => {
                   <h1 className="font-bold text-base">Unified Golf Pte Ltd</h1>
                 </div>
 
-                <div>
-                  <Link href={"tel:+6586929998"}>
-                    <Button variant={"link"} className="py-2">
-                      <span className="text-white flex items-center gap-2 text-xs font-bold">
-                        <MapPin className="h-4 w-4" />
-                        <div className="flex flex-wrap">
-                          1, Thomson Road #04-330G, Singapore, 300001{" "}
-                        </div>
-                      </span>
-                    </Button>
-                  </Link>
+                <div className="text-white flex justify-center items-center gap-2 text-xs font-bold py-2">
+                  <MapPin className="h-3 w-3" />
+                  <div className="flex flex-wrap">
+                    <span>1, Thomson Road #04-330G, Singapore, 300001</span>
+                  </div>
                 </div>
-                <div>
+                {/* <div>
                   <Link href={"tel:+6586929998"}>
                     <Button variant={"link"} className="py-2">
                       <span className="text-white flex items-center gap-2 text-xs font-bold">
@@ -231,8 +225,8 @@ export const NavbarNew = () => {
                       </span>
                     </Button>
                   </Link>
-                </div>
-                <div>
+                </div> */}
+                {/* <div>
                   <Link href={"tel:+60125499839"}>
                     <Button variant={"link"} className="py-2">
                       <span className="text-white flex items-center gap-2 text-xs font-bold">
@@ -241,9 +235,9 @@ export const NavbarNew = () => {
                       </span>
                     </Button>
                   </Link>
-                </div>
+                </div> */}
 
-                <div>
+                {/* <div>
                   <Link href={"mailto:theunifiedgolf@gmail.com"}>
                     <Button variant={"link"} className="py-2">
                       <span className="text-white flex items-center gap-2 text-xs font-bold">
@@ -252,18 +246,18 @@ export const NavbarNew = () => {
                       </span>
                     </Button>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
             <Separator />
             <div className=" bg-orange-700">
               <div className="block">
-                <div className="gap-2 w-full flex justify-between">
+                <div className="px-1 gap-2 w-full flex justify-between">
                   {routeList.map((route, index) => (
                     <div key={index}>
                       <Button
                         variant={"ghost"}
-                        className="h-10 px-2 rounded-none bg-red-700 text-sm"
+                        className="h-7 px-2 rounded-none bg-red-700 text-sm"
                       >
                         <Link
                           href={route.href}
@@ -283,13 +277,13 @@ export const NavbarNew = () => {
 
             <div className="fixed bottom-1 right-1 z-[100]">
               <div className="w-[90px] bg-transparent border-none -mt-4">
-                <ul className="grid gap-1">
+                <ul className="grid gap-0.5">
                   {moreMenuItems.map((item) => (
                     <li key={item.id}>
                       <Button
                         variant="ghost"
-                        size="sm"
-                        className="w-full justify-start text-left rounded-none p-2 bg-green-700 text-sm"
+                        size="xs"
+                        className="w-full justify-start text-left rounded-none bg-green-700 text-xs"
                         onClick={() => navigateAndCollapse(item.href)}
                       >
                         {item.label}
