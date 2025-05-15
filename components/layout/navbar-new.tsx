@@ -295,7 +295,7 @@ export const NavbarNew = () => {
       {/* Mobile Mode */}
       <div className="lg:hidden md:hidden">
         {/* <header className="shadow-inner bg-opacity-15 border border-secondary rounded-md p-1 bg-card"> */}
-        <header className="bg-card/80">
+        <header className="bg-card/80 -mr-5 sm:mr-0">
           <div className="flex flex-col w-full">
             <div className="flex flex-nowrap justify-between items-center w-full pl-1">
               <div className="flex flex-col items-start gap-1">
@@ -345,7 +345,7 @@ export const NavbarNew = () => {
               </div>
             </div>
             <Separator />
-            <div className="flex justify-between items-center bg-orange-700 pl-1.5">
+            <div className="flex justify-around items-center bg-orange-700">
               <NavigationMenu
                 className="block lg:block md:block"
                 delayDuration={0}
@@ -354,7 +354,7 @@ export const NavbarNew = () => {
                   setSelectedCity(null);
                 }}
               >
-                <NavigationMenuList>
+                <NavigationMenuList className="gap-4">
                   {routeList.map((route) => (
                     <NavigationMenuItem
                       key={route.id}
