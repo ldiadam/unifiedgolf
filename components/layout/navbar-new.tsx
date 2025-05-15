@@ -293,9 +293,9 @@ export const NavbarNew = () => {
   return (
     <div className="relative z-50">
       {/* Mobile Mode */}
-      <div className="lg:hidden md:hidden">
+      <div className="lg:hidden md:hidden w-[28rem]">
         {/* <header className="shadow-inner bg-opacity-15 border border-secondary rounded-md p-1 bg-card"> */}
-        <header className="bg-card/80 -mr-5 sm:mr-0">
+        <header className="bg-card/80 ">
           <div className="flex flex-col w-full">
             <div className="flex flex-nowrap justify-between items-center w-full pl-1">
               <div className="flex flex-col items-start gap-1">
