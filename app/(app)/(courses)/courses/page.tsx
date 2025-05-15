@@ -40,7 +40,7 @@ export default function CoursesPage() {
           </div>
           {/* Content */}
           <div className="absolute top-0 left-0 right-0 p-2 text-white px-4">
-            <div className="bg-red-700 rounded-none mb-3 md:mb-3 p-1 w-[14rem] md:w-[20rem]">
+            <div className="bg-red-700 rounded-none mb-3 md:mb-3 p-1 w-[13rem] md:w-[20rem]">
               <div className="flex justify-start items-center text-sm md:text-base">
                 <h2 className="text-md lg:text-2xl font-bold">
                   Country Golf Courses
