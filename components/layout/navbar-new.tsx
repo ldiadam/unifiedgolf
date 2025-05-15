@@ -253,7 +253,10 @@ export const NavbarNew = () => {
                 <div className="gap-2 w-full flex justify-between">
                   {routeList.map((route, index) => (
                     <div key={index}>
-                      <Button className="h-10 px-2 rounded-none bg-red-700 text-sm">
+                      <Button
+                        variant={"ghost"}
+                        className="h-10 px-2 rounded-none bg-red-700 text-sm"
+                      >
                         <Link
                           href={route.href}
                           onClick={(e) => {
