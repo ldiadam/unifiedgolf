@@ -148,7 +148,7 @@ export default function PackageCityPage({ params }: Props) {
                         className="flex flex-row"
                       >
                         <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
-                        <span className="text-white text-sm md:text-base">
+                        <span className="text-white text-xs md:text-base">
                           {packageName}
                         </span>
                       </Link>

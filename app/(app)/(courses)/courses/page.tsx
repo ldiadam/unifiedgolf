@@ -48,7 +48,7 @@ export default function CoursesPage() {
               </div>
             </div>
 
-            <div className="-pl-1">
+            <div className="">
               <Tag />
             </div>
 

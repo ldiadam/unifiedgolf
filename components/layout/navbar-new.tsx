@@ -105,11 +105,11 @@ const moreMenuItems = [
     href: "/contact",
     label: "Contact",
   },
-  {
-    id: 7,
-    href: "/admin/address-book/list",
-    label: "Admin Panel",
-  },
+  // {
+  //   id: 7,
+  //   href: "/admin/address-book/list",
+  //   label: "Admin Panel",
+  // },
 ];
 
 // Add a hook to detect viewport size
@@ -257,7 +257,7 @@ export const NavbarNew = () => {
                     <div key={index}>
                       <Button
                         variant={"ghost"}
-                        className="h-7 px-2 rounded-none bg-red-700 text-sm"
+                        className="h-7 px-1 rounded-none bg-red-700 text-sm"
                       >
                         <Link
                           href={route.href}
@@ -275,8 +275,8 @@ export const NavbarNew = () => {
               </div>
             </div>
 
-            <div className="fixed top-[35%] right-1 z-[100]">
-              <div className="w-[90px] bg-transparent border-none -mt-4">
+            <div className="fixed top-[36%] right-4 z-[100]">
+              <div className="w-[65px] bg-transparent border-none -mt-4">
                 <ul className="grid gap-0.5">
                   {moreMenuItems.map((item) => (
                     <li key={item.id}>
