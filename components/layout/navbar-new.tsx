@@ -15,7 +15,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
-import { ArrowLeft, ChevronRight, Phone, Mail } from "lucide-react";
+import { ArrowLeft, ChevronRight, Phone, Mail, MapPin } from "lucide-react";
 import locationData from "@/data/locationData.json"; // Import location data
 import allData from "@/data/allData.json"; // Import course data
 import { encodeUrlParam, getCountryUrl } from "@/utils/url-helpers";
@@ -196,9 +196,9 @@ export const NavbarNew = () => {
         <header className="bg-card/80 w-full">
           <div className="flex flex-col ">
             <div className="block">
-              <div className="flex flex-row px-1">
-                <div className="flex flex-col gap-1 items-start">
-                  <Link href="/" className="flex items-center">
+              <div className="flex flex-col">
+                <div className="flex justify-center items-center gap-5 pt-1">
+                  <Link href="/">
                     <Image
                       src={"/company-logo.jpg"}
                       width={50}
@@ -208,42 +208,50 @@ export const NavbarNew = () => {
                     />
                   </Link>
                   <h1 className="font-bold text-base">Unified Golf Pte Ltd</h1>
-                  <span className="text-sm font-bold pb-1">
-                    1, Thomson Road #04-330G, Singapore, 300001
-                  </span>
                 </div>
-                <div className="flex flex-col">
-                  <div>
-                    <Link href={"tel:+6586929998"}>
-                      <Button variant={"link"} className="py-2">
-                        <span className="text-white flex items-center gap-2 text-sm font-bold">
-                          <Phone className="h-4 w-4" />
-                          +65 8692 9998
-                        </span>
-                      </Button>
-                    </Link>
-                  </div>
-                  <div>
-                    <Link href={"tel:+60125499839"}>
-                      <Button variant={"link"} className="py-2">
-                        <span className="text-white flex items-center gap-2 text-sm font-bold">
-                          <Phone className="h-4 w-4" />
-                          +6012 549 9839
-                        </span>
-                      </Button>
-                    </Link>
-                  </div>
 
-                  <div>
-                    <Link href={"mailto:theunifiedgolf@gmail.com"}>
-                      <Button variant={"link"} className="py-2">
-                        <span className="text-white flex items-center gap-2 text-sm font-bold">
-                          <Mail className="h-4 w-4" />
-                          theunifiedgolf@gmail.com
-                        </span>
-                      </Button>
-                    </Link>
-                  </div>
+                <div>
+                  <Link href={"tel:+6586929998"}>
+                    <Button variant={"link"} className="py-2">
+                      <span className="text-white flex items-center gap-2 text-xs font-bold">
+                        <MapPin className="h-4 w-4" />
+                        <div className="flex flex-wrap">
+                          1, Thomson Road #04-330G, Singapore, 300001{" "}
+                        </div>
+                      </span>
+                    </Button>
+                  </Link>
+                </div>
+                <div>
+                  <Link href={"tel:+6586929998"}>
+                    <Button variant={"link"} className="py-2">
+                      <span className="text-white flex items-center gap-2 text-xs font-bold">
+                        <Phone className="h-4 w-4" />
+                        +65 8692 9998
+                      </span>
+                    </Button>
+                  </Link>
+                </div>
+                <div>
+                  <Link href={"tel:+60125499839"}>
+                    <Button variant={"link"} className="py-2">
+                      <span className="text-white flex items-center gap-2 text-xs font-bold">
+                        <Phone className="h-4 w-4" />
+                        +6012 549 9839
+                      </span>
+                    </Button>
+                  </Link>
+                </div>
+
+                <div>
+                  <Link href={"mailto:theunifiedgolf@gmail.com"}>
+                    <Button variant={"link"} className="py-2">
+                      <span className="text-white flex items-center gap-2 text-xs font-bold">
+                        <Mail className="h-4 w-4" />
+                        theunifiedgolf@gmail.com
+                      </span>
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
