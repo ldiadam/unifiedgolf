@@ -66,7 +66,7 @@ export default function CoursesPage() {
                     className="w-1/2 flex items-start py-2"
                   >
                     <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-1 flex-shrink-0"></div>
-                    <span className="text-white text-sm md:text-base">
+                    <span className="text-white text-xs md:text-base">
                       {item.country}
                     </span>
                   </Link>
