@@ -12,7 +12,7 @@ export default function StandardPackagesPage() {
     <>
       <div className="md:container mx-auto pt-[0.5rem] md:pt-34 lg:pt-34 overflow-x-hidden">
         <div className="relative h-[23rem]">
-          <div className="h-full">
+          <div className="h-full  px-2">
             <div className="fixed inset-0 -z-10">
               <Image
                 src="/jagorawi-golf-&-country-club-img-1.jpg"
@@ -36,7 +36,7 @@ export default function StandardPackagesPage() {
               <Tag />
             </div>
 
-            <div className="px-4 h-[10rem]">
+            <div className="pl-1.5 h-[10rem]">
               {/* <h3 className="text-white text-lg md:text-xl font-semibold mb-2">
                 Key Features:
               </h3> */}
@@ -48,7 +48,7 @@ export default function StandardPackagesPage() {
                     className="w-1/2 md:w-1/3 lg:w-1/4 flex items-start p-1"
                   >
                     <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
-                    <span className="text-white text-sm md:text-base">
+                    <span className="text-white text-xs md:text-base">
                       {item}
                     </span>
                   </Link>

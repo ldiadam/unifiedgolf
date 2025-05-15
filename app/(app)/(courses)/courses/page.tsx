@@ -39,7 +39,7 @@ export default function CoursesPage() {
             />
           </div>
           {/* Content */}
-          <div className="absolute top-0 left-0 right-0 p-2 text-white">
+          <div className="absolute top-0 left-0 right-0 p-2 text-white px-4">
             <div className="bg-red-700 rounded-none mb-3 md:mb-3 p-1 w-[14rem] md:w-[20rem]">
               <div className="flex justify-start items-center text-sm md:text-base">
                 <h2 className="text-md lg:text-2xl font-bold">
@@ -48,14 +48,16 @@ export default function CoursesPage() {
               </div>
             </div>
 
-            <Tag />
+            <div className="-pl-1">
+              <Tag />
+            </div>
 
             {/* <div className="mt-2 h-[175px] bg-card/50 rounded-xl p-2"> */}
             {/* <div className="mt-4 px-4 h-[10rem]"> */}
             {/* <h3 className="text-white text-lg md:text-xl font-semibold mb-2">
                 Key Features:
               </h3> */}
-            <div className="px-4 h-[10rem]">
+            <div className="pl-1 h-[10rem]">
               <div className=" flex flex-wrap w-[50%] md:w-[30%]">
                 {locationData.map((item, index) => (
                   <Link

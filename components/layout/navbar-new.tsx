@@ -345,7 +345,7 @@ export const NavbarNew = () => {
               </div>
             </div>
             <Separator />
-            <div className="flex justify-between items-center bg-orange-700 pl-1">
+            <div className="flex justify-between items-center bg-orange-700 pl-1.5">
               <NavigationMenu
                 className="block lg:block md:block"
                 delayDuration={0}

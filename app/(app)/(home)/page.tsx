@@ -46,7 +46,7 @@ export default function CompanyProfilePage() {
           </div>
 
           <Tag />
-          <div className="mr-16 px-2 mt-2 ">
+          <div className="mr-16 pl-0.5 pr-4 mt-2 ">
             <p className="text-white mb-2 text-xs md:text-md">
               We are established with the aim to offer golf holiday packages
               tailored to our cliets exact requirements, competitively, and with

@@ -223,7 +223,7 @@ export default function CityPage({ params }: PageProps) {
             {/* <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div> */}
 
             {/* Content */}
-            <div className="absolute top-0 left-0 right-0 p-2 text-white">
+            <div className="absolute top-0 left-0 right-0 p-2 text-white px-4">
               <div className="bg-red-700 rounded-none mb-3 md:mb-6 p-1 w-[15rem] md:w-[20rem]">
                 <div className="flex justify-start items-center text-sm md:text-base gap-1">
                   <h2 className="text-md lg:text-2xl font-bold">
@@ -233,7 +233,7 @@ export default function CityPage({ params }: PageProps) {
               </div>
 
               <Tag />
-              <div className="px-4 h-[20rem]">
+              <div className="pl-0.5 h-[20rem]">
                 <div className=" flex flex-wrap w-[80%] md:w-[90%]">
                   {cityCourses.map((item, index) => (
                     <Link

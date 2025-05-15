@@ -205,7 +205,7 @@ export default function CountryPage({ params }: Props) {
           </div>
 
           {/* Content */}
-          <div className="absolute top-0 left-0 right-0 p-2 text-white">
+          <div className="absolute top-0 left-0 right-0 p-2 text-white px-4">
             <div className="bg-red-700 rounded-none mb-3 md:mb-6 p-1 w-[13rem] md:w-[20rem]">
               <div className="flex justify-start items-center text-sm md:text-base">
                 <h2 className="text-md lg:text-2xl font-bold">
@@ -215,7 +215,7 @@ export default function CountryPage({ params }: Props) {
             </div>
 
             <Tag />
-            <div className="px-4 h-[20rem]">
+            <div className="pl-0.5 h-[20rem]">
               <div className="flex flex-wrap w-[70%] md:w-[50%]">
                 {countryData.city.map((city) => (
                   <Link
