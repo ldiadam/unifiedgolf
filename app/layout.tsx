@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background overflow-x-hidden min-w-screen",
+          "min-h-screen bg-background min-w-fit overflow-x-hidden",
           inter.className
         )}
       >
@@ -29,13 +29,11 @@ export default function RootLayout({
           enableSystem={true}
           disableTransitionOnChange
         >
-          <SearchProvider>
-            <CompanyProvider>
-              <NavbarNew />
-              {children}
-              <Toaster />
-            </CompanyProvider>
-          </SearchProvider>
+          <CompanyProvider>
+            <NavbarNew />
+            {children}
+            <Toaster />
+          </CompanyProvider>
         </ThemeProvider>
       </body>
     </html>

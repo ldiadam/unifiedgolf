@@ -113,30 +113,30 @@ const moreMenuItems = [
 ];
 
 // Add a hook to detect viewport size
-const useIsMobile = () => {
-  const [isMobile, setIsMobile] = useState(false);
+// const useIsMobile = () => {
+//   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const checkIsMobile = () => {
-      setIsMobile(window.innerWidth < 768); // md breakpoint is typically 768px
-    };
+//   useEffect(() => {
+//     const checkIsMobile = () => {
+//       setIsMobile(window.innerWidth < 768); // md breakpoint is typically 768px
+//     };
 
-    // Check on initial load
-    checkIsMobile();
+//     // Check on initial load
+//     checkIsMobile();
 
-    // Add event listener for window resize
-    window.addEventListener("resize", checkIsMobile);
+//     // Add event listener for window resize
+//     window.addEventListener("resize", checkIsMobile);
 
-    // Clean up
-    return () => window.removeEventListener("resize", checkIsMobile);
-  }, []);
+//     // Clean up
+//     return () => window.removeEventListener("resize", checkIsMobile);
+//   }, []);
 
-  return isMobile;
-};
+//   return isMobile;
+// };
 
 export const NavbarNew = () => {
   // Add this near the beginning of the NavbarNew component
-  const isMobile = useIsMobile();
+  // const isMobile = useIsMobile();
   // Client-side only state initialization using useEffect
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -194,57 +194,62 @@ export const NavbarNew = () => {
       {/* Mobile Mode */}
       <div className="lg:hidden md:hidden">
         <header className="bg-card/80 w-full">
-          <div className="flex flex-col w-full max-w-full">
-            <div className="flex flex-nowrap justify-between items-center w-full px-2">
-              <div className="flex flex-col items-start gap-1">
-                <Link href="/" className="flex items-center">
-                  <Image
-                    src={"/company-logo.jpg"}
-                    width={50}
-                    height={10}
-                    alt=""
-                    className="rounded-md"
-                  />
-                </Link>
-                <h1 className="font-bold text-sm">Unified Golf Pte Ltd</h1>
-                <span className="text-xs font-bold pb-1">
-                  1, Thomson Road #04-330G, Singapore, 300001
-                </span>
-              </div>
-              <div className="h-full mt-1 flex-col">
-                <Link href={"tel:+6586929998"}>
-                  <Button variant={"link"}>
-                    <span className="text-white flex items-center gap-2 text-xs font-bold">
-                      <Phone className="h-4 w-4" />
-                      +65 8692 9998
-                    </span>
-                  </Button>
-                </Link>
-                <Link href={"tel:+60125499839"}>
-                  <Button variant={"link"}>
-                    <span className="text-white flex items-center gap-2 text-xs font-bold">
-                      <Phone className="h-4 w-4" />
-                      +6012 549 9839
-                    </span>
-                  </Button>
-                </Link>
+          <div className="flex flex-col ">
+            <div className="block">
+              <div className="flex flex-row px-1">
+                <div className="flex flex-col gap-1 items-start">
+                  <Link href="/" className="flex items-center">
+                    <Image
+                      src={"/company-logo.jpg"}
+                      width={50}
+                      height={10}
+                      alt=""
+                      className="rounded-md"
+                    />
+                  </Link>
+                  <h1 className="font-bold text-sm">Unified Golf Pte Ltd</h1>
+                  <span className="text-xs font-bold pb-1">
+                    1, Thomson Road #04-330G, Singapore, 300001
+                  </span>
+                </div>
+                <div className="flex flex-col">
+                  <div>
+                    <Link href={"tel:+6586929998"}>
+                      <Button variant={"link"}>
+                        <span className="text-white flex items-center gap-2 text-xs font-bold">
+                          <Phone className="h-4 w-4" />
+                          +65 8692 9998
+                        </span>
+                      </Button>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link href={"tel:+60125499839"}>
+                      <Button variant={"link"}>
+                        <span className="text-white flex items-center gap-2 text-xs font-bold">
+                          <Phone className="h-4 w-4" />
+                          +6012 549 9839
+                        </span>
+                      </Button>
+                    </Link>
+                  </div>
 
-                <Link
-                  href={"mailto:theunifiedgolf@gmail.com"}
-                  className="text-xs font-bold"
-                >
-                  <Button variant={"link"}>
-                    <span className="text-white flex items-center gap-2">
-                      <Mail className="h-4 w-4" />
-                      theunifiedgolf@gmail.com
-                    </span>
-                  </Button>
-                </Link>
+                  <div>
+                    <Link href={"mailto:theunifiedgolf@gmail.com"}>
+                      <Button variant={"link"}>
+                        <span className="text-white flex items-center gap-2">
+                          <Mail className="h-4 w-4" />
+                          theunifiedgolf@gmail.com
+                        </span>
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
             <Separator />
             <div className=" bg-orange-700">
-              <div className="block lg:block md:block">
+              <div className="block">
                 <div className="gap-4 w-full flex justify-between">
                   {routeList.map((route, index) => (
                     <div key={index}>
