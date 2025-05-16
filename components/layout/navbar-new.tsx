@@ -216,7 +216,7 @@ export const NavbarNew = () => {
                     <span>1, Thomson Road #04-330G, Singapore, 300001</span>
                   </div>
                 </div>
-                {/* <div>
+                <div>
                   <Link href={"tel:+6586929998"}>
                     <Button variant={"link"} className="py-2">
                       <span className="text-white flex items-center gap-2 text-xs font-bold">
@@ -225,8 +225,8 @@ export const NavbarNew = () => {
                       </span>
                     </Button>
                   </Link>
-                </div> */}
-                {/* <div>
+                </div>
+                <div>
                   <Link href={"tel:+60125499839"}>
                     <Button variant={"link"} className="py-2">
                       <span className="text-white flex items-center gap-2 text-xs font-bold">
@@ -235,9 +235,9 @@ export const NavbarNew = () => {
                       </span>
                     </Button>
                   </Link>
-                </div> */}
+                </div>
 
-                {/* <div>
+                <div>
                   <Link href={"mailto:theunifiedgolf@gmail.com"}>
                     <Button variant={"link"} className="py-2">
                       <span className="text-white flex items-center gap-2 text-xs font-bold">
@@ -246,7 +246,7 @@ export const NavbarNew = () => {
                       </span>
                     </Button>
                   </Link>
-                </div> */}
+                </div>
               </div>
             </div>
             <Separator />
