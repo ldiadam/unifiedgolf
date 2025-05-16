@@ -7,7 +7,7 @@ export default function CompanyProfilePage() {
       {/* Background Image */}
       <div className="fixed inset-0 -z-10">
         <Image
-          src="/img-background-3.jpg"
+          src="/img-background-2.jpg"
           alt="Golf course background"
           fill
           className="object-cover opacity-70"
