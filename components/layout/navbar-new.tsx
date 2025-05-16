@@ -213,11 +213,11 @@ export const NavbarNew = () => {
                     </h1>
                   </div>
                 </div>
-                <div className="flex flex-row px-1 justrify-between items-center pl-4">
+                <div className="flex flex-row px-1 justify-between items-center pl-4">
                   <div className="text-white text-xs font-bold w-full">
                     {/* <MapPin className="h-4 w-4" /> */}
                     {/* <div className="flex flex-wrap"> */}
-                    <span className="text-[4.5px]/[0.9rem]">
+                    <span className="text-[4px]/[0.9rem]">
                       1, Thomson Road #04-330G, Singapore, 300001
                     </span>
                     {/* </div> */}
@@ -321,7 +321,7 @@ export const NavbarNew = () => {
               </div>
             </div>
 
-            <div className="fixed top-[16.5rem] right-4 z-[100]">
+            <div className="fixed top-[12rem] right-4 z-[100]">
               <div className="w-[65px] bg-transparent border-none -mt-4">
                 <ul className="grid gap-0.5">
                   {moreMenuItems.map((item) => (
