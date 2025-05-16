@@ -222,7 +222,7 @@ export const NavbarNew = () => {
                     </span>
                     {/* </div> */}
                   </div>
-                  <div className="-mx-2 flex justify-center items-center">
+                  <div className="-mx-3 flex justify-center items-center">
                     <Button variant={"link"} className="h-2">
                       <Link href={"tel:+6586929998"}>
                         <span className="text-white text-[10px] font-bold">
@@ -232,7 +232,7 @@ export const NavbarNew = () => {
                       </Link>
                     </Button>
                   </div>
-                  <div className="-mx-2 flex justify-center items-center">
+                  <div className="-mx-3 flex justify-center items-center">
                     <Button variant={"link"} className="h-2">
                       <Link href={"tel:+60125499839"}>
                         <span className="text-white text-[10px] font-bold">
@@ -243,7 +243,7 @@ export const NavbarNew = () => {
                     </Button>
                   </div>
 
-                  <div className="-mx-2 flex justify-center items-center">
+                  <div className="-mx-3 flex justify-center items-center">
                     <Button variant={"link"} className="h-2">
                       <Link href={"mailto:theunifiedgolf@gmail.com"}>
                         <span className="text-white text-[10px] font-bold ">
