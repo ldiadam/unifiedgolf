@@ -213,29 +213,29 @@ export const NavbarNew = () => {
                     </h1>
                   </div>
                 </div>
-                <div className="flex flex-row px-1">
-                  <div className="text-white text-xs font-bold">
+                <div className="flex flex-row px-1 justrify-between items-center pl-4">
+                  <div className="text-white text-xs font-bold w-full">
                     {/* <MapPin className="h-4 w-4" /> */}
                     {/* <div className="flex flex-wrap"> */}
-                    <span className="text-[10px]">
+                    <span className="text-[4.5px]/[0.9rem]">
                       1, Thomson Road #04-330G, Singapore, 300001
                     </span>
                     {/* </div> */}
                   </div>
-                  <div className="-mx-3 flex justify-center items-center">
+                  <div className="flex justify-center items-center">
                     <Button variant={"link"} className="h-2">
                       <Link href={"tel:+6586929998"}>
-                        <span className="text-white text-[10px] font-bold">
+                        <span className="text-white text-[5px] font-bold">
                           {/* <Phone className="h-3 w-3" /> */}
                           +65 8692 9998
                         </span>
                       </Link>
                     </Button>
                   </div>
-                  <div className="-mx-3 flex justify-center items-center">
+                  <div className="flex justify-center items-center">
                     <Button variant={"link"} className="h-2">
                       <Link href={"tel:+60125499839"}>
-                        <span className="text-white text-[10px] font-bold">
+                        <span className="text-white text-[5px] font-bold">
                           {/* <Phone className="h-3 w-3" /> */}
                           +6012 549 9839
                         </span>
@@ -243,10 +243,10 @@ export const NavbarNew = () => {
                     </Button>
                   </div>
 
-                  <div className="-mx-3 flex justify-center items-center">
+                  <div className="flex justify-center items-center">
                     <Button variant={"link"} className="h-2">
                       <Link href={"mailto:theunifiedgolf@gmail.com"}>
-                        <span className="text-white text-[10px] font-bold ">
+                        <span className="text-white text-[5px] font-bold ">
                           {/* <Mail className="h-3 w-3" /> */}
                           theunifiedgolf@gmail.com
                         </span>
