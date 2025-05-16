@@ -210,38 +210,38 @@ export const NavbarNew = () => {
                   <h1 className="font-bold text-base">Unified Golf Pte Ltd</h1>
                 </div>
 
-                <div className="text-white flex justify-center items-center gap-2 text-xs font-bold py-2">
+                <div className="text-white flex justify-center items-center gap-2 text-xs font-bold mt-1">
                   <MapPin className="h-3 w-3" />
                   <div className="flex flex-wrap">
                     <span>1, Thomson Road #04-330G, Singapore, 300001</span>
                   </div>
                 </div>
-                <div>
+                <div className="flex justify-center items-center">
                   <Link href={"tel:+6586929998"}>
-                    <Button variant={"link"} className="py-2">
+                    <Button variant={"link"} className="h-2">
                       <span className="text-white flex items-center gap-2 text-xs font-bold">
-                        <Phone className="h-4 w-4" />
+                        <Phone className="h-3 w-3" />
                         +65 8692 9998
                       </span>
                     </Button>
                   </Link>
                 </div>
-                <div>
+                <div className="flex justify-center items-center">
                   <Link href={"tel:+60125499839"}>
-                    <Button variant={"link"} className="py-2">
+                    <Button variant={"link"} className="h-2">
                       <span className="text-white flex items-center gap-2 text-xs font-bold">
-                        <Phone className="h-4 w-4" />
+                        <Phone className="h-3 w-3" />
                         +6012 549 9839
                       </span>
                     </Button>
                   </Link>
                 </div>
 
-                <div>
+                <div className="flex justify-center items-center">
                   <Link href={"mailto:theunifiedgolf@gmail.com"}>
-                    <Button variant={"link"} className="py-2">
-                      <span className="text-white flex items-center gap-2 text-xs font-bold">
-                        <Mail className="h-4 w-4" />
+                    <Button variant={"link"} className="h-2">
+                      <span className="text-white flex items-center gap-2 text-xs font-bold ">
+                        <Mail className="h-3 w-3" />
                         theunifiedgolf@gmail.com
                       </span>
                     </Button>
@@ -275,7 +275,7 @@ export const NavbarNew = () => {
               </div>
             </div>
 
-            <div className="fixed top-[12.5rem] right-2 z-[100]">
+            <div className="fixed top-[16rem] right-2 z-[100]">
               <div className="w-[65px] bg-transparent border-none -mt-4">
                 <ul className="grid gap-0.5">
                   {moreMenuItems.map((item) => (
