@@ -214,10 +214,10 @@ export const NavbarNew = () => {
                   </div>
                 </div>
                 <div className="flex flex-row px-1 justify-between items-center pl-4">
-                  <div className="text-white text-xs font-bold w-full">
+                  <div className="text-white font-bold pb-1">
                     {/* <MapPin className="h-4 w-4" /> */}
                     {/* <div className="flex flex-wrap"> */}
-                    <span className="text-[4px]/[0.9rem]">
+                    <span className="text-[3px]/[0.9rem]">
                       1, Thomson Road #04-330G, Singapore, 300001
                     </span>
                     {/* </div> */}
@@ -225,7 +225,7 @@ export const NavbarNew = () => {
                   <div className="flex justify-center items-center">
                     <Button variant={"link"} className="h-2">
                       <Link href={"tel:+6586929998"}>
-                        <span className="text-white text-[5px] font-bold">
+                        <span className="text-white text-[4px] font-bold">
                           {/* <Phone className="h-3 w-3" /> */}
                           +65 8692 9998
                         </span>
@@ -235,7 +235,7 @@ export const NavbarNew = () => {
                   <div className="flex justify-center items-center">
                     <Button variant={"link"} className="h-2">
                       <Link href={"tel:+60125499839"}>
-                        <span className="text-white text-[5px] font-bold">
+                        <span className="text-white text-[4px] font-bold">
                           {/* <Phone className="h-3 w-3" /> */}
                           +6012 549 9839
                         </span>
@@ -246,7 +246,7 @@ export const NavbarNew = () => {
                   <div className="flex justify-center items-center">
                     <Button variant={"link"} className="h-2">
                       <Link href={"mailto:theunifiedgolf@gmail.com"}>
-                        <span className="text-white text-[5px] font-bold ">
+                        <span className="text-white text-[4px] font-bold ">
                           {/* <Mail className="h-3 w-3" /> */}
                           theunifiedgolf@gmail.com
                         </span>
@@ -321,7 +321,7 @@ export const NavbarNew = () => {
               </div>
             </div>
 
-            <div className="fixed top-[12rem] right-4 z-[100]">
+            <div className="fixed top-[13rem] right-4 z-[100]">
               <div className="w-[65px] bg-transparent border-none -mt-4">
                 <ul className="grid gap-0.5">
                   {moreMenuItems.map((item) => (
