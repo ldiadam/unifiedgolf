@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function CompanyProfilePage() {
   return (
-    <div className="relative pt-[0.5rem] md:pt-34 lg:pt-34">
+    <div className="relative pt-[0.5rem] md:pt-34 lg:pt-34 overflow-hidden">
       {/* Background Image */}
       <div className="fixed inset-0 -z-10">
         <picture>
