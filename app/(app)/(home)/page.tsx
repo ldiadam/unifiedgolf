@@ -6,13 +6,20 @@ export default function CompanyProfilePage() {
     <div className="relative pt-[0.5rem] md:pt-34 lg:pt-34">
       {/* Background Image */}
       <div className="fixed inset-0 -z-10">
-        <Image
-          src="/img-background-2.jpg"
-          alt="Golf course background"
-          fill
-          className="object-cover opacity-70"
-          priority
-        />
+        <picture>
+          {/* Mobile-optimized image with higher quality and vibrancy */}
+          <source media="(max-width: 767px)" srcSet="/img-background-3.jpg" />
+          {/* Desktop image */}
+          <source media="(min-width: 768px)" srcSet="/img-background-3.jpg" />
+          <Image
+            src="/img-background-3.jpg"
+            alt="Golf course background"
+            fill
+            className="object-cover md:opacity-70 brightness-[1.1] contrast-[1.05] md:brightness-100 md:contrast-100"
+            priority
+            quality={90}
+          />
+        </picture>
       </div>
       <div className="mx-auto px-4 relative -z-0">
         {/* Hero Section */}
@@ -47,28 +54,28 @@ export default function CompanyProfilePage() {
 
           <Tag />
           <div className="mr-16 pl-0.5 pr-4 mt-2 ">
-            <p className="text-white mb-2 text-xs md:text-md">
+            <p className="text-black md:text-white mb-2 text-xs md:text-md">
               We are established with the aim to offer golf holiday packages
               tailored to our cliets exact requirements, competitively, and with
               a high standard of personal customised service
             </p>
-            <p className="mb-2 text-white text-xs md:text-md">
+            <p className="mb-2 text-black md:text-white text-xs md:text-md">
               The Company operates in partnership with established tour
               operators, with local connection and experience that been running
               successfully in the golf travel industry for many years.
             </p>
-            <p className="mb-2 text-white text-xs md:text-md">
+            <p className="mb-2 text-black md:text-white text-xs md:text-md">
               With our direct connection with various related and essential
               service providers, we are capable of offering our clients a highly
               competitive package with integrity and professionalism.
             </p>
-            <p className="mb-2 text-white text-xs md:text-md">
+            <p className="mb-2 text-black md:text-white text-xs md:text-md">
               We customise golf packages for local (Singapore), regional and
               international golf packages for both private group and
               personalised event with multinational participants from different
               countries, in advance or ad hoc basis.
             </p>
-            <p className="text-white text-xs md:text-md">
+            <p className="text-black md:text-white text-xs md:text-md">
               Please contact us for a free quotation or speak to our consultant
               to customise your nest trip to your specific requirement and
               budget.

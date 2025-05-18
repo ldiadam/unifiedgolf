@@ -179,11 +179,6 @@ export const NavbarNew = () => {
     router.push(href);
   };
 
-  // Add a new handler for desktop menu navigation
-  const handleDesktopNavigation = (href: string) => {
-    navigateAndCollapse(href);
-  };
-
   // If not mounted yet, return a simpler version to avoid hydration errors
   if (!mounted) {
     return null;
@@ -197,31 +192,27 @@ export const NavbarNew = () => {
           <div className="flex flex-col ">
             <div className="block">
               <div className="flex flex-col gap-1">
-                <div className="flex flex-col justify-center items-center px-1">
-                  <div className="flex justify-center items-center gap-4 pt-1">
+                <div className="flex flex-row justify-evenly items-center pl-1">
+                  <div className="flex flex-col justify-start py-1">
                     <Link href="/">
                       <Image
                         src={"/company-logo.jpg"}
-                        width={50}
-                        height={10}
+                        width={20}
+                        height={20}
                         alt=""
-                        className="rounded-md"
+                        // className="rounded-md"
                       />
                     </Link>
-                    <h1 className="font-bold text-base">
+                    <h1 className="font-bold text-[6px]">
                       Unified Golf Pte Ltd
                     </h1>
-                  </div>
-                </div>
-                <div className="flex flex-row px-1 justify-between items-center pl-4">
-                  <div className="text-white font-bold pb-1">
-                    {/* <MapPin className="h-4 w-4" /> */}
-                    {/* <div className="flex flex-wrap"> */}
-                    <span className="text-[3px]/[0.9rem]">
+                    <span className="text-[3px]">
                       1, Thomson Road #04-330G, Singapore, 300001
                     </span>
-                    {/* </div> */}
                   </div>
+                  {/* <div className="text-white font-bold pb-1.5">
+                    
+                  </div> */}
                   <div className="flex justify-center items-center">
                     <Button variant={"link"} className="h-2">
                       <Link href={"tel:+6586929998"}>
@@ -321,7 +312,7 @@ export const NavbarNew = () => {
               </div>
             </div>
 
-            <div className="fixed top-[13rem] right-4 z-[100]">
+            <div className="fixed top-[12rem] right-4 z-[100]">
               <div className="w-[65px] bg-transparent border-none -mt-4">
                 <ul className="grid gap-0.5">
                   {moreMenuItems.map((item) => (
@@ -395,7 +386,7 @@ export const NavbarNew = () => {
               </div>
             </div>
             <Separator />
-            <div className="my-2"></div>
+            {/* <div className="my-2"></div> */}
 
             <div className="flex justify-between gap-3 items-center px-1 bg-orange-700">
               {routeList.map((item) => (
