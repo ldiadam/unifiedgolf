@@ -192,7 +192,7 @@ export const NavbarNew = () => {
           <div className="flex flex-col ">
             <div className="block">
               <div className="flex flex-col gap-1">
-                <div className="flex flex-row justify-evenly items-center pl-1">
+                <div className="flex flex-row justify-between items-center pl-3">
                   <div className="flex flex-col justify-start py-1">
                     <Link href="/">
                       <Image
@@ -206,43 +206,45 @@ export const NavbarNew = () => {
                     <h1 className="font-bold text-[6px]">
                       Unified Golf Pte Ltd
                     </h1>
-                    <span className="text-[3px]">
+                    <span className="text-[4px]">
                       1, Thomson Road #04-330G, Singapore, 300001
                     </span>
                   </div>
                   {/* <div className="text-white font-bold pb-1.5">
                     
                   </div> */}
-                  <div className="flex justify-center items-center">
-                    <Button variant={"link"} className="h-2">
-                      <Link href={"tel:+6586929998"}>
-                        <span className="text-white text-[4px] font-bold">
-                          {/* <Phone className="h-3 w-3" /> */}
-                          +65 8692 9998
-                        </span>
-                      </Link>
-                    </Button>
-                  </div>
-                  <div className="flex justify-center items-center">
-                    <Button variant={"link"} className="h-2">
-                      <Link href={"tel:+60125499839"}>
-                        <span className="text-white text-[4px] font-bold">
-                          {/* <Phone className="h-3 w-3" /> */}
-                          +6012 549 9839
-                        </span>
-                      </Link>
-                    </Button>
-                  </div>
+                  <div className="pt-5 flex flex-shrink-0">
+                    <div className="flex justify-center items-center">
+                      <Button variant={"link"} className="h-2">
+                        <Link href={"tel:+6586929998"}>
+                          <span className="text-white text-[4px] font-bold">
+                            {/* <Phone className="h-3 w-3" /> */}
+                            +65 8692 9998
+                          </span>
+                        </Link>
+                      </Button>
+                    </div>
+                    <div className="flex justify-center items-center">
+                      <Button variant={"link"} className="h-2">
+                        <Link href={"tel:+60125499839"}>
+                          <span className="text-white text-[4px] font-bold">
+                            {/* <Phone className="h-3 w-3" /> */}
+                            +6012 549 9839
+                          </span>
+                        </Link>
+                      </Button>
+                    </div>
 
-                  <div className="flex justify-center items-center">
-                    <Button variant={"link"} className="h-2">
-                      <Link href={"mailto:theunifiedgolf@gmail.com"}>
-                        <span className="text-white text-[4px] font-bold ">
-                          {/* <Mail className="h-3 w-3" /> */}
-                          theunifiedgolf@gmail.com
-                        </span>
-                      </Link>
-                    </Button>
+                    <div className="flex justify-center items-center">
+                      <Button variant={"link"} className="h-2">
+                        <Link href={"mailto:theunifiedgolf@gmail.com"}>
+                          <span className="text-white text-[4px] font-bold ">
+                            {/* <Mail className="h-3 w-3" /> */}
+                            theunifiedgolf@gmail.com
+                          </span>
+                        </Link>
+                      </Button>
+                    </div>
                   </div>
                   {/* <div className="text-white flex justify-start items-center gap-2 text-xs font-bold pl-4">
                     <MapPin className="h-4 w-4" />
@@ -386,8 +388,6 @@ export const NavbarNew = () => {
               </div>
             </div>
             <Separator />
-            {/* <div className="my-2"></div> */}
-
             <div className="flex justify-between gap-3 items-center px-1 bg-orange-700">
               {routeList.map((item) => (
                 <div key={item.id}>
