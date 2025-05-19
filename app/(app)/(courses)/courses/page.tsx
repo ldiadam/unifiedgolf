@@ -30,13 +30,26 @@ export default function CoursesPage() {
               style={{ backgroundImage: `url(${locationData[0].image})` }}
             ></div> */}
           <div className="fixed inset-0 -z-10">
-            <Image
-              src="/jagorawi-golf-&-country-club-img-2.jpg"
-              alt="Golf course background"
-              fill
-              className="object-cover opacity-50"
-              priority
-            />
+            <picture>
+              {/* Mobile-optimized image with higher quality and vibrancy */}
+              <source
+                media="(max-width: 767px)"
+                srcSet="/img-background-2.jpg"
+              />
+              {/* Desktop image */}
+              <source
+                media="(min-width: 768px)"
+                srcSet="/img-background-2.jpg"
+              />
+              <Image
+                src="/img-background-2.jpg"
+                alt="Golf course background"
+                fill
+                className="object-cover md:opacity-70 brightness-[1.1] contrast-[1.05] md:brightness-100 md:contrast-100"
+                priority
+                quality={90}
+              />
+            </picture>
           </div>
           {/* Content */}
           <div className="absolute top-0 left-0 right-0 p-2 text-white px-4">
@@ -57,16 +70,16 @@ export default function CoursesPage() {
             {/* <h3 className="text-white text-lg md:text-xl font-semibold mb-2">
                 Key Features:
               </h3> */}
-            <div className="pl-1 h-[10rem]">
-              <div className=" flex flex-wrap w-[50%] md:w-[30%]">
+            <div className="h-[10rem]">
+              <div className=" flex flex-wrap w-[50%] md:w-[30%] ">
                 {locationData.map((item, index) => (
                   <Link
                     key={index}
                     href={`/courses/${item.country.toLowerCase()}`}
                     className="w-1/2 flex items-start py-2"
                   >
-                    <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-1 flex-shrink-0"></div>
-                    <span className="text-white text-xs md:text-base">
+                    <div className="bg-black md:bg-white rounded-full w-1.5 h-1.5 mt-1 mr-0.5 md:w-2 md:h-2 md:mt-1.5 md:mr-1 flex-shrink-0"></div>
+                    <span className="text-black md:text-white text-xs md:text-base">
                       {item.country}
                     </span>
                   </Link>

@@ -195,13 +195,26 @@ export default function CountryPage({ params }: Props) {
               style={{ backgroundImage: `url(${countryData.image})` }}
             ></div> */}
           <div className="fixed inset-0 -z-10">
-            <Image
-              src="/jagorawi-golf-&-country-club-img-2.jpg"
-              alt="Golf course background"
-              fill
-              className="object-cover opacity-50"
-              priority
-            />
+            <picture>
+              {/* Mobile-optimized image with higher quality and vibrancy */}
+              <source
+                media="(max-width: 767px)"
+                srcSet="/img-background-2.jpg"
+              />
+              {/* Desktop image */}
+              <source
+                media="(min-width: 768px)"
+                srcSet="/img-background-2.jpg"
+              />
+              <Image
+                src="/img-background-2.jpg"
+                alt="Golf course background"
+                fill
+                className="object-cover md:opacity-70 brightness-[1.1] contrast-[1.05] md:brightness-100 md:contrast-100"
+                priority
+                quality={90}
+              />
+            </picture>
           </div>
 
           {/* Content */}
@@ -216,7 +229,7 @@ export default function CountryPage({ params }: Props) {
 
             <Tag />
             <div className="pl-0.5 h-[20rem]">
-              <div className="flex flex-wrap w-[70%] md:w-[50%]">
+              <div className="flex flex-wrap w-[70%] md:w-[50%] ">
                 {countryData.city.map((city) => (
                   <Link
                     key={city}
@@ -225,8 +238,8 @@ export default function CountryPage({ params }: Props) {
                     )}`}
                     className="w-[50%] md:w-[33%] flex items-start p-1"
                   >
-                    <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
-                    <span className="text-white text-xs md:text-base">
+                    <div className="bg-black md:bg-white rounded-full w-1.5 h-1.5 mt-1 mr-0.5 md:w-2 md:h-2 md:mt-1.5 md:mr-1 flex-shrink-0"></div>
+                    <span className="text-black md:text-white text-xs md:text-base">
                       {city}
                     </span>
                   </Link>

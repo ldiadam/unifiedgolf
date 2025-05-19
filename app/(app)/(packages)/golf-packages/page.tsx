@@ -14,13 +14,20 @@ export default function StandardPackagesPage() {
         <div className="relative h-[23rem]">
           <div className="h-full  px-2">
             <div className="fixed inset-0 -z-10">
-              <Image
-                src="/jagorawi-golf-&-country-club-img-1.jpg"
-                alt="Golf course background"
-                fill
-                className="object-cover opacity-50"
-                priority
-              />
+              <picture>
+                {/* Mobile-optimized image with higher quality and vibrancy */}
+                <source media="(max-width: 767px)" srcSet="/loc-3.jpg" />
+                {/* Desktop image */}
+                <source media="(min-width: 768px)" srcSet="/loc-3.jpg" />
+                <Image
+                  src="/loc-3.jpg"
+                  alt="Golf course background"
+                  fill
+                  className="object-cover md:opacity-70 brightness-[1.1] contrast-[1.05] md:brightness-100 md:contrast-100"
+                  priority
+                  quality={90}
+                />
+              </picture>
             </div>
             {/* content */}
             <div className="top-0 left-0 right-0 p-2 text-white">
@@ -40,15 +47,15 @@ export default function StandardPackagesPage() {
               {/* <h3 className="text-white text-lg md:text-xl font-semibold mb-2">
                 Key Features:
               </h3> */}
-              <div className="">
+              <div className="bg-white/30 md:bg-none">
                 {country.map((item, index) => (
                   <Link
                     key={index}
                     href={`/golf-packages/${item.toLowerCase()}`}
                     className="w-1/2 md:w-1/3 lg:w-1/4 flex items-start p-1"
                   >
-                    <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
-                    <span className="text-white text-xs md:text-base">
+                    <div className="bg-black md:bg-white rounded-full w-1.5 h-1.5 mt-1 mr-0.5 md:w-2 md:h-2 md:mt-1.5 md:mr-1 flex-shrink-0"></div>
+                    <span className="text-black md:text-white text-xs md:text-base">
                       {item}
                     </span>
                   </Link>

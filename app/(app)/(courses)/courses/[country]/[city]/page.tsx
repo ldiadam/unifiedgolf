@@ -5,18 +5,8 @@ import allData from "@/data/allData.json";
 import cityCourseData from "@/data/cityCourseData.json";
 import { decodeUrlParam, encodeUrlParam } from "@/utils/url-helpers";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import { Card, CardContent } from "@/components/ui/card";
 import { useRef, useState } from "react";
 import Image from "next/image";
-import { Metadata } from "next";
 import Tag from "@/components/layout/tag";
 
 interface PageProps {
@@ -211,13 +201,26 @@ export default function CityPage({ params }: PageProps) {
               style={{ backgroundImage: `url(${locationData[3].image})` }}
             ></div> */}
             <div className="fixed inset-0 -z-10">
-              <Image
-                src="/jagorawi-golf-&-country-club-img-3.jpg"
-                alt="Golf course background"
-                fill
-                className="object-cover opacity-50"
-                priority
-              />
+              <picture>
+                {/* Mobile-optimized image with higher quality and vibrancy */}
+                <source
+                  media="(max-width: 767px)"
+                  srcSet="/img-background-2.jpg"
+                />
+                {/* Desktop image */}
+                <source
+                  media="(min-width: 768px)"
+                  srcSet="/img-background-2.jpg"
+                />
+                <Image
+                  src="/img-background-2.jpg"
+                  alt="Golf course background"
+                  fill
+                  className="object-cover md:opacity-70 brightness-[1.1] contrast-[1.05] md:brightness-100 md:contrast-100"
+                  priority
+                  quality={90}
+                />
+              </picture>
             </div>
             {/* Overlay */}
             {/* <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300"></div> */}
@@ -234,15 +237,15 @@ export default function CityPage({ params }: PageProps) {
 
               <Tag />
               <div className="pl-0.5 h-[20rem]">
-                <div className=" flex flex-wrap w-[80%] md:w-[90%]">
+                <div className=" flex flex-wrap w-[80%] md:w-[90%] ">
                   {cityCourses.map((item, index) => (
                     <Link
                       key={index}
                       href={`/course-detail/${item.slug}`}
                       className="w-[50%] md:w-[30%] flex items-start py-2"
                     >
-                      <div className="bg-white rounded-full w-2 h-2 mt-1.5 mr-2 flex-shrink-0"></div>
-                      <span className="text-white text-xs md:text-base">
+                      <div className="bg-black md:bg-white rounded-full w-1.5 h-1.5 mt-1 mr-0.5 md:w-2 md:h-2 md:mt-1.5 md:mr-1 flex-shrink-0"></div>
+                      <span className="text-black md:text-white text-xs md:text-base">
                         {item.name}
                       </span>
                     </Link>
