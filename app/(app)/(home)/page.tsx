@@ -54,13 +54,13 @@ export default function CompanyProfilePage() {
 
           <Tag />
           <div className="mr-16 pl-0.5 pr-4 mt-2">
-            <div className="bg-white/15 md:bg-none font-semibold">
-              <p className="text-white mb-2 text-xs md:text-md ">
+            <div className="bg-gray-500/20 md:bg-none font-semibold">
+              <p className="text-black md:text-white mb-2 text-xs md:text-md ">
                 We are established with the aim to offer golf holiday packages
                 tailored to our cliets exact requirements, competitively, and
                 with a high standard of personal customised service
               </p>
-              <p className="mb-2 text-white text-xs md:text-md ">
+              <p className="mb-2 text-black md:text-white text-xs md:text-md ">
                 The Company operates in partnership with established tour
                 operators, with local connection and experience that been
                 running successfully in the golf travel industry for many years.
