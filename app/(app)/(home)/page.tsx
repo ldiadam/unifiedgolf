@@ -54,7 +54,7 @@ export default function CompanyProfilePage() {
 
           <Tag />
           <div className="mr-16 pl-0.5 pr-4 mt-2">
-            <div className="md:bg-none font-bold text-shadow-lg/80 text-white">
+            <div className="bg-card/50 p-2 rounded-md md:bg-none font-bold text-shadow-lg/80 text-white">
               <p className=" mb-2 text-xs md:text-md ">
                 We are established with the aim to offer golf holiday packages
                 tailored to our cliets exact requirements, competitively, and
@@ -76,7 +76,7 @@ export default function CompanyProfilePage() {
                 personalised event with multinational participants from
                 different countries, in advance or ad hoc basis.
               </p>
-              <p className=" text-xs md:text-md bg ">
+              <p className=" text-xs md:text-md">
                 Please contact us for a free quotation or speak to our
                 consultant to customise your nest trip to your specific
                 requirement and budget.
