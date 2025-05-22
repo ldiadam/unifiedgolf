@@ -26,26 +26,13 @@ export default function CompanyProfilePage() {
           <div className="mr-16 pl-0.5 pr-4 mt-2">
             <div className="bg-none font-bold text-shadow-lg/80">
               <p className=" mb-2 text-xs md:text-md text-black md:text-white ">
-                We are established with the aim to{" "}
-                <span className="md:text-black text-white">offer golf</span>{" "}
-                holiday packages tailored to our{" "}
-                <span className="md:text-black text-white">cliets exact</span>{" "}
-                requirements, competitively,{" "}
-                <span className="md:text-black text-white">
-                  and with a high
-                </span>{" "}
-                standard of personal customi
-                <span className="md:text-black text-white">sed service</span>
+                We are established with the aim to offer golf holiday packages
+                tailored to our cliets exact requirements, competitively, and
+                with a high standard of personal customised service
               </p>
               <p className="mb-2 text-xs md:text-md text-black md:text-white">
-                The Company operates in{" "}
-                <span className="md:text-black text-white">
-                  partnership with
-                </span>{" "}
-                established tour operators, with local{" "}
-                <span className="md:text-black text-white">
-                  connection and experience that been
-                </span>{" "}
+                The Company operates in partnership with established tour
+                operators, with local connection and experience that been
                 running successfully in the golf travel industry for many years.
               </p>
               <p className="mb-2  text-xs md:text-md text-black md:text-white">
@@ -53,7 +40,7 @@ export default function CompanyProfilePage() {
                 service providers, we are capable of offering our clients a
                 highly competitive package with integrity and professionalism.
               </p>
-              <p className="mb-2 text-xs md:text-md text-black md:text-white">
+              <p className="mb-2 text-xs md:text-md text-white">
                 We customise golf packages for local (Singapore), regional and
                 international golf packages for both private group and
                 personalised event with multinational participants from
