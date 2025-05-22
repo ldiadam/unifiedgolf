@@ -3,9 +3,10 @@ import Image from "next/image";
 
 export default function CompanyProfilePage() {
   return (
-    <div className="relative pt-[0.5rem] md:pt-34 lg:pt-34 overflow-hidden">
+    <div className="relative md:pt-34 lg:pt-34 overflow-hidden">
       {/* Background Image */}
-      <div className="fixed inset-0 -z-10">
+      {/* <div className="fixed inset-0 -z-10"> */}
+      <div className="relative md:fixed md:inset-0 md:-z-10 min-h-min">
         <picture>
           {/* Mobile-optimized image with higher quality and vibrancy */}
           <source media="(max-width: 767px)" srcSet="/bg-home.png" />
@@ -14,8 +15,9 @@ export default function CompanyProfilePage() {
           <Image
             src="/bg-home.png"
             alt="Golf course background"
-            fill
-            className="object-fill md:opacity-70 brightness-[1.1] contrast-[1.05] md:brightness-100 md:contrast-100 mt-16"
+            width={375}
+            height={760}
+            className="object-fill md:opacity-70 brightness-[1.1] contrast-[1.05] md:brightness-100 md:contrast-100"
             priority
             quality={90}
           />
