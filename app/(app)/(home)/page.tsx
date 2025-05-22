@@ -26,9 +26,14 @@ export default function CompanyProfilePage() {
           <div className="mr-16 pl-0.5 pr-4 mt-2">
             <div className="bg-none font-bold text-shadow-lg/80">
               <p className=" mb-2 text-xs md:text-md text-black md:text-white ">
-                We are established with the aim to offer golf holiday packages
-                tailored to our cliets exact requirements, competitively, and
-                with a high standard of personal customised service
+                We are established with the aim{" "}
+                <span className="md:text-black text-white">to offer</span> golf
+                holiday packages tailored to our clients exact requirements,{" "}
+                <span className="md:text-black text-white">competitively,</span>{" "}
+                and with a high standard of personal{" "}
+                <span className="md:text-black text-white">
+                  customised service
+                </span>
               </p>
               <p className="mb-2 text-xs md:text-md text-black md:text-white">
                 The Company operates in partnership with established tour
@@ -41,10 +46,14 @@ export default function CompanyProfilePage() {
                 highly competitive package with integrity and professionalism.
               </p>
               <p className="mb-2 text-xs md:text-md text-white">
-                We customise golf packages for local (Singapore), regional and
-                international golf packages for both private group and
-                personalised event with multinational participants from
-                different countries, in advance or ad hoc basis.
+                <span className="text-black md:text-white">
+                  We customise golf packages for local (Singapore), regional and
+                  international golf packages for both private group and
+                </span>{" "}
+                personalised event with{" "}
+                <span className="text-black md:text-white">multinational</span>{" "}
+                participants from different countries, in advance or ad hoc
+                basis.
               </p>
               <p className=" text-xs md:text-md text-white">
                 Please contact us for a free quotation or speak to our
