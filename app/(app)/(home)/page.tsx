@@ -8,22 +8,22 @@ export default function CompanyProfilePage() {
       <div className="fixed inset-0 -z-10">
         <picture>
           {/* Mobile-optimized image with higher quality and vibrancy */}
-          <source media="(max-width: 767px)" srcSet="/img-background-3.jpg" />
+          <source media="(max-width: 767px)" srcSet="/bg-home.png" />
           {/* Desktop image */}
           <source media="(min-width: 768px)" srcSet="/img-background-3.jpg" />
           <Image
-            src="/img-background-3.jpg"
+            src="/bg-home.png"
             alt="Golf course background"
             fill
-            className="object-cover opacity-70 md:opacity-70 brightness-[1.1] contrast-[1.05] md:brightness-100 md:contrast-100"
+            className="object-fill md:opacity-70 brightness-[1.1] contrast-[1.05] md:brightness-100 md:contrast-100 mt-16"
             priority
             quality={90}
           />
         </picture>
       </div>
-      <div className="mx-auto px-4 relative -z-0">
-        {/* Hero Section */}
-        {/* <div className="relative rounded-3xl overflow-hidden mb-16">
+      {/* <div className="mx-auto px-4 relative -z-0"> */}
+      {/* Hero Section */}
+      {/* <div className="relative rounded-3xl overflow-hidden mb-16">
           <div className="absolute inset-0">
             <Image
               src="/img-background.jpg"
@@ -46,45 +46,93 @@ export default function CompanyProfilePage() {
           </div>
         </div> */}
 
-        {/* Company Introduction Section */}
-        <section className="w-full">
-          <div className="bg-red-700 rounded-none p-1 w-[9rem] md:w-[18rem] mb-3">
+      {/* Company Introduction Section */}
+      {/* <section className="w-full"> */}
+      {/* <div className="bg-red-700 rounded-none p-1 w-[9rem] md:w-[18rem] mb-3">
             <h2 className="text-md lg:text-2xl font-bold">Company Profile</h2>
-          </div>
+          </div> */}
 
-          <Tag />
-          <div className="mr-16 pl-0.5 pr-4 mt-2">
-            <div className="bg-card/50 p-2 rounded-md md:bg-none font-bold text-shadow-lg/80 text-white">
-              <p className=" mb-2 text-xs md:text-md ">
+      {/* <Tag /> */}
+      {/* <div className="mr-16 pl-0.5 pr-4 mt-2"> */}
+      {/* <div className=" md:bg-none font-semibold text-white">
+              <p className="mb-2 text-xs md:text-md text-stroke">
                 We are established with the aim to offer golf holiday packages
                 tailored to our cliets exact requirements, competitively, and
                 with a high standard of personal customised service
               </p>
-              <p className="mb-2 text-xs md:text-md ">
+              <p className="mb-2 text-xs md:text-md text-stroke">
                 The Company operates in partnership with established tour
                 operators, with local connection and experience that been
                 running successfully in the golf travel industry for many years.
               </p>
-              <p className="mb-2  text-xs md:text-md ">
+              <p className="mb-2 text-xs md:text-md text-stroke">
                 With our direct connection with various related and essential
                 service providers, we are capable of offering our clients a
                 highly competitive package with integrity and professionalism.
               </p>
-              <p className="mb-2 text-xs md:text-md ">
+              <p className="mb-2 text-xs md:text-md text-stroke">
                 We customise golf packages for local (Singapore), regional and
                 international golf packages for both private group and
                 personalised event with multinational participants from
                 different countries, in advance or ad hoc basis.
+              </p>
+              <p className="text-xs md:text-md text-stroke">
+                Please contact us for a free quotation or speak to our
+                consultant to customise your nest trip to your specific
+                requirement and budget.
+              </p>
+            </div> */}
+      {/* <div className="md:bg-none font-bold mix-blend-difference">
+              <p className=" mb-2 text-xs md:text-md">
+                <span className="text-black">
+                  <span className="text-white">We are</span> established with
+                  the aim{" "}
+                  <span className="text-white">
+                    to offer golf holiday packages tailored to our cliets exact
+                    requirements,
+                  </span>
+                </span>{" "}
+                <span className="text-black">
+                  competitively, and with a high standard of personal customised
+                  service
+                </span>
+              </p>
+              <p className="mb-2 text-xs md:text-md text-black">
+                The Company operates in partnership with established tour
+                operators, with local connection and experience that been
+                running successfully in the golf travel industry for many years.
+              </p>
+              <p className="mb-2 text-xs md:text-md text-black">
+                With our direct connection with various related and essential
+                service providers, we are capable of offering our clients a
+                highly competitive package with integrity and professionalism.
+              </p>
+              <p className="mb-2 text-xs md:text-md text-white">
+                <span className="text-black">
+                  We customise golf packages for local (Singapore), regional and
+                </span>{" "}
+                {""}
+                international golf{" "}
+                <span className="text-black">
+                  packages for both private
+                </span>{" "}
+                {""}
+                group and personalised 
+                <span className="text-black">
+                  event with multinational
+                </span>{" "}
+                participants from different countries, in{" "}
+                <span className="text-black">advance</span> or ad hoc basis.
               </p>
               <p className=" text-xs md:text-md">
                 Please contact us for a free quotation or speak to our
                 consultant to customise your nest trip to your specific
                 requirement and budget.
               </p>
-            </div>
-          </div>
-        </section>
-      </div>
+            </div> */}
+      {/* </div> */}
+      {/* </section> */}
+      {/* </div> */}
     </div>
   );
 }
