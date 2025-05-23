@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function CompanyProfilePage() {
   return (
-    <div className="relative pt-[0.5rem] md:pt-34 lg:pt-34 overflow-hidden">
+    <div className="relative md:pt-34 lg:pt-34 overflow-hidden">
       {/* Background Image */}
       <div className="fixed inset-0 -z-10">
         {/* <picture> */}
@@ -15,7 +15,7 @@ export default function CompanyProfilePage() {
           src="/bg-home-3.png"
           alt="Golf course background"
           fill
-          className="object-fill md:opacity-70 brightness-[1.1] contrast-[1.05] md:brightness-100 md:contrast-100 mt-16"
+          className="object-fill md:opacity-70 brightness-[1.1] contrast-[1.05] md:brightness-100 md:contrast-100 mt-12"
           priority
           quality={90}
         />
