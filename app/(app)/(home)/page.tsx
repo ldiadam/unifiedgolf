@@ -6,7 +6,7 @@ export default function CompanyProfilePage() {
   return (
     <>
       {/* Background Image */}
-      <div className="w-full h-auto shadow-lg -mb-33">
+      <div className="w-full h-auto shadow-lg -mb-34">
         <Image
           src="/bg-home-3.png"
           alt="Golf course background"
