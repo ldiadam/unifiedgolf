@@ -10,7 +10,7 @@ export default function CompanyProfilePage() {
         <img
           src="/bg-home-3.png"
           alt="Golf course background"
-          className="w-full h-auto md:opacity-70 brightness-[1.1] contrast-[1.05] md:brightness-100 md:contrast-100"
+          className="w-full h-auto opacity-85"
         />
       </div>
       <footer className="bg-card/80 text-white text-xs text-center py-4">
