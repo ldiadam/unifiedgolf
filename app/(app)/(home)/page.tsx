@@ -7,18 +7,15 @@ export default function CompanyProfilePage() {
     <>
       {/* Background Image */}
       <div className="w-full h-auto shadow-lg -mb-34">
-        <Image
+        <img
           src="/bg-home-3.png"
           alt="Golf course background"
-          // fill={true}
-          width={375}
-          height={1024}
-          className="md:opacity-70 brightness-[1.1] contrast-[1.05] md:brightness-100 md:contrast-100"
-          priority
-          quality={90}
+          className="w-full h-auto md:opacity-70 brightness-[1.1] contrast-[1.05] md:brightness-100 md:contrast-100"
         />
       </div>
-      <FooterSection />
+      <footer className="bg-card/80 text-white text-xs text-center py-4">
+        © 2025 Unified Golf Pte Ltd. All rights reserved.
+      </footer>
     </>
   );
 }
