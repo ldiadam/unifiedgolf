@@ -408,7 +408,7 @@ export const NavbarNew = () => {
                       <li key={item.id}>
                         <Button
                           variant="ghost"
-                          className="w-full p-6 justify-center items-center text-lg text-left rounded-none bg-green-700 focus-visible:ring-0"
+                          className="w-full py-6 justify-start items-center text-lg text-left rounded-none bg-green-700 focus-visible:ring-0"
                           onClick={() => navigateAndCollapse(item.href)}
                         >
                           {item.label}
