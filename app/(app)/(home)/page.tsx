@@ -17,16 +17,16 @@ export default function CompanyProfilePage() {
 
       {/* Here is for dekstop*/}
       <div className="hidden md:block md:h-auto md:-mt-6">
-        <div className="w-full h-auto shadow-lg -mb-34">
+        <div className="w-full h-auto shadow-lg">
           <img
             src="/bg-home-desktop.png"
             alt="Golf course background"
-            className="w-full h-auto opacity-85"
+            className="w-screen h-screen"
           />
         </div>
-        <footer className="bg-card/80 text-white text-xs text-center py-4">
+        {/* <footer className="bg-card/80 text-white text-xs text-center py-4">
           © 2025 Unified Golf Pte Ltd. All rights reserved.
-        </footer>
+        </footer> */}
       </div>
     </>
   );
