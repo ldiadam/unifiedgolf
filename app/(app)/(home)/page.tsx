@@ -16,7 +16,7 @@ export default function CompanyProfilePage() {
       </div>
 
       {/* Here is for dekstop*/}
-      <div className="hidden md:block md:h-auto">
+      <div className="hidden md:block md:h-auto md:-mt-6">
         <div className="w-full h-auto shadow-lg -mb-34">
           <img
             src="/bg-home-desktop.png"
