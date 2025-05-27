@@ -394,7 +394,7 @@ export const NavbarNew = () => {
                   <Link href={item.href}>
                     <Button
                       variant={"ghost"}
-                      className="rounded-none ml-[0.1rem] bg-red-700"
+                      className="rounded-none ml-[0.1rem] bg-red-700 text-lg p-6 font-bold"
                     >
                       {item.label}
                     </Button>
