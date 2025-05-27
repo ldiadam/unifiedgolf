@@ -21,7 +21,7 @@ export default function CompanyProfilePage() {
           <img
             src="/bg-home-desktop.png"
             alt="Golf course background"
-            className="w-screen h-screen"
+            className="w-full h-full"
           />
         </div>
         {/* <footer className="bg-card/80 text-white text-xs text-center py-4">

@@ -401,8 +401,8 @@ export const NavbarNew = () => {
                   </Link>
                 </div>
               ))}
-              <div className="fixed bottom-0 right-24 z-[100]">
-                <div className="w-[160px] p-0 bg-transparent border-none">
+              <div className="fixed bottom-0 right-16 z-[100]">
+                <div className="w-[160px] bg-transparent border-none pr-1">
                   <ul className="grid gap-1">
                     {moreMenuItems.map((item) => (
                       <li key={item.id}>
