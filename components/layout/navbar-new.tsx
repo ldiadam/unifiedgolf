@@ -402,13 +402,13 @@ export const NavbarNew = () => {
                 </div>
               ))}
               <div className="fixed bottom-1 right-1 z-[100]">
-                <div className="w-[124px] p-0 bg-transparent border-none">
-                  <ul className="grid gap-1 p-1">
+                <div className="w-[160px] p-0 bg-transparent border-none">
+                  <ul className="grid gap-1">
                     {moreMenuItems.map((item) => (
                       <li key={item.id}>
                         <Button
                           variant="ghost"
-                          className="w-full justify-start text-left rounded-none bg-green-700 focus-visible:ring-0"
+                          className="w-full p-6 justify-center items-center text-lg text-left rounded-none bg-green-700 focus-visible:ring-0"
                           onClick={() => navigateAndCollapse(item.href)}
                         >
                           {item.label}
