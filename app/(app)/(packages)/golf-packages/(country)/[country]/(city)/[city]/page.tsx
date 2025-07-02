@@ -64,6 +64,12 @@ export default function PackageCityPage({ params }: Props) {
       country: "Malaysia",
       city: ["Johor", "Malaysia"],
     },
+    {
+      id: 6,
+      package: ["Hua Hin Golf Package"],
+      country: "Thailand",
+      city: ["Hua Hin"],
+    },
   ];
 
   const { country } = params;

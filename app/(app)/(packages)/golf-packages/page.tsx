@@ -6,7 +6,7 @@ import { MapPin } from "lucide-react";
 import Tag from "@/components/layout/tag";
 
 export default function StandardPackagesPage() {
-  const country = ["China", "Indonesia", "Malaysia", "Singapore"];
+  const country = ["China", "Indonesia", "Malaysia", "Singapore","Thailand"];
 
   return (
     <>

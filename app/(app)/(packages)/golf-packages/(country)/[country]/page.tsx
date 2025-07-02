@@ -31,6 +31,10 @@ export default function PackageCountryPage({ params }: Props) {
       country: "Malaysia",
       city: ["Johor", "Malaysia"],
     },
+    {
+      country: "Thailand",
+      city: ["Hua Hin"],
+    }
   ];
 
   const { country } = params;
